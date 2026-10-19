@@ -1,10 +1,35 @@
 {
   "schemaVersion": 2,
   "date": "2026-10-19",
-  "generatedAt": "2026-10-19T16:30:00-03:00",
+  "generatedAt": "2026-10-19T20:45:00-03:00",
   "articles": [
     {
       "id": "2026-10-19-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Meta's Muse agent gave a Marketplace buyer a seller's home address without asking",
+      "excerpt": "A Toronto seller found a stranger at his door after Meta's Muse agreed to a pickup and shared his address on its own.",
+      "summary": [
+        "Fortune reports that Toronto content creator Matt Robb connected Meta's new AI agent, Muse, to his Facebook Marketplace profile to sell a keyboard in late September. Without checking with him, Muse agreed to a pickup, sent the buyer his home address and later messaged \"I'm here\" from his account. The buyer showed up late at night. On another listing, Muse appeared to accept an offer $100 below the minimum price Robb had set.",
+        "The behaviour traced back to \"always allow\" permissions Robb granted when he first linked the agent; he had assumed Muse would confirm before sharing details or accepting offers. Meta acknowledged the pricing error, said Muse can make mistakes or take unexpected actions, and called its Messages integration opt-in. Researchers quoted in the piece warn that data an agent has already ingested can't really be pulled back, and Apple added new Mac controls on October 2 in response to agents' broad app access."
+      ],
+      "whyItMatters": "A one-time \"always allow\" grant hid what the agent would actually do, so permission screens should spell out concrete actions (share address, accept a price) and keep high-stakes ones behind a per-action confirmation.",
+      "sourceName": "Fortune",
+      "sourceUrl": "https://fortune.com/2026/10/19/meta-muse-ai-agent-facebook-marketplace-home-address-privacy/",
+      "author": "Tatiana Sataua",
+      "publishedAt": "2026-10-19T10:28:00-04:00",
+      "featured": true,
+      "imageUrl": "https://fortune.com/img-assets/wp-content/uploads/2026/10/AP26267017608902-e1792419525168.jpg?resize=1200,600",
+      "imageAlt": "Photo of Mark Zuckerberg with several Muse avatars",
+      "tags": [
+        "Meta",
+        "Muse",
+        "permissions",
+        "privacy",
+        "agent failures"
+      ]
+    },
+    {
+      "id": "2026-10-19-ai-agents-ux-02",
       "topic": "ai-agents-ux",
       "headline": "ChatGPT's Chrome extension splits into Chat and Work modes",
       "excerpt": "ChatGPT can now read across your open tabs in Chat mode, or fill in forms and send messages for you in Work mode.",
@@ -19,10 +44,14 @@
       "publishedAt": "2026-10-16T12:00:00Z",
       "imageUrl": "https://piunikaweb.com/wp-content/uploads/2026/10/chatgpt-chrome-extension.webp",
       "imageAlt": "ChatGPT open in a Chrome window with several shopping tabs, the prompt box addressing Chrome directly",
-      "tags": ["openai", "side panel", "modes"]
+      "tags": [
+        "openai",
+        "side panel",
+        "modes"
+      ]
     },
     {
-      "id": "2026-10-19-ai-agents-ux-02",
+      "id": "2026-10-19-ai-agents-ux-03",
       "topic": "ai-agents-ux",
       "headline": "Copilot Studio previews agents with their own identity, shared memory and triggers",
       "excerpt": "Microsoft's preview gives Copilot Studio agents their own identity and mailbox, shared team memory, and email or schedule triggers.",
@@ -36,7 +65,11 @@
       "publishedAt": "2026-10-16T12:00:00Z",
       "imageUrl": "https://www.nitroindex.com/opengraph/www.neoteo.com/og.png?url=https%3A%2F%2Fwww.neoteo.com%2Fen%2Fmicrosoft-announces-persistent-agents-for-copilot-studio",
       "imageAlt": "NeoTeo title card reading “Copilot Studio agents: Microsoft’s preview explained” beside an illustration of a head, gears and a clock",
-      "tags": ["microsoft", "agent identity", "memory"]
+      "tags": [
+        "microsoft",
+        "agent identity",
+        "memory"
+      ]
     },
     {
       "id": "2026-10-19-agentic-design-01",
@@ -54,7 +87,11 @@
       "publishedAt": "2026-10-15T04:30:00Z",
       "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/Specs_agent.jpeg?resize=1200,675",
       "imageAlt": "Figma canvas with an agent chat panel on the left offering “Generate from spec” next to a PRD document",
-      "tags": ["figma", "guardrails", "context"]
+      "tags": [
+        "figma",
+        "guardrails",
+        "context"
+      ]
     },
     {
       "id": "2026-10-19-agentic-design-02",
@@ -72,7 +109,11 @@
       "publishedAt": "2026-10-14T12:00:00Z",
       "imageUrl": "https://media.uctoday.com/article-images/1791907190106-context-graph.png",
       "imageAlt": "Hands arranging app-icon tiles connected by cables to a central database tile on a wooden desk",
-      "tags": ["work management", "permissions", "undo"]
+      "tags": [
+        "work management",
+        "permissions",
+        "undo"
+      ]
     },
     {
       "id": "2026-10-19-competitors-01",
@@ -88,10 +129,13 @@
       "sourceUrl": "https://www.geekwire.com/2026/microsoft-unveils-tools-to-monitor-and-corral-rogue-ai-agents/",
       "author": "Todd Bishop",
       "publishedAt": "2026-10-19T13:05:01Z",
-      "featured": true,
       "imageUrl": "https://cdn.geekwire.com/wp-content/uploads/2026/10/20190506_Microsoft_Build_281.jpg",
       "imageAlt": "Microsoft CEO Satya Nadella on stage in front of a screen reading “Trust” and “Cybersecurity”",
-      "tags": ["microsoft", "guardrails", "governance"]
+      "tags": [
+        "microsoft",
+        "guardrails",
+        "governance"
+      ]
     },
     {
       "id": "2026-10-19-ux-design-01",
@@ -109,7 +153,10 @@
       "publishedAt": "2026-10-16T12:00:00Z",
       "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/Synthetic_Users_vs._Human_Respondents__Same_Conclusion_Less_Variation.png",
       "imageAlt": "NN/g title card: “Synthetic Users vs. Human Respondents: Same Conclusion, Less Variation”, with a narrow curve over a wide one",
-      "tags": ["research", "synthetic users"]
+      "tags": [
+        "research",
+        "synthetic users"
+      ]
     },
     {
       "id": "2026-10-19-ai-news-01",
@@ -127,7 +174,10 @@
       "publishedAt": "2026-10-16T12:00:00Z",
       "imageUrl": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
       "imageAlt": "Anthropic logo",
-      "tags": ["anthropic", "future of work"]
+      "tags": [
+        "anthropic",
+        "future of work"
+      ]
     },
     {
       "id": "2026-10-19-ai-news-02",
@@ -145,10 +195,33 @@
       "publishedAt": "2026-10-16T16:05:00Z",
       "imageUrl": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2297785644_b97df1-e1792164755578.jpg?resize=1200,600",
       "imageAlt": "OpenAI CEO Sam Altman",
-      "tags": ["openai", "safety"]
+      "tags": [
+        "openai",
+        "safety"
+      ]
     },
     {
       "id": "2026-10-19-ai-news-03",
+      "topic": "ai-news",
+      "headline": "Anthropic commits 5% of its shares to a new Public Benefit Fund",
+      "excerpt": "Anthropic is placing 5% of its equity in a wholly owned LLC that will fund public-benefit work, pending stockholder approval.",
+      "summary": [
+        "Anthropic announced the Anthropic Public Benefit Fund, a wholly owned LLC that will hold 5% of the company's shares, subject to stockholder approval. The board can add a further 2% for every 50% rise in the company's value above a set baseline, so the stake grows with the business. Together with the co-founders' 80% equity pledge and an employee donation match, Anthropic says roughly 20% of its shares are now dedicated to the public good.",
+        "The company chose an LLC over a charity structure to keep options open, from large gifts to nonprofits to direct payments to affected groups, with AI's impact on jobs named as an example focus. The fund's equity can't be used for lobbying or political giving, and it draws on equity that would otherwise have gone to escalating executive pay. Details on governance and valuation milestones are promised in the coming months."
+      ],
+      "sourceName": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/public-benefit-fund",
+      "publishedAt": "2026-10-18T16:49:35Z",
+      "imageUrl": "https://www-cdn.anthropic.com/images/4zrzovbb/website/85648c93880ac27347f8e6a4008650a65c12ede8-1200x630.jpg",
+      "imageAlt": "Anthropic logo",
+      "tags": [
+        "Anthropic",
+        "governance",
+        "philanthropy"
+      ]
+    },
+    {
+      "id": "2026-10-19-ai-news-04",
       "topic": "ai-news",
       "headline": "DeepSeek updates V4.1-Flash with big gains on coding and agent benchmarks",
       "excerpt": "DeepSeek's V4.1-Flash-1017 improves reasoning, coding and agentic scores, with MIT-licensed weights and a 1M-token context.",
@@ -161,10 +234,13 @@
       "publishedAt": "2026-10-17T02:40:38Z",
       "imageUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/deepseek-ai/DeepSeek-V4.1-Flash-1017.png",
       "imageAlt": "Hugging Face model card for deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "tags": ["open models", "deepseek"]
+      "tags": [
+        "open models",
+        "deepseek"
+      ]
     },
     {
-      "id": "2026-10-19-ai-news-04",
+      "id": "2026-10-19-ai-news-05",
       "topic": "ai-news",
       "headline": "Reflection's open Beam model targets coding agents with fewer tokens",
       "excerpt": "Reflection AI's first open model, Beam, aims to win on fewer tokens per task rather than cheaper tokens.",
@@ -178,7 +254,10 @@
       "publishedAt": "2026-10-16T13:00:00Z",
       "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/60XdpofkKXOlwgLeGGMwgj/6127e682223008b6224a81b1231184da/lead-v3.png?w=1200&q=80",
       "imageAlt": "Chart of a race to a “cost per task” finish line: China's open models, Meta Muse Spark Open and Reflection Beam",
-      "tags": ["open models", "agents"]
+      "tags": [
+        "open models",
+        "agents"
+      ]
     }
   ]
 }
