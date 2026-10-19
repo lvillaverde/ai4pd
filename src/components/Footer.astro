@@ -1,15 +1,38 @@
 ---
 import { siteConfig } from '../site.config';
 import { url } from '../lib/url';
+import { formatLongDate, formatTime, plural } from '../lib/format';
+import type { Edition } from '../lib/data';
+
+interface Props { edition?: Edition }
+const { edition } = Astro.props;
 ---
 <footer class="footer">
   <div class="container">
-    <p><strong>{siteConfig.title}</strong> is curated every morning by an AI agent. Summaries are original; every story links to its source.</p>
-    <p class="meta"><a href={url('/archive/')}>Archive</a> · <a href={url('/rss.xml')}>RSS feed</a></p>
+    <div class="top">
+      {edition ? (
+        <p class="edition">
+          <span class="label">Edition</span>
+          <a href={url(`/day/${edition.date}/`)}>{formatLongDate(edition.date)}</a>
+          <span>· {plural(edition.articles.length, 'story', 'stories')} · Updated <time datetime={edition.generatedAt}>{formatTime(edition.generatedAt)}</time></span>
+        </p>
+      ) : <span />}
+      <p class="links"><a href={url('/archive/')}>Archive</a> · <a href={url('/rss.xml')}>RSS</a></p>
+    </div>
+    <p class="bottom">Designed and Developed by {siteConfig.credit.name} · <a class="credit" href={siteConfig.credit.url} rel="author">{siteConfig.credit.url.replace(/^https?:\/\//, '')}</a></p>
   </div>
 </footer>
 <style>
   .footer { border-top: var(--rule-width) solid var(--color-rule); padding-block: var(--space-6); font-size: var(--text-sm); color: var(--color-text-muted); }
-  .footer .container { display: grid; gap: var(--space-2); }
-  .footer strong { color: var(--color-text); }
+  .footer .container { display: grid; gap: var(--space-4); }
+  .top {
+    display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-2) var(--space-5);
+    padding-bottom: var(--space-4); border-bottom: var(--rule-width) solid var(--color-rule);
+  }
+  .edition { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-1) var(--space-2); }
+  .edition a { color: var(--color-text); font-weight: var(--weight-medium); text-decoration: none; }
+  .edition a:hover { color: var(--color-accent); text-decoration: underline; }
+  .bottom { text-align: center; }
+  .credit { color: var(--color-text); font-weight: var(--weight-medium); }
+  .links a { color: var(--color-text); font-weight: var(--weight-medium); }
 </style>

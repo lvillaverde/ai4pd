@@ -21,7 +21,10 @@ a:hover { color: var(--color-accent); }
 
 :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; border-radius: var(--radius); }
 
-h1, h2, h3 { font-family: var(--font-display); font-weight: var(--weight-medium); line-height: var(--leading-tight); text-wrap: balance; }
+h1, h2, h3 {
+  font-family: var(--font-display); font-weight: var(--weight-bold); line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight); text-wrap: balance;
+}
 p { text-wrap: pretty; }
 
 .container { width: 100%; max-width: var(--page-max); margin-inline: auto; padding-inline: var(--page-gutter); }
@@ -41,15 +44,20 @@ p { text-wrap: pretty; }
   font-family: var(--font-body); font-size: var(--text-xs); font-weight: var(--weight-bold);
   letter-spacing: var(--tracking-label); text-transform: uppercase; color: var(--color-accent);
 }
-.meta { font-size: var(--text-sm); color: var(--color-text-muted); }
+.meta { font-size: var(--text-sm); font-weight: var(--weight-light); color: var(--color-text-muted); }
+.meta strong { font-weight: var(--weight-medium); color: var(--color-text); }
+
+/* Light summary text under bold headlines */
+.deck { font-weight: var(--weight-light); line-height: var(--leading-normal); }
 
 .section-head {
-  display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4);
-  border-top: var(--rule-width-strong) solid var(--color-rule-strong);
-  padding-top: var(--space-3); margin-bottom: var(--space-5);
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+  border-bottom: var(--rule-width) solid var(--color-rule);
+  padding-bottom: var(--space-3); margin-bottom: var(--space-5);
 }
-.section-head h2 { font-size: var(--text-xl); }
-.section-head a { font-size: var(--text-sm); white-space: nowrap; }
+.section-head h2 { font-size: 1.25rem; text-transform: uppercase; letter-spacing: 0; display: flex; align-items: center; gap: var(--space-2); }
+.section-head a { font-size: var(--text-sm); font-weight: var(--weight-medium); white-space: nowrap; text-decoration: none; color: var(--color-text-muted); }
+.section-head a:hover { color: var(--color-accent); }
 
 .empty { color: var(--color-text-muted); font-style: italic; }
 

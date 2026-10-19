@@ -4,10 +4,10 @@ import topicsJson from '../../data/topics.json';
 
 export type Edition = CollectionEntry<'news'>['data'];
 export type Article = Edition['articles'][number];
-export type Topic = { slug: string; name: string; description?: string };
+export type Topic = { slug: string; name: string; icon?: string; description?: string };
 
 const topicsSchema = z.object({
-  topics: z.array(z.object({ slug: z.string(), name: z.string(), description: z.string().optional() })).min(1),
+  topics: z.array(z.object({ slug: z.string(), name: z.string(), icon: z.string().optional(), description: z.string().optional() })).min(1),
 });
 
 export const topics: Topic[] = topicsSchema.parse(topicsJson).topics;
@@ -43,6 +43,19 @@ export async function getLatestEdition(): Promise<Edition | undefined> {
 /** Lead story: first featured article, else the first one. */
 export function getLead(edition: Edition): Article {
   return edition.articles.find((a) => a.featured) ?? edition.articles[0];
+}
+
+/** Stories shown beside the lead: the first story of up to `n` other topics, in file order. */
+export function getSecondary(edition: Edition, lead: Article, n = 2): Article[] {
+  const seen = new Set([lead.topic]);
+  const picks: Article[] = [];
+  for (const a of edition.articles) {
+    if (picks.length === n) break;
+    if (a === lead || seen.has(a.topic)) continue;
+    seen.add(a.topic);
+    picks.push(a);
+  }
+  return picks;
 }
 
 export function byTopic(articles: Article[], slug: string): Article[] {

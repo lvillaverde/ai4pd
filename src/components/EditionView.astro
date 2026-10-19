@@ -1,12 +1,44 @@
 ---
 import LeadStory from './LeadStory.astro';
+import ArticleCard from './ArticleCard.astro';
 import TopicSection from './TopicSection.astro';
-import { topics, getLead, byTopic, type Edition } from '../lib/data';
+import { topics, getLead, getSecondary, byTopic, type Edition } from '../lib/data';
 
 interface Props { edition: Edition }
 const { edition } = Astro.props;
 const lead = getLead(edition);
-const rest = edition.articles.filter((a) => a !== lead);
+const secondary = getSecondary(edition, lead);
+const promoted = new Set([lead, ...secondary]);
+const rest = edition.articles.filter((a) => !promoted.has(a));
 ---
-<LeadStory article={lead} />
-{topics.map((t) => <TopicSection topic={t} articles={byTopic(rest, t.slug)} hideWhenEmpty={t.slug === lead.topic && byTopic(rest, t.slug).length === 0} />)}
+<div class:list={['top', { 'has-aside': secondary.length }]}>
+  <LeadStory article={lead} date={edition.date} />
+  {secondary.length > 0 && (
+    <aside class="aside" aria-label="Also today">
+      {secondary.map((a) => <ArticleCard article={a} date={edition.date} showTopic size="lg" />)}
+    </aside>
+  )}
+</div>
+{topics.map((t) => {
+  const remaining = byTopic(rest, t.slug);
+  // Hide a section only when all of today's stories for it were promoted to the top.
+  const allPromoted = remaining.length === 0 && byTopic(edition.articles, t.slug).length > 0;
+  return <TopicSection topic={t} articles={remaining} date={edition.date} hideWhenEmpty={allPromoted} />;
+})}
+<style>
+  .top {
+    display: grid; gap: var(--space-6) var(--space-7);
+    padding-bottom: var(--space-6); margin-bottom: var(--space-7);
+    border-bottom: var(--rule-width) solid var(--color-rule);
+  }
+  .aside { display: grid; gap: var(--space-5); align-content: start; }
+  .aside :global(.card:last-child) { border-bottom: 0; padding-bottom: 0; }
+  @media (min-width: 64rem) {
+    .top.has-aside { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+    .aside { border-left: var(--rule-width) solid var(--color-rule); padding-left: var(--space-6); }
+    /* The lead photo grows to the sidebar's height and crops to fit (cover), instead of leaving a gap. */
+    .top.has-aside :global(.lead) { display: flex; flex-direction: column; }
+    .top.has-aside :global(.lead .thumb) { flex: 1 1 auto; display: flex; flex-direction: column; }
+    .top.has-aside :global(.lead .frame) { flex: 1 1 auto; aspect-ratio: auto; min-height: 22rem; }
+  }
+</style>

@@ -4,14 +4,19 @@ import Masthead from '../components/Masthead.astro';
 import Footer from '../components/Footer.astro';
 import { siteConfig } from '../site.config';
 import { url } from '../lib/url';
+import type { Edition } from '../lib/data';
 
 interface Props {
   title?: string;
   description?: string;
   activeTopic?: string;
-  editionDate?: string;
+  /** Edition shown in the footer (date, story count, update time). */
+  edition?: Edition;
+  /** Share image for link previews (og:image). */
+  image?: { url: string; alt: string };
+  ogType?: 'website' | 'article';
 }
-const { title, description = siteConfig.description, activeTopic, editionDate } = Astro.props;
+const { title, description = siteConfig.description, activeTopic, edition, image, ogType = 'website' } = Astro.props;
 const pageTitle = title ? `${title} — ${siteConfig.title}` : `${siteConfig.title} — ${siteConfig.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -27,23 +32,26 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <link rel="alternate" type="application/rss+xml" title={siteConfig.title} href={url('/rss.xml')} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
-    <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#15140f" media="(prefers-color-scheme: dark)" />
+    {image && <meta property="og:image" content={image.url} />}
+    {image && <meta property="og:image:alt" content={image.alt} />}
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap"
     />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <Masthead activeTopic={activeTopic} editionDate={editionDate} />
+    <Masthead activeTopic={activeTopic} />
     <main id="main" class="container">
       <slot />
     </main>
-    <Footer />
+    <Footer edition={edition} />
   </body>
 </html>

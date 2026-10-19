@@ -12,7 +12,7 @@ for (const e of editions) {
   months.set(key, [...(months.get(key) ?? []), e]);
 }
 ---
-<Base title="Archive" description="Every past edition, newest first." editionDate={editions[0]?.date}>
+<Base title="Archive" description="Every past edition, newest first.">
   {editions.length === 0 ? <EmptyState /> : (
     <>
       <h1 class="title">Archive</h1>
@@ -23,7 +23,7 @@ for (const e of editions) {
             {list.map((e) => (
               <li>
                 <a href={url(`/day/${e.date}/`)}>{formatLongDate(e.date)}</a>
-                <span class="meta">{plural(e.articles.length, 'story')}</span>
+                <span class="meta">{plural(e.articles.length, 'story', 'stories')}</span>
                 <span class="lead-line">{getLead(e).headline}</span>
               </li>
             ))}

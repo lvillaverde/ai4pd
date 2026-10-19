@@ -1,52 +1,92 @@
 ---
 import { siteConfig } from '../site.config';
 import { topics } from '../lib/data';
-import { formatLongDate } from '../lib/format';
 import { url } from '../lib/url';
 
-interface Props { activeTopic?: string; editionDate?: string }
-const { activeTopic, editionDate } = Astro.props;
+interface Props { activeTopic?: string }
+const { activeTopic } = Astro.props;
 const path = Astro.url.pathname.replace(/\/$/, '');
 const isHome = path === url('/').replace(/\/$/, '');
 const isArchive = path === url('/archive');
 ---
 <header class="masthead">
   <div class="container">
-    <div class="top meta">
-      <span>{editionDate ? formatLongDate(editionDate) : siteConfig.tagline}</span>
-      <a href={url('/rss.xml')}>RSS</a>
-    </div>
-    <a class="brand" href={url('/')} aria-current={isHome ? 'page' : undefined}>{siteConfig.title}</a>
+    <a class="brand" href={url('/')} aria-current={isHome ? 'page' : undefined}>
+      <span aria-hidden="true">ai<span class="four">4</span>pd</span><span class="visually-hidden">{siteConfig.title}</span>
+    </a>
     <p class="tagline">{siteConfig.tagline}</p>
   </div>
-  <nav class="nav" aria-label="Sections">
-    <ul class="container">
+</header>
+<nav class="nav" aria-label="Sections">
+  <div class="container nav-inner">
+    <!-- Compact logo: fades in once the masthead logo has scrolled out of view. -->
+    <a class="mini-brand" href={url('/')}>
+      <span aria-hidden="true">ai<span class="four">4</span>pd</span><span class="visually-hidden">{siteConfig.title} home</span>
+    </a>
+    <ul>
       <li><a href={url('/')} aria-current={isHome ? 'page' : undefined}>Today</a></li>
       {topics.map((t) => (
         <li><a href={url(`/topic/${t.slug}/`)} aria-current={activeTopic === t.slug ? 'page' : undefined}>{t.name}</a></li>
       ))}
       <li><a href={url('/archive/')} aria-current={isArchive ? 'page' : undefined}>Archive</a></li>
     </ul>
-  </nav>
-</header>
+  </div>
+</nav>
+
+<script>
+  const nav = document.querySelector<HTMLElement>('.nav');
+  const masthead = document.querySelector<HTMLElement>('.masthead');
+  if (nav && masthead && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => nav.classList.toggle('stuck', !entry.isIntersecting)).observe(masthead);
+  }
+</script>
 
 <style>
-  .masthead { text-align: center; padding-top: var(--space-4); }
-  .top { display: flex; justify-content: space-between; gap: var(--space-4); padding-bottom: var(--space-3); border-bottom: var(--rule-width) solid var(--color-rule); }
-  .top a { text-decoration: none; }
+  .masthead { text-align: center; padding-top: var(--space-3); }
   .brand {
     display: inline-block; margin-top: var(--space-5);
-    font-family: var(--font-display); font-size: var(--text-masthead); font-weight: var(--weight-medium);
-    line-height: 1; letter-spacing: -0.02em; text-decoration: none;
+    font-family: var(--font-display); font-size: var(--text-masthead); font-weight: var(--weight-bold);
+    line-height: 0.9; letter-spacing: -0.06em; text-decoration: none; color: var(--color-brand);
   }
-  .tagline { margin: var(--space-2) 0 var(--space-5); color: var(--color-text-muted); font-family: var(--font-display); font-style: italic; font-size: var(--text-lg); }
-  .nav { border-block: var(--rule-width) solid var(--color-rule-strong); }
+  /* The 4: light, sized to the lowercase letters, in the text color (logo direction C). */
+  .four { margin: 0 0.03em; font-size: 0.72em; font-weight: var(--weight-light); color: var(--color-text); }
+  .brand:hover, .mini-brand:hover { color: var(--color-brand); }
+  .tagline { margin: var(--space-2) 0 var(--space-5); color: var(--color-text-muted); font-weight: var(--weight-light); font-size: var(--text-lg); }
+
+  .nav {
+    position: sticky; top: 0; z-index: 5;
+    background: var(--color-bg); border-block: var(--rule-width) solid var(--color-rule);
+  }
+  .nav-inner { position: relative; display: flex; align-items: center; }
   .nav ul {
-    list-style: none; display: flex; gap: var(--space-5); justify-content: center;
+    flex: 1 1 auto; min-width: 0;
+    list-style: none; display: flex; gap: var(--space-6); justify-content: center;
     overflow-x: auto; scrollbar-width: none; padding-block: var(--space-3);
+    transition: padding-left 200ms ease;
   }
   .nav ul::-webkit-scrollbar { display: none; }
-  .nav a { font-size: var(--text-sm); font-weight: var(--weight-medium); text-decoration: none; white-space: nowrap; padding-block: var(--space-1); }
-  .nav a[aria-current='page'] { color: var(--color-accent); box-shadow: inset 0 -2px 0 currentColor; }
-  @media (max-width: 48rem) { .nav ul { justify-content: flex-start; } }
+  .nav ul a { font-size: var(--text-base); text-decoration: none; white-space: nowrap; padding-block: var(--space-1); }
+  .nav ul a[aria-current='page'] { font-weight: var(--weight-bold); box-shadow: inset 0 -2px 0 var(--color-brand); }
+
+  .mini-brand {
+    position: absolute; left: var(--page-gutter); top: 50%;
+    font-size: 1.625rem; font-weight: var(--weight-bold); letter-spacing: -0.06em; line-height: 1;
+    color: var(--color-brand); text-decoration: none;
+    opacity: 0; visibility: hidden; transform: translateY(calc(-50% + 6px));
+    transition: opacity 200ms ease, transform 200ms ease, visibility 200ms;
+  }
+  .nav.stuck .mini-brand { opacity: 1; visibility: visible; transform: translateY(-50%); }
+
+  /* Narrow screens: links start at the left and make room for the logo once it appears. */
+  @media (max-width: 72rem) {
+    .nav ul { justify-content: flex-start; gap: var(--space-5); }
+    .nav.stuck ul { padding-left: 5.5rem; }
+  }
+  /* Wide screens: room is reserved on both sides, so the centered links never shift. */
+  @media (min-width: 72.01rem) {
+    .nav ul { padding-inline: 6rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .mini-brand, .nav ul { transition: none; }
+  }
 </style>

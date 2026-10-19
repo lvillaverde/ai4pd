@@ -1,0 +1,32 @@
+---
+import ArticleCard from './ArticleCard.astro';
+import type { Article } from '../lib/data';
+
+interface Props { articles: Article[]; date: string; showTopic?: boolean }
+const { articles, date, showTopic = false } = Astro.props;
+// Infobae-style rows of 2, 3 or 4 equal columns, picked so rows fill evenly.
+const n = articles.length;
+const cols = n <= 2 ? n : n % 4 === 0 ? 4 : 3;
+const size = cols === 4 ? 'sm' : 'md';
+---
+<div class="story-grid" data-cols={cols}>
+  {articles.map((a) => <ArticleCard article={a} date={date} showTopic={showTopic} size={size} wide={cols === 1} />)}
+</div>
+<style>
+  .story-grid { display: grid; gap: var(--space-5) var(--grid-gap); grid-template-columns: 1fr; }
+  /*
+   * Cards in the same row share three row tracks (title block, image, excerpt) through subgrid,
+   * so titles of different lengths still line up sources, images and excerpts across the row.
+   * The source line sits at the bottom of the title block.
+   */
+  .story-grid:not([data-cols='1']) > :global(.card) { grid-row: span 3; grid-template-rows: subgrid; row-gap: var(--space-4); }
+  .story-grid:not([data-cols='1']) > :global(.card) > :global(.text) { display: flex; flex-direction: column; }
+  .story-grid:not([data-cols='1']) > :global(.card) > :global(.text) > :global(.meta) { margin-top: auto; }
+  @media (min-width: 40rem) {
+    .story-grid:not([data-cols='1']) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (min-width: 64rem) {
+    .story-grid[data-cols='3'] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .story-grid[data-cols='4'] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+</style>

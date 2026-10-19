@@ -4,31 +4,35 @@
  */
 :root {
   /* Color */
-  --color-bg: #faf8f4;
-  --color-surface: #ffffff;
-  --color-text: #1a1814;
-  --color-text-muted: #5c574e;
-  --color-rule: #d9d3c7;
-  --color-rule-strong: #1a1814;
-  --color-accent: #b4361e;        /* topic labels, links on hover */
+  --color-bg: #ffffff;
+  --color-surface: #f5f5f5;       /* image placeholders, notes */
+  --color-text: #1f1f1f;
+  --color-text-muted: #555555;
+  --color-rule: #e0e0e0;          /* hairlines between cards and sections */
+  --color-rule-strong: #1f1f1f;
+  --color-brand: #e8700c;         /* masthead wordmark — large text only */
+  --color-accent: #b85008;        /* topic labels, links on hover (5:1 on bg) */
   --color-accent-contrast: #ffffff;
   --color-focus: #1f5fd1;
-  --color-note-bg: #f3ecdc;
+  --color-note-bg: #fdecd8;
 
   /* Typography */
-  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
-  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.1875rem;
-  --text-xl: 1.5rem;
-  --text-2xl: clamp(1.75rem, 1.4rem + 1.5vw, 2.25rem);
-  --text-3xl: clamp(2.25rem, 1.6rem + 3vw, 3.5rem);
-  --text-masthead: clamp(2.5rem, 1.5rem + 5vw, 4.75rem);
-  --leading-tight: 1.15;
-  --leading-normal: 1.55;
-  --tracking-label: 0.08em;
+  --font-display: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --text-xs: 0.75rem;     /* 12 */
+  --text-sm: 0.875rem;    /* 14 — bylines, meta */
+  --text-base: 1rem;      /* 16 — card summaries */
+  --text-lg: 1.125rem;    /* 18 — lead summary, small headlines */
+  --text-xl: 1.375rem;    /* 22 — card headlines */
+  --text-2xl: clamp(1.375rem, 1.2rem + 0.6vw, 1.5rem);   /* 24 — secondary headlines */
+  --text-3xl: clamp(1.875rem, 1.3rem + 2vw, 2.625rem);   /* 42 — lead headline */
+  --text-masthead: clamp(2.75rem, 1.6rem + 5vw, 5rem);
+  --leading-tight: 1.2;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+  --tracking-tight: -0.015em;     /* bold headlines */
+  --tracking-label: 0.06em;
+  --weight-light: 300;
   --weight-regular: 400;
   --weight-medium: 500;
   --weight-bold: 700;
@@ -38,31 +42,33 @@
   --space-2: 0.5rem;
   --space-3: 0.75rem;
   --space-4: 1rem;
-  --space-5: 1.5rem;
+  --space-5: 1.25rem;     /* 20 — grid gap */
   --space-6: 2rem;
   --space-7: 3rem;
   --space-8: 4.5rem;
 
   /* Layout */
-  --page-max: 72rem;
-  --page-gutter: clamp(1rem, 0.5rem + 2vw, 2rem);
-  --measure: 38rem;
-  --radius: 2px;
+  --page-max: 74rem;      /* ~1158px content + gutters */
+  --page-gutter: clamp(1rem, 0.5rem + 2vw, 1.5rem);
+  --grid-gap: var(--space-5);
+  --measure: 40rem;
+  --radius: 3px;
   --rule-width: 1px;
-  --rule-width-strong: 3px;
+  --rule-width-strong: 2px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #15140f;
-    --color-surface: #1d1c17;
-    --color-text: #ece8df;
-    --color-text-muted: #a8a196;
-    --color-rule: #3a372f;
-    --color-rule-strong: #ece8df;
-    --color-accent: #f08a6c;
-    --color-accent-contrast: #15140f;
+    --color-bg: #121212;
+    --color-surface: #1e1e1e;
+    --color-text: #ececec;
+    --color-text-muted: #a3a3a3;
+    --color-rule: #2e2e2e;
+    --color-rule-strong: #ececec;
+    --color-brand: #f68e1e;
+    --color-accent: #ff9a3c;
+    --color-accent-contrast: #121212;
     --color-focus: #8ab4ff;
-    --color-note-bg: #2a261c;
+    --color-note-bg: #2b2016;
   }
 }

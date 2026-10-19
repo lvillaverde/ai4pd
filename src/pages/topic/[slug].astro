@@ -1,6 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
+import StoryGrid from '../../components/StoryGrid.astro';
+import TopicIcon from '../../components/TopicIcon.astro';
 import { topics, getEditions, byTopic, type Topic } from '../../lib/data';
 import { formatLongDate, formatShortDate } from '../../lib/format';
 import { url } from '../../lib/url';
@@ -19,9 +21,9 @@ const recent = editions
   .map((e) => ({ date: e.date, articles: byTopic(e.articles, topic.slug) }))
   .filter((d) => d.articles.length);
 ---
-<Base title={topic.name} description={topic.description} activeTopic={topic.slug} editionDate={latest?.date}>
+<Base title={topic.name} description={topic.description} activeTopic={topic.slug}>
   <header class="topic-head">
-    <h1>{topic.name}</h1>
+    <h1><TopicIcon name={topic.icon} size={44} />{topic.name}</h1>
     {topic.description && <p>{topic.description}</p>}
   </header>
 
@@ -30,7 +32,7 @@ const recent = editions
       <h2 id="latest">{latest ? formatLongDate(latest.date) : 'Latest'}</h2>
     </div>
     {today.length ? (
-      <div class="grid">{today.map((a) => <ArticleCard article={a} />)}</div>
+      <div class="latest"><StoryGrid articles={today} date={latest.date} /></div>
     ) : (
       <p class="empty">No {topic.name} stories in the latest edition.</p>
     )}
@@ -42,7 +44,7 @@ const recent = editions
       {recent.map((d) => (
         <div class="day">
           <h3 class="label"><a href={url(`/day/${d.date}/`)}>{formatShortDate(d.date)}</a></h3>
-          <div class="list">{d.articles.map((a) => <ArticleCard article={a} size="sm" />)}</div>
+          <div class="list">{d.articles.map((a) => <ArticleCard article={a} date={d.date} size="list" />)}</div>
         </div>
       ))}
     </section>
@@ -50,9 +52,9 @@ const recent = editions
 </Base>
 <style>
   .topic-head { display: grid; gap: var(--space-2); margin-bottom: var(--space-6); }
-  .topic-head h1 { font-size: var(--text-3xl); }
-  .topic-head p { color: var(--color-text-muted); font-size: var(--text-lg); max-width: var(--measure); }
-  .grid { display: grid; gap: var(--space-6); grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); margin-bottom: var(--space-7); }
+  .topic-head h1 { font-size: var(--text-3xl); display: flex; align-items: center; gap: var(--space-3); }
+  .topic-head p { color: var(--color-text-muted); font-size: var(--text-lg); font-weight: var(--weight-light); max-width: var(--measure); }
+  .latest { margin-bottom: var(--space-7); }
   .day { display: grid; gap: var(--space-3); padding-block: var(--space-4); border-bottom: var(--rule-width) solid var(--color-rule); }
   @media (min-width: 48rem) { .day { grid-template-columns: 8rem 1fr; } }
   .day .label a { text-decoration: none; }

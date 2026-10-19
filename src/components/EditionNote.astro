@@ -1,12 +1,11 @@
 ---
 import { siteConfig } from '../site.config';
-import { formatLongDate, formatTime } from '../lib/format';
+import { formatLongDate } from '../lib/format';
 
-interface Props { date: string; generatedAt: string }
-const { date, generatedAt } = Astro.props;
+interface Props { date: string }
+const { date } = Astro.props;
 ---
 <div class="edition-note" data-edition-date={date} data-tz={siteConfig.timezone}>
-  <p class="meta">Updated <time datetime={generatedAt}>{formatTime(generatedAt)}</time></p>
   <p class="stale" hidden>Today's edition isn't out yet — showing news from {formatLongDate(date)}.</p>
 </div>
 <script is:inline>
@@ -19,6 +18,5 @@ const { date, generatedAt } = Astro.props;
   })();
 </script>
 <style>
-  .edition-note { display: grid; gap: var(--space-2); margin-bottom: var(--space-5); }
-  .stale { background: var(--color-note-bg); padding: var(--space-2) var(--space-3); font-size: var(--text-sm); border-left: var(--rule-width-strong) solid var(--color-accent); }
+  .stale { margin-bottom: var(--space-5); background: var(--color-note-bg); padding: var(--space-2) var(--space-3); font-size: var(--text-sm); border-left: var(--rule-width-strong) solid var(--color-accent); }
 </style>

@@ -1,6 +1,6 @@
-# News for PDs
+# AI4PD
 
-A static, newspaper-style daily briefing for product designers. All content comes from JSON files written each morning by an AI agent; every push to `main` validates the data and redeploys to GitHub Pages.
+*The daily AI digest for product designers.* A static, newspaper-style site. All content comes from JSON files written each morning by an AI agent; every push to `main` validates the data and redeploys to GitHub Pages.
 
 ```
 agent → data/news/YYYY-MM-DD.json → push to main → GitHub Action (validate → build) → GitHub Pages
@@ -24,7 +24,7 @@ npm run check      # validate + build
 To preview exactly as on GitHub Pages (under `/<repo>/`):
 
 ```bash
-BASE_PATH=/news-for-pds npm run build && BASE_PATH=/news-for-pds npm run preview
+BASE_PATH=/ai4pd npm run build && BASE_PATH=/ai4pd npm run preview
 ```
 
 ## First-time setup
@@ -53,7 +53,7 @@ src/
   content.config.ts      # Zod schema (mirrors schema/news.schema.json)
   lib/                   # data access, formatting, base-path URLs
   components/
-  pages/                 # /, /topic/[slug]/, /day/[date]/, /archive/, /rss.xml, 404
+  pages/                 # /, /topic/[slug]/, /day/[date]/, /day/[date]/[id]/ (story), /archive/, /rss.xml, 404
 .github/workflows/       # deploy.yml (main), validate.yml (PRs)
 ```
 
@@ -63,7 +63,7 @@ Edit `data/topics.json` (`slug`, `name`, `description`). Slugs are lowercase keb
 
 ## Changing the design
 
-Everything visual lives in `src/styles/tokens.css` (light values on `:root`, dark values in the `prefers-color-scheme: dark` block). Fonts are loaded from Google Fonts in `src/layouts/Base.astro`.
+Everything visual lives in `src/styles/tokens.css` (light values on `:root`, dark values in the `prefers-color-scheme: dark` block). The type is DM Sans (loaded from Google Fonts in `src/layouts/Base.astro`): bold headlines, light summaries. Layout is image-led: a lead story with secondary stories beside it, then topic rows of 2, 3 or 4 columns (`src/components/StoryGrid.astro`) with 16:9 images.
 
 ## Safety net
 

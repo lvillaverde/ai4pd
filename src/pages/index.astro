@@ -7,11 +7,11 @@ import { getLatestEdition } from '../lib/data';
 
 const edition = await getLatestEdition();
 ---
-<Base editionDate={edition?.date}>
+<Base edition={edition}>
   {edition ? (
     <>
       <h1 class="visually-hidden">Today's edition</h1>
-      <EditionNote date={edition.date} generatedAt={edition.generatedAt} />
+      <EditionNote date={edition.date} />
       <EditionView edition={edition} />
     </>
   ) : (

@@ -1,0 +1,30 @@
+---
+import Base from '../../../layouts/Base.astro';
+import EditionView from '../../../components/EditionView.astro';
+import { getEditions, type Edition } from '../../../lib/data';
+import { formatLongDate, formatShortDate, plural } from '../../../lib/format';
+import { url } from '../../../lib/url';
+
+export async function getStaticPaths() {
+  const editions = await getEditions(); // newest first
+  return editions.map((edition, i) => ({
+    params: { date: edition.date },
+    props: { edition, newer: editions[i - 1]?.date, older: editions[i + 1]?.date },
+  }));
+}
+
+interface Props { edition: Edition; newer?: string; older?: string }
+const { edition, newer, older } = Astro.props;
+---
+<Base title={formatLongDate(edition.date)} description={`${plural(edition.articles.length, 'story', 'stories')} from ${formatLongDate(edition.date)}.`} edition={edition}>
+  <h1 class="visually-hidden">Edition of {formatLongDate(edition.date)}</h1>
+  <EditionView edition={edition} />
+  <nav class="pager" aria-label="Editions">
+    {older ? <a href={url(`/day/${older}/`)} rel="prev">← {formatShortDate(older)}</a> : <span />}
+    <a href={url('/archive/')}>All editions</a>
+    {newer ? <a href={url(`/day/${newer}/`)} rel="next">{formatShortDate(newer)} →</a> : <span />}
+  </nav>
+</Base>
+<style>
+  .pager { margin-top: var(--space-6); display: flex; justify-content: space-between; gap: var(--space-4); border-top: var(--rule-width) solid var(--color-rule); padding-top: var(--space-4); font-size: var(--text-sm); }
+</style>

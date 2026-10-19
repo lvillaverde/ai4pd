@@ -1,0 +1,35 @@
+---
+/**
+ * Outline icons for topics (24px grid, 1.75 stroke, round caps), drawn in currentColor.
+ * Pick one per topic with the `icon` field in data/topics.json.
+ */
+export const topicIcons = {
+  bot: '<path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/>',
+  cursor: '<path d="M4 4l6.5 16 2.4-6.6L19.5 11z"/><path d="M18 2.5v4M16 4.5h4"/>',
+  target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
+  pen: '<path d="M12 21l-7-8 3-9h8l3 9z"/><path d="M12 21v-8.5"/><circle cx="12" cy="11" r="1.5"/>',
+  newspaper: '<path d="M16 21H6a2 2 0 0 1-2-2V4h12v15a2 2 0 0 0 4 0V8h-4"/><path d="M8 8h4M8 12h4M8 16h4"/>',
+  hash: '<path d="M4 9h16M4 15h16M10 3L8 21M16 3l-2 18"/>',
+} as const;
+export type TopicIconName = keyof typeof topicIcons;
+
+interface Props { name?: string; size?: number; class?: string }
+const { name, size = 20, class: className } = Astro.props;
+const paths = topicIcons[(name ?? 'hash') as TopicIconName] ?? topicIcons.hash;
+---
+<svg
+  class:list={['topic-icon', className]}
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  set:html={paths}
+/>
+<style>
+  .topic-icon { flex-shrink: 0; color: var(--color-brand); }
+</style>

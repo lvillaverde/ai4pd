@@ -2,31 +2,28 @@
 import type { Article } from '../lib/data';
 import { getTopic } from '../lib/data';
 import { formatDateTime } from '../lib/format';
+import { storyUrl } from '../lib/url';
+import Thumb from './Thumb.astro';
 
-interface Props { article: Article }
-const { article: a } = Astro.props;
+interface Props { article: Article; date: string }
+const { article: a, date } = Astro.props;
 const topic = getTopic(a.topic);
+const href = storyUrl(date, a.id);
 ---
-<article class:list={['lead', { 'has-image': a.imageUrl }]}>
-  {a.imageUrl && (
-    <figure>
-      <img src={a.imageUrl} alt={a.imageAlt ?? ''} width="1200" height="675" fetchpriority="high" decoding="async" />
-    </figure>
-  )}
+<article class="lead">
   <div class="body">
     {topic && <p class="label">{topic.name}</p>}
-    <h2><a href={a.sourceUrl} rel="noopener">{a.headline}<span class="visually-hidden"> (opens {a.sourceName})</span></a></h2>
-    <p class="summary">{a.summary}</p>
-    <p class="meta">{a.sourceName} · <time datetime={a.publishedAt}>{formatDateTime(a.publishedAt)}</time> · <a href={a.sourceUrl} rel="noopener" aria-hidden="true" tabindex="-1">Read at source ↗</a></p>
+    <h2><a href={href}>{a.headline}</a></h2>
+    <p class="deck summary">{a.excerpt}</p>
+    <p class="meta"><strong>{a.sourceName}</strong> · <time datetime={a.publishedAt}>{formatDateTime(a.publishedAt)}</time></p>
   </div>
+  <Thumb article={a} href={href} eager />
 </article>
 <style>
-  .lead { display: grid; gap: var(--space-5); padding-bottom: var(--space-6); margin-bottom: var(--space-6); border-bottom: var(--rule-width) solid var(--color-rule); }
-  @media (min-width: 56rem) { .lead.has-image { grid-template-columns: 1.4fr 1fr; align-items: center; gap: var(--space-6); } }
-  figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--color-note-bg); border-radius: var(--radius); }
+  .lead { display: grid; gap: var(--space-5); align-content: start; min-width: 0; }
   .body { display: grid; gap: var(--space-3); }
   h2 { font-size: var(--text-3xl); overflow-wrap: anywhere; }
   h2 a { text-decoration: none; }
-  h2 a:hover { text-decoration: underline; }
+  h2 a:hover { color: inherit; text-decoration: underline; text-decoration-thickness: 2px; }
   .summary { font-size: var(--text-lg); max-width: var(--measure); }
 </style>

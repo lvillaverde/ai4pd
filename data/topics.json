@@ -1,9 +1,9 @@
 {
   "topics": [
-    { "slug": "product-design", "name": "Product Design", "description": "Craft, process and the practice of designing digital products." },
-    { "slug": "ai-and-tools", "name": "AI & Tools", "description": "AI in design workflows and the tools product designers use every day." },
-    { "slug": "design-systems", "name": "Design Systems", "description": "Components, tokens, governance and scaling design." },
-    { "slug": "ux-research", "name": "UX Research", "description": "Methods, findings and how teams learn from users." },
-    { "slug": "industry", "name": "Industry", "description": "Companies, careers and the business of design." }
+    { "slug": "ai-agents-ux", "icon": "bot", "name": "AI Agents & AI UX", "description": "New agent products and AI features, and how companies present them in the UI." },
+    { "slug": "agentic-design", "icon": "cursor", "name": "Agentic Experience Design", "description": "Designing experiences where AI agents act on users' behalf: trust, autonomy, approvals, recovery." },
+    { "slug": "competitors", "icon": "target", "name": "Competitors", "description": "Launches and AI features from work-management and collaboration tools." },
+    { "slug": "ux-design", "icon": "pen", "name": "UX & Product Design", "description": "Design systems, tooling, research and notable design writing." },
+    { "slug": "ai-news", "icon": "newspaper", "name": "AI News", "description": "Model releases, lab announcements and industry news for people building AI into products." }
   ]
 }
