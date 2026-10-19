@@ -1,0 +1,12 @@
+---
+import LeadStory from './LeadStory.astro';
+import TopicSection from './TopicSection.astro';
+import { topics, getLead, byTopic, type Edition } from '../lib/data';
+
+interface Props { edition: Edition }
+const { edition } = Astro.props;
+const lead = getLead(edition);
+const rest = edition.articles.filter((a) => a !== lead);
+---
+<LeadStory article={lead} />
+{topics.map((t) => <TopicSection topic={t} articles={byTopic(rest, t.slug)} hideWhenEmpty={t.slug === lead.topic && byTopic(rest, t.slug).length === 0} />)}

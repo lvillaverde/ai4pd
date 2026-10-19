@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { topics, getEditions, byTopic, type Topic } from '../../lib/data';
+import { formatLongDate, formatShortDate } from '../../lib/format';
+import { url } from '../../lib/url';
+
+export function getStaticPaths() {
+  return topics.map((topic) => ({ params: { slug: topic.slug }, props: { topic } }));
+}
+
+interface Props { topic: Topic }
+const { topic } = Astro.props;
+const editions = await getEditions();
+const latest = editions[0];
+const today = latest ? byTopic(latest.articles, topic.slug) : [];
+const recent = editions
+  .slice(1, 8)
+  .map((e) => ({ date: e.date, articles: byTopic(e.articles, topic.slug) }))
+  .filter((d) => d.articles.length);
+---
+<Base title={topic.name} description={topic.description} activeTopic={topic.slug} editionDate={latest?.date}>
+  <header class="topic-head">
+    <h1>{topic.name}</h1>
+    {topic.description && <p>{topic.description}</p>}
+  </header>
+
+  <section aria-labelledby="latest">
+    <div class="section-head">
+      <h2 id="latest">{latest ? formatLongDate(latest.date) : 'Latest'}</h2>
+    </div>
+    {today.length ? (
+      <div class="grid">{today.map((a) => <ArticleCard article={a} />)}</div>
+    ) : (
+      <p class="empty">No {topic.name} stories in the latest edition.</p>
+    )}
+  </section>
+
+  {recent.length > 0 && (
+    <section class="recent" aria-labelledby="recent">
+      <div class="section-head"><h2 id="recent">Recently in {topic.name}</h2></div>
+      {recent.map((d) => (
+        <div class="day">
+          <h3 class="label"><a href={url(`/day/${d.date}/`)}>{formatShortDate(d.date)}</a></h3>
+          <div class="list">{d.articles.map((a) => <ArticleCard article={a} size="sm" />)}</div>
+        </div>
+      ))}
+    </section>
+  )}
+</Base>
+<style>
+  .topic-head { display: grid; gap: var(--space-2); margin-bottom: var(--space-6); }
+  .topic-head h1 { font-size: var(--text-3xl); }
+  .topic-head p { color: var(--color-text-muted); font-size: var(--text-lg); max-width: var(--measure); }
+  .grid { display: grid; gap: var(--space-6); grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); margin-bottom: var(--space-7); }
+  .day { display: grid; gap: var(--space-3); padding-block: var(--space-4); border-bottom: var(--rule-width) solid var(--color-rule); }
+  @media (min-width: 48rem) { .day { grid-template-columns: 8rem 1fr; } }
+  .day .label a { text-decoration: none; }
+  .list { display: grid; gap: var(--space-4); }
+</style>

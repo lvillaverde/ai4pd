@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-17",
+  "generatedAt": "2026-10-17T07:05:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-17-product-design-01",
+      "topic": "product-design",
+      "headline": "Sample: Teams trade pixel-perfect handoff for shared prototypes",
+      "summary": "A placeholder story about product teams moving from static specs to interactive prototypes as the single source of truth for engineering. Replace with real agent output.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-17/product-design-1",
+      "publishedAt": "2026-10-17T08:00:00Z",
+      "featured": true,
+      "imageUrl": "https://picsum.photos/seed/2026-10-17/1200/675",
+      "imageAlt": "Placeholder photograph for the lead story"
+    },
+    {
+      "id": "2026-10-17-ai-and-tools-01",
+      "topic": "ai-and-tools",
+      "headline": "Sample: A new wave of AI copilots lands inside design tools",
+      "summary": "Placeholder summary describing how assistants for layout, copy and accessibility checks are being built directly into the canvas.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-17/ai-and-tools-1",
+      "publishedAt": "2026-10-17T09:00:00Z",
+      "tags": [
+        "sample"
+      ]
+    },
+    {
+      "id": "2026-10-17-design-systems-01",
+      "topic": "design-systems",
+      "headline": "Sample: Why token pipelines are becoming the backbone of design systems",
+      "summary": "Placeholder summary about teams automating the path from design tokens to production code across platforms.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-17/design-systems-1",
+      "publishedAt": "2026-10-17T10:00:00Z"
+    },
+    {
+      "id": "2026-10-17-ux-research-01",
+      "topic": "ux-research",
+      "headline": "Sample: Continuous discovery goes mainstream",
+      "summary": "Placeholder summary on weekly customer interviews becoming a default habit for product trios.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-17/ux-research-1",
+      "publishedAt": "2026-10-17T11:00:00Z"
+    },
+    {
+      "id": "2026-10-17-industry-01",
+      "topic": "industry",
+      "headline": "Sample: Design hiring rebounds with a focus on generalists",
+      "summary": "Placeholder summary about hiring trends favoring designers who can span research, interaction and prototyping.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-17/industry-1",
+      "publishedAt": "2026-10-17T12:00:00Z"
+    }
+  ]
+}

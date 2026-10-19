@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19T07:05:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-19-product-design-01",
+      "topic": "product-design",
+      "headline": "Sample: Designing for agents, not just for people",
+      "summary": "Placeholder summary on how product designers are rethinking flows when an AI agent, not a human, is the one clicking through the interface \u2014 from permissions to undo and audit trails.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-19/product-design-1",
+      "publishedAt": "2026-10-19T08:00:00Z",
+      "featured": true,
+      "imageUrl": "https://picsum.photos/seed/2026-10-19/1200/675",
+      "imageAlt": "Placeholder photograph for the lead story"
+    },
+    {
+      "id": "2026-10-19-ai-and-tools-01",
+      "topic": "ai-and-tools",
+      "headline": "Sample: Figma-style canvases meet chat \u2014 the new hybrid workspace",
+      "summary": "Placeholder summary about tools that blend a freeform canvas with conversational editing so designers can direct changes in plain language.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-19/ai-and-tools-1",
+      "publishedAt": "2026-10-19T09:00:00Z",
+      "tags": [
+        "sample"
+      ]
+    },
+    {
+      "id": "2026-10-19-ai-and-tools-02",
+      "topic": "ai-and-tools",
+      "headline": "Sample: Accessibility checks move from audit to autocomplete",
+      "summary": "Placeholder summary on real-time contrast, focus-order and alt-text suggestions while designing.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-19/ai-and-tools-2",
+      "publishedAt": "2026-10-19T10:00:00Z"
+    },
+    {
+      "id": "2026-10-19-design-systems-01",
+      "topic": "design-systems",
+      "headline": "Sample: Multi-brand theming without forking your components",
+      "summary": "Placeholder summary on using layered tokens to serve several brands from a single component library.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-19/design-systems-1",
+      "publishedAt": "2026-10-19T11:00:00Z"
+    },
+    {
+      "id": "2026-10-19-ux-research-01",
+      "topic": "ux-research",
+      "headline": "Sample: Turning support tickets into a research repository",
+      "summary": "Placeholder summary about mining customer support conversations for recurring usability problems.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-19/ux-research-1",
+      "publishedAt": "2026-10-19T12:00:00Z"
+    },
+    {
+      "id": "2026-10-19-industry-01",
+      "topic": "industry",
+      "headline": "Sample: Design leadership roles grow inside AI-first companies",
+      "summary": "Placeholder summary on new head-of-design positions at companies building AI products, and the skills they ask for.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-19/industry-1",
+      "publishedAt": "2026-10-19T13:00:00Z"
+    },
+    {
+      "id": "2026-10-19-industry-02",
+      "topic": "industry",
+      "headline": "Sample: Conference season recap \u2014 the themes everyone talked about",
+      "summary": "Placeholder summary of recurring themes from this season's product design conferences.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-19/industry-2",
+      "publishedAt": "2026-10-19T14:00:00Z"
+    }
+  ]
+}

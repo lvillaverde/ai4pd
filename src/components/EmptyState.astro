@@ -1,0 +1,13 @@
+---
+interface Props { title?: string }
+const { title = 'No editions yet' } = Astro.props;
+---
+<section class="empty-state">
+  <h1>{title}</h1>
+  <p>The first edition will appear here as soon as the morning agent publishes it.</p>
+</section>
+<style>
+  .empty-state { text-align: center; padding-block: var(--space-8); display: grid; gap: var(--space-3); }
+  .empty-state h1 { font-size: var(--text-2xl); }
+  .empty-state p { color: var(--color-text-muted); }
+</style>

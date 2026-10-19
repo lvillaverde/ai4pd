@@ -1,0 +1,15 @@
+---
+import { siteConfig } from '../site.config';
+import { url } from '../lib/url';
+---
+<footer class="footer">
+  <div class="container">
+    <p><strong>{siteConfig.title}</strong> is curated every morning by an AI agent. Summaries are original; every story links to its source.</p>
+    <p class="meta"><a href={url('/archive/')}>Archive</a> · <a href={url('/rss.xml')}>RSS feed</a></p>
+  </div>
+</footer>
+<style>
+  .footer { border-top: var(--rule-width) solid var(--color-rule); padding-block: var(--space-6); font-size: var(--text-sm); color: var(--color-text-muted); }
+  .footer .container { display: grid; gap: var(--space-2); }
+  .footer strong { color: var(--color-text); }
+</style>

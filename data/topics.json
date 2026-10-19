@@ -1,0 +1,9 @@
+{
+  "topics": [
+    { "slug": "product-design", "name": "Product Design", "description": "Craft, process and the practice of designing digital products." },
+    { "slug": "ai-and-tools", "name": "AI & Tools", "description": "AI in design workflows and the tools product designers use every day." },
+    { "slug": "design-systems", "name": "Design Systems", "description": "Components, tokens, governance and scaling design." },
+    { "slug": "ux-research", "name": "UX Research", "description": "Methods, findings and how teams learn from users." },
+    { "slug": "industry", "name": "Industry", "description": "Companies, careers and the business of design." }
+  ]
+}

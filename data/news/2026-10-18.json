@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-18",
+  "generatedAt": "2026-10-18T07:05:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-18-ai-and-tools-01",
+      "topic": "ai-and-tools",
+      "headline": "Sample: Designers are prototyping with code-generating agents",
+      "summary": "Placeholder summary on designers using agents to turn sketches into working prototypes in minutes, and what that means for the design-to-dev loop.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-18/ai-and-tools-1",
+      "publishedAt": "2026-10-18T08:00:00Z",
+      "featured": true,
+      "imageUrl": "https://picsum.photos/seed/2026-10-18/1200/675",
+      "imageAlt": "Placeholder photograph for the lead story"
+    },
+    {
+      "id": "2026-10-18-product-design-01",
+      "topic": "product-design",
+      "headline": "Sample: The return of dense, information-rich interfaces",
+      "summary": "Placeholder summary about productivity apps moving away from airy layouts toward compact, power-user friendly density modes.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-18/product-design-1",
+      "publishedAt": "2026-10-18T09:00:00Z",
+      "tags": [
+        "sample"
+      ]
+    },
+    {
+      "id": "2026-10-18-design-systems-01",
+      "topic": "design-systems",
+      "headline": "Sample: Governance models that keep design systems alive",
+      "summary": "Placeholder summary comparing centralized, federated and hybrid contribution models.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-18/design-systems-1",
+      "publishedAt": "2026-10-18T10:00:00Z"
+    },
+    {
+      "id": "2026-10-18-ux-research-01",
+      "topic": "ux-research",
+      "headline": "Sample: Synthetic users \u2014 useful shortcut or false comfort?",
+      "summary": "Placeholder summary on the debate around simulated research participants and where they fit alongside real users.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-18/ux-research-1",
+      "publishedAt": "2026-10-18T11:00:00Z"
+    },
+    {
+      "id": "2026-10-18-ux-research-02",
+      "topic": "ux-research",
+      "headline": "Sample: Measuring usability at scale with lightweight benchmarks",
+      "summary": "Placeholder summary about recurring task-based benchmarks that track experience quality over time.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-18/ux-research-2",
+      "publishedAt": "2026-10-18T12:00:00Z"
+    },
+    {
+      "id": "2026-10-18-industry-01",
+      "topic": "industry",
+      "headline": "Sample: What the latest product design salary survey shows",
+      "summary": "Placeholder summary of an industry survey covering roles, seniority and remote work.",
+      "sourceName": "Sample Source",
+      "sourceUrl": "https://example.com/2026-10-18/industry-1",
+      "publishedAt": "2026-10-18T13:00:00Z"
+    }
+  ]
+}

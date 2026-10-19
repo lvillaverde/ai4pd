@@ -1,0 +1,68 @@
+/*
+ * Design tokens — the only file you need to touch to restyle the site.
+ * Light values on :root, dark values in the media query below.
+ */
+:root {
+  /* Color */
+  --color-bg: #faf8f4;
+  --color-surface: #ffffff;
+  --color-text: #1a1814;
+  --color-text-muted: #5c574e;
+  --color-rule: #d9d3c7;
+  --color-rule-strong: #1a1814;
+  --color-accent: #b4361e;        /* topic labels, links on hover */
+  --color-accent-contrast: #ffffff;
+  --color-focus: #1f5fd1;
+  --color-note-bg: #f3ecdc;
+
+  /* Typography */
+  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.1875rem;
+  --text-xl: 1.5rem;
+  --text-2xl: clamp(1.75rem, 1.4rem + 1.5vw, 2.25rem);
+  --text-3xl: clamp(2.25rem, 1.6rem + 3vw, 3.5rem);
+  --text-masthead: clamp(2.5rem, 1.5rem + 5vw, 4.75rem);
+  --leading-tight: 1.15;
+  --leading-normal: 1.55;
+  --tracking-label: 0.08em;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  /* Layout */
+  --page-max: 72rem;
+  --page-gutter: clamp(1rem, 0.5rem + 2vw, 2rem);
+  --measure: 38rem;
+  --radius: 2px;
+  --rule-width: 1px;
+  --rule-width-strong: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #15140f;
+    --color-surface: #1d1c17;
+    --color-text: #ece8df;
+    --color-text-muted: #a8a196;
+    --color-rule: #3a372f;
+    --color-rule-strong: #ece8df;
+    --color-accent: #f08a6c;
+    --color-accent-contrast: #15140f;
+    --color-focus: #8ab4ff;
+    --color-note-bg: #2a261c;
+  }
+}

@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import EditionView from '../components/EditionView.astro';
+import EditionNote from '../components/EditionNote.astro';
+import EmptyState from '../components/EmptyState.astro';
+import { getLatestEdition } from '../lib/data';
+
+const edition = await getLatestEdition();
+---
+<Base editionDate={edition?.date}>
+  {edition ? (
+    <>
+      <h1 class="visually-hidden">Today's edition</h1>
+      <EditionNote date={edition.date} generatedAt={edition.generatedAt} />
+      <EditionView edition={edition} />
+    </>
+  ) : (
+    <EmptyState />
+  )}
+</Base>

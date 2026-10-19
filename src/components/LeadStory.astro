@@ -1,0 +1,32 @@
+---
+import type { Article } from '../lib/data';
+import { getTopic } from '../lib/data';
+import { formatDateTime } from '../lib/format';
+
+interface Props { article: Article }
+const { article: a } = Astro.props;
+const topic = getTopic(a.topic);
+---
+<article class:list={['lead', { 'has-image': a.imageUrl }]}>
+  {a.imageUrl && (
+    <figure>
+      <img src={a.imageUrl} alt={a.imageAlt ?? ''} width="1200" height="675" fetchpriority="high" decoding="async" />
+    </figure>
+  )}
+  <div class="body">
+    {topic && <p class="label">{topic.name}</p>}
+    <h2><a href={a.sourceUrl} rel="noopener">{a.headline}<span class="visually-hidden"> (opens {a.sourceName})</span></a></h2>
+    <p class="summary">{a.summary}</p>
+    <p class="meta">{a.sourceName} · <time datetime={a.publishedAt}>{formatDateTime(a.publishedAt)}</time> · <a href={a.sourceUrl} rel="noopener" aria-hidden="true" tabindex="-1">Read at source ↗</a></p>
+  </div>
+</article>
+<style>
+  .lead { display: grid; gap: var(--space-5); padding-bottom: var(--space-6); margin-bottom: var(--space-6); border-bottom: var(--rule-width) solid var(--color-rule); }
+  @media (min-width: 56rem) { .lead.has-image { grid-template-columns: 1.4fr 1fr; align-items: center; gap: var(--space-6); } }
+  figure img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--color-note-bg); border-radius: var(--radius); }
+  .body { display: grid; gap: var(--space-3); }
+  h2 { font-size: var(--text-3xl); overflow-wrap: anywhere; }
+  h2 a { text-decoration: none; }
+  h2 a:hover { text-decoration: underline; }
+  .summary { font-size: var(--text-lg); max-width: var(--measure); }
+</style>

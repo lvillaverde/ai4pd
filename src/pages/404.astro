@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/url';
+---
+<Base title="Page not found">
+  <section class="nf">
+    <p class="label">404</p>
+    <h1>This page didn't make the paper.</h1>
+    <p><a href={url('/')}>Go to today's edition</a> or browse the <a href={url('/archive/')}>archive</a>.</p>
+  </section>
+</Base>
+<style>
+  .nf { text-align: center; padding-block: var(--space-8); display: grid; gap: var(--space-3); }
+  .nf h1 { font-size: var(--text-2xl); }
+</style>

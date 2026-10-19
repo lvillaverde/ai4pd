@@ -1,0 +1,26 @@
+---
+import ArticleCard from './ArticleCard.astro';
+import type { Article, Topic } from '../lib/data';
+import { url } from '../lib/url';
+
+interface Props { topic: Topic; articles: Article[]; hideWhenEmpty?: boolean }
+const { topic, articles, hideWhenEmpty = false } = Astro.props;
+const headingId = `section-${topic.slug}`;
+---
+{!(hideWhenEmpty && articles.length === 0) && (
+  <section class="topic" aria-labelledby={headingId}>
+    <div class="section-head">
+      <h2 id={headingId}>{topic.name}</h2>
+      <a href={url(`/topic/${topic.slug}/`)}>More {topic.name}<span aria-hidden="true"> →</span></a>
+    </div>
+    {articles.length ? (
+      <div class="grid">{articles.map((a) => <ArticleCard article={a} />)}</div>
+    ) : (
+      <p class="empty">No stories today.</p>
+    )}
+  </section>
+)}
+<style>
+  .topic { margin-bottom: var(--space-7); }
+  .grid { display: grid; gap: var(--space-6) var(--space-6); grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); }
+</style>

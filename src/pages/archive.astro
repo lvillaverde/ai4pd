@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import EmptyState from '../components/EmptyState.astro';
+import { getEditions, getLead } from '../lib/data';
+import { formatLongDate, formatMonth, plural } from '../lib/format';
+import { url } from '../lib/url';
+
+const editions = await getEditions();
+const months = new Map<string, typeof editions>();
+for (const e of editions) {
+  const key = e.date.slice(0, 7);
+  months.set(key, [...(months.get(key) ?? []), e]);
+}
+---
+<Base title="Archive" description="Every past edition, newest first." editionDate={editions[0]?.date}>
+  {editions.length === 0 ? <EmptyState /> : (
+    <>
+      <h1 class="title">Archive</h1>
+      {[...months].map(([key, list]) => (
+        <section aria-labelledby={`m-${key}`}>
+          <div class="section-head"><h2 id={`m-${key}`}>{formatMonth(list[0].date)}</h2></div>
+          <ol class="days" reversed>
+            {list.map((e) => (
+              <li>
+                <a href={url(`/day/${e.date}/`)}>{formatLongDate(e.date)}</a>
+                <span class="meta">{plural(e.articles.length, 'story')}</span>
+                <span class="lead-line">{getLead(e).headline}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))}
+    </>
+  )}
+</Base>
+<style>
+  .title { font-size: var(--text-3xl); margin-bottom: var(--space-6); }
+  section { margin-bottom: var(--space-7); }
+  .days { list-style: none; padding: 0; }
+  .days li { display: grid; gap: var(--space-1) var(--space-4); padding-block: var(--space-3); border-bottom: var(--rule-width) solid var(--color-rule); }
+  @media (min-width: 48rem) { .days li { grid-template-columns: 16rem 7rem 1fr; align-items: baseline; } }
+  .days a { font-family: var(--font-display); font-size: var(--text-lg); font-weight: var(--weight-medium); }
+  .lead-line { color: var(--color-text-muted); font-size: var(--text-sm); overflow-wrap: anywhere; }
+</style>
