@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-20T07:03:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-20-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "WhatsApp help pages hid notes telling AI not to point users to regulators",
+      "excerpt": "Invisible text on WhatsApp support pages steered AI answers away from data regulators and privacy laws until it was removed.",
+      "summary": [
+        "Data-deletion company Redact archived the 545 pages linked from WhatsApp's help center and found 102 blocks of hidden text across 80 of them, visible only in the page source and aimed at AI systems. Most were routine, but two stood out: one told the AI not to suggest contacting a data protection authority when users couldn't delete an account after losing their phone, and another told it to stop citing GDPR, LGPD or CCPA once a user mentioned lawyers or courts.",
+        "Redact spotted the notes on October 8; archive snapshots suggest they appeared between July and September 2026, and they were gone by October 18. WhatsApp told WIRED the text was meant for its own support chatbot and was published because of a bug that has since been fixed. It is still unknown whether any assistant actually followed the notes, how long they were live, or whether other languages carried similar text."
+      ],
+      "whyItMatters": "Any agent that reads web or workspace content can be quietly steered by text people never see, so retrieved content should be treated as data and the sources behind an answer should be inspectable.",
+      "sourceName": "Redact",
+      "sourceUrl": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+      "author": "Dan Saltman",
+      "publishedAt": "2026-10-19T16:00:00Z",
+      "imageUrl": "https://redact.dev/blog-images/2026/10/whatsapp-hidden-ai-notes-robot-puppeteer.jpg",
+      "imageAlt": "A robot working a person at a laptop like a puppet on strings",
+      "tags": [
+        "WhatsApp",
+        "Meta",
+        "prompt injection",
+        "chatbots",
+        "transparency"
+      ]
+    },
+    {
+      "id": "2026-10-20-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Meta says a Claude-linked tool's browsing triggered the No Kings Instagram suspension",
+      "excerpt": "Meta's bot detection mistook a tool reading the account at four times human speed for automated abuse and locked the page.",
+      "summary": [
+        "Meta now says the October 17 suspension of the No Kings Coalition's Instagram account was set off by a tool linked to Anthropic's Claude. Communications VP Andy Stone said engineers saw the tool read profiles, posts and hashtags in short, intense bursts at roughly four times the pace of a person, which Meta's systems classified as bot traffic. The page was down for about 90 minutes during weekend early-voting events.",
+        "Stone apologised and called the takedown an error, after first blaming unusually high posting activity on Saturday. An automated review flagged the removal as wrong about an hour later, but administrators stayed locked out until 17:33 ET. Meta did not say which Claude tool was involved, who was running it or what it was doing, and the article carries no comment from Anthropic."
+      ],
+      "whyItMatters": "Agents browsing on a user's behalf can trip the abuse defences of the services they touch, so products need pacing limits and clear attribution of which actions an agent took.",
+      "sourceName": "TNW",
+      "sourceUrl": "https://thenextweb.com/news/meta-claude-no-kings-instagram-suspension",
+      "author": "Ana-Maria Stanciuc",
+      "publishedAt": "2026-10-19T08:38:36Z",
+      "imageUrl": "https://media.thenextweb.com/2026/10/no-kings-in-america-flag-protest-crowd.jpg",
+      "imageAlt": "Protesters holding a 'No Kings in America' flag and signs in front of a government building",
+      "tags": [
+        "Meta",
+        "Instagram",
+        "Anthropic",
+        "Claude",
+        "agents",
+        "bot detection"
+      ]
+    },
+    {
+      "id": "2026-10-20-competitors-01",
+      "topic": "competitors",
+      "featured": true,
+      "headline": "Notion rebuilds its agents to run for 24+ hours, with an Auto model router and new credits",
+      "excerpt": "Notion Agent tasks can now run for over a day instead of five minutes, and Auto picks a model per task to cut costs.",
+      "summary": [
+        "Notion has reworked Notion Agent and Custom Agents so a single task can run for more than 24 hours, up from five minutes, and connect to hundreds of tools through MCP and connectors. A new router called Auto sends simple requests to fast models and harder multi-step work to stronger ones, switching models when one stalls; Notion claims results close to Opus 5.5 and Astra across 20+ tasks at about 90% lower average cost, with agents up to 50% faster.",
+        "Business and Enterprise seats now get 1,500 Standard credits (Notion picks the model) and 500 Select credits (the user picks, or Custom Agents run) each month; existing customers move over on November 2. Users can connect a ChatGPT subscription to their personal agent, Enterprise BYOK is in private alpha, and a 'Review for me' mode has a separate model check an action is safe before the agent takes it. An AI Command Center for usage, spending limits and agent controls is coming soon."
+      ],
+      "whyItMatters": "Day-long agent runs and metered credits mean work tools now need progress views, cost visibility per agent and admin controls as first-class parts of the agent experience.",
+      "sourceName": "Notion",
+      "sourceUrl": "https://www.notion.com/blog/notion-ai-more-for-less",
+      "author": "Akshay Kothari",
+      "publishedAt": "2026-10-19T10:00:00-07:00",
+      "imageUrl": "https://images.ctfassets.net/spoqsaf9291f/3RzIxFVl6BB6xsjEd3LEkb/94570209d91367d7bb8b5311f86404d2/Auto_4_5__1_.png",
+      "imageAlt": "Notion prompt box set to Auto, switching between a list of models including GPT-6 and Opus 5.5",
+      "tags": [
+        "Notion",
+        "agents",
+        "model routing",
+        "pricing",
+        "credits"
+      ]
+    },
+    {
+      "id": "2026-10-20-ai-news-01",
+      "topic": "ai-news",
+      "headline": "EU publishes EN 18286, the first harmonised standard under the AI Act",
+      "excerpt": "Providers of high-risk AI systems that follow the new quality management standard get a presumption of conformity with Article 17.",
+      "summary": [
+        "The European Commission published the reference to EN 18286:2026 in the Official Journal on October 19, making it the first harmonised standard supporting the AI Act. Developed by CEN and CENELEC, it turns the quality management system requirements of Article 17 into an operational QMS for providers of high-risk AI systems, organised around the AI system lifecycle rather than the organisation.",
+        "Providers that implement it gain a presumption of conformity with the Article 17 requirements it covers, which the Commission says no other AI QMS standard offers. It is designed to sit on top of ISO/IEC 42001, ISO 9001 or sector systems such as ISO 13485 rather than replace them. More harmonised standards are expected ahead of the high-risk obligations taking effect."
+      ],
+      "whyItMatters": "Teams shipping AI features into the EU now have a concrete checklist for documenting how AI behaviour is designed, tested and monitored across its lifecycle.",
+      "sourceName": "European Commission",
+      "sourceUrl": "https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal",
+      "publishedAt": "2026-10-19T12:00:00Z",
+      "imageUrl": "https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_card_AIActSD1_AIZSH7DzIjLeL69ePWUJYp634iE_249168.jpg?itok=Y_NoktB4",
+      "imageAlt": "Illustration of a person reading a large 'AI Act' scroll next to a gavel on a purple background",
+      "tags": [
+        "EU AI Act",
+        "regulation",
+        "standards",
+        "compliance"
+      ]
+    },
+    {
+      "id": "2026-10-20-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Inception's Mercury 3 diffusion LLM runs at over 1,000 tokens per second",
+      "excerpt": "Inception says its new diffusion model beats GPT-6 Luna and Claude Haiku 5.5 while running four to eight times faster.",
+      "summary": [
+        "Inception released Mercury 3, which it calls the most capable diffusion-based language model so far. Instead of writing tokens one at a time, it refines whole outputs in parallel, reaching about 1,068 tokens per second on NVIDIA GPUs. The company says it outperforms GPT-6 Luna and Claude Haiku 5.5 on a range of benchmarks, and a partner reports it completed half of 50 live Mind2Web browsing tasks.",
+        "The context window grows to 1M tokens from 260K in Mercury 2.5. Pricing is $0.20 per million input and $0.70 per million output tokens, halved during launch, with cached input 90% cheaper. It is OpenAI API compatible and available on Inception's platform, OpenRouter, Baseten and Vercel; benchmark claims come from Inception and its partners."
+      ],
+      "whyItMatters": "Near-instant generation makes it realistic to design agent steps and inline suggestions that respond as fast as the interface itself.",
+      "sourceName": "Inception",
+      "sourceUrl": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "author": "Inception Team",
+      "publishedAt": "2026-10-19T19:46:00Z",
+      "imageUrl": "https://framerusercontent.com/images/Zgp1I1AaILVgkXF4Xlk7iImaE.png?width=1200&height=630",
+      "imageAlt": "Black Inception banner reading 'Diffusion at scale, Introducing Mercury 3' above rings of rippling text",
+      "tags": [
+        "Inception",
+        "Mercury 3",
+        "diffusion models",
+        "LLM",
+        "speed"
+      ]
+    },
+    {
+      "id": "2026-10-20-ai-news-03",
+      "topic": "ai-news",
+      "headline": "Cloudflare's Clairic model extracts and forecasts values without generating text",
+      "excerpt": "Clairic pulls figures, dates and estimates out of messy input in under a second and is in preview on Workers AI.",
+      "summary": [
+        "Cloudflare introduced Clairic, a fast single-pass 'System One' model built for extraction rather than open-ended reasoning. It returns text spans with confidence scores, computed numbers and dates, estimates with 80% intervals, simple forecasts, and an explicit null when the answer is not in the input. Because it produces no output tokens, responses typically arrive in under a second.",
+        "In a damaged-product claims pipeline, chaining Clairic with other models cut end-to-end time from 61.7 to 19.3 seconds and cost per million claims by about 49% versus an all-LLM setup. Cloudflare flags weaknesses in multi-step arithmetic and aggregation, and warns intervals can be too narrow on unfamiliar data. It is in preview on Workers AI, with open weights planned."
+      ],
+      "whyItMatters": "Per-field confidence and explicit 'not found' results give designers honest signals to show when AI fills in forms or records.",
+      "sourceName": "Cloudflare Blog",
+      "sourceUrl": "https://blog.cloudflare.com/clairic-extraction-model/",
+      "author": "Michelle Chen",
+      "publishedAt": "2026-10-19T17:48:26Z",
+      "imageUrl": "https://blog.cloudflare.com/_emdash/api/media/file/01M5AKCBMF8BCH80YN3A4DG9FH.png",
+      "imageAlt": "Cloudflare blog banner with a glowing crystal ball over musical notes and a stack of layers",
+      "tags": [
+        "Cloudflare",
+        "Clairic",
+        "extraction",
+        "Workers AI"
+      ]
+    },
+    {
+      "id": "2026-10-20-ai-news-04",
+      "topic": "ai-news",
+      "headline": "Jim Keller's Tenstorrent raises $1.5B at a $6.2B valuation",
+      "excerpt": "The RISC-V AI chip startup will use its Series E to ramp Galaxy server production and expand its open software stack.",
+      "summary": [
+        "Toronto-based Tenstorrent closed a $1.5 billion Series E led by Trace Capital and Innovation X, with Morgan Stanley, Fidelity, ARK Invest and T. Rowe Price among the participants, valuing the company at $6.2 billion. The money will go to scaling production of its Galaxy servers, RISC-V research and hiring.",
+        "The company sells one architecture from the TT-QuietBox desktop workstation and Blackhole PCIe cards up to Galaxy superclusters, backed by an open-source compiler, SDK and kernel stack. Virtu Financial runs on-premises trading agents on Galaxy, and Equinix offers the servers to enterprises. Analysts quoted frame it as more evidence that Nvidia now faces credible alternatives."
+      ],
+      "sourceName": "SiliconANGLE",
+      "sourceUrl": "https://siliconangle.com/2026/10/19/chip-legend-jim-kellers-tenstorrent-raises-1-5b-to-expand-its-open-compute-ecosystem/",
+      "author": "Mike Wheatley",
+      "publishedAt": "2026-10-19T12:00:46Z",
+      "imageUrl": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/Screenshot-from-2026-10-19-09-13-39.png",
+      "imageAlt": "Tenstorrent CEO Jim Keller in a maroon T-shirt in a bright office",
+      "tags": [
+        "Tenstorrent",
+        "AI chips",
+        "funding",
+        "RISC-V"
+      ]
+    }
+  ]
+}
