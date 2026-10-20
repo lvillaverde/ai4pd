@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "date": "2026-10-20",
-  "generatedAt": "2026-10-20T08:28:55-03:00",
+  "generatedAt": "2026-10-20T08:35:53-03:00",
   "articles": [
     {
       "id": "2026-10-20-ai-agents-ux-01",
@@ -55,48 +55,46 @@
     {
       "id": "2026-10-20-agentic-design-01",
       "topic": "agentic-design",
-      "headline": "Jakob Nielsen maps AI to three interaction styles: ask, assign and appoint",
-      "excerpt": "Turn-taking chat, task agents and always-on agents now coexist, and each brings its own usability problems.",
+      "headline": "Jakob Nielsen maps AI into three interaction styles: ask, assign, appoint",
+      "excerpt": "Nielsen argues turn-taking chat, task agents and always-on agents form a ladder of delegation users move up and down.",
       "summary": [
-        "In a long essay on his newsletter, Jakob Nielsen sorts today's AI products into three interaction styles named after the user's verb. With turn-taking AI you ask and it answers. With task agents you assign a bounded job and get a deliverable back minutes or days later. With always-on agents you appoint the AI to a standing role, and it decides when to act and when to contact you. He points to Gemini Spark, Grok Bot, Meta's Muse and OpenAI's Dots as recent examples of the third style.",
-        "He argues the styles are rungs on one ladder that users climb up and down all day, so products should not force people to choose a mode before they speak: the request should pick the rung, and the system should confirm before spending time or money. Other recommendations include echoing scope to avoid turning a passing remark into a permanent rule, keeping standing orders on one page users can revoke, sharing one ranked interruption queue across all of a person's agents, showing a visible heartbeat, and letting users narrow an agent's authority without firing it."
+        "Jakob Nielsen has proposed a vocabulary for how people now work with AI: Turn-Taking AI answers each question and waits, Task Agents take a bounded job and return a deliverable minutes or days later, and Always-on Agents hold a standing role and decide for themselves when to act or notify. He separates them by who starts each unit of work and when it counts as done, not by whether processing happens in the background.",
+        "The styles stack rather than replace each other, and trust decides how far up users climb; one bad error can send them back down, so he wants agents that can be demoted without losing their memory. He criticizes shipping these rungs as separate product modes and lists guidelines: echo the scope of each instruction (once or from now on), keep every standing rule in an editable charter, give background agents a visible heartbeat and digests, and gate irreversible actions. He notes long-run evidence is still thin."
       ],
-      "whyItMatters": "Separate how much ongoing responsibility a user hands an agent from how much authority it has, and give users a way to shorten the leash, such as requiring approval for one category of actions, without deleting the agent's charter or memory.",
-      "sourceName": "Jakob Nielsen on UX",
-      "sourceUrl": "https://jakobnielsenphd.substack.com/p/ai-interaction-styles",
+      "whyItMatters": "Design agent setup around scope rather than modes: confirm whether an instruction applies once or from now on, and keep every standing rule visible and revocable in one charter.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/ai-interaction-styles",
       "author": "Jakob Nielsen",
-      "publishedAt": "2026-10-14T11:21:37Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!X4MF!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0d30cb7f-b58e-4ef3-a311-d2cb5e694f5a_1280x720.jpeg",
-      "imageAlt": "Three cartoon robots under the words Ask, Assign and Appoint, holding a question bubble, a checked document and a lantern",
+      "publishedAt": "2026-10-14T11:00:07Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_b2af9e5e42ee4853ad50631b8d07def0~mv2.jpg/v1/fill/w_1280,h_720,al_c/d496b6_b2af9e5e42ee4853ad50631b8d07def0~mv2.jpg",
+      "imageAlt": "Three comic-style panels labeled Ask, Assign and Appoint, showing a robot answering a question, delivering a rock sample and monitoring orbits from a control console",
       "tags": [
+        "delegation",
         "autonomy levels",
         "always-on agents",
-        "modes",
-        "interruptions",
-        "delegation"
+        "trust"
       ]
     },
     {
       "id": "2026-10-20-agentic-design-02",
       "topic": "agentic-design",
-      "headline": "Patrick Neeman: an approval click proves someone was present, not that they were paying attention",
-      "excerpt": "A designer argues that whoever sets an agent's reach owns its outcomes, and that oversight has to be enforced by the system.",
+      "headline": "Human in the loop needs a reach test, not more confirm dialogs",
+      "excerpt": "Patrick Neeman argues approval clicks shift blame to reviewers and that an agent's reach and reversibility should set its gates.",
       "summary": [
-        "Writing in his AI for UX newsletter, designer Patrick Neeman argues that a confirm button does not make an AI agent accountable. Drawing on research into automation bias, he notes that people tend to miss errors the machine never flags, and he cites Anthropic data showing auto-approve use in its coding agent rising from about 20% of sessions for new users to over 40% for experienced ones. He also uses Madeleine Elish's idea of the moral crumple zone to show how blame lands on the nearest human operator.",
-        "His prescription is to price each action the agent takes without being asked by how reversible it is, to write an explicit mandate covering scope, duration and revocation, and to enforce it with least-privilege permissions at the moment of action instead of instructions in a prompt. He lists four moves for teams: audit how fast people approve, write and enforce explicit rules, let agents act unasked only on reversible actions, and keep a stop control that works mid-run plus an action log the agent did not write itself."
+        "Writing in UX Collective, Patrick Neeman argues that a confirm button only proves someone was present, not that they understood what they approved. He draws on automation-bias research, Madeleine Clare Elish's idea of moral crumple zones and the 2018 Uber self-driving fatality to show how blame lands on the human nearest the failure, and cites Anthropic data showing experienced users auto-approve more often but also interrupt agents more.",
+        "His alternative is a reach test: ask what an agent can touch and whether a person can put it back. Agents may act unasked on anything undoable in one step, while sending, paying or deleting needs a real decision. He recommends measuring how long people spend before clicking approve, writing the agent's mandate into permissions rather than the prompt, keeping a log the agent does not write itself, and showing a stop control while it runs."
       ],
-      "whyItMatters": "Tie confirmation to reversibility, so drafts flow freely while sends, deletes and payments need a deliberate approval, and track approval speed as a sign that review has become a ritual.",
-      "sourceName": "AI for UX",
-      "sourceUrl": "https://aiforux.substack.com/p/designing-for-ai-human-in-the-loop",
+      "whyItMatters": "Scale an agent's autonomy to how reversible each action is, and pair approvals with a working stop control and an independent activity log instead of more confirmation prompts.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/designing-for-ai-human-in-the-loop-means-making-sure-the-human-is-not-out-of-the-loop-e38826309c91",
       "author": "Patrick Neeman",
-      "publishedAt": "2026-10-15T17:40:08Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!ZSoq!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28cad80b-d54f-46ae-8f1c-2c536531ff95_1200x675.png",
-      "imageAlt": "A person at a desk at night reviewing a tabbed binder beside a laptop showing a case review list with pending sign-offs",
+      "publishedAt": "2026-10-15T22:09:29Z",
+      "imageUrl": "https://miro.medium.com/v2/resize:fit:1200/1*HzHXq_X2ih01vbqVZYkmfw.png",
+      "imageAlt": "A man at a desk in a dark, empty office checks his phone beside two monitors showing dashboards",
       "tags": [
-        "human in the loop",
+        "human-in-the-loop",
         "approvals",
         "accountability",
-        "reversibility",
         "guardrails"
       ]
     },
@@ -128,24 +126,24 @@
     {
       "id": "2026-10-20-ux-design-01",
       "topic": "ux-design",
-      "headline": "Design in the material you ship: make the code prototype the source of truth",
-      "excerpt": "Jon Sabutis argues designers should review real code and regenerate the design file from it, since AI now writes the code.",
+      "headline": "Design in the material you ship: make the coded prototype the source of truth",
+      "excerpt": "Jon Sabutis argues designers should understand code as a material, with AI doing the writing and the design file reduced to a mirror.",
       "summary": [
-        "In a UX Collective essay, designer Jon Sabutis borrows Howard Roark's rule from The Fountainhead, that the material should determine the shape, and argues that code is the digital designer's material. A design file shows one state at one width with tidy data, while the shipped product has to handle long names, translated labels that double in length, failed images, empty lists, slow requests, keyboard users and 320-pixel screens. When the file is the source of truth, those gaps get decided by whoever writes the code, usually without a conversation.",
-        "On his product team, the coded prototype is what gets reviewed, and the design file is regenerated from it after each pass. He says the old demand that designers learn to code is moot now that AI writes it; the designer's job is to understand the medium and judge output by running it, for example at 320 pixels, with the longest real name, on a slow network and without a mouse. He suggests learning how layout flows, which states exist, the shape of the data and what a screen reader announces, while engineers stay accountable for reading the code."
+        "In a UX Collective essay, Jon Sabutis uses Howard Roark's rule from The Fountainhead to argue that code is the digital designer's material and that a design file is only a drawing of one state. Long names, translations that double a label's length, failed images, empty lists, slow requests, keyboard use and 320-pixel screens rarely appear in the file and end up decided by whoever writes the code.",
+        "On his team the coded prototype is what gets reviewed, and the canvas file is regenerated from it after each pass. He says designers no longer need to write or review syntax because AI does both, but they still need to understand layout flow, states, data shapes and what a screen reader announces, and to judge work by running it at small widths, with slow networks and without a mouse."
       ],
-      "whyItMatters": "Reviewing a running prototype against real data, long strings, slow networks and keyboard use surfaces the states a static mockup hides before they reach users.",
+      "whyItMatters": "Reviewing working prototypes with real data, translations and failure states catches the cases a static mockup hides before engineers have to decide them alone.",
       "sourceName": "UX Collective",
       "sourceUrl": "https://uxdesign.cc/design-in-the-material-you-ship-7adf198388ee",
       "author": "Jon Sabutis",
-      "publishedAt": "2026-10-18T12:11:30Z",
+      "publishedAt": "2026-10-18T12:11:43Z",
       "imageUrl": "https://miro.medium.com/v2/resize:fit:1200/1*lWh48fMxFr6rcnextAR_dQ.png",
-      "imageAlt": "Side-by-side comparison of a booking card as drawn in the design file and as rendered in the browser with a long French name, wrapped labels and an error message",
+      "imageAlt": "The same reservation card shown twice: a tidy English version labeled The File and a French version with a long name, wrapped button and error message labeled The Browser",
       "tags": [
         "prototyping",
         "design-to-code",
         "states",
-        "AI coding"
+        "workflow"
       ]
     },
     {
