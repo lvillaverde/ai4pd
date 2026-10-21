@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T07:25:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-21-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Yelp's assistant will now phone a restaurant for you and text back the wait time",
+      "excerpt": "A new Check for Me button sends an AI voice agent to call the venue, then reports the wait by SMS.",
+      "summary": [
+        "Yelp is adding Check for Me to restaurant pages in its app: the user enters a party size and a phone number, an AI voice agent calls the restaurant to ask about the current wait, and the answer arrives as a text message. The same update brings OpenTable booking inside Yelp's assistant, memory of preferences mentioned in earlier chats, 30 days of chat history, recurring reminders and a revamped Lists feature with Been Here and Want to Go lists.",
+        "On the business side, Yelp is launching Smart Lead Reply, a $30-per-month agent that answers customers and qualifies leads under rules the owner sets, complementing the voice agents it already sells to businesses. TechCrunch notes the obvious risk of a consumer agent talking to a business agent and the exchange breaking down. Weekly personalized picks start next month, while the redesigned Lists tab and a map view arrive later this year."
+      ],
+      "whyItMatters": "The flow states up front what the agent will and won't do (no booking, no waitlist), shows a working state the user can dismiss, and delivers the result asynchronously, a compact template for any background agent task.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-10-20T11:00:00Z",
+      "featured": true,
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/Yelp-waitlist.jpg?resize=1200,675",
+      "imageAlt": "Four phone screens of Yelp's wait-time flow: the restaurant page, a party-size and phone form, a 'Checking the wait time' screen and the SMS reply",
+      "tags": ["voice agents", "delegation", "async tasks", "consumer AI"]
+    },
+    {
+      "id": "2026-10-21-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Meta's Muse agent app passes 10 million US downloads in 40 days",
+      "excerpt": "Sensor Tower data puts Muse among only 12 apps to hit that pace, with retention ahead of ChatGPT, Claude and Grok.",
+      "summary": [
+        "Meta's Muse, an AI companion and agent app that can carry out tasks for users, has been downloaded 10.9 million times since its September debut, 10.2 million of them in the US, according to Sensor Tower. Only 12 apps have reached 10 million US installs within 40 days, and Threads was the last to do it. Daily active users topped 2.5 million on October 16, and Muse has held the top App Store spot almost every day.",
+        "Meta is pushing hard: Muse took 39% of its US ad budget in October, up from 23% in September, and it is promoted across apps used by 3.6 billion people daily. Sensor Tower puts 7-day retention at 30% and 14-day retention at 23%, above rival chatbot averages. The figures are third-party estimates, Muse is only available in the US and Canada, and 40 days is too short to judge whether users keep coming back."
+      ],
+      "whyItMatters": "Agent apps are now judged on retention, not installs, so the repeat-use loop (tasks that bring people back) deserves as much design attention as the first-run experience.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-10-20T17:12:48Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/09/meta-muse-app-GettyImages-2293792137.jpg?w=1024",
+      "imageAlt": "Meta app icons on a phone screen",
+      "tags": ["Meta", "Muse", "adoption", "retention"]
+    },
+    {
+      "id": "2026-10-21-ai-agents-ux-03",
+      "topic": "ai-agents-ux",
+      "headline": "ChatGPT adds Locked Chats behind a PIN or Face ID",
+      "excerpt": "Individual conversations can now be locked into a separate section with its own memory, on every consumer and business plan.",
+      "summary": [
+        "OpenAI has started rolling out Locked Chats in ChatGPT. Users can lock a single conversation with a four-digit PIN or, on supported devices, Face ID or Touch ID; locked conversations move into their own section and disappear from regular history, pinned chats and search. Unlike Temporary Chats they stay available, and if Memory is on, the locked section keeps a separate memory that doesn't feed into normal chats.",
+        "The feature is aimed at moments like handing a phone to someone else, not at data protection: it isn't end-to-end encryption, doesn't change retention or training settings, and doesn't erase what ChatGPT already remembered. Resetting the PIN permanently deletes all locked content. Temporary, archived, group, shared-link and scheduled-task chats can't be locked, and the feature is not offered on ChatGPT for Healthcare."
+      ],
+      "whyItMatters": "As assistants accumulate personal history, privacy controls need precise copy about what they do and don't protect, or users will assume a lock icon means encryption.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
+      "author": "Aisha Malik",
+      "publishedAt": "2026-10-20T18:36:53Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1200,800",
+      "imageAlt": "The ChatGPT application icon displayed on a smartphone screen",
+      "tags": ["ChatGPT", "OpenAI", "privacy", "memory"]
+    },
+    {
+      "id": "2026-10-21-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Jakob Nielsen: every AI agent needs a Stop button that actually stops",
+      "excerpt": "Stop must halt new actions at once, keep finished work and show what completed, what didn't and what is still running.",
+      "summary": [
+        "In his October 19 UX Roundup, Jakob Nielsen argues that a visible, dependable Stop control is what makes people willing to hand work to an agent. His rules: stopping has to block any new action immediately, because a reassuring 'Stopped' label is worthless if the agent keeps editing data, and the interface must then report which updates finished, which records were left untouched and what is still in flight.",
+        "He separates three controls with different jobs: Pause for a temporary interruption, Stop to end the task, and Undo wherever completed changes can be reversed, and he insists that stopping should keep useful progress rather than throw it away. The same roundup suggests sorting decisions by reversibility, delegating the reversible ones, and recommends testing stop controls during a real running task, not just reviewing them in a static mockup."
+      ],
+      "whyItMatters": "Design the post-stop state as a first-class screen (completed, untouched, in progress) and give agents distinct Pause, Stop and Undo controls instead of a single cancel button.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/ux-roundup-20261019",
+      "author": "Jakob Nielsen",
+      "publishedAt": "2026-10-19T11:00:17Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_4114d22fbaa94d6787819daff13adc15~mv2.jpg/v1/fill/w_1280,h_720,al_c/d496b6_4114d22fbaa94d6787819daff13adc15~mv2.jpg",
+      "imageAlt": "Illustrated roundup cover with robot hands, a magnifying glass, a briefcase holding a web layout and a stopwatch",
+      "tags": ["stop control", "undo", "human in the loop", "delegation"]
+    },
+    {
+      "id": "2026-10-21-competitors-01",
+      "topic": "competitors",
+      "headline": "Otter.ai takes $320M in non-dilutive funding to push its meeting assistant into enterprise workflows",
+      "excerpt": "General Catalyst's Customer Value Fund backs the notetaker, which reports 40 million users and over $100M in ARR.",
+      "summary": [
+        "Otter.ai has raised $320 million from General Catalyst's Customer Value Fund, capital whose returns are tied to the performance of marketing spend rather than equity. Before this, the nearly ten-year-old company had raised about $50 million in total. Otter says it passed $100 million in annual recurring revenue last year and now counts 40 million users, up from 25 million a year earlier, and will spend the money on enterprise growth, international expansion and product.",
+        "The company is testing a pre-meeting brief that pulls context from past conversations and Live Assist, which lets users question the assistant during a call. Like other notetakers it wants to plug meeting data into enterprise systems and turn transcripts into follow-up actions. It faces Fireflies, Granola, Read AI and newer entrants such as Calendly and Superhuman, and has not disclosed monthly active users or churn."
+      ],
+      "whyItMatters": "Meeting tools are moving from transcripts to action items that land in other systems, so work-management products need clear ways to receive, attribute and review AI-generated tasks.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-10-20T11:00:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/04/Otter-feat.jpg?resize=1200,675",
+      "imageAlt": "Otter logo at the center, linked to Notion, ChatGPT, Google Drive, Salesforce, Gmail and Claude icons",
+      "tags": ["Otter.ai", "meetings", "funding", "notetakers"]
+    },
+    {
+      "id": "2026-10-21-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Dylan Field says MCP is 'not a perfect protocol' even as Figma adds 20 MCP partners",
+      "excerpt": "Figma's CEO argues the protocol favors frontier labs and that exposing every data type raises the risk of abuse.",
+      "summary": [
+        "At a media briefing, Figma CEO Dylan Field told TechCrunch that the Model Context Protocol has 'tons of room for improvement' and currently benefits frontier AI labs more than anyone else. The remarks follow his September post on X asking why Anthropic, which created MCP, doesn't expose artifacts and other resources made through it, part of a public back-and-forth after an MCP co-creator criticized Figma for not supporting the open-source Pi tool.",
+        "Figma is still widening its MCP support: at its first Config in India it added 20 partners, including Amp, ClickUp, Linear, Mistral, Notion and Sarvam Agents, and Field says Pi support is coming. But he says Figma won't open everything, because each extra data type exposed through MCP raises the chance of misuse, so the company is balancing user demand for easy access to their design data against control over it."
+      ],
+      "whyItMatters": "How much design data agents can read from design tools will shape AI-assisted design-to-code workflows, so teams should watch which file types and resources each MCP server actually exposes.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-10-20T14:13:32Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2023/05/GettyImages-1233645802.jpg?resize=1200,800",
+      "imageAlt": "Figma co-founder and CEO Dylan Field during a television interview in San Francisco",
+      "tags": ["Figma", "MCP", "design tools", "interoperability"]
+    },
+    {
+      "id": "2026-10-21-ux-design-02",
+      "topic": "ux-design",
+      "headline": "CSS random() arrives, and Smashing shows how to use it without breaking your design system",
+      "excerpt": "Brecht De Ruyte walks through native random values in stylesheets, now in Safari and rolling out with Chrome 156.",
+      "summary": [
+        "In a long Smashing Magazine tutorial, Brecht De Ruyte introduces random(), a native function from CSS Values Level 5 that picks a value between a minimum and maximum, optionally snapped to a step, with no JavaScript or preprocessor loops. Safari shipped it first and Chrome and Edge are rolling it out with version 156; Firefox has not shipped it. Shared caching keys let several properties reuse one random value, for example to keep a tile square.",
+        "His demos include tilted letters and cards, desynchronized animations, scroll-driven marquees and depth-of-field effects. He sets firm limits: keep randomness to decorative and editorial moments, never randomize layout geometry, form widths or body text, reset tilted interactive elements on hover and focus, honor prefers-reduced-motion, label split-letter text for screen readers and wrap everything in @supports with static fallbacks."
+      ],
+      "whyItMatters": "Native randomness gives design systems a sanctioned way to add organic variation to decorative surfaces while leaving tokens, layout and controls predictable.",
+      "sourceName": "Smashing Magazine",
+      "sourceUrl": "https://www.smashingmagazine.com/2026/10/embracing-playful-imperfection-css-random-function/",
+      "author": "Brecht De Ruyte",
+      "publishedAt": "2026-10-20T10:00:00Z",
+      "imageUrl": "https://files.smashing.media/articles/embracing-playful-imperfection-css-random-function/embracing-playful-imperfection-css-random-function.jpg",
+      "imageAlt": "Smashing Magazine article card with the author's photo and an illustrated red cat leaping",
+      "tags": ["CSS", "design systems", "motion", "accessibility"]
+    },
+    {
+      "id": "2026-10-21-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Anthropic circulates a draft bill that could halt a model's release over catastrophic risk",
+      "excerpt": "Registered evaluators would flag imminent dangers to Commerce, which could ask a judge to block the release.",
+      "summary": [
+        "Anthropic has been shopping a draft federal AI safety bill to lawmakers, first reported by Politico and confirmed by the company. Independent evaluators registered with the Commerce Department would assess models; if they found a foreseeable, imminent risk of catastrophe from bioweapons, a model escaping developer control or a cyberattack, they would have 72 hours to alert Commerce, which could ask a Washington, D.C. judge to stop the release.",
+        "The thresholds, more than 50 deaths or over $1 billion in damage, mirror California's SB 53, and the draft bars agencies from halting a model on their own. Labs could pay evaluators as long as pay doesn't depend on results, which raises independence questions. TechCrunch notes the scenarios are removed from current worries like agentic hacking, and that the proposal goes further than most labs, which favor voluntary oversight. Congress has not taken it up."
+      ],
+      "whyItMatters": "If pre-release evaluation becomes law, launch timelines for model-dependent features could hinge on third-party sign-off, worth planning for in AI product roadmaps.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "author": "Lucas Ropek",
+      "publishedAt": "2026-10-20T23:01:23Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2282033342.jpg?w=1024",
+      "imageAlt": "Anthropic CEO Dario Amodei at a G7 Summit working lunch in Evian-les-Bains, France",
+      "tags": ["Anthropic", "regulation", "AI safety", "policy"]
+    },
+    {
+      "id": "2026-10-21-ai-news-02",
+      "topic": "ai-news",
+      "headline": "US orders civilian agencies to remove DeepSeek, including products built on its models",
+      "excerpt": "A DHS notice bars new purchases and requires removal of DeepSeek tech from federal systems, with exceptions on request.",
+      "summary": [
+        "A Department of Homeland Security notice in the Federal Register orders US federal civilian agencies to stop buying DeepSeek products and services and to remove existing ones from government IT systems. The order also covers third-party products built with DeepSeek's technology. DHS cites national security, warning that data from government users could be accessible to Chinese authorities under Chinese law. Agencies can request exceptions; no deadline is stated.",
+        "The move extends a December 2025 law that already kept DeepSeek out of intelligence and national security systems. It follows a September report accusing DeepSeek and five other Chinese labs of large-scale distillation of American models, claims OpenAI and Anthropic have also raised. China's foreign ministry said it opposes politicizing technology and will defend its companies' rights."
+      ],
+      "whyItMatters": "Products that let customers pick or route between models need procurement-aware controls, since public-sector buyers may require proof that certain models are never used.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+      "author": "Kate Park",
+      "publishedAt": "2026-10-20T13:07:24Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2195703830.jpg?w=1024",
+      "imageAlt": "A welcome message on the DeepSeek AI mobile app",
+      "tags": ["DeepSeek", "government", "policy", "open models"]
+    }
+  ]
+}
