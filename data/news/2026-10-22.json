@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-22T07:40:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-22-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Anthropic previews Claude Duet, a proactive agent that works in the background and asks before it acts",
+      "excerpt": "A standalone app sends a morning brief, watches connected apps and finishes tasks on its own cloud computer.",
+      "summary": [
+        "Anthropic opened a waitlisted research preview of Claude Duet, a separate app for iOS, Android and the web aimed at professionals and small business owners. Built on Claude Opus 5.5, it sends a short brief each morning, checks connected accounts every few hours, and messages people only when something needs them. It can take on small chores like scheduling or bigger jobs like dashboards, forecasts and prototypes, drawing on more than 6,000 connectors.",
+        "Work runs on its own virtual machine with a browser, so the user's device can stay off; the app pings when a task is finished or needs review. Everything happens in one ongoing thread, by text or voice. Before sending messages, paying, signing or deleting, it shows the exact action and waits for approval, and some actions, such as trading securities, are blocked outright. It launches for US Pro and Max subscribers, shares their usage limits, and cannot yet show users its browser."
+      ],
+      "whyItMatters": "It is a reference design for an always-on agent: a single persistent thread, a periodic digest instead of constant pings, and an exact-action preview before any irreversible step.",
+      "sourceName": "Anthropic",
+      "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+      "publishedAt": "2026-10-21T12:00:00Z",
+      "featured": true,
+      "imageUrl": "https://claude.com/resources/articles/claude-duet/opengraph-image/og",
+      "imageAlt": "Claude Duet app icon: a looping black line over an orange blob on a white rounded square, set on a lavender background",
+      "tags": ["Anthropic", "Claude Duet", "proactive agents", "approvals", "background tasks"]
+    },
+    {
+      "id": "2026-10-22-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Walmart opens its store to AI shopping agents, with per-agent profiles and spending limits",
+      "excerpt": "Its new Agent Gateway lets approved agents search inventory and buy, while Amazon keeps blocking them.",
+      "summary": [
+        "Walmart launched Agent Gateway, an MCP server that lets approved AI agents search its online inventory and place orders for shoppers at Walmart and Sam's Club. CEO John Furner announced it at the Masters of Scale Summit. The move is a deliberate contrast with Amazon and several travel sites, which have shut agents out. Walmart says shoppers can buy their usual brands without handing their personal details or purchase history to the agent.",
+        "Starting next month, each agent gets its own Agent Profile in the customer's account, so its purchases are listed separately. Shoppers can require approval on every order or let the agent buy up to a limit they set, which Walmart likens to adding an authorized user to a credit card. Agents may only act within the shopper's intent, never see payment data and only touch the data the task needs; returns still apply when an agent gets it wrong, and agents that break the rules are blocked."
+      ],
+      "whyItMatters": "Giving each agent its own identity, activity history and spending cap is a pattern any product that lets agents act for users can borrow.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-10-21T19:30:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2018/01/gettyimages-903923942.jpeg?resize=1200,800",
+      "imageAlt": "Walmart signage with its yellow spark logo on a store building",
+      "tags": ["Walmart", "agentic commerce", "MCP", "permissions"]
+    },
+    {
+      "id": "2026-10-22-ai-agents-ux-03",
+      "topic": "ai-agents-ux",
+      "headline": "GM rebuilds OnStar around an in-house AI assistant you talk to in the car",
+      "excerpt": "The voice assistant debuts in the 2027 Cadillac Lyriq, alongside connected cameras and a single new OnStar app.",
+      "summary": [
+        "At its GM Forward event in New York, General Motors said OnStar is becoming a connected intelligence platform with an agentic AI assistant at its core. The OnStar AI Assistant is built in-house, rather than being the Gemini-based assistant GM had previously promised for 2026. Drivers speak to it to adjust functions such as climate or ask about vehicle features, and GM pitches it as predictive and proactive rather than a call center.",
+        "The assistant arrives first in the 2027 Cadillac Lyriq EV in the coming months, with other models later. GM is also adding connected cameras that can record and upload footage when the car senses trouble, and a new OnStar app in 2027 that replaces several brand apps. GM says customers choose what data is shared and recordings are encrypted and time-limited, a notable point after an FTC order restricted its data sharing."
+      ],
+      "whyItMatters": "It shows an assistant that spans a voice surface and a companion app, where consent and data controls have to be designed into both.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/",
+      "author": "Kirsten Korosec",
+      "publishedAt": "2026-10-21T18:00:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/OnStar-AI-Assistant.jpg?resize=1200,624",
+      "imageAlt": "A driver's hand on the steering wheel while the car's wide dashboard screen reads \"Hey OnStar\"",
+      "tags": ["GM", "OnStar", "voice assistant", "automotive"]
+    },
+    {
+      "id": "2026-10-22-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Agents now out-work their people six to one, so design for the reading tax",
+      "excerpt": "Patrick Neeman turns Anthropic's study of its own agents into seven steps for keeping humans in charge.",
+      "summary": [
+        "Writing in UX Collective, Patrick Neeman unpacks an October 16 Anthropic study of how agents changed its own workforce. By August 2026, agents run by employees logged about six hours for each human hour, sat idle roughly 80% of the time waiting on a person, and produced so much output that reading all of it would take more than half a workweek, even for staff who don't write code.",
+        "He argues that a person who cannot read what an agent did is in the loop only on paper. His remedies: budget reading time like page-load time, make agents justify a severity level so routine items go to a digest and only real decisions interrupt, build review screens that show before-and-after changes, what was checked and skipped and where claims came from, with the riskiest change first, and write decisions down where agents can find them. He draws on alarm fatigue in hospitals and calm technology research."
+      ],
+      "whyItMatters": "Rank every agent request by severity, batch the routine ones into a digest, and design review screens around a diff with the riskiest change first.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/anthropic-october-2026-study-human-attention-is-the-new-old-bottleneck-d7bc4642668a",
+      "author": "Patrick Neeman",
+      "publishedAt": "2026-10-19T21:39:27Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*sE14LY9q2J83iqFOPTgcmg.png",
+      "imageAlt": "A wide office floor of glowing monitors where one person sits reading at a desk",
+      "tags": ["human in the loop", "attention", "review", "notifications", "automation bias"]
+    },
+    {
+      "id": "2026-10-22-competitors-01",
+      "topic": "competitors",
+      "headline": "monday.com survey: 58% of leaders expect to manage more AI agents than people within a year",
+      "excerpt": "A Nielsen poll of 1,700 senior managers finds high AI confidence but patchy integration and harder performance reviews.",
+      "summary": [
+        "monday.com published its AI Report 2026, a Nielsen survey of about 1,700 directors and senior managers across seven countries. 96% use AI at work and 83% feel confident about where it adds value, but only 29% say AI is fully integrated into a central system, and 57% now juggle more software tools than before. More than half find it harder to judge an employee's original work, and 78% have changed how they evaluate people.",
+        "On agents, 58% expect to oversee more agents than direct reports within 12 months, 52% name data access as a top worry and 46% fear losing control over what agents do. TechCrunch notes that 39% already use AI to draft performance reviews, raising bias concerns. The numbers are self-reported expectations, not measured productivity, and come from a vendor selling a work platform with built-in agents."
+      ],
+      "whyItMatters": "Managers worried about control need agent permissions, approval steps and activity views built into the same place they already manage people's work.",
+      "sourceName": "monday.com Blog",
+      "sourceUrl": "https://monday.com/blog/project-management/monday-ai-report-2026/",
+      "author": "Rebecca Noori",
+      "publishedAt": "2026-10-21T13:29:30+00:00",
+      "imageUrl": "https://monday.com/blog/wp-content/uploads/2026/10/AI-Report-2026-Blog-Cover-2.png",
+      "imageAlt": "Report cover reading \"Monday's AI Report 2026: Squinting in the Sun\" over a pink and orange sunrise, with monday.com and Nielsen logos",
+      "tags": ["monday.com", "survey", "AI agents", "management"]
+    },
+    {
+      "id": "2026-10-22-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Jakob Nielsen's case for designing for flow, and against automating away the challenge",
+      "excerpt": "A long guide maps flow's preconditions to response times, interruptions and skill-matched challenge, with 16 guidelines.",
+      "summary": [
+        "Jakob Nielsen's new UX Tigers article treats flow, the state of full absorption described by Mihaly Csikszentmihalyi, as a design goal. Its three conditions, clear goals, immediate feedback and challenge matched to skill, become interface requirements. He restates his 0.1, 1 and 10 second response limits, says interruptions should land at task boundaries, and separates the task's real challenge, which should stay, from tool friction, which should go.",
+        "He warns about dark flow, the compulsive absorption of feeds and slot machines, and suggests testing whether users would endorse a mechanism if they understood it. On AI, he says chatbots break the one-second contract and that leaving people only to monitor or approve agent output removes their flow channel, so teams should automate chores rather than the challenge. He also proposes measuring flow with silent sessions and retrospective think-alouds instead of engagement metrics."
+      ],
+      "whyItMatters": "When adding AI to a workflow, keep the meaningful part of the task with the person and hand the agent the chores around it.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/flow",
+      "author": "Jakob Nielsen",
+      "publishedAt": "2026-10-21T11:00:11.676Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_f0f7e8ef9da54900876268b6026bda57~mv2.jpg/v1/fill/w_1280,h_720,al_c/d496b6_f0f7e8ef9da54900876268b6026bda57~mv2.jpg",
+      "imageAlt": "Psychedelic illustration titled \"Flow in UX\" of a woman at a mixing console beside a glowing network sphere and a luminous figure",
+      "tags": ["flow", "response time", "interruptions", "Jakob Nielsen"]
+    },
+    {
+      "id": "2026-10-22-ai-news-01",
+      "topic": "ai-news",
+      "headline": "OpenAI's GPT-6 models come to Google Cloud in private preview",
+      "excerpt": "Astra, Sol and Luna join Model Garden, billed through Google Cloud and counted toward existing commitments.",
+      "summary": [
+        "Google Cloud is adding three OpenAI models to its Model Garden: GPT-6 Astra for demanding coding, computer-use and research work, GPT-6.1 Sol as a cheaper near-Astra option, and GPT-6 Luna for fast everyday workloads. Access starts as a private preview for selected enterprise customers through an interest form, with wider access promised later. Google says this makes it the only hyperscaler offering all three leading closed models.",
+        "Usage is bought through Google Cloud Marketplace, shows up on the same invoice and counts toward existing commitments and cross-provider savings plans. Prompts and outputs stay in the customer's data perimeter and are not used for training, with zero data retention promised soon. Codex workflows can route inference through Google's platform, and Google plans to bring the models to Gemini for business and Antigravity. No per-token prices were listed."
+      ],
+      "whyItMatters": "Multi-model access inside one cloud makes it easier for product teams to route features to different models without new vendor contracts.",
+      "sourceName": "TestingCatalog",
+      "sourceUrl": "https://www.testingcatalog.com/google-cloud-adds-openai-models-in-private-preview/",
+      "author": "Erin",
+      "publishedAt": "2026-10-21T23:30:02.000Z",
+      "imageUrl": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w1200/2026/10/banner-14.webp",
+      "imageAlt": "Banner reading \"OpenAI models for Google Cloud customers\" beside a glowing purple and red particle shape on black",
+      "tags": ["OpenAI", "Google Cloud", "GPT-6", "Model Garden"]
+    },
+    {
+      "id": "2026-10-22-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Recursive releases Flint, a free laptop coding model it says AI largely built",
+      "excerpt": "The open 40B mixture-of-experts model runs locally at about 131 tokens per second on an M4 Pro MacBook.",
+      "summary": [
+        "Recursive, the startup led by former Salesforce chief scientist Richard Socher, released Flint, a coding model that runs on a laptop and is free on Hugging Face under Apache 2.0. It is a mixture-of-experts model with 40 billion parameters, of which 2.5 billion are active per task. The company says its automated research system, the Eureka Machine, did most of the work, and a small team built it from scratch in under four months.",
+        "Recursive reports about 131 tokens per second on an M4 Pro MacBook Pro, roughly twice comparable models, and the best SWE-Bench Verified score among models under 50 billion parameters. It credits Eureka with low-bit training that shrank the model by 71%. The company admits Flint needs more guidance than big paid assistants and suggests splitting large tasks into steps. Recursive came out of stealth in May with $650 million."
+      ],
+      "whyItMatters": "Fast local models make private, offline AI features practical, which changes what can run on-device instead of in the cloud.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+      "author": "Aditya Mehta",
+      "publishedAt": "2026-10-21T20:27:41+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2157738833.jpg?resize=1200,800",
+      "imageAlt": "Recursive CEO Richard Socher speaking on stage at the Collision conference",
+      "tags": ["Recursive", "open models", "coding", "on-device"]
+    }
+  ]
+}
