@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T07:05:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-23-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "1Password for Agents lets AI assistants sign in for you without ever seeing your password",
+      "excerpt": "1Password launched a platform where personal AI agents request a login and the user approves it before credentials are filled in.",
+      "summary": [
+        "1Password introduced 1Password for Agents on October 22, a service that lets personal AI agents sign in to websites and accounts on a person's behalf while the credentials stay hidden from the agent. Grok Bot and Meta's Muse get it first over the coming days, with Claude Duet, ChatGPT Work and Dots, and Town's Townie listed as coming soon. It is free for Individual and Family accounts on 1Password.com.",
+        "The flow is a request-and-approve loop: the agent proves who it is with a unique digital key, the person gets an alert and can allow or deny the sign-in, and 1Password then fills the form directly so the agent never handles the secret. Coverage notes the limit of that model: once a login is approved, the agent can still act inside the account, so prompt injection or bad web content remains a risk. Accounts on the .eu and .ca regions are not supported at launch."
+      ],
+      "whyItMatters": "It is a clean reference for per-action consent in agent products: the agent asks, the person approves in a lightweight alert, and sensitive data never passes through the model.",
+      "sourceName": "MacRumors",
+      "sourceUrl": "https://www.macrumors.com/2026/10/22/1password-for-agents/",
+      "author": "Juli Clover",
+      "publishedAt": "2026-10-22T21:27:57+00:00",
+      "featured": true,
+      "imageUrl": "https://images.macrumors.com/t/aPUfls4J-l9qFgXKB_h70dnj1D8=/2000x/article-new/2026/10/1password-for-agents.jpg",
+      "imageAlt": "1Password for Agents graphic on a blue background with a grid of partner logos including Meta, Anthropic and OpenAI",
+      "tags": [
+        "1Password",
+        "agent identity",
+        "approvals",
+        "security"
+      ]
+    },
+    {
+      "id": "2026-10-23-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Uber rolls out ChatGPT Work to all 30,000 employees",
+      "excerpt": "After a 1,000-person pilot, Uber is giving its whole workforce OpenAI's enterprise agent, mostly for non-engineering work.",
+      "summary": [
+        "Uber and OpenAI expanded their partnership on October 22, with Uber putting its roughly 30,000 employees on ChatGPT Work, the enterprise agent OpenAI introduced in July. The decision follows a pilot with about 1,000 people across finance, operations and product, where around 80% of early adopters were not engineers, according to Uber engineering VP Sumanth Sukumar.",
+        "Pilot users mainly used the agent to spot trends in operational data, localize training material for different markets and build personalized interactive dashboards. Uber has not set firm usage rules yet, letting teams experiment while it tracks usage, workflows and productivity outcomes. The cost was not disclosed, and the deal lands as OpenAI pushes harder into enterprise accounts against Anthropic."
+      ],
+      "whyItMatters": "Most early agent users at Uber were non-engineers building dashboards and reports, a signal that work tools need agent entry points designed for analysts and operators, not just developers.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
+      "author": "Lucas Ropek",
+      "publishedAt": "2026-10-22T16:00:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/06/wayve-uber-uk.jpg?resize=1200,800",
+      "imageAlt": "'Available on Uber' sticker on the rear window of a black car",
+      "tags": [
+        "OpenAI",
+        "ChatGPT Work",
+        "enterprise AI",
+        "Uber"
+      ]
+    },
+    {
+      "id": "2026-10-23-ai-agents-ux-03",
+      "topic": "ai-agents-ux",
+      "headline": "Spotify wants to be the music service AI agents pick by default",
+      "excerpt": "On its Q3 call, Spotify said it will serve requests from outside assistants like Muse, ChatGPT and Claude rather than fight them.",
+      "summary": [
+        "Spotify reported 788 million monthly active users and nearly €5 billion in third-quarter revenue, and co-CEO Gustav Söderström used the earnings call to lay out an agent strategy. His argument is that people delegate chores to agents but want to experience entertainment themselves, so the goal is for assistants to fetch music, podcasts and audiobooks from Spotify when someone asks. Spotify already integrates with Meta's Muse, ChatGPT and Claude.",
+        "Söderström described Spotify as a media service you can talk to and instruct, either in its own app or through someone else's agent, for example building a running playlist sorted by tempo and key from listening history. Spotify says it does not hand listener data to partners: the external agent sends a request and Spotify's systems choose what plays. The stance contrasts with platforms such as Amazon, which has blocked outside shopping agents."
+      ],
+      "whyItMatters": "Products are now designing for two front doors, their own UI and other companies' agents, which raises the question of what a request from an outside agent should be allowed to see and do.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
+      "author": "Lauren Forristal",
+      "publishedAt": "2026-10-22T15:03:58+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/02/GettyImages-1783835425-crop-e1717409949317.jpg?resize=1200,676",
+      "imageAlt": "Spotify and Apple Music apps on a smartphone screen",
+      "tags": [
+        "Spotify",
+        "agents",
+        "platforms"
+      ]
+    },
+    {
+      "id": "2026-10-23-competitors-01",
+      "topic": "competitors",
+      "headline": "Linear Loops can now start from Slack and GitHub, and its agent can read and edit Figma files",
+      "excerpt": "Linear's automation Loops gained Slack and GitHub triggers, shareable templates and per-loop reasoning levels.",
+      "summary": [
+        "Linear shipped an update to Loops, its automations that react to changes in Linear and connected tools, on October 22. Loops can now be triggered by events in Slack and GitHub, such as answering product questions posted in a channel or drafting a QA plan when a pull request is labeled ready for testing. Teams can save a loop as a template that appears next to Linear's built-in ones for everyone in the workspace.",
+        "Each loop can also run at Auto, Low, Medium or High reasoning to trade off speed, cost and depth. Through Figma's MCP server, Linear Agent can now read and update designs, turn a shared frame into implementation requirements or draft a design proposal from an issue. The release also syncs issues with pull requests in Cursor Origin repos and bundles a long list of smaller fixes."
+      ],
+      "whyItMatters": "Exposing a reasoning level per automation and letting users share agent recipes as templates are two concrete controls work-management tools can borrow for their own agent features.",
+      "sourceName": "Linear",
+      "sourceUrl": "https://linear.app/changelog/2026-10-22-slack-and-github-loops",
+      "publishedAt": "2026-10-22T12:00:00Z",
+      "imageUrl": "https://webassets.linear.app/images/ornj730p/production/7d9888135010f49802debd027a63dbdd472fef81-1200x600.png?q=95&auto=format&dpr=2",
+      "imageAlt": "Dark illustration of circular dials labeled 'Message posted in Slack channel', 'PR created' and 'Checks pass or fail'",
+      "tags": [
+        "Linear",
+        "automation",
+        "Figma MCP",
+        "templates"
+      ]
+    },
+    {
+      "id": "2026-10-23-competitors-02",
+      "topic": "competitors",
+      "headline": "Atlassian's Browser Company will shut down Arc on December 22 to focus on Dia",
+      "excerpt": "Arc stops accepting new accounts now and stops working on Mac and Windows in two months, with users steered to the AI browser Dia.",
+      "summary": [
+        "The Browser Company, which Atlassian bought for $610 million in 2025, is retiring its Arc browser. New Arc accounts were closed on October 22, Arc Search on mobile loses its AI features and sync on November 23, and the desktop browser stops working on December 22, with account data deleted within 30 days. The company says modern browser security demands ongoing work that grows with AI, so its teams will focus on Dia.",
+        "Dia now offers profiles in place of Arc's Spaces, optional vertical tabs and pinned tab groups, and imports passwords, bookmarks, extensions and history. Arc-equivalent features are free and the AI is optional. Many users pushed for Arc to be open-sourced, but CEO Josh Miller says that is not feasible because its proprietary development kit also powers Dia."
+      ],
+      "whyItMatters": "Atlassian is consolidating around an AI-first browser as a work surface, and the staged sunset with feature mapping is a useful model for migrating loyal users off a beloved product.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/arc-browser-sunsets-december-22-as-the-browser-company-doubles-down-on-dia/",
+      "author": "Aditya Mehta",
+      "publishedAt": "2026-10-22T20:01:51+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/05/arc-search-call.png?resize=1200,675",
+      "imageAlt": "Two phones showing Arc Search's 'Call Arc' voice feature with a smiling Arc face on a gradient screen",
+      "tags": [
+        "Atlassian",
+        "The Browser Company",
+        "Dia",
+        "Arc"
+      ]
+    },
+    {
+      "id": "2026-10-23-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Figma explains how to feed its agent your design system: libraries, guidelines, examples and skills",
+      "excerpt": "A Figma product manager walks through four kinds of context that make the Figma agent produce on-system designs.",
+      "summary": [
+        "Figma product manager Wayne Lin published a guide on giving the Figma agent enough context to design with a team's own system. It covers four layers: connecting a published library so the agent reuses approved components and variables, attaching written guidelines to that library, supplying example designs, and recording skills, which are repeatable processes stored as markdown and run with a slash command.",
+        "Guidelines are uploaded under Library, Manage guidelines and apply automatically to prompts that use the library, though Figma says they work best when creating from scratch and are less consistent when editing existing designs. Examples can live on an Examples page or be flagged with an _example suffix. Sample skills include a design-system audit for detached instances and hardcoded values. The agent is available to Full seats on paid plans."
+      ],
+      "whyItMatters": "Well-named components, written usage rules and canonical examples now double as agent instructions, so design system hygiene directly shapes the quality of AI-generated screens.",
+      "sourceName": "Figma Blog",
+      "sourceUrl": "https://www.figma.com/blog/how-to-put-your-design-system-to-work-with-the-figma-agent/",
+      "author": "Wayne Lin",
+      "publishedAt": "2026-10-23T02:27:00Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/9db0b3dca44f5d8d35c537adb07f9f9eb479dcd0-1632x918.png?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "Abstract illustration with a gray panel of blue and green brush lettering framed by orange rays on a yellow and black pattern",
+      "tags": [
+        "Figma",
+        "design systems",
+        "Figma agent",
+        "guidelines"
+      ]
+    },
+    {
+      "id": "2026-10-23-ux-design-02",
+      "topic": "ux-design",
+      "headline": "Canva launches Craft, its first in-house image generation model",
+      "excerpt": "Canva's research team built a model trained on human-made templates that plans layouts before rendering images up to 2K.",
+      "summary": [
+        "Canva released Canva Craft on October 22, its first image generation model built by its own research team, including researchers from Leonardo.ai. The model works in two steps: it first plans spatial relationships, scale, visual hierarchy and text, then renders images at up to 2K resolution in up to 30 aspect ratios. It was trained on human-designed templates such as posters, social posts, menus and infographics rather than on photographs.",
+        "Craft images can be turned into layered, editable designs through Canva Magic, and the model is available to all users in the Dream Lab tab and through the Canva API, with support for chatbots like ChatGPT and Gemini planned via Canva's MCP. Cheaper Craftfast and Craft-ultrafast versions are coming. Owning the model should cut Canva's spend on third-party image APIs at a time when it has trimmed its growth outlook."
+      ],
+      "whyItMatters": "Training on structured design templates and outputting editable layers points to generative tools that respect hierarchy and stay editable, rather than producing flat images.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-10-22T19:00:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/Sample-Outputs.jpeg?resize=1200,675",
+      "imageAlt": "Collage of sample images generated by Canva Craft, including a flower, a giant chessboard, a surfer and an anime character",
+      "tags": [
+        "Canva",
+        "image generation",
+        "Canva Craft"
+      ]
+    },
+    {
+      "id": "2026-10-23-ux-design-03",
+      "topic": "ux-design",
+      "headline": "Buy vs. build is now a UX decision too, argues Patrick Neeman",
+      "excerpt": "A UX Collective essay says AI made building cheap, but upkeep, tool gaps and chat host surfaces decide the real cost.",
+      "summary": [
+        "In a UX Collective essay, Patrick Neeman argues designers should have a seat in buy-versus-build decisions now that coding agents make internal tools look like an afternoon's work. He budgets about 30% of the upfront build cost every year for upkeep, and shows how a two-person, two-week build can cost more over three years than a 25-seat subscription. He also points to research suggesting purchased AI tools succeed more often than internal builds.",
+        "Neeman recommends measuring the gaps users feel between tools by following one real task and logging every switch and retyped value, and treating Slack, Teams, ChatGPT and Claude as host surfaces whose rules constrain your design, such as ChatGPT's two-action limit on inline cards. His closing rule is to buy commodities and build differentiators: the model is becoming a commodity, while the experience around it is not."
+      ],
+      "whyItMatters": "If your product increasingly shows up as a card inside someone else's chat window, that card needs its own design: one job, one primary action and a clear handoff to the full app.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/buy-versus-build-is-now-also-a-ux-decision-especially-in-enterprise-6b4345715c63",
+      "author": "Patrick Neeman",
+      "publishedAt": "2026-10-22T21:55:36Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*nj8TtjChBWaVUnj1eBPjYQ.png",
+      "imageAlt": "Four colleagues at a conference table comparing a dashboard on one laptop with code and wireframes on another",
+      "tags": [
+        "enterprise UX",
+        "buy vs build",
+        "host surfaces"
+      ]
+    },
+    {
+      "id": "2026-10-23-ai-news-01",
+      "topic": "ai-news",
+      "headline": "OpenAI opens its fast Decisions API to all developers, taking on TypeSafe's Jev",
+      "excerpt": "OpenAI's classifier-style model picks between options in roughly 100 to 180 milliseconds and now supports voice and images.",
+      "summary": [
+        "OpenAI made its Decisions API generally available on October 22, after first showing it at its September 29 developer day. It competes in the young category of decision models started by TypeSafe's Jev, which choose among a fixed set of options and return a confidence score instead of generating text. OpenAI built it by reconfiguring its ChatGPT Luna model, cutting response times from one to three seconds down to roughly 100 to 180 milliseconds.",
+        "Early testers include Box, Datadog, Ramp and Speak, whose CTO said time between actions dropped from 1.4 to 0.13 seconds. The public release adds voice and visual inputs. Benchmarks are mixed: OpenAI's model ranks eighth and fourteenth on two decision indexes led by Liquid and Base Lab models, while OpenAI argues it is better calibrated on multimodal tasks and aims to reach about 60 milliseconds."
+      ],
+      "whyItMatters": "Sub-200 ms routing and classification makes it practical to let AI choose the next step in an interface without a visible loading state.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+      "author": "Tim Fernholz",
+      "publishedAt": "2026-10-22T19:00:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-22-at-12.17.11-PM-1.png?resize=1200,988",
+      "imageAlt": "Demo of a phone-shaped camera view where a man holds up a game controller and a green apple, with a microphone button below",
+      "tags": [
+        "OpenAI",
+        "Decisions API",
+        "latency",
+        "models"
+      ]
+    },
+    {
+      "id": "2026-10-23-ai-news-02",
+      "topic": "ai-news",
+      "headline": "OpenAI is reportedly raising up to $30B at a $1.25 trillion valuation",
+      "excerpt": "CNBC reports Coatue would lead the round with UAE investors, possibly tied to extra computing capacity from the UAE.",
+      "summary": [
+        "OpenAI is working on a round of up to $30 billion at a $1.25 trillion pre-money valuation, according to sources cited by CNBC, with Coatue leading and investors from the UAE participating. The UAE money could come with a deal for more computing capacity. Terms are still being negotiated, and OpenAI declined to comment. At that price it would be the most valuable private company ever.",
+        "The figure is below the $1.4 trillion Bloomberg reported a month earlier, and well above the $852 billion post-money valuation from OpenAI's March raise. OpenAI filed confidential IPO paperwork in June, as did Anthropic, which raised at $965 billion in May and is reportedly seeking $1.5 to $2 trillion in its listing. A public Anthropic filing could come first."
+      ],
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+      "author": "Julie Bort",
+      "publishedAt": "2026-10-22T22:08:24+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2023/11/Sam-Altman-OpenAI.jpg?resize=1200,680",
+      "imageAlt": "OpenAI CEO Sam Altman",
+      "tags": [
+        "OpenAI",
+        "funding",
+        "IPO",
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "2026-10-23-ai-news-03",
+      "topic": "ai-news",
+      "headline": "Mistral and NVIDIA team up on AI for engineering, as Mistral Large 4 enters public preview",
+      "excerpt": "The partners plan open datasets and benchmarks for physics models and engineering agents in aerospace, auto and chips.",
+      "summary": [
+        "Mistral announced on October 21 that it is building AI-native engineering workflows with NVIDIA, pairing its models and physics-modeling pipelines with NVIDIA CUDA-X, Warp and Omniverse libraries to speed up simulation in aerospace, automotive and semiconductors. The companies plan public benchmarks and open datasets for physics models, plus benchmarks that test whether agents use computer-aided engineering and chip-design tools correctly.",
+        "The post also says Mistral Large 4 is now in public preview: a multimodal model with about 1 trillion total and 49 billion active parameters, trained on 3,800 NVIDIA Grace Blackwell GPUs in Mistral-run European data centers, with weights due at the end of October. Mistral is adding NVIDIA infrastructure toward a 1 GW compute target by 2030. No customers, pricing or benchmark release dates were given."
+      ],
+      "whyItMatters": "Agent benchmarks that score tool use, multistep completion, cost and time are the kind of measures product teams need when judging whether an agent is ready to act inside real workflows.",
+      "sourceName": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+      "publishedAt": "2026-10-21T12:00:00Z",
+      "imageUrl": "https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp",
+      "imageAlt": "Mistral cover image reading '#1 in Sovereign AI.' above orange and red stripes with a pixel-art cat",
+      "tags": [
+        "Mistral",
+        "NVIDIA",
+        "Mistral Large 4",
+        "benchmarks"
+      ]
+    }
+  ]
+}
