@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-10-25",
+  "generatedAt": "2026-10-25T07:30:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-25-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Framer opens its website builder to outside AI agents with an official MCP server",
+      "excerpt": "ChatGPT, Claude, Cursor and other assistants can now edit Framer pages, manage CMS content and publish sites.",
+      "summary": [
+        "Framer released Framer MCP on October 22, an official remote Model Context Protocol server that lets AI tools outside its editor work on Framer projects. Once a user signs in through OAuth and approves the connection, an assistant such as ChatGPT, Codex, Claude, Claude Code, Cursor or Grok can create and edit pages across breakpoints, manage CMS collections, review SEO and page structure, and publish, from a desktop or a phone.",
+        "Edits stay editable on the Framer canvas and don't go live until someone publishes, though an agent may publish when explicitly asked. Unlike Framer's older local agent setup, which put every change on a branch automatically, the MCP server only works on a branch when the user requests it, and the agent inherits all the permissions of the signed-in account. Localization isn't supported yet, and AI usage is billed by the connected assistant rather than Framer."
+      ],
+      "whyItMatters": "When outside agents can act inside your product, review-before-publish, branch-based staging and scoped permissions become core interface decisions rather than settings buried in an admin page.",
+      "sourceName": "The Agile Brand Guide",
+      "sourceUrl": "https://agilebrandguide.com/framer-launches-official-mcp-server-letting-outside-ai-agents-build-and-edit-websites/",
+      "author": "Greg Kihlström",
+      "publishedAt": "2026-10-22T12:00:00Z",
+      "imageUrl": "https://framerusercontent.com/images/ZwoOnILDE8voHKhZN8ivC6GGbo.png?width=1600&height=900",
+      "imageAlt": "The letters \"mcp\" written in glowing blue neon script on a black background",
+      "tags": ["Framer", "MCP", "agents", "website builders", "publishing"]
+    },
+    {
+      "id": "2026-10-25-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Six teams show how they use Figma code layers, from Dell to Rocket Money",
+      "excerpt": "Figma shares customer examples of code-backed prototypes built on its canvas, with time savings of up to 90%.",
+      "summary": [
+        "Figma published six customer stories on October 23 about code layers, the open-beta feature that puts code-backed prototypes directly on the design canvas. Superside turned static wallet frames into an animated card concept through prompts, Dell builds layers from the same React components its developers ship, and Rocket Money rebuilt a screen using its design system's exact component names so teams can debate interactions with a live link.",
+        "A Cox Automotive product manager iterated through 19 versions of a tiered-feature prototype in about an hour of hands-on time, estimating a 90% saving. Merkle reports 30% faster iteration and up to half the time on interaction specs, and Checkout.com fed client screenshots to the Figma agent to match a brand. Code layers consume AI credits, but creating and editing them is free on paid plans until November 4."
+      ],
+      "whyItMatters": "Prototypes built from production components let teams test real interaction and AI behavior with stakeholders instead of describing it in static frames and specs.",
+      "sourceName": "Figma Blog",
+      "sourceUrl": "https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/",
+      "author": "Camille Rose Shortridge",
+      "publishedAt": "2026-10-23T12:00:00Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/ae1c3c193908deb3921d2061f39ffd17878e4240-10835x6095.png?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "A mobile product page for a wall clock next to the React code that renders it",
+      "tags": ["Figma", "code layers", "prototyping", "design systems"]
+    },
+    {
+      "id": "2026-10-25-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Block unveils Dessa, a full-duplex voice model that laughs, pauses and runs on a laptop",
+      "excerpt": "Jack Dorsey's company says its research model listens and talks at once and needs no separate language model.",
+      "summary": [
+        "Block's research lab has shown Dessa, a voice model the company says was trained only on human speech and runs locally on consumer machines such as a MacBook with an M4 Max chip. It is full-duplex, so it can listen while it speaks, and produces laughter, pauses and even crying, with emotion built into the model. Block says it trained Dessa on a single rack of NVIDIA GPUs and that its knowledge comes from conversational data rather than a paired text model.",
+        "Dessa is not publicly available. Block has invited safety researchers to probe it, especially for ways a voice agent could deceive people, and the demos released so far are curated samples of staff chatting and playing games with it. TechCrunch notes the claims are unverified, and that an on-device model could cut costs for Square, which already uses voice AI to take orders."
+      ],
+      "whyItMatters": "Voice agents that sound convincingly human raise the bar for disclosure, so products adding voice need clear signals that people are talking to an AI.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-10-24T16:00:00Z",
+      "featured": true,
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/07/jack-dorsey.jpg?resize=1200,822",
+      "imageAlt": "Block co-founder Jack Dorsey in a grey T-shirt in front of a stone wall",
+      "tags": ["Block", "voice AI", "on-device", "full-duplex", "safety"]
+    },
+    {
+      "id": "2026-10-25-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Pushed to name a candidate, Grok picks Republicans and GPT picks Democrats",
+      "excerpt": "A study of nearly 500 midterm races found the two models agreed on a candidate less than 10% of the time.",
+      "summary": [
+        "Convovo, a research studio led by Cornell professor Tapan Parikh, asked Grok 4.7 and GPT-6.1 Sol through their developer APIs who to vote for in nearly 500 races in the 2026 US midterms, instructing them to name one candidate without hedging. Grok chose the Republican in 92% of answers and GPT the Democrat in 97%, and the two agreed less than 10% of the time, even in districts that lean heavily the other way.",
+        "Their sources differed sharply: Grok often cited X and conservative voter guides, while GPT leaned on Wikipedia, AP and Axios. With web search off in a 30-race rerun, Grok mostly refused to choose and GPT still favored Democrats. The consumer apps decline such questions, and OpenAI says API tests don't reflect real use, but Parikh says simple prompts can get around those refusals."
+      ],
+      "whyItMatters": "Model choice and the sources an assistant cites shape what users are told, so showing citations and handling sensitive questions consistently are part of the product design, not just the model.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "author": "Rebecca Bellan",
+      "publishedAt": "2026-10-24T15:00:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1777713346.jpg?resize=1200,900",
+      "imageAlt": "Illustration of a white humanoid robot holding a voting ballot over a red, white and blue ballot box",
+      "tags": ["Grok", "OpenAI", "elections", "bias", "research"]
+    }
+  ]
+}
