@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T07:20:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-26-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "The texting inbox is becoming the interface for a new wave of personal AI agents",
+      "excerpt": "TechCrunch maps more than 20 assistants that run inside iMessage, WhatsApp, SMS and Telegram instead of their own apps.",
+      "summary": [
+        "TechCrunch's Lauren Forristal rounded up more than 20 AI agents that people reach by sending a text rather than opening a dedicated app. They include general helpers such as Poke, Caddy, Folk, Martin, Maverick and Instinct, family organizers like Fambot, Ohai, Ollie and Orbits, plus niche tools for travel (Miso), work (Town) and creators (Stanley). Most live in iMessage, RCS, WhatsApp, Telegram or plain SMS, and handle chores like calendar changes, bookings, reminders, email and errands.",
+        "The list shows how varied the trust models already are. Maverick asks for permission before it acts, Comma surfaces work for approval, Wajo's agent has its own email, phone number and payment card and can pass a task to a human assistant, and Underdog runs on the user's own device for privacy. Pricing ranges from free betas to roughly $1 a day or $20 to $25 a month, and Instinct is reported to be valued at $10 billion after a $1 billion round, a sign that investors see messaging as a serious agent channel."
+      ],
+      "whyItMatters": "When an agent lives in a chat thread there is no dashboard to fall back on, so confirmations, progress updates and undo have to work as short messages that make sense out of context.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "author": "Lauren Forristal",
+      "publishedAt": "2026-10-24T14:00:00+00:00",
+      "featured": true,
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813",
+      "imageAlt": "Two paper speech bubbles with typing dots on a cork-colored background",
+      "tags": ["AI agents", "messaging", "iMessage", "WhatsApp", "consumer AI"]
+    },
+    {
+      "id": "2026-10-26-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Lufthansa Systems swaps static cockpit mockups for live, data-backed map prototypes built in Figma Make",
+      "excerpt": "The team behind the Lido pilot apps now tests interactive traffic and airport maps with pilots instead of clicking through static screens.",
+      "summary": [
+        "Figma published a case study on Lufthansa Systems, whose Lido Pilot Apps run on cockpit iPads used daily by more than 100,000 pilots at over 250 airports. Lead product designer Pank Juvekar started testing Figma Make during an internal hackathon, connecting it to a Mapbox web version of the app's map and to sample air traffic from the OpenSky Network, so tapping an aircraft shows its call sign, type, speed, altitude and route. After pilot feedback, a short prompt sized aircraft markers by FAA weight class.",
+        "The team had cycled through Sketch, XD and Framer without getting a convincing dynamic map, and pilots were unimpressed by static screens. Now prototypes test behaviors such as zoom-level traffic display and runway color changes, other design teams reuse shared Make templates, and some projects are prototyped only in Make. Caveats: this is a vendor-published story, the traffic is sample data rather than live feeds, production code is still written separately in SwiftUI, and the head of design admits there are still growing pains."
+      ],
+      "whyItMatters": "Prototypes wired to realistic data let expert users react to real behavior, not pictures of it, which matters most for dense, data-heavy views like timelines, dashboards and boards.",
+      "sourceName": "Figma Blog",
+      "sourceUrl": "https://www.figma.com/blog/lufthansa-figma-make/",
+      "author": "Jenny Xie",
+      "publishedAt": "2026-10-22T14:50:00Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/25a1a68c5c527f854a2b80c859e10fbd1cc1d8c0-3840x2160.png?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "A Figma Make prototype of a European airways map next to the same map on an iPad, above an illustrated flight path from preparation to gate",
+      "tags": ["Figma Make", "prototyping", "case study", "aviation", "data-driven prototypes"]
+    },
+    {
+      "id": "2026-10-26-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Apollo's chief economist finds no AI payoff yet outside Big Tech",
+      "excerpt": "Torsten Slok says margins and revenue per worker look flat at the S&P 500 companies that aren't tech giants.",
+      "summary": [
+        "Torsten Slok, chief economist at Apollo Global Management, argued in a new note that AI has produced zero financial payoff for large US companies outside tech so far. He looked at what he calls the S&P 493, the index minus Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia and Tesla, and found that profit margins and revenue per worker appear flat, with no sign that AI is lifting productivity for this group.",
+        "Slok's explanation is partly conceptual: he describes AI as an excellent calculator, while business intelligence is mostly judgment, and says the technology does not grasp accountability, trust or culture. TechCrunch's short write-up gives no sample, time window or method beyond those two measures, and flat figures alone do not prove AI has no effect, but the note adds to a growing set of studies questioning how quickly enterprise AI spending turns into measurable results."
+      ],
+      "whyItMatters": "As buyers start asking for proof of return, AI features need to show the work they saved and the outcomes they moved, not just how often they were used.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "author": "Anthony Ha",
+      "publishedAt": "2026-10-25T16:57:32+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-1308803174.jpg?resize=1200,800",
+      "imageAlt": "Felt figures of tired office workers asleep at their desks",
+      "tags": ["AI ROI", "productivity", "enterprise AI", "economics"]
+    },
+    {
+      "id": "2026-10-26-ai-news-02",
+      "topic": "ai-news",
+      "headline": "PHP2Shell: two critical PHP bugs, exploited with AI help, force sites offline worldwide",
+      "excerpt": "Patches shipped October 21, but attackers were already exploiting the flaws days earlier, and confirmed compromises are piling up.",
+      "summary": [
+        "Two remote code execution flaws in PHP, nicknamed PHP2Shell (CVE-2026-109618 and CVE-2026-109619), let an attacker take over an unpatched internet-facing server with no login or user click. Researchers at Calif, working within the Hack the Planet initiative run by OpenAI and Wiz, found a way to exploit bugs first spotted in 2024, and the PHP Foundation released fixes on October 21. Roughly 70% of the web relies on PHP, including WordPress, Drupal, Joomla and MediaWiki, and banks, hospitals, retailers and some government agencies took servers down to patch.",
+        "Amazon saw exploitation about a week before patches were out and advises checking logs from October 17; Palo Alto Networks and Trail of Bits have since reported confirmed compromises. AI assisted with building the exploit, but Calif stresses most of the work came from human expertise and that no model can find all bugs from a simple prompt, at least for now. How attackers learned of the flaws early is still unknown, and slow-to-update and embedded systems may stay exposed for years."
+      ],
+      "whyItMatters": "AI is shortening the time between a bug's discovery and its exploitation, so products that let agents act on users' data need clear permission scopes and a fast way to pause or revoke them.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/24/php-ocalypse-how-two-critical-web-bugs-almost-broke-the-internet/",
+      "author": "Zack Whittaker",
+      "publishedAt": "2026-10-24T15:30:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/php-web-bug-padlock-2300746159.jpg?resize=1200,800",
+      "imageAlt": "Silhouette of an open padlock over glowing green binary code",
+      "tags": ["security", "PHP", "vulnerability", "OpenAI", "AI-assisted exploits"]
+    },
+    {
+      "id": "2026-10-26-ai-news-03",
+      "topic": "ai-news",
+      "headline": "xAI posts seven minutes of its promised AI-made 'Odyssey' film, now billed as episode one",
+      "excerpt": "Grok Imagine footage arrives three months after Elon Musk promised a full-length, historically accurate movie.",
+      "summary": [
+        "xAI's Grok account published a seven-minute clip on X on October 23, labeled episode one of an Odyssey series and made with its Grok Imagine video tool together with Wonder Studios and director Dev Walker. It comes three months after Elon Musk said Grok would release a full-length, historically accurate film version of Homer's epic, in contrast to Christopher Nolan's nearly three-hour live-action Odyssey, shot in six countries with thousands of cast and crew.",
+        "TechCrunch's Anthony Ha found the visuals better than expected, with some sea shots that could pass for live action, but called the result stilted and lacking artistry, comparing it to a skippable video-game cutscene. The account offered a full breakdown of how the clip was made if viewers ask for one; no schedule for further episodes or a full film has been given, so the original promise is still unmet."
+      ],
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+      "author": "Anthony Ha",
+      "publishedAt": "2026-10-25T21:31:16+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800",
+      "imageAlt": "The Grok logo glowing on a phone screen in a dark room",
+      "tags": ["xAI", "Grok Imagine", "AI video", "generative media"]
+    }
+  ]
+}
