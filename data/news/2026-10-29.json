@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T07:04:05-03:00",
+  "articles": [
+    {
+      "id": "2026-10-29-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Google opens Gemini and Search to any developer with a Connected Apps platform built on MCP",
+      "excerpt": "Developers can now submit their own apps for people to use inside Gemini and AI Mode in Search.",
+      "summary": [
+        "Google launched its Connected Apps Platform, a public preview that lets any business or developer in the U.S. submit apps that users can call from inside Gemini and Google Search. Until now, connected apps were limited to partners such as Canva, Adobe, Peloton and YouTube Music. Gemini already lists more than 50 of them, and those will arrive in Search over the coming weeks, with Calm named as a new partner for both surfaces.",
+        "Developers plug in through a cloud-hosted MCP server or Android's AppFunctions APIs, then register, test and submit through a new Google Connected Console, choosing whether the app shows up in Search, Gemini or both. Once live, they can watch traffic, latency and error rates and keep verified logos and signed-in accounts. TechCrunch frames it as an early version of SEO for the agentic web; Google has not said when access widens beyond the waitlist."
+      ],
+      "whyItMatters": "Assistants are becoming the place where third-party actions happen, so products need clear, branded action cards and confirmation steps that still make sense when they appear inside someone else's chat UI.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-10-28T17:00:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/Blog_ConnectedApps_1027_2.width-2200.format-webp.webp?resize=1200,675",
+      "imageAlt": "Two phone screens: Google Search AI Mode checking connected apps for meditations, and Gemini showing a dinner reservation card with a Confirm button",
+      "tags": [
+        "Google",
+        "Gemini",
+        "MCP",
+        "connected apps",
+        "agentic web"
+      ]
+    },
+    {
+      "id": "2026-10-29-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Chrome's AI autofill now pulls booking codes and order numbers from your Gmail",
+      "excerpt": "An opt-in Chrome update suggests form values it finds in your email, labeled as coming from Gemini.",
+      "summary": [
+        "Google is extending Chrome's autofill with an AI-powered mode that reads your Gmail to suggest values for online forms, such as flight confirmation numbers, membership IDs, tracking and order numbers, addresses and phone numbers. It builds on Personal Intelligence, the feature that already lets Gemini pull details from connected Google apps to answer questions.",
+        "The enhanced autofill is off until users turn it on in Chrome settings, and Google says sensitive data is encrypted. It is rolling out in the U.S. on desktop and in Gemini in Chrome on iOS and Android. In Google's preview, AI suggestions sit in the normal autofill dropdown under a 'Suggested by Gemini' label, next to the browser's saved entries."
+      ],
+      "whyItMatters": "Labeling which suggestions came from AI and where the data was found, inside a control people already know, is a low-friction way to add proactive help without hiding its source.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-10-28T17:00:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/autofill-ai-chrome.jpg?resize=1200,643",
+      "imageAlt": "Airline check-in form with an autofill dropdown showing a saved booking code and a second one labeled Suggested by Gemini",
+      "tags": [
+        "Chrome",
+        "Gemini",
+        "autofill",
+        "personalization",
+        "privacy"
+      ]
+    },
+    {
+      "id": "2026-10-29-ai-agents-ux-03",
+      "topic": "ai-agents-ux",
+      "headline": "Marissa Mayer's Dazzle interview revives the question of whether AI leaders build for real people",
+      "excerpt": "Backlash over an AI assistant describing a child for a school event puts tech leaders' use cases under scrutiny.",
+      "summary": [
+        "Former Yahoo CEO Marissa Mayer drew criticism after an interview about Dazzle, her new AI assistant that learns from a user's camera roll, in which she described using it to come up with three bullet points about her 10-year-old daughter for a school presentation. TechCrunch's Amanda Silberling argues the reaction reflects a wider pattern of AI executives pitching parenting and family life as things to hand off to software.",
+        "Mayer later said on X that she was testing the prototype, which surfaced old kindergarten projects as evidence of her daughter's traits. But in the same interview she also pitched Dazzle for planning birthday themes, playdates and vacations, and even for coordinating with her husband's assistant. The piece links this to earlier pushback against Sam Altman's comments on raising a child with ChatGPT."
+      ],
+      "whyItMatters": "Showcase use cases shape how people judge an AI product, so demos and onboarding should feature tasks users actually want to hand off, not personal moments they want to keep.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
+      "author": "Amanda Silberling",
+      "publishedAt": "2026-10-28T15:53:52+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/03/GettyImages-1172241499.jpg?resize=1200,728",
+      "imageAlt": "Marissa Mayer smiling at an event in front of a blue backdrop",
+      "tags": [
+        "Dazzle",
+        "Marissa Mayer",
+        "consumer AI",
+        "product strategy"
+      ]
+    },
+    {
+      "id": "2026-10-29-competitors-01",
+      "topic": "competitors",
+      "headline": "Microsoft says Microsoft 365 Copilot usage jumped 50% in a quarter as it regroups around 'Agents and Infra'",
+      "excerpt": "Microsoft's new reporting puts Microsoft 365 and Azure together in an Agents and Infra segment that grew 25%.",
+      "summary": [
+        "Microsoft reported fiscal first-quarter revenue of $92.28 billion, up 19%, with Azure bringing in $33.17 billion. For the first time it split results into two segments: Agents and Infra, which combines Azure, Microsoft 365 cloud and productivity tools and rose 25% to $76.8 billion, and Devices and Consumer, which fell 3%. CEO Satya Nadella said the number of people using Microsoft 365 Copilot rose 50% from the previous quarter.",
+        "Microsoft again declined to share how many paid Copilot seats it has, but CFO Amy Hood said the new Microsoft 365 E7 bundle has already reached millions of seats. Capital spending hit a record $45.2 billion, and the company guided to $96–97.1 billion in revenue next quarter, saying AI demand still exceeds supply."
+      ],
+      "whyItMatters": "Microsoft now reports its productivity suite as part of an agents business, a sign that work-management buyers will compare tools on agent capabilities and usage, not only on seats.",
+      "sourceName": "SiliconANGLE",
+      "sourceUrl": "https://siliconangle.com/2026/10/28/microsofts-stock-rises-on-solid-earnings-and-revenue-beat-with-azure-growing-48/",
+      "author": "Mike Wheatley",
+      "publishedAt": "2026-10-29T01:34:50+00:00",
+      "imageUrl": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/satyanadella-copilot-ignite2023-800x446.png",
+      "imageAlt": "Microsoft CEO Satya Nadella speaking on stage in front of a Copilot sign",
+      "tags": [
+        "Microsoft",
+        "Microsoft 365 Copilot",
+        "earnings",
+        "E7"
+      ]
+    },
+    {
+      "id": "2026-10-29-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Patrick Neeman: smaller, AI-equipped teams need design leaders who still do the work",
+      "excerpt": "A UX Collective essay argues the player-coach design lead is back and that AI evals are now part of craft.",
+      "summary": [
+        "In a UX Collective essay, Patrick Neeman, who has led design teams at Workday, Icertis and Evisort, argues that the era of headcount-driven design leadership is over. He ties the big design teams of the 2010s to near-zero interest rates and pandemic hiring, and says leaner budgets and AI tools now reward output per person, which brings back the player-coach: a leader who designs alongside the team and understands the business numbers.",
+        "He cites Figma surveys showing designers lag developers in using AI for core work and that designer participation in development doubled to 41% in a year. He suggests redefining craft away from visual polish toward problem solving, including writing the examples and evaluation criteria that specify how an AI feature should behave. He also warns that thinner middle management can break mentoring paths for junior designers."
+      ],
+      "whyItMatters": "Treating evaluation sets and quality criteria for AI outputs as design deliverables gives designers a concrete way to own how AI features behave.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/smaller-teams-want-design-leaders-who-make-again-heres-how-b8939221bd7b",
+      "author": "Patrick Neeman",
+      "publishedAt": "2026-10-28T09:37:57Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*C6ckPKkjzXCbYxsEwU-pqg.png",
+      "imageAlt": "A design lead points at a laptop screen while working with two designers at a shared table covered in sticky notes and wireframes",
+      "tags": [
+        "design leadership",
+        "AI evals",
+        "design teams",
+        "craft"
+      ]
+    },
+    {
+      "id": "2026-10-29-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Google unveils Gemini 4 Carbon, its strongest model, starting with cyber defenders",
+      "excerpt": "Two weeks after Argon, Google's new flagship tops a major intelligence index but ships first to security partners.",
+      "summary": [
+        "Google DeepMind introduced Gemini 4 Carbon, which it calls its strongest model, with a focus on cybersecurity and long-running tasks. It arrives two weeks after Gemini 4 Argon and ranks first on the new v5.0 of the Artificial Analysis Intelligence Index with a score of 59. Google reports 88.2% on SEC-bench Pro for finding vulnerabilities and 71.0% on CWE-bench for patching, and says Carbon is more than twice as good as Argon at generating secure code.",
+        "Access starts with a subset of cyber defenders and expands to trusted partners through Google's Fairwind Program; developers, businesses and consumers will follow once guardrails are refined, with no date given. Google says Carbon cuts unsupported claims roughly in half versus Argon and lists what is still missing instead of guessing. Introductory API pricing is $2 per million input tokens and $10 per million output tokens, rising later to $4 and $20."
+      ],
+      "whyItMatters": "A model that states what it could not verify, rather than filling gaps, gives interfaces something honest to show, so designers should plan room for caveats and blocked steps in agent output.",
+      "sourceName": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "author": "Koray Kavukcuoglu",
+      "publishedAt": "2026-10-28T17:00:00+00:00",
+      "featured": true,
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_social_share.width-1300.png",
+      "imageAlt": "Gemini 4 Carbon wordmark beside a glowing iridescent crystal surrounded by small floating number 4s on a blue background",
+      "tags": [
+        "Google",
+        "Gemini 4 Carbon",
+        "frontier models",
+        "cybersecurity"
+      ]
+    },
+    {
+      "id": "2026-10-29-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Anthropic launches Claude Enterprise reports that show teams what their AI spend produced",
+      "excerpt": "Managers get reports on what a team made with Claude, what it cost and where workflows broke down.",
+      "summary": [
+        "Anthropic released a set of reporting tools for enterprise customers that combine internal analytics and employee surveys. Managers can pick a date range and see what a team produced with Claude, how much it cost and where its workflows broke down, along with recommendations for getting better results. Anthropic is also adding pooled group budgets so teams can manage token spending together, and says the data is not used for training by default.",
+        "The launch comes as companies push for proof of return on AI spending. TechCrunch cites a Jellyfish report covering 276,000 developers in which Claude-based tools generated nearly a third of proposed code changes, and spending on such tools grew tenfold this year to about 2% of engineering costs. Investor financials also show Anthropic posted an operating profit in the second quarter."
+      ],
+      "whyItMatters": "Showing AI usage as work delivered per workstream, with cost alongside, is a pattern any team-facing AI product can borrow to make its value visible to admins and managers.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+      "author": "Tim Fernholz",
+      "publishedAt": "2026-10-28T19:19:58+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/claude-enterprise-social-smartreports-five-beats-gray200-animated-1080x608-v032.gif?w=1080",
+      "imageAlt": "Smart reports panel listing a group's Claude workstreams with bars for share of sessions and share of spend",
+      "tags": [
+        "Anthropic",
+        "Claude Enterprise",
+        "analytics",
+        "AI ROI"
+      ]
+    },
+    {
+      "id": "2026-10-29-ai-news-03",
+      "topic": "ai-news",
+      "headline": "Nvidia releases Nemotron 3.5 Transcribe, a free open-weight model for 40 languages",
+      "excerpt": "The 30-billion-parameter speech model separates up to eight speakers and runs on a single Nvidia chip.",
+      "summary": [
+        "Nvidia released Nemotron 3.5 Transcribe, a free, open-weight speech-to-text model that covers up to 40 languages, alongside version 2 of its open Granary speech dataset. Nvidia says the model translates 31 languages to and from English, handles recordings up to an hour long, distinguishes up to eight speakers and beats rivals on benchmarks such as Hugging Face's Open ASR Leaderboard.",
+        "At 30 billion parameters, it can run on a single chip, from the Jetson AGX Thor robotics controller to Blackwell data-center GPUs. It targets meeting and medical transcription apps and can be tuned for industry jargon, but it only works on recorded audio, not live streams. The release lands in a crowded month for voice AI, after Mistral's Voxtral 3 and ElevenLabs' Realtime."
+      ],
+      "whyItMatters": "Cheaper, open multilingual transcription with speaker labels makes meeting notes and voice capture realistic features for collaboration tools, not just premium add-ons.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+      "author": "Julie Bort",
+      "publishedAt": "2026-10-28T15:00:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/AI-on-the-tongue.png?resize=1200,600",
+      "imageAlt": "Illustration of an open mouth with the letters AI printed on the tongue, on a teal background",
+      "tags": [
+        "Nvidia",
+        "speech-to-text",
+        "open weights",
+        "voice AI"
+      ]
+    }
+  ]
+}
