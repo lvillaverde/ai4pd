@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-10-30",
+  "generatedAt": "2026-10-30T07:30:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-30-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "GitHub launches Copilot Fusion, which picks the model for each step of a coding task",
+      "excerpt": "At Universe, GitHub swapped manual model choice for automatic routing as agents now start over 40% of pull requests.",
+      "summary": [
+        "GitHub used its Universe conference on October 28 to launch Copilot Fusion, a system that decides which AI model, or mix of models, handles each step of a coding task, weighing what each step needs in reasoning, code generation, debugging and tool use. Microsoft says its top tier, Fusion Max, lands within two points of Claude Opus 5.5 Max on Artificial Analysis's Coding Agent Index at half the cost, and Satya Nadella pitched it as frontier quality up to 77% cheaper.",
+        "The same day, GitHub's Octoverse report said more than 40% of pull requests in September began as an agent-written draft, up from 17% in March, and that 61% of Copilot users who chose models used more than one. GitHub also introduced a Copilot app where cloud agent sessions move between app, editor, terminal and web, multi-repository Copilot projects, and pay-per-credit access for Enterprise customers."
+      ],
+      "whyItMatters": "Hiding the model picker behind automatic routing shifts the user's choice from 'which model' to 'how much effort', a simpler control that AI features in any product can borrow.",
+      "sourceName": "TNW",
+      "sourceUrl": "https://thenextweb.com/news/github-universe-copilot-fusion-octoverse-agents",
+      "author": "Ana Maria Constantin",
+      "publishedAt": "2026-10-28T18:50:35Z",
+      "featured": true,
+      "imageUrl": "https://media.thenextweb.com/2026/10/github-universe-2026-mona-octocat-graphic.jpg",
+      "imageAlt": "GitHub Universe '26 graphic with the Octocat mascot repeated in a trail of bright colors",
+      "tags": ["GitHub", "Copilot", "model routing", "coding agents"]
+    },
+    {
+      "id": "2026-10-30-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Wabi, the personal agent that builds mini apps inside a messenger, reaches a $1.25B valuation",
+      "excerpt": "Eugenia Kuyda's startup raised $55 million led by IVP after pivoting to a chat-based personal agent.",
+      "summary": [
+        "Wabi, founded by Replika creator Eugenia Kuyda, raised $55 million at a $1.25 billion valuation in a round led by IVP, with a16z, Forerunner and the Amazon Alexa Fund also taking part. Angel investors include Shopify's Tobi Lütke, Salesforce's Marc Benioff and Marissa Mayer.",
+        "The company started as a tool for building apps from prompts, then pivoted in September to a messenger-style product that acts as a personal agent and generates the small interfaces a task needs, such as meal planners, restaurant trackers, date-night plans, fitness programs or trivia games. The round lands amid big bets on consumer agents, including Instinct's recent $10 billion valuation."
+      ],
+      "whyItMatters": "Wabi treats generated mini apps as the agent's output inside a chat thread, a pattern for turning a conversation into a reusable, structured tool instead of another wall of text.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-10-29T14:35:26Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/09/wabi-20.jpg?resize=1200,620",
+      "imageAlt": "Wabi landing page reading 'A new kind of messenger that gets things done' above a phone showing a group trip chat with mini app cards",
+      "tags": ["Wabi", "personal agents", "generative UI", "funding"]
+    },
+    {
+      "id": "2026-10-30-ai-agents-ux-03",
+      "topic": "ai-agents-ux",
+      "headline": "Granola adds free, unlimited dictation that works in any Mac app",
+      "excerpt": "The meeting notetaker now lets Mac users hold the Fn key, speak, and get cleaned-up text in any app.",
+      "summary": [
+        "Granola, the $1.5 billion meeting-notes startup, launched a dictation feature on Mac: users press the Fn key, talk, and the app tidies and formats the speech before inserting it into whatever app they are in, from notes and AI prompts to email and chat replies. It is included on every plan with no word limits, and Granola says iOS and Windows versions are coming soon.",
+        "The move mirrors rival Wispr, valued at $2 billion, which added a meeting notetaker earlier this year. Voice tools such as Fireflies, Speechify and Monologue are likewise bundling notetaking and dictation, ending the brief run of single-purpose voice apps."
+      ],
+      "whyItMatters": "A single system-wide shortcut for voice input makes speaking prompts to an AI as fast as typing, which raises the bar for how quickly users expect to brief an assistant.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-10-29T17:54:38Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/Granola.jpg?resize=1200,675",
+      "imageAlt": "Granola's black spiral logo on a lime-green background",
+      "tags": ["Granola", "dictation", "voice input"]
+    },
+    {
+      "id": "2026-10-30-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Figma explains how it trained its own editing model, and how it measures whether the agent got better",
+      "excerpt": "Figma's in-house model now powers precise canvas edits, and users undo the agent's work 60% less often.",
+      "summary": [
+        "Figma's VP of software engineering Josh Clemm described the first-party model behind the Figma agent's everyday edits to existing designs. It began as supervised fine-tuning on more than 250,000 synthetic examples, each pairing a design in Figma's native format, an edit request and a validated result, and is now post-trained on Qwen 3.8 27B. On an internal editing benchmark it scored 77.8%, slightly ahead of a leading third-party model.",
+        "Figma grades the agent on structure, visual quality, instruction-following, speed and cost, with expert designers calibrating the scores. From beta to general availability, typical tasks got about 20% faster, user ratings rose 33%, and users undid the agent's work 60% less often. The team found fine-tuning alone produced designs too close to the training data and is moving to reinforcement learning with expert-written criteria."
+      ],
+      "whyItMatters": "Track how often people undo or revert an agent's actions as a core quality metric: it captures trust in the result far better than satisfaction surveys alone.",
+      "sourceName": "Figma Blog",
+      "sourceUrl": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
+      "author": "Josh Clemm",
+      "publishedAt": "2026-10-29T12:00:00Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/fb5d45c15530cb8862429e9c6a70c004ee6f76e4-3264x1836.jpg?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "Abstract illustration of a large green mechanical wheel threaded with winding golden ropes, surrounded by green and pale yellow circles",
+      "tags": ["Figma", "measuring agent UX", "undo", "evals"]
+    },
+    {
+      "id": "2026-10-30-competitors-01",
+      "topic": "competitors",
+      "headline": "monday.com launches Frontier to help customers get agents into production",
+      "excerpt": "At Elevate, co-CEO Eran Zinman said the hard part of AI is business change, and staff built 3,600 agents in one week.",
+      "summary": [
+        "At its Elevate 2026 conference in New York, monday.com introduced monday Frontier, a group that pairs managed services with deployment engineers to help customers find bottlenecks and launch AI projects within weeks. Co-CEO Eran Zinman told theCUBE the technology is not the hard part; the organizational change is, and customers now want proof of return because tokens are expensive.",
+        "The approach comes from an internal 'Customer Zero' program in which employees paused normal work for a week to build agents, producing more than 3,600, of which about 2,000 were still running. Zinman also said the company is rebranding as simply 'monday' to reflect a workspace shared by people and agents, while stressing that accountability stays with humans. theCUBE is a paid media partner of the event."
+      ],
+      "whyItMatters": "Work-management vendors now sell agent deployment help, not just agent features, so onboarding, templates and governance for building agents become part of the product experience.",
+      "sourceName": "SiliconANGLE",
+      "sourceUrl": "https://siliconangle.com/2026/10/29/autonomous-agents-need-deployment-experts-pay-off-mondayelevate/",
+      "author": "Jonathan Anthony",
+      "publishedAt": "2026-10-30T02:30:36Z",
+      "imageUrl": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/IMG_5558-1-scaled-e1793327100302.jpg",
+      "imageAlt": "monday.com co-CEO Eran Zinman smiling during an interview with theCUBE at Elevate 2026",
+      "tags": ["monday.com", "Elevate 2026", "AI agents", "work management"]
+    },
+    {
+      "id": "2026-10-30-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Jakob Nielsen: like, favorite and bookmark do three different jobs, so give each its own control",
+      "excerpt": "Nielsen argues marking features are cheap usability wins that break when one button tries to do several things.",
+      "summary": [
+        "In a long guide on UX Tigers, Jakob Nielsen separates marking features into three jobs: evaluating (a public, counted like, best shown as a heart), curating (a short private favorites list, a star) and retrieving (an unbounded private bookmark, a flag). His central rule is one job per control, with text labels on first use, because overloaded buttons turn private saves into public endorsements or skew recommendations.",
+        "He adds that people mark far more than they revisit, creating 'save debt', so products should design for thousands of marks with search, resurfacing and decay, cap pins, and capture context automatically on save. On AI, he says explicit marks become more valuable as signals for personal agents, but agent suggestions must stay visibly separate from what the user approved, and marks should be exportable."
+      ],
+      "whyItMatters": "Collaboration tools that mix pins, favorites and follows in one control should split them by job, and keep agent-suggested items visibly apart from user-chosen ones.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/distinction-marking",
+      "author": "Jakob Nielsen",
+      "publishedAt": "2026-10-28T11:00:40Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_0e639d60e3c54bb6b829d2a83619bcdd~mv2.jpg/v1/fill/w_1280,h_720,al_c/d496b6_0e639d60e3c54bb6b829d2a83619bcdd~mv2.jpg",
+      "imageAlt": "Painted red heart, gold star and blue bookmark icons labeled Like, Favorite and Bookmark on a dark background",
+      "tags": ["Jakob Nielsen", "interaction design", "bookmarks", "icons"]
+    },
+    {
+      "id": "2026-10-30-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Mistral releases the weights of Mistral Large 4, its trillion-parameter model aimed at cyber defense",
+      "excerpt": "The open-weight model is now downloadable on Hugging Face so organizations can run it on their own infrastructure.",
+      "summary": [
+        "Mistral published the weights for Mistral Large 4, a trillion-parameter model nicknamed 'Le Chonk' that it first introduced earlier in October, on Hugging Face and through its API. The company pitches it as 'sovereign cyber defense' for spotting, analyzing and responding to threats across code and IT systems, and says it matches China's GLM-5.3 while using 47% fewer tokens per task.",
+        "Mistral also claims the model tops all open models on agentic coding in Artificial Analysis's Coding Agent Index, a claim TechCrunch did not independently verify. Executives argued that open weights mean access cannot be cut off by a provider, and that defensive capabilities should spread quickly because attackers may use similar tools."
+      ],
+      "whyItMatters": "A frontier-scale open model that can run on-premises gives products serving regulated customers a credible option for keeping AI features inside their own infrastructure.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+      "author": "Lucas Ropek",
+      "publishedAt": "2026-10-29T17:00:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/06/GettyImages-1760104305.jpg?resize=1200,798",
+      "imageAlt": "Arthur Mensch, co-founder and CEO of Mistral AI",
+      "tags": ["Mistral", "open weights", "cybersecurity"]
+    }
+  ]
+}
