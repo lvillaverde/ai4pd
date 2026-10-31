@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-31T07:20:00-03:00",
+  "articles": [
+    {
+      "id": "2026-10-31-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "OpenAI lets ChatGPT Pro users text their Dot agent over iMessage and RCS",
+      "excerpt": "A US beta moves the always-on Dot agent out of ChatGPT and into the phone's own messaging app.",
+      "summary": [
+        "OpenAI has opened a beta that lets ChatGPT Pro subscribers in the United States reach their Dot, the agent that runs tasks and keeps watch on things for them, through ordinary text messages. Users can send it text, photos and voice notes from iMessage or RCS, and the agent can message them first when it has news about a task it is handling.",
+        "Setup happens from the Dot's profile in ChatGPT: pick Texting, verify a phone number and save the contact the agent sends back. Only the account holder can text the Dot, it can only reply to that person, and it gets no access to other conversations. Group chats and calls are not supported, users can limit texts to urgent matters, and anything that needs approval arrives as a link to review inside the app. Other plans and countries will have to wait."
+      ],
+      "whyItMatters": "Agents are leaving the app's chat panel for the channels people already check, so designers need rules for which updates deserve an interruption and where approvals should land.",
+      "sourceName": "Digital Trends",
+      "sourceUrl": "https://www.digitaltrends.com/computing/openai-now-lets-you-text-your-chatgpt-dot-agent-to-get-things-done/",
+      "author": "Manisha Priyadarshini",
+      "publishedAt": "2026-10-28T18:06:39-07:00",
+      "imageUrl": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/10/chatgpt-dot-agent-imessage-rcs.jpg?resize=1200%2C630&ssl=1",
+      "imageAlt": "Phone messaging screen with a Dot agent avatar named Iggy saying it can now be reached by text",
+      "tags": ["OpenAI", "ChatGPT", "Dot", "messaging", "notifications"]
+    },
+    {
+      "id": "2026-10-31-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "NN/g's Raluca Budiu: when agents act for people, UX has to design the whole human-agent journey",
+      "excerpt": "Nielsen Norman Group argues the field should become 'experience design' because the person is no longer the only user.",
+      "summary": [
+        "Raluca Budiu of Nielsen Norman Group explains why she now backs dropping 'user' from 'user experience'. Personal agents increasingly deal with businesses on a person's behalf, sometimes outside the channels a company planned for, so journeys now involve several actors rather than just several channels. She splits the work into three areas: people using products, agents using systems for people, and people and agents sharing the same system.",
+        "The third area is where she sees the hardest problems. In her flight-booking example the agent did its job, but the traveller could not sign in because their password manager was not available in the agent's browser. She recommends judging success by human goals rather than agent scores, evaluating handoffs explicitly, keeping qualitative research central for questions of autonomy and control, and testing nondeterministic systems with repeated runs and log inspection."
+      ],
+      "whyItMatters": "Map every point where control passes between a person and an agent (sign-in, approvals, resuming a task) and test those handoffs end to end, not just the agent's output.",
+      "sourceName": "Nielsen Norman Group",
+      "sourceUrl": "https://www.nngroup.com/articles/ux-vs-experience-design/",
+      "author": "Raluca Budiu",
+      "publishedAt": "2026-10-30T12:00:00Z",
+      "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/The_Role_of_UX_in_Agentic_Software_Factories_YO2Q558.png",
+      "imageAlt": "NN/g title card with the letters UX, where the U is selected on a canvas next to a Delete button",
+      "tags": ["NN/g", "experience design", "handoffs", "human-in-the-loop"]
+    },
+    {
+      "id": "2026-10-31-agentic-design-02",
+      "topic": "agentic-design",
+      "headline": "Jakob Nielsen: personalized AI advice persuades more, and AI summaries can quietly steer decisions",
+      "excerpt": "Two new studies show tailored arguments and leading summaries move people more than they notice, prompting new dark-pattern names.",
+      "summary": [
+        "Jakob Nielsen's October 30 roundup highlights two studies. In one, 240 US investors ranked stocks before and after chatting with an AI advisor; when it tied each argument to the person's job, income and values, the share who reconsidered rose from 35% to 59%, even though they did not rate it as more trustworthy. In another, 278 people judged Amazon products, and an AI summary shown before the reviews shifted opinions about twice as much as one shown after them.",
+        "Nielsen coins 'spinopsis' for a slanted summary placed above honest data and 'candorflage' for a steering verdict backed by a flood of accurate detail. He asks products to state whose interests shape a recommendation, check summary sentiment against the underlying data, link claims to evidence and measure changed behavior rather than satisfaction. The same issue covers churn of 55-80% among new AI subscribers and suggests memories expire or be scoped to a task."
+      ],
+      "whyItMatters": "When an agent summarizes or recommends, show the evidence behind each claim and disclose whose goals it is optimizing, because users underestimate how much the framing moves them.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/ux-roundup-20261030",
+      "author": "Jakob Nielsen",
+      "publishedAt": "2026-10-30T11:00:08Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_0fa4ab3aa325414b8b4557ac6011b01c~mv2.jpg/v1/fill/w_1280,h_720,al_c/d496b6_0fa4ab3aa325414b8b4557ac6011b01c~mv2.jpg",
+      "imageAlt": "Illustration of a doubtful man talking with a robot, beside a scale where a summary card outweighs several review cards",
+      "tags": ["Jakob Nielsen", "persuasion", "AI summaries", "dark patterns", "trust"]
+    },
+    {
+      "id": "2026-10-31-competitors-01",
+      "topic": "competitors",
+      "headline": "Work-management vendors spent October trying to prove their AI agents pay off",
+      "excerpt": "monday.com, Notion, Wrike, Linear and Atlassian all shipped agent updates as Microsoft and Google posted new Copilot and Gemini numbers.",
+      "summary": [
+        "UC Today's monthly work-management review gathers October's agent news. Microsoft said daily Microsoft 365 Copilot users rose nearly 50% in a quarter, and monday.com's co-CEO said enterprises adopt its agents about three times as fast as small businesses. Notion's October 19 overhaul gave agents browser access and runs of up to 24 hours, with Business and Enterprise workspaces moving to a new AI credit system on November 2.",
+        "Wrike now runs simple agent actions, such as fixed status changes, without spending AI allowances, and is building AI resource allocation where managers keep the final say. Linear's Loops can start from Slack and GitHub events and read Figma designs over MCP, while Atlassian lets engineers call a coding agent from Jira through Rovo Chat. The piece notes that many vendor productivity claims are self-reported and not independently audited."
+      ],
+      "whyItMatters": "Credits, allowances and proof of value are becoming part of the agent experience, so work-management products need clear ways to show what an agent did, what it cost and who paid for it.",
+      "sourceName": "UC Today",
+      "sourceUrl": "https://uctoday.com/work-management-news-octobers-ai-giants-have-to-show-their-work",
+      "author": "Rebekah Carter",
+      "publishedAt": "2026-10-31T09:01:00Z",
+      "imageUrl": "https://media.uctoday.com/article-images/1793364327017-Evidence-week.png",
+      "imageAlt": "Wooden blocks with the Microsoft, monday.com and Google logos on a desk beside tabbed notebooks and a city skyline",
+      "tags": ["monday.com", "Notion", "Wrike", "Linear", "Atlassian", "Microsoft 365 Copilot"]
+    },
+    {
+      "id": "2026-10-31-ux-design-01",
+      "topic": "ux-design",
+      "headline": "NN/g warns AI-native development playbooks shrink UX to a context file",
+      "excerpt": "Tanner Kohler says lab playbooks for agent-built software keep UX's context role but drop discovery and evaluation.",
+      "summary": [
+        "Tanner Kohler of Nielsen Norman Group reviews the AI-native software lifecycle playbooks published by Anthropic, Google and OpenAI, in which agents do most of the building and humans approve work at gates. In those models UX mostly shows up as context: Markdown instructions that steer generation. Kohler argues this leaves out two of UX's three jobs, deciding what is worth building and evaluating what gets built.",
+        "He walks through each stage, from intent files any product owner can approve to monitoring that tracks technical health but not usability. His advice is for UX teams to claim the context and skills early, write intent templates around user problems rather than solutions, define when a person must review a mockup or run a quick test, make research findings machine-readable and add abandonment and support-ticket spikes to monitoring."
+      ],
+      "whyItMatters": "Design teams working alongside coding agents should own the design-system and research context those agents read, and set explicit triggers for human usability review.",
+      "sourceName": "Nielsen Norman Group",
+      "sourceUrl": "https://www.nngroup.com/articles/ux-agentic-software-factories/",
+      "author": "Tanner Kohler",
+      "publishedAt": "2026-10-30T12:00:00Z",
+      "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/The_Role_of_UX_in_Agentic_Software_Factories.png",
+      "imageAlt": "NN/g title card with boxes on a conveyor belt passing through a doorway marked with an AI sparkle",
+      "tags": ["NN/g", "design process", "AI-native SDLC", "UX research"]
+    },
+    {
+      "id": "2026-10-31-ai-news-01",
+      "topic": "ai-news",
+      "headline": "OpenAI's updated Model Spec tells agents to ask before spending and treat memories as editable defaults",
+      "excerpt": "The October 29 revision centers model behavior on human intent and agency, with worked examples for agents acting on a user's behalf.",
+      "summary": [
+        "OpenAI published a revised Model Spec on October 29 built around five values, led by faithfulness to human intent and human agency, plus harm minimization, honesty and transparency, and care for people affected by the work. Several examples deal directly with agents: in a business-trip case, the preferred behavior is to propose booking terms and get approval rather than buying immediately, then act freely within the limits the user accepted.",
+        "The spec says remembered preferences are defaults, not rules, because they may be outdated, and models should make such assumptions visible and easy to correct. Costs well beyond what a request implies need explicit permission, and advice should flag a conflict once without nagging. OpenAI admits its models do not yet fully behave this way and gave no rollout timeline or performance data."
+      ],
+      "whyItMatters": "The spec reads like an interaction guideline: scoped approvals, visible assumptions and correctable memory are now expected behavior that agent interfaces must make room for.",
+      "sourceName": "The Neuron",
+      "sourceUrl": "https://www.theneuron.ai/news/openai-model-spec-chatgpt-human-intent/",
+      "author": "Marianne Sison",
+      "publishedAt": "2026-10-30T06:59:15Z",
+      "featured": true,
+      "imageUrl": "https://cdn.theneuron.ai/openai-chatgpt-human-intent-featured-image.png",
+      "imageAlt": "Paper-cut illustration of a hand holding an orange speech bubble in front of a teal thought cloud with a compass",
+      "tags": ["OpenAI", "Model Spec", "permissions", "memory", "agents"]
+    },
+    {
+      "id": "2026-10-31-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Google's first data center satellite is running Gemma 4 in orbit",
+      "excerpt": "The Suncatcher prototype passed commissioning and answered its first prompt with a haiku about space.",
+      "summary": [
+        "Google's Suncatcher prototype, a satellite built by Planet Labs and launched on a SpaceX Falcon 9 earlier in October, is now talking to the ground. It carries four Google TPUs and generates up to 1 kW of power, enough to run only one TPU at a time for about 20 minutes. After roughly three weeks of commissioning, its preloaded Gemma 4 model answered a first test prompt with a haiku.",
+        "The test campaign will study how the chips cope with heat and space radiation, which can flip bits and silently corrupt data; ground tests suggest inference holds up better than training would. Google plans two more satellites with more advanced TPUs in 2027, with more power and optical links between satellites, though earlier analysis says launch costs must fall sharply for the idea to work."
+      ],
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry",
+      "author": "Tim Fernholz",
+      "publishedAt": "2026-10-30T17:00:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/DSC_0298.jpg?resize=1200,800",
+      "imageAlt": "Satellite with unfolded solar panels in a Planet Labs clean room",
+      "tags": ["Google", "Suncatcher", "TPU", "Gemma 4", "infrastructure"]
+    }
+  ]
+}
