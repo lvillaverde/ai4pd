@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-01",
+  "generatedAt": "2026-11-01T07:40:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-01-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "DeepSeek open-sources Super-agent, a coding agent that picks up work from team chats without being asked",
+      "excerpt": "DeepSeek's Harness team published a prototype agent that watches a repo and group chats and replies with fixes and pull requests.",
+      "summary": [
+        "DeepSeek's Harness team announced Super-agent in a WeChat post on Saturday, October 31, and published the code on GitHub under the MIT license. The prototype watches a single GitHub repository and, optionally, Feishu (Lark) group chats; when an approved teammate asks for something, it opens a work item, handles it in its own session and replies in the same thread, often with a pull request. The repository passed 4,000 stars within a day, and Bloomberg framed the launch as a challenge to Anthropic's Claude Code.",
+        "The design is built around a persistent Router that talks to people and holds shared context, parallel Worker sessions that run tasks (a Worker that owns a pull request keeps responding to its review comments), and a Watchdog that catches failures and stalled loops. Unprompted work only happens under rules the team writes, and it starts in a mode that just logs what the agent would have done; a local web panel lists only the items that need a human decision. DeepSeek stresses it is a research prototype, not an official product, and recommends running it under a separate OS account."
+      ],
+      "whyItMatters": "Its approach to proactivity, rule-gated, starting in a log-only shadow mode, with a review queue that surfaces only decisions, is a concrete template for introducing agents that act without being asked.",
+      "sourceName": "ShiftDelete.Net",
+      "sourceUrl": "https://shiftdelete.net/en/deepseek-coding-agent",
+      "author": "Hakkı Alkan",
+      "publishedAt": "2026-11-01T10:01:14+03:00",
+      "featured": true,
+      "imageUrl": "https://en.shiftdelete.net/wp-content/uploads/2026/11/deepseek-coding-agent.webp",
+      "imageAlt": "Illustration of a glowing agent hub linked to floating chat and code panels above a desk at night",
+      "tags": ["DeepSeek", "coding agents", "proactive agents", "open source", "human-in-the-loop"]
+    },
+    {
+      "id": "2026-11-01-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Apple CEO John Ternus: AI done right should be invisible to the people using it",
+      "excerpt": "In a Wired interview, Ternus said Apple will lean on AI in new products but won't add it just to have it.",
+      "summary": [
+        "Apple CEO John Ternus, who took over at the start of September, defended the company's AI position in an interview with Wired's Steven Levy, as reported by TechCrunch on October 31. He acknowledged that everyone has an opinion about Apple's AI efforts but said he likes where the company stands, and that Apple will absolutely use AI in its new products, just not for its own sake. His test is whether people love the result, not whether they can tell AI or conventional software produced it.",
+        "Asked whether AI agents could eventually make apps unnecessary, Ternus allowed that this could make some things easier but described building products as a deeply human and personal craft that Apple enjoys. The interview comes after years in which Apple was seen as trailing in AI, largely because of the delayed Siri overhaul, which finally shipped this summer. The piece announces no new products, timelines or metrics."
+      ],
+      "whyItMatters": "It is a clear statement of the 'invisible AI' school of product design, where AI shows up as better outcomes inside existing flows rather than as a branded feature or a separate chat surface.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "author": "Anthony Ha",
+      "publishedAt": "2026-10-31T21:41:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2302418320.jpg?w=1024",
+      "imageAlt": "John Ternus smiling beside a MacBook at an Apple product event in Los Angeles",
+      "tags": ["Apple", "AI strategy", "Siri", "AI UX"]
+    },
+    {
+      "id": "2026-11-01-competitors-01",
+      "topic": "competitors",
+      "headline": "Microsoft's October Copilot update lets Cowork create and edit Planner plans, goals and tasks after user approval",
+      "excerpt": "Microsoft's monthly roundup also replaces Copilot Notebooks with team Workspaces and brings reusable skills to Copilot Chat.",
+      "summary": [
+        "Microsoft's 'What's New in Microsoft Copilot | October 2026' roundup, summarized by WindowsForum on October 30, says Cowork, Copilot's agent for longer multi-step work, can now view, create and update Planner plans, buckets, goals and tasks, and read and update OneNote notebooks. Changes to Planner are written back only after the user approves them. The capability reached Frontier early-access customers in October, with a worldwide rollout planned for November.",
+        "The update also makes Home the starting point of the Copilot app, with Chat for quick questions and drafts and Cowork for longer jobs, plus a shared pane for plugins, automations, workspaces, projects and history. Copilot Notebooks become Workspaces with live cursors, and creating Word, Excel and PowerPoint files inside them reaches all customers in January. Skills, saved plain-language instructions that colleagues can share and admins can deploy, expand from Cowork into Copilot Chat in November, and Autopilot arrives for Frontier in November. Microsoft calls all dates tentative."
+      ],
+      "whyItMatters": "Goals and tasks are becoming something an assistant edits directly, with an approve-before-write step, which sets user expectations for how agents should handle planning objects in work-management tools.",
+      "sourceName": "WindowsForum",
+      "sourceUrl": "https://windowsforum.com/news/microsoft-365-copilot-october-2026-update-workspaces-chat-skills-and-purview-dlp.450293/",
+      "publishedAt": "2026-10-30T19:27:00-04:00",
+      "imageUrl": "https://windowsforum.com/attachments/windowsforum-microsoft-365-copilot-october-2026-update-workspaces-chat-skills-and-purview-dlp-webp.188319/",
+      "imageAlt": "Three colleagues review an AI-powered productivity dashboard linking Office apps, team collaboration, automation, and security tools.",
+      "tags": ["Microsoft 365 Copilot", "Planner", "Cowork", "goals", "approvals"]
+    },
+    {
+      "id": "2026-11-01-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Figma explains Weave, its node-based canvas for repeatable AI image and video workflows",
+      "excerpt": "A new Figma guide walks through nodes, branches and packaged Weave tools that teammates can run without touching prompts.",
+      "summary": [
+        "Figma published an explainer on October 31 for Figma Weave, its platform that strings AI image and video generation and editing into connected, reusable workflows for creative teams with ongoing production work. A workflow is made of nodes, such as an image, a prompt, a generation step or an edit, and branches let a team explore different directions from the same starting point or run one prompt through several models side by side.",
+        "Editing steps like color correction, compositing, levels, crop and painting are nodes too, which gives direct control and avoids spending credits on a fresh generation. A Figma node links a frame from Figma Design, so changes to the original flow into the workflow, and a finished workflow can be packaged as a Weave tool that colleagues run without seeing nodes or prompts; community-built tools can also be tried inside Figma Design. The post gives no new pricing or launch date."
+      ],
+      "whyItMatters": "Packaging a visible, editable AI pipeline into a simple tool for others is a useful model for exposing AI automation to casual users without hiding how results are produced.",
+      "sourceName": "Figma Blog",
+      "sourceUrl": "https://www.figma.com/blog/the-tldr-on-figma-weave/",
+      "author": "Emma Webster",
+      "publishedAt": "2026-10-31T12:00:00Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/6ff46e4235ab02c904cb2673573d5fefd08312aa-3264x1836.png?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "A 'Spring Arrivals' campaign frame in Figma Design next to its linked node in Weave, with options to update the Figma design or review an update",
+      "tags": ["Figma", "Figma Weave", "generative AI", "workflows", "design tools"]
+    },
+    {
+      "id": "2026-11-01-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Alibaba's Qwen will power Siri and Apple Intelligence features for users in China",
+      "excerpt": "Alibaba says Qwen arrives in an iOS developer beta on November 4 and ships to Chinese users with iOS 27.3 in December.",
+      "summary": [
+        "Alibaba announced on Saturday that its Qwen model will be integrated into Apple Intelligence for users in China, according to Xinhua via CGTN. Qwen will handle text and image understanding and content generation behind Siri, Writing Tools and Visual Intelligence. Testing starts in the latest iOS developer beta from November 4, with release to Chinese users planned for iOS 27.3 in December, for people who buy an Apple Intelligence-capable iPhone in China or whose device location and Apple Account region are both set to China.",
+        "Users can choose whether to turn on the integration and what information to share, and Alibaba says it will not use requests or generated responses to train its models. Apple Intelligence was among seven on-device generative AI services that completed filings with China's cyberspace regulator in July. A Beijing University of Posts and Telecommunications researcher called it the first time a major global hardware maker has made a Chinese model its main system-level AI in China. The report carries no statement from Apple."
+      ],
+      "whyItMatters": "Swapping the underlying model by region while keeping the same features shows why AI experiences should be designed around stable capabilities and clear consent, not around one specific model.",
+      "sourceName": "CGTN",
+      "sourceUrl": "https://news.cgtn.com/news/2026-10-31/Alibaba-s-Qwen-to-integrate-into-Apple-Intelligence-in-landmark-deal-1RHilSeJsbK/p.html",
+      "publishedAt": "2026-10-31T23:02:00+08:00",
+      "imageUrl": "https://news.cgtn.com/news/2026-10-31/Alibaba-s-Qwen-to-integrate-into-Apple-Intelligence-in-landmark-deal-1RHilSeJsbK/img/65b9b882c2ae4d74bb9987f990ce8603/65b9b882c2ae4d74bb9987f990ce8603-1920.jpeg",
+      "imageAlt": "Blurred Apple Intelligence logo behind a phone screen showing the Qwen app icon",
+      "tags": ["Alibaba", "Qwen", "Apple Intelligence", "China", "Siri"]
+    },
+    {
+      "id": "2026-11-01-ai-news-02",
+      "topic": "ai-news",
+      "headline": "OpenAI reportedly cuts its funding round target to $20 billion amid an AI stock sell-off",
+      "excerpt": "Reports say OpenAI has secured about $11 billion so far after a tepid response from some large investors.",
+      "summary": [
+        "OpenAI has lowered the target for its latest funding round to $20 billion, the Financial Times reported on Friday, with a first close expected below that figure, TechCrunch wrote on October 31. The company was earlier reported to be raising $30 billion, first at a $1.4 trillion valuation and later at $1.25 trillion ahead of a planned IPO. The round is to be led by investors from the United Arab Emirates, and a later retail offering aimed at wealthy individuals could bring it up to the target.",
+        "The Wall Street Journal reported that OpenAI has secured $11 billion so far and that some large investors responded tepidly. TechCrunch points to timing: Wall Street has grown wary of heavy spending on AI infrastructure, contributing to a broad tech sell-off, and Anthropic's own planned IPO could face similar headwinds. OpenAI had not commented when the story was published."
+      ],
+      "whyItMatters": "Tighter capital for frontier labs can show up downstream as pricing changes and slower rollouts, so teams building on these models should plan for cost and roadmap volatility.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+      "author": "Anthony Ha",
+      "publishedAt": "2026-10-31T16:12:55Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/07/OpenAI-logo-green.jpg?w=1024",
+      "imageAlt": "OpenAI logo on a phone screen in front of a green stock-market chart",
+      "tags": ["OpenAI", "funding", "AI investment", "IPO"]
+    }
+  ]
+}
