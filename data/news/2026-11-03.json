@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T07:20:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-03-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Cyclon pitches a phone where an AI agent taps through your apps for you",
+      "excerpt": "A Y Combinator startup opened preorders for a Pixel 8a running an agent layer that operates apps the way a person does.",
+      "summary": [
+        "Cyclon, a company from Y Combinator's F26 batch, wants to replace the app-by-app smartphone routine with an AI layer that carries out multi-step jobs itself. Instead of waiting for developers to build integrations, the agent works inside existing apps by navigating their screens, can hop between several apps for one request, keeps running in the background, and reportedly generates a small app on the spot when the right one isn't installed.",
+        "The first units are Google Pixel 8a phones with Cyclon preinstalled, promised within 30 days of preorder, because the work happens almost entirely at the operating-system level; custom hardware that runs more models on-device is on the roadmap. Digital Trends notes the open question: every app has its own layout and quirks, and an agent that drives interfaces visually has to cope with all of them reliably or risk becoming another overpromising assistant. No price was given."
+      ],
+      "whyItMatters": "Its home screen is a single chat-style feed that reports completed actions per app, a useful reference for how to summarise background agent work across many tools in one place.",
+      "sourceName": "Digital Trends",
+      "sourceUrl": "https://www.digitaltrends.com/phones/cyclon-is-an-ai-phone-that-wants-to-replace-your-iphone/",
+      "author": "Rachit Agarwal",
+      "publishedAt": "2026-11-02T23:01:43-07:00",
+      "imageUrl": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/Cyclon-AI-phone.jpg?resize=1200%2C630&ssl=1",
+      "imageAlt": "Cyclon phone shown from the back and front, with the screen listing tasks the agent handled in WhatsApp, X and Amazon",
+      "tags": ["AI phone", "computer use", "agents", "Y Combinator"]
+    },
+    {
+      "id": "2026-11-03-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Musk confirms Grok Bot usage limits were cut on purpose because serving it cost too much",
+      "excerpt": "Subscribers saw weekly allowances jump to 100% over Halloween weekend; Musk says it was deliberate, not a glitch.",
+      "summary": [
+        "Over the Halloween weekend, some subscribers to Grok Bot, the agentic product from the newly public SpaceX, found their weekly usage meters suddenly maxed out without overnight use, with some reporting jumps from around 50% to 100%. On November 1 Elon Musk said this was intentional, explaining that the cost of serving Grok Bot had become unsustainably high relative to the revenue it brings in.",
+        "The change lands while SpaceX is promoting the product as a success story: its filing showed AI making up 52% of company income and a $431 million profit for its renamed Super Intelligence division, despite $1.2 billion in one-time costs linked to the Cursor acquisition. Musk has not said what limits subscribers should expect going forward, and he continues to promote Grok Bot's shopping help on X."
+      ],
+      "whyItMatters": "Silently moving a usage meter erodes trust fast; agent products need visible limits, advance notice of changes and a clear reset time.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs",
+      "author": "Amanda Silberling",
+      "publishedAt": "2026-11-02T16:23:21Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/03/grok-getty.jpg?resize=1200,800",
+      "imageAlt": "The Grok logo displayed on a mobile phone screen",
+      "tags": ["Grok", "usage limits", "pricing", "agents"]
+    },
+    {
+      "id": "2026-11-03-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "A practical guide to designing AI cost controls people can actually understand",
+      "excerpt": "Taras Bakusevych breaks AI pricing UX into two decisions: which unit users see, and when they learn the cost.",
+      "summary": [
+        "In UX Collective, Taras Bakusevych argues that a quick edit and a long-running agent often start from the same button even though one may read hundreds of files and retry steps. Since raw token counts mean little to people who budget in money, time and finished work, he frames cost design as two choices: the unit users see themselves spending (tokens, dollars, natural units, credits, tasks, outcomes or allowances) and the moment the cost is explained, before, during or after the work.",
+        "He shows how each unit shifts uncertainty between user and vendor, recommends showing a price or credible range before expensive batch jobs while keeping everyday chat under an allowance, and lists concrete rules: show every time window with an exact reset, explain the overflow order, give promotions an end date, state who pays for failed steps, and attribute credit deductions to the job that used them. Examples come from Claude, Cursor, Codex and Zapier."
+      ],
+      "whyItMatters": "Before an agent starts a large or scheduled run, show an estimated cost range and what happens at the limit, and afterwards attribute what was spent to that specific run.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/how-to-design-transparent-ai-cost-controls-a44fd52b9104",
+      "author": "Taras Bakusevych",
+      "publishedAt": "2026-11-01T14:33:14Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/0*8pfoiYvqGQZTA4wz.jpeg",
+      "imageAlt": "A hand dropping a coin marked with a question mark into a prompt bar, surrounded by cards for tokens, dollars, natural units, credits and usage allowances",
+      "tags": ["pricing UX", "credits", "transparency", "usage limits"]
+    },
+    {
+      "id": "2026-11-03-agentic-design-02",
+      "topic": "agentic-design",
+      "headline": "ElevenLabs data: voice agents beat chat once conversations run past two minutes",
+      "excerpt": "Comparing each agent's own voice and chat results, ElevenLabs found voice succeeded 31.7% more often on long calls.",
+      "summary": [
+        "ElevenLabs analysed production agents that handled at least 50 voice and 50 chat conversations between May and July 2026, comparing each agent with itself. Chat led by about nine points on exchanges under a minute, the two were roughly even between one and two minutes, and beyond two minutes voice led by 10.9 points, a 31.7% relative lift. Successful long voice calls also finished faster, averaging 4.6 minutes against 7 for chat.",
+        "A study with 98 people rebooking a simulated cancelled flight found 85% preferred voice, citing speed and empathy, and a test on 315 conversations linked a 16% latency cut to a 26% rise in success. The company recommends letting agents finish the job through backend actions, keeping latency low, sounding calm, and sharing one agent across channels. The research comes from a vendor that sells voice agents."
+      ],
+      "whyItMatters": "Pick the agent's channel by task complexity: offer voice or richer back-and-forth for long, stressful flows and keep short lookups in text, measuring success per agent.",
+      "sourceName": "ElevenLabs",
+      "sourceUrl": "https://elevenlabs.io/blog/voice-wins-complex-stressful-conversations",
+      "author": "Jake Tennant, Alanna Brown",
+      "publishedAt": "2026-11-02T12:00:00Z",
+      "imageUrl": "https://eleven-public-cdn.elevenlabs.io/payloadcms/o6an5k6csfk-Voice-cover.webp",
+      "imageAlt": "Blurred blue and maroon abstract background with the white title text of the ElevenLabs study",
+      "tags": ["voice agents", "research", "conversational UX", "latency"]
+    },
+    {
+      "id": "2026-11-03-competitors-01",
+      "topic": "competitors",
+      "headline": "Atlassian starts billing Rovo AI overage on 3 December, switched on by default",
+      "excerpt": "Rovo credits beyond each plan's pooled allowance will cost $10 per 1,000, with admin alerts at 80% and 100%.",
+      "summary": [
+        "A weekly Atlassian roundup published November 2 details how Rovo AI usage will be charged from 3 December 2026. Standard plans include 25 credits per user per month, Premium 70 and Enterprise 150; allowances are pooled across the organisation, reset monthly and do not roll over. Usage beyond the pool is billed at $0.01 per credit, and extra usage is enabled unless an admin turns it off or sets a spending cap.",
+        "Admins receive alerts at 80% and 100% of the allowance and can track consumption under Usage and Meters. The same roundup notes that Confluence Cloud XML export loses support on 1 December, that page bylines now collapse apps into one row, and cites Atlassian Teamwork Lab research on polished but unhelpful AI-written pages, where reviewers were 22% less likely to catch a critical flaw. The publisher sells a Confluence app."
+      ],
+      "whyItMatters": "Opt-out overage billing makes usage meters, threshold alerts and spending caps core admin UX for any work-management product with metered AI.",
+      "sourceName": "Capable",
+      "sourceUrl": "https://www.gocapable.com/blog/whats-new-atlassian-2-november-2026",
+      "author": "Jack Graves",
+      "publishedAt": "2026-11-02T12:00:00Z",
+      "imageUrl": "https://www.gocapable.com/_astro/whats-new-for-confluence-teams.iuK2t3wr_Z158cL9.jpeg",
+      "imageAlt": "Blue card titled What's new for Confluence teams, listing XML export ending, Rovo extra usage billing, byline apps and AI page standards",
+      "tags": ["Atlassian", "Rovo", "Confluence", "AI pricing"]
+    },
+    {
+      "id": "2026-11-03-ux-design-01",
+      "topic": "ux-design",
+      "headline": "A 1,786-variant Figma kit and the case for governing design systems with an LLM skill",
+      "excerpt": "A consultant revisits a large design-system consolidation and asks whether components should still be the source of truth.",
+      "summary": [
+        "Designer Pekka Oskari Puhakka looks back on consolidating several business units' design kits into one company-wide Figma library. Around 40 components ended up carrying 1,786 variants, down from roughly 4,000 in the working file; the button alone had 260, of which he says only 15 needed real design judgment while the rest were mechanical combinations of behaviours and sizes.",
+        "He notes that later Figma features such as typography variables, variable theming and slots could have cut much of that bulk, and that a coded system with tokens would have handled it more simply. His thesis is that rigid kits act as caches of past decisions, and that an LLM skill encoding the system's rules, able to generate components and assets for several tools through MCP, may be a better long-term basis than components, code or documentation alone, though he says this still needs proving."
+      ],
+      "whyItMatters": "Separate the few decisions a component really encodes from the arithmetic around them, so tokens or agent rules can generate the rest.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/state-of-a-system-5c8473db1e9",
+      "author": "Pekka Oskari Puhakka",
+      "publishedAt": "2026-11-02T17:56:46Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*MNloQFcLyMhVm6CHrcqNqA.png",
+      "imageAlt": "A segmented color wheel split diagonally between a light and a dark background",
+      "tags": ["design systems", "Figma", "variants", "LLM"]
+    },
+    {
+      "id": "2026-11-03-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Anthropic's IPO filing warns it may soon reach AI-driven self-improvement",
+      "excerpt": "The amended S-1 says future models may imminently meet its threshold for dramatically accelerated, AI-driven research.",
+      "summary": [
+        "Anthropic's revised S-1/A, filed Monday ahead of its planned listing, adds risk factors about recursive self-improvement, the point where AI meaningfully speeds up the building of better AI. The company admits it has previously failed to recognise significant acceleration from its own AI-assisted research until after the fact, and says internal estimates for future models suggest it may imminently meet its Responsible Scaling Policy definition of dramatically accelerated progress attributable to AI.",
+        "Anthropic stresses that no current model has been designated as crossing that threshold and that it is still assessing the data. It says it does not expect to let Claude design successive frontier models without meaningful human oversight and is considering policy updates to keep humans in control. TechCrunch notes that S-1 filings double as marketing, but argues the warning deserves attention given how quickly Claude's coding, math and security skills have advanced."
+      ],
+      "whyItMatters": "If capability jumps arrive faster and less predictably, products built on these models need evaluation and release processes that can absorb sudden behaviour changes.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "author": "Julie Bort",
+      "publishedAt": "2026-11-02T22:14:50Z",
+      "featured": true,
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Recursive-Neural-Spiral-in-Circuitry.png?resize=1200,600",
+      "imageAlt": "Illustration of glowing neural-network trees growing out of a golden spiral above a dark circuit board",
+      "tags": ["Anthropic", "IPO", "AI safety", "Responsible Scaling Policy"]
+    },
+    {
+      "id": "2026-11-03-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Meituan releases LongCat-2.5, a 1.6-trillion-parameter model for long agentic coding work",
+      "excerpt": "The multimodal model activates about 48B parameters per token and is live in Meituan's chat app and API.",
+      "summary": [
+        "Chinese delivery giant Meituan launched LongCat-2.5 on November 2, a multimodal model with 1.6 trillion total parameters and roughly 48 billion active per token. It targets tasks where agents must work for long stretches, with stronger visual understanding and coding, and handles images and text in one unified token framework for visual coding, creative design and 3D work.",
+        "Meituan says it trained on longer task sequences, used large-scale reinforcement learning on complex codebases and full software projects, and turned real agent failures into reproducible training tasks. The model is available through Meituan's chat service and API platform, with GitHub and Hugging Face releases planned. TechNode's report gives no benchmark scores or pricing."
+      ],
+      "whyItMatters": "Another very large model tuned for long-running agent tasks, with open releases planned, widens the choice of engines for products that delegate multi-hour work.",
+      "sourceName": "TechNode",
+      "sourceUrl": "https://technode.com/2026/11/02/meituan-launches-longcat-2-5-multimodal-ai-model-for-extended-coding-tasks/",
+      "publishedAt": "2026-11-02T04:32:41Z",
+      "imageUrl": "https://i0.wp.com/technode.com/wp-content/uploads/2026/11/feed-20261102-cn-371978.png?fit=2350%2C1000&ssl=1",
+      "imageAlt": "Meituan's yellow app icon and Chinese wordmark on a light grey background",
+      "tags": ["Meituan", "LongCat", "open models", "coding agents"]
+    }
+  ]
+}
