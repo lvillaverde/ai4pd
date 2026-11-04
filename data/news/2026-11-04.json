@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T07:03:47-03:00",
+  "articles": [
+    {
+      "id": "2026-11-04-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Apple opens Siri AI to every developer through App Intents and multi-step 'skills'",
+      "excerpt": "A developer preview in the iOS 27.3 betas lets any app expose its content and actions to the new conversational Siri.",
+      "summary": [
+        "Apple has started a developer preview that lets any app plug into Siri AI, the more conversational and personal version of its assistant. It arrives in the iOS, iPadOS, macOS, watchOS and visionOS 27.3 betas. Apps expose their data and actions through App Intents, and a new concept called skills lets developers teach Siri to chain several actions into one response for a complex request. Siri AI can also surface any item in the Spotlight semantic index, not only items that fit a predefined schema.",
+        "Apple has already wired the capability into 15 of its own apps, including Mail, Notes, Reminders, Calendar and Files, and users can ask Siri what it can do inside each one. App Store submissions open in the spring, with a consumer launch promised in a few months. Server-side requests will have daily usage limits, with paid expanded access planned later. The feature is not yet available in the EU on iOS, iPadOS and watchOS, and Apple will publish usage policies at a later date."
+      ],
+      "whyItMatters": "Assistants that act through declared app actions make the quality of your action model — names, parameters, confirmations — part of the user experience, even when your own UI never appears.",
+      "sourceName": "Apple Developer",
+      "sourceUrl": "https://developer.apple.com/news/?id=gdk2umrf",
+      "publishedAt": "2026-11-03T12:00:00Z",
+      "featured": true,
+      "imageUrl": "https://developer.apple.com/news/images/og/siri-ai-dark-og.jpg",
+      "imageAlt": "Siri AI app icon: a glowing glass sphere with a light wave inside a rounded square on a black background",
+      "tags": [
+        "Apple",
+        "Siri",
+        "App Intents",
+        "assistants",
+        "developer preview"
+      ]
+    },
+    {
+      "id": "2026-11-04-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Netflix tests AI Discover, a TV tab that recommends by mood and lets viewers tune picks",
+      "excerpt": "A small group of US members on TVs gets a new Discover tab built around themes, conversational input and per-title feedback.",
+      "summary": [
+        "Netflix has started testing AI Discover, a new tab in its TV app marked with a red gem icon and a New label. Instead of rows of titles, it opens with themes such as Something Light, Scare Me, Family Movie Night and Quick Watches, each previewed with a clip. Picking a theme shows matching titles, offers narrower themes, or a Something Different option for a fresh set, and viewers can also say in their own words what they are looking for.",
+        "Each title carries a Tune Your Recommendations button for keeping a suggestion or asking not to see it again, and Netflix says the tab will remember rejected titles and explain its results. The test starts with a small group of English-language US members on supported TVs and will widen over the coming weeks. Netflix calls it a test kitchen: ideas that work may move into the main app, while others will be dropped."
+      ],
+      "whyItMatters": "It shows a calm alternative to the chat box: start from curated intents, let people refine with lightweight controls, and explain why each result appears.",
+      "sourceName": "Netflix",
+      "sourceUrl": "https://about.netflix.com/en/news/introducing-ai-discover",
+      "publishedAt": "2026-11-03T12:00:00Z",
+      "imageUrl": "https://images.ctfassets.net/4cd45et68cgf/4sev3PTKFV9Pf9S9qLijE4/f55e962bb248247c5ec5a3467a13dbf6/AIDiscover-Hero-1440x810.gif",
+      "imageAlt": "Animated red four-pointed gem glowing on a dark red background, the AI Discover icon",
+      "tags": [
+        "Netflix",
+        "recommendations",
+        "AI discovery",
+        "TV UX"
+      ]
+    },
+    {
+      "id": "2026-11-04-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Everyone is building AI agents. Who's designing the stop button?",
+      "excerpt": "A designer argues the key decision in agent products is where AI interpretation ends and predictable, reviewable execution begins.",
+      "summary": [
+        "In UX Collective, designer Michał Krztoń argues that teams are wrong to treat more autonomy as automatically better. He opens with research in which the same prompt at temperature zero produced 80 different completions across 1,000 runs, and a simple calculation: ten steps that each succeed 95% of the time complete end to end only about 60% of the time. Variation is fine in an answer, he says, but becomes a problem once answers turn into bookings, record updates or document transfers.",
+        "He contrasts two products. Routine Labs uses generative AI to build healthcare automations but runs them as repeatable, logged workflows with status indicators and execution histories instead of a chatbot. Zauber lets its freight agents interpret messy emails and packing lists, but flags conflicting values, such as two different shipment volumes, shows where each came from and asks an operator to confirm before booking. His point is that some steps should stay a form or a confirmation button."
+      ],
+      "whyItMatters": "Map each agent workflow into interpret, execute and confirm zones, and send people only to the fields where sources disagree, with the evidence shown side by side.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/your-ai-is-non-deterministic-but-your-product-cant-be-3ec2a0cf870c",
+      "author": "Michał Krztoń",
+      "publishedAt": "2026-11-03T22:40:34Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*4xb0tuwC90tLWJBgYVaomg.png",
+      "imageAlt": "Pixel-art flow diagram: a person's fixed steps branch into many AI paths that hit a bar labeled 'Where AI Stops'",
+      "tags": [
+        "autonomy",
+        "human-in-the-loop",
+        "determinism",
+        "workflows",
+        "error handling"
+      ]
+    },
+    {
+      "id": "2026-11-04-agentic-design-02",
+      "topic": "agentic-design",
+      "headline": "Computer-use agents fail at the same bad UX people quietly work around",
+      "excerpt": "A designer at an agent company finds that agents stall on vague labels, hidden state, pop-ups, timeouts and silent success.",
+      "summary": [
+        "Stephen Patterson, who designs at Deck, a company that runs computer-use agents on utility, vendor and back-office portals, writes that thousands of agent runs fail in very ordinary places. Agents cannot guess, backtrack on a hunch or ask a colleague, so they stop where people simply muddle through. He groups the failures into five patterns: ambiguous labels such as two buttons reading Continue and Submit, state hidden behind hover or colour, surprise overlays, sessions that expire mid-task, and success that is never clearly confirmed.",
+        "He links the fixes to accessibility, calling agents the newest constrained user, but notes three limits: some friction, like confirming a payment, should stay, ideally replaced by granting the agent limited authority at handoff; some sites rightly block bots; and agents also misread dense layouts people handle easily. He closes with review questions, such as whether a flow could be completed by someone who cannot guess and whether success announces itself."
+      ],
+      "whyItMatters": "Treat agent run logs as usability data, and design delegation as an explicit grant of scoped authority instead of stripping out confirmations for agents.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/agents-struggle-with-the-same-bad-ux-we-do-98415f2b8981",
+      "author": "Stephen Patterson",
+      "publishedAt": "2026-11-03T22:36:33Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*P84_tG2F_rrE_MWlHlPGJA.jpeg",
+      "imageAlt": "Two buttons, one says Continue, the other Submit",
+      "tags": [
+        "computer use",
+        "agents as users",
+        "accessibility",
+        "usability",
+        "delegation"
+      ]
+    },
+    {
+      "id": "2026-11-04-competitors-01",
+      "topic": "competitors",
+      "headline": "Notion moves every workspace to two credit pools and bills shared agents to their owners",
+      "excerpt": "From 2 November, existing Business and Enterprise workspaces get separate Standard and Select AI credit pools per seat.",
+      "summary": [
+        "Pricing analyst Steven Forth details Notion's latest AI pricing change, its fourth model in under four years. Each Business and Enterprise seat now gets 1,500 Standard credits a month, where Notion's Auto router picks the model, and 500 Select credits, used when a person chooses a model or runs a Custom Agent. Existing workspaces moved over on 2 November. Notion says Auto handles simple tasks for about 5 credits versus roughly 50 on a frontier model, at about 90% of the quality.",
+        "Custom Agents created from 2 November charge their owner's Select credits by default even when shared, though admins can fund them from the workspace instead. AI Meeting Notes will consume Standard credits from 1 December, at about 10 per hour-long meeting, while Workers stay free in beta. Forth argues the meter is personal while agent value is team-level, so owners of shared agents and heavy meeting users will feel the pressure first."
+      ],
+      "whyItMatters": "When agents are billed per owner, the interface has to show who pays for a shared agent and what a run will cost before people rely on it.",
+      "sourceName": "Pricing Innovation (Substack)",
+      "sourceUrl": "https://pricinginnovation.substack.com/p/notion-pricing-update",
+      "author": "Steven Forth",
+      "publishedAt": "2026-11-02T13:39:15Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!kW93!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc0850917-03fe-47ed-a487-2d48f5fcad1f_3200x1800.png",
+      "imageAlt": "Timeline chart 'From one meter to two pools' showing Notion's 2026 credit pricing changes from February to December",
+      "tags": [
+        "Notion",
+        "pricing",
+        "AI credits",
+        "custom agents"
+      ]
+    },
+    {
+      "id": "2026-11-04-competitors-02",
+      "topic": "competitors",
+      "headline": "ZoomInfo brings company and contact data into Notion AI chat through MCP",
+      "excerpt": "Notion Business and Enterprise users can add ZoomInfo as a connector and get answers grounded in its go-to-market data.",
+      "summary": [
+        "ZoomInfo has released a connector that brings its sales intelligence into Notion AI using the Model Context Protocol. Customers whose Notion workspace is on a Business or Enterprise plan can add ZoomInfo in Notion AI chat and pull company details, contacts and buying signals into notes, project docs and prompts, for tasks such as building campaign audiences, sizing a market or preparing for account calls. It runs on ZoomInfo's GTM.AI layer, which the company says covers about 100 million companies and 500 million contacts.",
+        "Notion workspace admins decide which connections people can use, and ZoomInfo cites access control, permissions, data lineage and audit logging as enterprise safeguards. Basic tools such as contact search and enrichment work on every ZoomInfo plan, while some advanced tools need extra entitlements or credits. Notion's head of ecosystem framed the launch as part of making its AI more useful by reaching the context teams already depend on."
+      ],
+      "whyItMatters": "Work-management AI is becoming a hub for third-party connectors, so admin controls and clear source attribution in answers become core design work.",
+      "sourceName": "Business Wire (via Yahoo Finance)",
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/zoominfo-launches-mcp-integration-notion-133000407.html",
+      "publishedAt": "2026-11-03T13:30:00Z",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/447401ff457cdd56e97b2227589bc1365591d49f8edff12dd879f9ddd02f2e24/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbusiness-wire.com%2F88f7fc35924afc379ee18a5644945a1c.jpg",
+      "imageAlt": "Red ZoomInfo logo tile on a dark background with a wave of white dots",
+      "tags": [
+        "Notion",
+        "ZoomInfo",
+        "MCP",
+        "connectors"
+      ]
+    },
+    {
+      "id": "2026-11-04-ux-design-01",
+      "topic": "ux-design",
+      "headline": "NN/G: AI-native development playbooks leave UX only as context for code generation",
+      "excerpt": "Nielsen Norman Group says UX must also decide what's worth building and evaluate what agents ship, not just feed them context.",
+      "summary": [
+        "Nielsen Norman Group's Tanner Kohler reviews the AI-native software lifecycles promoted by Anthropic, Google and OpenAI, in which agents do most of the planning, design, building and testing while humans approve at gates and work is passed along as Markdown files such as intent, spec and plan. He finds UX has no defined role: intent is not tied to user needs, AI mockups are mostly UI rather than validated UX, testing checks builds against the team's own artifacts, and monitoring tracks technical health rather than usability.",
+        "He proposes three roles for UX: deciding what is worth building, evaluating what gets built, and supplying context to AI. Concrete steps include intent templates built around user problems, user-value acceptance criteria agreed with product owners, rules for when a change needs a usability check, and UX distress signals such as task abandonment wired into monitoring. He also flags a conflict of interest, since the labs gain when companies adopt these workflows."
+      ],
+      "whyItMatters": "Design teams can claim a place in agent-driven delivery by owning machine-readable research and design-system context plus explicit triggers for human UX review.",
+      "sourceName": "Nielsen Norman Group",
+      "sourceUrl": "https://www.nngroup.com/articles/ux-agentic-software-factories/",
+      "author": "Tanner Kohler",
+      "publishedAt": "2026-10-30T17:00:00Z",
+      "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/The_Role_of_UX_in_Agentic_Software_Factories.png",
+      "imageAlt": "NN/G title card with orange cubes on a purple conveyor belt passing through a frame with a sparkle icon",
+      "tags": [
+        "NN/G",
+        "AI-native SDLC",
+        "design process",
+        "research"
+      ]
+    },
+    {
+      "id": "2026-11-04-ux-design-02",
+      "topic": "ux-design",
+      "headline": "A designer's rule for AI: delegate work that can be checked, keep the decisions",
+      "excerpt": "Patrick Neeman sorts his work by whether an outside check exists: AI drafts and builds, he keeps the calls that set direction.",
+      "summary": [
+        "Patrick Neeman, who has designed machine-learning products for over a decade, explains how he splits work with AI. Tasks with an external check, such as research where sources can be opened, drafts graded against his own style rules, prototypes he can click through and repeated jobs turned into agent skills, go to models. Work that sets the standard itself, like a thesis, arithmetic or irreversible analysis, stays with him because nothing outside it can catch a wrong answer.",
+        "He grounds the split in the jagged-frontier research, in which consultants using GPT-4 finished more tasks faster and better inside the model's range but did worse than people alone outside it, so task difficulty is a poor guide. He also cites Figma's 2026 AI report, where the share of designers taking part in development rose from 21% to 41% in a year, and stresses he hands over the typing, not the judgment of when work is good enough."
+      ],
+      "whyItMatters": "Asking whether an output has an outside check is a simple test for which steps an AI feature can run on its own and which need a human sign-off.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/i-let-ai-build-i-dont-let-ai-decide-b3892a87feb3",
+      "author": "Patrick Neeman",
+      "publishedAt": "2026-11-03T22:37:40Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*Lytrg3JiMtGnqGvqQh-JSQ.png",
+      "imageAlt": "Watercolour sketch of a workbench split in two: tools and a laptop on one side, a single open notebook and chair on the other",
+      "tags": [
+        "AI workflow",
+        "delegation",
+        "prototyping",
+        "design practice"
+      ]
+    },
+    {
+      "id": "2026-11-04-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Anthropic open-sources FlashProve, cryptographic proof of which model wrote a reply",
+      "excerpt": "The research prototype lets anyone verify that an output came from committed model weights without seeing those weights.",
+      "summary": [
+        "Anthropic has released FlashProve, an open-source research prototype for provable inference. A provider publishes a short commitment to its model weights, then attaches a zero-knowledge proof to each response showing that the committed model produced those tokens from that prompt. Anyone holding the commitment, prompt and reply can verify it without access to the weights. On Llama 4 Maverick, a 400-billion-parameter mixture-of-experts model, proving ran at about 110 tokens per second on one H100, with proofs of about 19 MB per 1,024-token request.",
+        "Costs are still steep: proving takes roughly 70 to 95 times the GPU time of normal inference, and verification takes about 17 seconds on a 24-thread CPU. The proofs cover greedy decoding on integer weights, a 1,024-token context and after-the-fact checks rather than live serving, and only one model architecture has been tested. Everything ships under Apache 2.0, including a prover, a C++ verifier and formal proofs in Lean, but not the model weights."
+      ],
+      "whyItMatters": "Verifiable provenance could eventually let products prove which model handled a request, a new trust signal for audits and regulated customers.",
+      "sourceName": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/research/provable-inference",
+      "publishedAt": "2026-11-02T12:00:00Z",
+      "imageUrl": "https://www-cdn.anthropic.com/images/4zrzovbb/website/2eba335a28661a8253187053fa36add230af728b-2000x1125.jpg",
+      "imageAlt": "Anthropic logo",
+      "tags": [
+        "Anthropic",
+        "provable inference",
+        "zero-knowledge proofs",
+        "open source",
+        "trust"
+      ]
+    },
+    {
+      "id": "2026-11-04-ai-news-02",
+      "topic": "ai-news",
+      "headline": "OpenAI says GPT-6 Astra designed a pocket Codex device in under a week",
+      "excerpt": "OpenAI's hardware team used the model for the enclosure, circuit board, firmware and interface of a device for talking to Codex.",
+      "summary": [
+        "OpenAI says its hardware team used GPT-6 Astra to design, as a side project, a handheld device for talking to its Codex coding agent in under a week. According to the company, the model handled the enclosure, the circuit-board layout including parts selection and trace routing, the firmware and the user interface, and a contract manufacturer produced a small prototype batch in under a month. Astra's highest reasoning setting scores 0.594 on the BenchCAD 2.0 benchmark.",
+        "The account comes from OpenAI and needed several revision rounds, because the model did not always account for manufacturing constraints, tolerances and assembly details. OpenAI also mentions an undisclosed internal model scoring 0.875 on the same benchmark, and says token use by its hardware teams for CAD, drawings and simulation has grown 23 times since February. There is no word on whether the device will be sold."
+      ],
+      "whyItMatters": "Design-to-build loops are compressing beyond software, so designers will increasingly review AI-made artifacts against real-world constraints rather than draw them.",
+      "sourceName": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
+      "author": "Matthias Bastian",
+      "publishedAt": "2026-11-03T20:15:45Z",
+      "imageUrl": "https://the-decoder.com/wp-content/uploads/2026/11/openai_ai_hardware.png",
+      "imageAlt": "Hand holding a translucent purple handheld device with a small screen showing a cartoon Codex character",
+      "tags": [
+        "OpenAI",
+        "GPT-6 Astra",
+        "hardware",
+        "Codex"
+      ]
+    },
+    {
+      "id": "2026-11-04-ai-news-03",
+      "topic": "ai-news",
+      "headline": "Anthropic extends its EU-driven text watermark to older Claude models, with no opt-out",
+      "excerpt": "An invisible pattern in Claude's wording now covers Mythos 5, Opus 4.7, Opus 4.6 and Sonnet 4.6 for users worldwide.",
+      "summary": [
+        "Anthropic is extending a hidden watermark, first applied to its newest models in August in response to EU rules on generative AI, to older models including Mythos 5, Opus 4.7, Opus 4.6 and Sonnet 4.6, The Independent reports. The mark is a pattern woven into word choices that automated tools can detect. It applies to all users globally, including outside the EU, and there is no opt-out.",
+        "Only parties eligible under EU law, such as regulators, researchers and journalists, plus companies checking AI Act compliance, can run detection; ordinary users cannot test their own text. Anthropic concedes that short texts may not carry enough signal, and critics note that proofreading with Claude could trigger detection while rewording through another model may remove it. Changing sampling settings reportedly strips it on some older models. OpenAI uses a similar scheme, applied automatically only in Europe."
+      ],
+      "whyItMatters": "AI-written text in products may soon carry provenance signals, so disclosure and labelling decisions need design attention now.",
+      "sourceName": "The Independent (via Yahoo Finance)",
+      "sourceUrl": "https://uk.finance.yahoo.com/news/anthropic-claude-now-leave-trail-151343512.html",
+      "author": "Andrew Griffin",
+      "publishedAt": "2026-11-02T15:13:00Z",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/489ec7a8af500567adf10c8e803be7dac3f761406f328407ec87e7eced35ab6b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_independent_577%2F00f0ed76e69ca55dbfbfd35cf75cb9d6.jpg",
+      "imageAlt": "Anthropic logo lettering on a lit wall with a blurred person in the foreground",
+      "tags": [
+        "Anthropic",
+        "watermarking",
+        "EU AI Act",
+        "provenance"
+      ]
+    }
+  ]
+}
