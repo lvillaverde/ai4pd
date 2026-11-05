@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T07:05:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-05-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Adobe's marketing agent now works inside ChatGPT, Claude, Gemini and Copilot",
+      "excerpt": "Marketers can plan campaigns and adjust customer journeys from the AI assistant they already use instead of opening Adobe's apps.",
+      "summary": [
+        "Adobe has made CX Enterprise Coworker, its agent for customer-experience work, available inside third-party assistants: ChatGPT (as a plugin), Claude, Databricks Genie, Gemini for business and Microsoft Copilot. From those chats, marketing teams can plan campaigns, analyse performance, forecast audiences, adjust customer journeys and resolve workflow conflicts. Support for Amazon Quick, IBM and Snowflake is expected later.",
+        "The agent is built on Model Context Protocol and Agent2Agent, and Adobe says human oversight stays in place. New pre-built connectors let one request pull data or trigger actions in partner tools such as Amazon Ads, Demandbase, Meta's campaign tools, Microsoft Work IQ and Snowflake Cortex AI. Adobe also says integrators including Accenture and Deloitte Digital, and agencies such as WPP and Publicis, are building on it."
+      ],
+      "whyItMatters": "Agents are leaving their home apps: work products now need to be designed for the moment their agent is invoked from someone else's chat window, with approvals and results that still make sense there.",
+      "sourceName": "ChannelLife Australia",
+      "sourceUrl": "https://channellife.com.au/story/adobe-puts-cx-enterprise-coworker-inside-ai-assistants",
+      "author": "Joseph Gabriel Lagonsin",
+      "publishedAt": "2026-11-05T12:00:00Z",
+      "imageUrl": "https://channellife.com.au/uploads/story/2026/11/05/compatible_image001-story-323532.jpg",
+      "imageAlt": "Mock-up of a ChatGPT prompt installing the Adobe CX Enterprise Coworker plugin, next to campaign assets and a governance agent card marked Approved",
+      "tags": ["Adobe", "agents", "MCP", "A2A", "ChatGPT", "Copilot"]
+    },
+    {
+      "id": "2026-11-05-competitors-01",
+      "topic": "competitors",
+      "headline": "Smartsheet launches vsActual, with a drift agent that compares plans to what is really happening",
+      "excerpt": "At Engage 2026, Smartsheet unveiled an agent-driven planning platform plus scheduled agentic workflows for status reports.",
+      "summary": [
+        "Smartsheet used its Engage 2026 conference to introduce vsActual, a planning and execution platform where AI agents watch work across enterprise systems, measure progress against strategic objectives and suggest changes. A drift-detection agent continuously looks for emerging problems, other agents write executive reports, and creation and data-quality agents build project structures, dashboards and reports or flag bad data. It rests on an Execution Graph built from roughly two decades of workflow data.",
+        "Alongside it, new Agentic Workflows can schedule recurring jobs such as status reports and risk assessments, and early-access conversational integrations cover GitHub, Zendesk, Airtable and Monday.com. vsActual can pull budgets, schedules and staffing from Oracle, SAP, Workday, Atlassian and ServiceNow. Product chief Pratima Arora said the default stance is human in the loop; no general availability date was given."
+      ],
+      "whyItMatters": "Plan-versus-actual tables with source-by-source status chips show a clear pattern for goal and project agents: show the evidence from each system before asking anyone to act on the agent's conclusion.",
+      "sourceName": "SiliconANGLE",
+      "sourceUrl": "https://siliconangle.com/2026/11/04/smartsheet-ai-powered-platform-bridges-gap-between-planning-and-results/",
+      "author": "Paul Gillin",
+      "publishedAt": "2026-11-04T17:00:59Z",
+      "featured": true,
+      "imageUrl": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/vsActual-Drift-Detection-1-scaled-e1793816577375.png",
+      "imageAlt": "Smartsheet vsActual drift agent screen comparing plan and actual across Slack, Workday, Jira and Smartsheet, with a go-live flagged 9 weeks late",
+      "tags": ["Smartsheet", "agents", "planning", "OKRs", "work management"]
+    },
+    {
+      "id": "2026-11-05-ux-design-01",
+      "topic": "ux-design",
+      "headline": "What AI really changed in design systems: review, governance and machine-readable tokens",
+      "excerpt": "Three practitioners from ITV, Siemens and freelance practice explain why the hard part of a system is still human.",
+      "summary": [
+        "Designer Anna Lefour interviewed three design-system practitioners: Marianne Ashton-Booth of ITV, David Sward of Siemens and freelance systems specialist Nicolas Chatelain. All three agree that AI makes UI kits quick to produce, but that adoption, governance and trust across teams decide whether a system works. The piece cites a Zeroheight report in which 59% of practitioners credit communication and community for adoption.",
+        "Faster production has moved the bottleneck to review and validation, so teams are loosening control through Figma slots or design-system reps. Systems are also being made readable by agents: Chatelain's team moved tokens to the DTCG standard, and a July 2026 study of 21 open-source systems found 20 offer an MCP server while only 3 use Figma Code Connect. Siemens uses an LLM to compare built UI with the system."
+      ],
+      "whyItMatters": "If agents will read your design system, its tokens, MCP access and links between Figma and code need the same care as its components.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/what-ai-has-changed-in-design-systems-and-what-is-still-up-to-us-d4e8e8f4ceb2",
+      "author": "Anna Lefour",
+      "publishedAt": "2026-11-04T22:12:09Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*er_HyzWo0FVdfLtEexv7KQ.jpeg",
+      "imageAlt": "Illustration of a designer inspecting UI cards with a magnifying glass as they flow through a funnel into an organized, checked-off system",
+      "tags": ["design systems", "governance", "MCP", "design tokens", "Figma"]
+    },
+    {
+      "id": "2026-11-05-ux-design-02",
+      "topic": "ux-design",
+      "headline": "AI can match your design system and still get the moment wrong",
+      "excerpt": "An essay argues that generated UI needs guidance on when to celebrate, stay quiet or simply get out of the way.",
+      "summary": [
+        "Writing in UX Collective, Dolphia argues that as AI assembles more screens from shared patterns, matching the system is not enough to define quality. A confetti success state can be right for someone who just launched a business and patronizing for an admin updating their forty-seventh record. The essay draws on Don Norman's emotional design and the difference between surface and deep delight.",
+        "Examples include Duolingo varying header sizes by purpose while keeping titles in place, Mailchimp keeping one voice but changing tone with the reader's situation, and Google's Material 3 Expressive research, where a larger, closer Send button helped people find it faster. The author suggests prompts for AI should describe the situation and what the person needs, rather than asking for something friendly and playful."
+      ],
+      "whyItMatters": "Instructions for generated UI should describe what the user just did and how often, so tools can choose between quiet confirmation and celebration.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/ai-can-generate-the-interface-what-makes-it-worth-caring-about-a5f3a3e81986",
+      "author": "Dolphia",
+      "publishedAt": "2026-11-04T22:12:46Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*3TA1JRp7-caokhilM29rqQ.jpeg",
+      "imageAlt": "Three phone screens showing a confirmation success state, a context success state with profile progress, and a celebratory badge screen",
+      "tags": ["emotional design", "UI generation", "tone", "success states"]
+    },
+    {
+      "id": "2026-11-05-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Apple's annual filing warns AI agents may act in ways nobody authorized",
+      "excerpt": "Apple added new risk factors on autonomous agents to its 10-K, citing possible lawsuits and reputational harm.",
+      "summary": [
+        "Apple's Form 10-K, filed with the SEC on 3 November, adds risk factors about AI agents. It says agents can act on their own, including reaching systems they may not be allowed to access, running or changing code, sending messages and completing transactions, and that they may behave unpredictably or take actions no one directed. Apple also says its ability to oversee third-party agents may be limited.",
+        "The filing follows Apple's October tightening of full disk access on Macs and recent incidents involving rogue agents, including one at Hugging Face. On the earnings call, John Ternus said Apple sees real room to expand Siri and wants users to understand what they are giving access to. The filing also flags uncertainty over how fast-changing AI laws will be applied."
+      ],
+      "whyItMatters": "When the largest consumer platform lists unauthorized agent actions as a business risk, clear permission scopes, previews and audit trails become baseline requirements for any agent feature.",
+      "sourceName": "Digital Watch Observatory",
+      "sourceUrl": "https://dig.watch/updates/apple-includes-ai-agent-risk-factor-to-sec-filing",
+      "publishedAt": "2026-11-05T01:37:24+01:00",
+      "imageUrl": "https://diplo-media.s3.eu-central-1.amazonaws.com/2026/11/Apple-Sydney-Australia.jpg",
+      "imageAlt": "Glass facade of the Apple Store in Sydney with the illuminated Apple logo and people on the street outside",
+      "tags": ["Apple", "agents", "risk", "SEC", "permissions"]
+    },
+    {
+      "id": "2026-11-05-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Apple is reportedly rationing what its engineers can spend on AI each day",
+      "excerpt": "Bloomberg says daily AI allowances fell from $300 to $200 in October, with some heading to $100.",
+      "summary": [
+        "Apple is cutting how much its engineering teams can spend on AI each day, according to a Bloomberg report covered by TechCrunch. The daily cap dropped from $300 to $200 in October, more cuts are planned that would bring some allowances down to $100, and teams outside engineering may get a limit as low as $25. TechCrunch asked Apple for comment.",
+        "The report fits a broader shift: after a year in which companies pushed staff to use AI as much as possible, rising token bills are leading to rationing. It also feeds an ongoing debate about the gap between what AI costs to run and the productivity gains it delivers, which are often hard to measure."
+      ],
+      "whyItMatters": "Usage budgets are becoming normal inside companies, so AI features need visible cost, quota and fallback states rather than assuming unlimited use.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage",
+      "author": "Lucas Ropek",
+      "publishedAt": "2026-11-05T01:26:22Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/06/iphone-usb-cable.jpg?resize=1200,800",
+      "imageAlt": "Close-up of a Lightning charging cable next to the bottom edge of an iPhone",
+      "tags": ["Apple", "AI costs", "tokens", "enterprise AI"]
+    },
+    {
+      "id": "2026-11-05-ai-news-03",
+      "topic": "ai-news",
+      "headline": "Google makes schools choose: opt in to its AI tools or lose Search for students",
+      "excerpt": "Gemini will be off by default for K-12 student accounts, but turning it off also removes Google Search.",
+      "summary": [
+        "Google will switch off its AI products for K-12 student accounts by default and require administrators to opt in, reversing an August decision that turned them on automatically in Google Classroom. The catch is that schools which keep AI disabled also lose Google Search for those students. The update covers Gemini, Gemini Notebook, Gemini in Classroom and Search, according to education chief Chris Phillips.",
+        "The move follows an October open letter urging 150 US districts to disable Gemini. New York City mayor Zohran Mamdani accused Google of using monopoly power to push AI into schools. Accounts with Search enabled will get Guided Learning, a step-by-step homework tool that starts as a pilot at select US schools later this month."
+      ],
+      "whyItMatters": "Bundling an AI opt-out with a core feature turns a consent setting into a forced choice, which is a pattern that quickly erodes trust in AI controls.",
+      "sourceName": "CNET",
+      "sourceUrl": "https://www.cnet.com/tech/services-and-software/google-forcing-schools-choose-between-search-engine-ai/",
+      "author": "Anna Gragert",
+      "publishedAt": "2026-11-03T19:30:18-05:00",
+      "imageUrl": "https://www.cnet.com/wp-content/uploads/sites/2/google-logo.jpg",
+      "imageAlt": "A Google logo on the side of a building",
+      "tags": ["Google", "Gemini", "education", "AI controls", "consent"]
+    }
+  ]
+}
