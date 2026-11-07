@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-07T07:05:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-07-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Meta adds Spaces to Muse: goal-focused threads that become live trackers and boards",
+      "excerpt": "Muse users can now spin off dedicated Spaces that the agent builds and keeps updated in the background.",
+      "summary": [
+        "Meta has introduced Spaces for its Muse agents. A Space is a separate, topic-specific thread listed in a sidebar next to the main chat, where Muse works toward one goal for the user. People create one by describing an idea in the conversation, and Muse turns it into something like a tracker, planner or project board, for example a holiday gift list, a wedding plan or a trip.",
+        "Spaces can connect to third-party apps and data, and Meta says they refresh in the background, so changes such as new prices or savings progress show up without a prompt. It is the second Muse feature in about a week, after voice and video calls. Mark Zuckerberg said in October that Muse had 10 million users in the US and Canada; TechCrunch did not report a rollout schedule for Spaces."
+      ],
+      "whyItMatters": "It shows a consumer agent moving from a single chat stream to persistent, goal-scoped workspaces that the agent maintains, a pattern close to project and goal tracking in work tools.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+      "author": "Lucas Ropek",
+      "publishedAt": "2026-11-06T18:44:20Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
+      "imageAlt": "Meta's Muse mascot sitting at a laptop",
+      "tags": ["Meta", "Muse", "agents", "workspaces", "background updates"]
+    },
+    {
+      "id": "2026-11-07-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Amazon lets invited US shoppers text Alexa to search, fill a cart and buy",
+      "excerpt": "Alexa's shopping agent now works over plain text messages, starting with invited US customers.",
+      "summary": [
+        "Amazon has opened a text-message channel for its Alexa shopping agent. Selected US customers get an invitation by SMS and, once they opt in, can type natural-language requests to find products, add them to a cart and complete purchases. Others can join a waitlist, and Amazon plans a wider rollout to millions of users in the coming weeks, just ahead of the holiday season.",
+        "The text agent reuses Alexa's recent shopping skills: managing lists, tracking prices, comparing items, searching the web and checking orders, plus finding similar items from a photo. It will also learn preferences over time. The move follows Amazon's September decision to block Meta's Muse agent from its site, and DoorDash's report that outside agents had placed only a few hundred orders."
+      ],
+      "whyItMatters": "Commerce platforms are choosing to own the agent channel instead of serving third-party agents, and they are meeting users in plain messaging rather than in a new app.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-11-06T14:10:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Alexa-Shopping-Text-Hero.jpeg?resize=1200,725",
+      "imageAlt": "Hand holding a phone with an Alexa Shopping text thread that adds lasagna ingredients to a $38.05 cart",
+      "tags": ["Amazon", "Alexa", "shopping agents", "messaging"]
+    },
+    {
+      "id": "2026-11-07-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "NN/G defines the agent harness, the layer that decides what an AI product can really do",
+      "excerpt": "Nielsen Norman Group explains the software loop around a model that supplies context, runs tools and enforces limits.",
+      "summary": [
+        "Nielsen Norman Group has published a definition of the agent harness: the software around a language model that runs its execution loop. The model can only write requests, such as checking a calendar; the harness carries them out, returns the results and repeats. Caleb Sponheim describes three jobs for it: assembling context, connecting tools while enforcing permissions and approvals, and applying instructions and hard limits on time, cost and steps.",
+        "The piece argues that two products on the same model can behave very differently because of their harness, for instance whether saved preferences reach the model or a PDF is sent as text only. It asks UX teams to specify default permissions, approval points, cancellation behavior and stopping conditions with engineers, and to test whole tasks, including failures like disconnected calendars."
+      ],
+      "whyItMatters": "Treat the harness as design material: write a behavior spec covering approvals, what persists after a user cancels, and when the agent must stop and ask, alongside the screens.",
+      "sourceName": "Nielsen Norman Group",
+      "sourceUrl": "https://www.nngroup.com/articles/agent-harness/",
+      "author": "Caleb Sponheim",
+      "publishedAt": "2026-11-06T12:00:00Z",
+      "featured": true,
+      "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/Agent-Harness_socialcard.png",
+      "imageAlt": "NN/G card titled Agent Harness: Definition, with an AI sparkle surrounded by tool, checklist, document and settings icons",
+      "tags": ["agent harness", "permissions", "approvals", "stopping conditions", "NN/G"]
+    },
+    {
+      "id": "2026-11-07-competitors-01",
+      "topic": "competitors",
+      "headline": "Notion pitches itself as one shared memory for ChatGPT, Claude and other agents",
+      "excerpt": "Through its MCP connector, outside AI assistants can now save what they learn into the same Notion memory.",
+      "summary": [
+        "Notion has launched a way for external AI agents, including ChatGPT, Claude, Meta's Muse and others, to write what they learn about a user into one shared memory inside a Notion workspace. The connection runs over Notion's MCP connector; there are setup links for ChatGPT and Claude and a generic prompt that other agents can paste in. Memory sync is described as live.",
+        "Reporting says the setup creates an operating guide that agents read first and a private memories database the user can edit. Shared skills over MCP were still listed as coming soon in Notion's October release, and plan requirements and pricing were not spelled out. The move positions Notion as neutral context infrastructure, so switching assistants does not mean starting over."
+      ],
+      "whyItMatters": "Work tools are competing to be the place where agent context and preferences live, which makes an editable, user-visible memory a core product surface rather than a hidden setting.",
+      "sourceName": "RuntimeWire",
+      "sourceUrl": "https://runtimewire.com/article/notion-chatgpt-claude-shared-memory-mcp",
+      "author": "Ryan Merket",
+      "publishedAt": "2026-11-04T21:34:00Z",
+      "imageUrl": "https://runtimewire.com/og/notion-chatgpt-claude-shared-memory-mcp.16x9.jpg?v=og2-1bw1aqs",
+      "imageAlt": "Glowing glass blocks on a desk showing the OpenAI logo, the Notion N and Claude's orange starburst, linked by light",
+      "tags": ["Notion", "MCP", "agent memory", "ChatGPT", "Claude"]
+    },
+    {
+      "id": "2026-11-07-competitors-02",
+      "topic": "competitors",
+      "headline": "Box previews Content Retrieval, built on Nvidia Nemotron, to feed agents only the relevant chunks",
+      "excerpt": "Box's new API returns the most relevant document passages to agents while keeping its permission controls.",
+      "summary": [
+        "Box previewed Box Content Retrieval at its developer conference. The feature builds Nvidia's open-weight Nemotron embedding models into Box so that AI agents receive the passages most relevant to a question or task instead of reading whole documents. Because the embeddings capture concepts, matches can surface even when the wording or language differs. CEO Aaron Levie said it packs about five technologies into one API.",
+        "Box's existing metadata and permission rules sit at the center of the system. Nvidia's Kari Briski said she expects answers about four times faster, with roughly 20% fewer errors and 90% fewer tokens; these are projections, not tested results. It will reach Enterprise Advance customers starting early next year, with legal clause and precedent search as a headline use case."
+      ],
+      "whyItMatters": "Content platforms are rebuilding search for agents rather than people, so permission-aware retrieval becomes part of what makes an in-product agent trustworthy.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+      "author": "Russell Brandom",
+      "publishedAt": "2026-11-05T14:00:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/08/GettyImages-1178603809.jpg?w=1024",
+      "imageAlt": "Box CEO Aaron Levie on stage at TechCrunch Disrupt",
+      "tags": ["Box", "Nvidia", "retrieval", "agents", "permissions"]
+    },
+    {
+      "id": "2026-11-07-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Eric Bailey's guide to making LLM chat interfaces work with screen readers and keyboards",
+      "excerpt": "A detailed Smashing Magazine playbook covers live regions, message headings, landmarks and F6 navigation for AI chat.",
+      "summary": [
+        "In a long Smashing Magazine article, accessibility designer Eric Bailey sets out practical fixes for full-page LLM chat products like ChatGPT, Claude, Copilot and Gemini. The core advice: use a single live region at the end of the page, announce only finished replies rather than streaming text, keep focus in the prompt box, and announce loading every five seconds when only an animation is shown.",
+        "He also recommends wrapping each message in an article with a hidden 'You said' or agent heading, using a few landmarks instead of one per message, F6 shortcuts to jump between regions, and preferences to mute announcements of reasoning or tool calls, motion and sounds. Tables and code blocks should get short spoken summaries, and he advises waiting on ariaNotify() for now."
+      ],
+      "whyItMatters": "Agent panels and copilots inherit these chat patterns, so streaming, progress and tool-call updates need an announcement strategy, not just a visual one.",
+      "sourceName": "Smashing Magazine",
+      "sourceUrl": "https://www.smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/",
+      "author": "Eric Bailey",
+      "publishedAt": "2026-11-05T13:00:00Z",
+      "imageUrl": "https://files.smashing.media/articles/making-immersive-llm-chat-experiences-more-accessible/making-immersive-llm-chat-experiences-more-accessible.jpg",
+      "imageAlt": "Smashing Magazine card with the article title, an illustrated portrait of Eric Bailey and the red Smashing cat mascot",
+      "tags": ["accessibility", "chat UI", "screen readers", "live regions"]
+    },
+    {
+      "id": "2026-11-07-ux-design-02",
+      "topic": "ux-design",
+      "headline": "Figma's agent now draws editable, layered vector icons and illustrations",
+      "excerpt": "Generated vectors now come with grouped layers, real strokes and style references, ready for Figma Motion.",
+      "summary": [
+        "Figma updated how its built-in agent generates vector art. Illustrations and icons now arrive as independent, logically grouped layers, line work is drawn with strokes instead of filled shapes, and designers can attach existing illustrations as style references so new icons or components match them. The release note is dated November 5.",
+        "The cleaner structure means stroke weight and end caps can be changed without redrawing, and the output is ready to animate in Figma Motion. The same week Figma also let code layers read prototype connections between frames, made cloning connected GitHub repositories the default for new connections, and on November 6 added one-click object selection to its AI image editing on macOS."
+      ],
+      "whyItMatters": "AI output that respects layer structure and an existing style is far easier to bring into a design system than a flattened picture.",
+      "sourceName": "Figma",
+      "sourceUrl": "https://www.figma.com/release-notes/",
+      "publishedAt": "2026-11-05T12:00:00Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/342e17642c7afa81206490b0dd21c3e5724ae040-2400x1260.png?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "Figma logo and wordmark on a lilac background",
+      "tags": ["Figma", "vectors", "icons", "AI generation"]
+    },
+    {
+      "id": "2026-11-07-ux-design-03",
+      "topic": "ux-design",
+      "headline": "Design by numbers: AI didn't create the outputs-over-outcomes problem, it speeds it up",
+      "excerpt": "A design lead argues the bigger AI risk to UX is a job reduced to process and artifacts, not lost jobs.",
+      "summary": [
+        "Writing in UX Collective, design lead Russell Pinkston pushes back on the idea that an overnight AI-built app equals design. After a year of daily work with AI tools, he says getting from a proof of concept to a usable product still takes weeks of noticing broken flows, missing error states and modal traps. He looks at Indeed and TrueUp data and finds design openings fell mostly before ChatGPT and have since been stable.",
+        "His main worry is 'design by numbers': the belief that following steps and producing journey maps or wireframes guarantees good results. He traces it to the 1960s design methods movement and Rittel's wicked problems, and argues AI makes outputs cheap while critical thinking, empathy and taste remain what turns them into outcomes."
+      ],
+      "whyItMatters": "When AI can produce every deliverable on demand, design teams need to measure and defend user outcomes rather than artifact throughput.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/design-by-numbers-is-ai-ruining-ux-or-just-pouring-gasoline-on-the-fire-24164d49e422",
+      "author": "Russell Pinkston",
+      "publishedAt": "2026-11-05T10:49:10Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*NxZYfrz8aLvN2VAE-JFQKQ.png",
+      "imageAlt": "Paint-by-numbers illustration of a phone screen with an error dialog, surrounded by numbered colored waves",
+      "tags": ["design practice", "outcomes", "AI and jobs"]
+    },
+    {
+      "id": "2026-11-07-ai-news-01",
+      "topic": "ai-news",
+      "headline": "OpenAI reportedly raises $11 billion at a $1.25 trillion valuation, short of its target",
+      "excerpt": "Bloomberg reports the round could reach about $20 billion, below the $30 billion OpenAI sought in September.",
+      "summary": [
+        "OpenAI has raised $11 billion so far in a new funding round that values it at $1.25 trillion, Bloomberg reported on Friday, citing people familiar with the matter. The round is expected to close in the coming weeks and could total around $20 billion. In late September Bloomberg had reported a target of $30 billion at a $1.4 trillion valuation, so both numbers have come down.",
+        "The report lands in a nervous market: Bloomberg also said some potential buyers of Anthropic's IPO shares see its value as low as $1.1 trillion, against about $2 trillion expected a month ago. Investors are weighing the US midterm results, voter hostility to data centers and possible regulation. OpenAI is now expected to go public in 2027."
+      ],
+      "whyItMatters": "Cooling valuations add pressure on AI labs to prove revenue, which tends to show up as price changes, usage limits and packaging that product teams build on.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+      "author": "Lucas Ropek",
+      "publishedAt": "2026-11-06T22:53:46Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/07/OpenAI-logo-green.jpg?w=1024",
+      "imageAlt": "OpenAI logo on a phone screen in front of a green stock chart",
+      "tags": ["OpenAI", "funding", "valuation", "Anthropic IPO"]
+    },
+    {
+      "id": "2026-11-07-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Ramp data: companies use more AI but token spending has flattened",
+      "excerpt": "Token spend grew just 1.5% over August and September as price cuts and cost controls kicked in.",
+      "summary": [
+        "New data from spend-management company Ramp shows business AI usage still rising while spending stalls. Token spend grew 1.5% across August and September combined, after a 42% jump in July, then picked up 8.9% between late September and late October. Median firms spend $12 to $15 per employee per month, the top 10% spend $600 to $1,000, and the top 1% sit just under about $10,000.",
+        "Ramp economist Ara Kharazian attributes the slowdown to price competition and cost-conscious buyers rather than weaker demand. OpenAI halved some API prices in September, and Anthropic said its own price cuts reduced revenue growth by about $600 million. Ramp's sample leans toward venture-backed tech firms, so it may not reflect the whole market."
+      ],
+      "whyItMatters": "Falling model prices and tighter AI budgets push products toward visible usage controls, credit systems and features that prove value per token.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+      "author": "Rebecca Bellan",
+      "publishedAt": "2026-11-06T15:54:47Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/ara-stripe-5.png?resize=1200,779",
+      "imageAlt": "Ramp lead economist Ara Kharazian speaking at Stripe Sessions",
+      "tags": ["Ramp", "AI spending", "pricing", "enterprise"]
+    }
+  ]
+}
