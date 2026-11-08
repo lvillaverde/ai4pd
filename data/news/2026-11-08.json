@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-08T07:40:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-08-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Wealthsimple's Penny assistant can move money and trade, but only after the client confirms",
+      "excerpt": "The Canadian fintech unveiled an AI assistant that turns money goals into steps clients approve one by one.",
+      "summary": [
+        "Wealthsimple introduced Penny, an AI assistant that can send e-Transfers and wires, pay invoices, flag duplicate card charges and buy or sell investments for Canadian clients. It was the lead announcement among roughly a dozen products shown at the company's \"Something Good Is Going to Happen\" event, alongside instant transfers of up to $100,000, virtual cards and a Canadian-dollar stablecoin.",
+        "Penny's core idea is goal-to-plan: a client states something like maxing out a retirement contribution by March, and the assistant proposes steps such as checking linked outside accounts and setting up recurring investments, then adjusts as things change. The company says nothing executes without the client's confirmation. Connections that let clients use their accounts from ChatGPT or Claude are planned for early 2027, with scoped access levels and an extra check on critical actions."
+      ],
+      "whyItMatters": "It is a clear consumer example of an agent that drafts a multi-step plan from a stated goal and requires explicit confirmation before every action that moves money.",
+      "sourceName": "Fintech.ca",
+      "sourceUrl": "https://www.fintech.ca/2026/11/05/wealthsimple-unveils-penny-ai-assistant/",
+      "author": "Fintech Newsdesk",
+      "publishedAt": "2026-11-05T15:00:00+00:00",
+      "imageUrl": "https://www.fintech.ca/wp-content/uploads/2026/11/W3A6153-1.png",
+      "imageAlt": "Eight Wealthsimple team members on stage in front of a screen reading 'Wealthsimple Presents: Something good is going to happen'",
+      "tags": ["Wealthsimple", "AI assistant", "fintech", "approvals", "goals"]
+    },
+    {
+      "id": "2026-11-08-competitors-01",
+      "topic": "competitors",
+      "headline": "Microsoft's Planner Agent gets task assignment, scheduled catch-up and Copilot memory",
+      "excerpt": "A Message Center update says the Copilot Chat agent can now assign people and suggest tasks from recent email, chats and meetings.",
+      "summary": [
+        "Microsoft announced in Message Center post MC1539002 that Planner Agent in Copilot Chat is gaining three capabilities: assigning one or more people to tasks in shared basic plans (including in bulk), a scheduled catch-up that surfaces outstanding commitments and requests from recent emails, chats and meetings, and personalization from Copilot memory. The 30-task cap on plan creation is also removed, and users can pick a model.",
+        "Catch-up can run on demand or on a recurring schedule with optional email notifications, and each suggestion shows its sources. Everything the agent proposes, assignments included, stays an editable draft until the user saves it. The agent still cannot delete tasks or undo changes and does not work with premium plans. Worldwide rollout is scheduled for early December 2026 across Copilot on the web, Teams and Planner, enabled by default."
+      ],
+      "whyItMatters": "Agent-generated tasks that stay as sourced drafts until a person confirms them is a pattern every work-management product adding agents will need to get right.",
+      "sourceName": "Microsoft 365 Message Center (via mc.merill.net)",
+      "sourceUrl": "https://mc.merill.net/message/MC1539002",
+      "publishedAt": "2026-11-05T00:11:39Z",
+      "imageUrl": "https://mc.merill.net/zap/og/MC1539002.png?v=1793837513",
+      "imageAlt": "Message Center card for MC1539002 with a Planner logo and 'Major change' and 'Message Center' badges",
+      "tags": ["Microsoft", "Planner", "Copilot", "AI agents", "task management"]
+    },
+    {
+      "id": "2026-11-08-ux-design-01",
+      "topic": "ux-design",
+      "headline": "As AI makes polished output cheap, a design leader lists eight skills that still separate good designers",
+      "excerpt": "Nil Thyrion argues a sketch of the right idea beats a slick vibe-coded prototype of the wrong one.",
+      "summary": [
+        "In a UX Collective essay, design leader Nil Thyrion says that reviewing portfolios and team work has convinced him AI makes real design ability both harder to spot and more important. He sets out eight skills that sit underneath the tools: craft, taste, instinct, creativity, system, method, ingenuity and business, illustrated with examples from an ultramarathon runner in sandals to Raymond Loewy and Pixar.",
+        "He frames craft as knowledge multiplied by the dexterity to apply it, taste as knowing how far to push for a given audience, and instinct as experience working faster than explanation. He also pushes back on teams that refuse to form an idea before research, arguing designers should arrive with a hypothesis and let evidence challenge it. The piece is explicitly not anti-AI: tools should speed up thinking, not stand in for it."
+      ],
+      "whyItMatters": "Useful framing for design critiques and hiring when every candidate can produce a finished-looking prototype in minutes.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/otherwise-youre-just-a-machine-a9d3b21179b5",
+      "author": "Nil Thyrion",
+      "publishedAt": "2026-11-07T20:15:42Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*DPDKtw_Qr-hC8-5aISbtwg.png",
+      "imageAlt": "Torn notebook paper listing eight design skills: Craft, Taste, Instinct, Creativity, System, Method, Ingenuity and Business",
+      "tags": ["design craft", "design leadership", "AI tools", "career"]
+    },
+    {
+      "id": "2026-11-08-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Claude Code's 'don't ask again' approvals leaked thousands of secrets into public GitHub repos",
+      "excerpt": "Apiiro found passwords and API keys saved in remembered command approvals across 1,994 public repositories.",
+      "summary": [
+        "Security firm Apiiro reports that when Claude Code users choose \"Yes, and don't ask again\", the tool stores the full approved command, including any password or key typed into it, in .claude/settings.local.json. Scanning 104,185 copies of that file across public GitHub, it found 1,122 containing at least one secret. Counting shared settings files, older commits and saved agent logs, the total reached 2,539 secrets in 1,994 repositories, including 379 database passwords and 23 AWS keys.",
+        "Claude Code adds the file to the user's global git excludes, but that does not protect copies already committed or travel with the project, and in 539 traced repositories a Claude co-authored commit touched the file. Of 16 coding agents compared, it was the only one confirmed to save full approved commands in a project file by default. Popular scanners missed many cases, and earlier bug reports were auto-closed. Researchers advise rotating exposed credentials and approving command patterns rather than exact commands."
+      ],
+      "whyItMatters": "A remembered approval is stored data: designs for 'always allow' should save the permission pattern, never the sensitive values the user typed.",
+      "sourceName": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+      "author": "Swati Khandelwal",
+      "publishedAt": "2026-11-07T12:14:00+05:30",
+      "featured": true,
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZH3vYLZb9lP7mDLqy2h-upzdComeWIfjDX5siFUO3FM2HlUs03OTwirA1R2uzOZq_clptIVBsoaJNXIuf8LlTbXHFvzBJLRl1l3mqGVesHjgdmD86S_c-k2JY_t56xZqI0bnN6jXRDr92KlMw6X5BHzm5hqogpWflsERi9zrsMHSS_abAcvZMcUGovd8/s1600/claude-code.jpg",
+      "imageAlt": "Claude Code 'Yes, and don't ask again' button above a settings.local.json file holding a psql command with a masked password, next to a GitHub logo",
+      "tags": ["Anthropic", "Claude Code", "security", "permissions", "coding agents"]
+    },
+    {
+      "id": "2026-11-08-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Judge lets claims that Claude Max overstated its usage limits move forward",
+      "excerpt": "A federal magistrate judge kept key claims alive in a proposed class action over how Anthropic advertised its 5x and 20x plans.",
+      "summary": [
+        "A magistrate judge in the Northern District of California allowed parts of Kahn v. Anthropic to proceed, TNW reports, citing Courthouse News. The plaintiffs say the $100 and $200 Claude Max plans were sold as giving five and 20 times Pro usage, while weekly caps mean the real multiple is closer to 3.5x and 6x for one model, because only the five-hour session allowance scales by the advertised factor.",
+        "Anthropic argued buyers should know the multiple applied per session and pointed to a help page, but the judge noted that explanation sat two links away from the sales pages and that monthly billing made a monthly reading reasonable. Negligent misrepresentation, breach of contract and one state consumer claim survive; the California unfair-competition and false-advertising claims were dismissed. Anthropic renamed the Max plans the week before."
+      ],
+      "whyItMatters": "Usage-based AI pricing needs limits explained where people buy, not behind help-center links, or the plan page itself becomes the liability.",
+      "sourceName": "TNW",
+      "sourceUrl": "https://thenextweb.com/news/anthropic-claude-max-lawsuit-ruling-usage-claims",
+      "author": "Ana Maria Constantin",
+      "publishedAt": "2026-11-07T12:15:11+00:00",
+      "imageUrl": "https://media.thenextweb.com/2026/10/dario-amodei-anthropic-logo-phone-screen.jpg",
+      "imageAlt": "Phone showing the Anthropic logo in front of a blurred photo of a smiling man in glasses",
+      "tags": ["Anthropic", "Claude", "pricing", "usage limits", "lawsuit"]
+    }
+  ]
+}
