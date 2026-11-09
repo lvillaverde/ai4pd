@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-09T07:20:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-09-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Apple could turn Siri into a goal-tracking agent as soon as next year, Gurman reports",
+      "excerpt": "Bloomberg's Mark Gurman says Apple wants Siri to pursue goals on its own, like Dots and Muse, after its CEO urged a faster roadmap.",
+      "summary": [
+        "In his Sunday Power On newsletter, Bloomberg's Mark Gurman wrote that Apple could make Siri behave more like an agent as early as 2027. Today's Siri AI, which shipped with iOS 27, still waits for a request before it does anything, while rivals such as OpenAI's Dots, Meta's Muse and Grok keep track of a goal, work out the next step and carry on without being prompted each time. Gurman says Apple ultimately wants to move in that direction.",
+        "The report also says CEO John Ternus told software chief Craig Federighi in a private meeting that Apple must speed up its software roadmap and go beyond incremental Siri fixes. Apple has not announced any agentic Siri feature or date, and MacRumors notes the actual implementation is still unknown. The rumor follows Ternus describing Siri as primarily request-based on the November 2 earnings call."
+      ],
+      "whyItMatters": "When the largest consumer platform moves from request-and-response to goal-pursuing assistants, users will expect work tools to show standing goals, next steps and progress rather than just answer prompts.",
+      "sourceName": "MacRumors",
+      "sourceUrl": "https://www.macrumors.com/2026/11/08/siri-ai-rumored-to-become-more-agentic/",
+      "author": "Joe Rossignol",
+      "publishedAt": "2026-11-08T17:24:29Z",
+      "featured": true,
+      "imageUrl": "https://images.macrumors.com/t/_tjfK0vua64wDcGeqmNXpkPzL54=/2048x/article-new/2026/11/Siri-AI-Icon.jpeg",
+      "imageAlt": "Siri AI app icon: a glowing glass orb inside a dark rounded square on a black background",
+      "tags": ["Apple", "Siri", "proactive agents", "rumor"]
+    },
+    {
+      "id": "2026-11-09-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "DeepSeek's open-source Harness agent app passes 1.5 million daily users and plans a plugin store",
+      "excerpt": "DeepSeek says Harness grew from about 271,000 daily users in late September to 1.54 million by November 4.",
+      "summary": [
+        "DeepSeek disclosed on X that Harness, its open-source agent application for coding, file analysis and research with limited supervision, reached 1.54 million daily active users on November 4, less than three months after its August launch. The company says those users burn through about 92 trillion tokens a day, roughly 60 million each, and that usage was around 271,000 daily users at the end of September.",
+        "Harness already has about 35,000 community plugins, and DeepSeek says around 60% of active users have built or installed at least one. It now plans an official plugin marketplace plus a support program for plugin authors with usage credits, technical help and promotion, though details were not shared. The numbers are DeepSeek's own and have not been independently verified."
+      ],
+      "whyItMatters": "An agent where most users install or build plugins shows that extensibility, discovery and trust signals for third-party skills are becoming core parts of agent product design.",
+      "sourceName": "Seeking Alpha",
+      "sourceUrl": "https://seekingalpha.com/news/4668771-deepseek-says-agent-app-tops-15m-daily-users-plans-plugin-marketplace",
+      "author": "Rob Williams",
+      "publishedAt": "2026-11-08T19:59:10Z",
+      "imageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/2196631406/image_2196631406.jpg?io=getty-c-og",
+      "imageAlt": "DeepSeek website and its whale logo with the greeting 'Hi, I'm DeepSeek' seen through a magnifying lens",
+      "tags": ["DeepSeek", "agents", "plugins", "open source"]
+    },
+    {
+      "id": "2026-11-09-ai-agents-ux-03",
+      "topic": "ai-agents-ux",
+      "headline": "NYT Cooking's AI assistant writes 'Your version' of a recipe instead of editing the original",
+      "excerpt": "A hands-on review finds the recipe assistant handy for swaps and scaling, but confusing when the original and AI versions mix.",
+      "summary": [
+        "The Verge's Jennifer Pattison Tuohy tested the new NYT Cooking assistant, available to subscribers on iOS at launch. It sits in a small 'Customize this recipe…' box on each recipe page; asking it to swap ingredients, scale servings or change equipment produces a new recipe under a 'Your version' tab with every change highlighted, while the tested original stays untouched and one tap away. It drew on reader comments for substitutions and refused nonsense requests such as minced beef in a trifle.",
+        "Weeknight swaps worked well, and halving a cake recipe sensibly rounded five eggs to three. The weak spot was version confusion: modified recipes cannot be saved separately, and when she asked how much butter she needed while cooking the original, the assistant quoted the AI version's amount without saying which one it meant. Some subscribers object to the feature, and the chat box cannot be switched off, only scrolled past."
+      ],
+      "whyItMatters": "Generating a separate, diffed 'your version' next to the trusted source is a strong pattern for AI edits, but every answer must say which version it refers to.",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+      "author": "Jennifer Pattison Tuohy",
+      "publishedAt": "2026-11-07T15:50:00Z",
+      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268844_NY_Times_Cooking_App_JTuohy_0006.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "imageAlt": "Hand holding a phone showing an AI-made 'Your version' of a cinnamon roll muffin recipe in NYT Cooking, with frosted muffins behind",
+      "tags": ["NYT Cooking", "AI assistant", "versioning", "review"]
+    },
+    {
+      "id": "2026-11-09-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Luke Wroblewski: design systems get agents 90% there, visual feedback closes the rest",
+      "excerpt": "Wroblewski describes correcting coding agents with Figma comments, annotated screenshots and whole-screen markup.",
+      "summary": [
+        "Luke Wroblewski writes that when building his Intent app, agent instructions plus a lean design system now take a new feature about 90% of the way, compared with 50–60% on earlier models. The remaining gap comes from layouts, variants and combinations no design system anticipates, and he argues the fix is a fast visual feedback loop: pointing at what is broken rather than describing it.",
+        "He compares the options: comments placed directly on Figma frames, marked-up screenshots of the running app, typed chat corrections (the least efficient) and Intent's own macOS notch tool, which lets a designer type, speak, annotate the screen or record video for the agent. Crucially, he does not let agents write lessons back into the design system automatically, because models tend to over-document; a designer decides what gets added."
+      ],
+      "whyItMatters": "Give people a way to correct an agent by pointing at the exact spot on screen, and keep a human gate on whatever the agent turns into lasting rules or memory.",
+      "sourceName": "LukeW",
+      "sourceUrl": "https://lukew.com/ff/entry.asp?2170",
+      "author": "Luke Wroblewski",
+      "publishedAt": "2026-11-03T12:00:00Z",
+      "imageUrl": "https://static.lukew.com/intent_designsystem_agents.png",
+      "imageAlt": "Two browser windows showing the Intent design system: a color palette of yellows and greys, and a components page with button and dropdown controls",
+      "tags": ["design systems", "feedback", "coding agents", "human-in-the-loop"]
+    },
+    {
+      "id": "2026-11-09-ux-design-01",
+      "topic": "ux-design",
+      "headline": "'After the AI bubble': a manifesto asks designers to make computers tools for people again",
+      "excerpt": "A UX Collective essay argues AI is a speculative bubble and invites readers to sign demands for more humane software.",
+      "summary": [
+        "Oliver Meredith Cox published a manifesto in UX Collective arguing that today's AI boom is a speculative bubble whose eventual burst will hurt people who did not profit from it. The authors say they are not anti-AI and are enthusiastic about what large language models can do, but believe their abilities have been oversold, and they point to circular financing among AI companies and loss warnings in AI firms' own filings.",
+        "The text goes on to attack fatalistic messaging that treats technology as inevitable and CEO predictions as fact, quoting Ted Nelson's view that computers exist for human freedom. It is framed as a living document: readers are asked to comment with feedback and to sign their names if they agree, and the authors say topics such as environmental impact and AI-generated slop are out of scope rather than unimportant."
+      ],
+      "whyItMatters": "Growing skepticism among designers is a reminder to justify AI features by the user value they deliver rather than by the hype around them.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/after-the-ai-bubble-a-manifesto-2e3157387662",
+      "author": "Oliver Meredith Cox",
+      "publishedAt": "2026-11-06T22:42:58Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*LeadMvj17vkMT2qwt-h5RQ.jpeg",
+      "imageAlt": "Morro Rock and three power-plant smokestacks reflected on a wet beach under a cloudy blue sky in Morro Bay, California",
+      "tags": ["AI bubble", "manifesto", "design ethics"]
+    },
+    {
+      "id": "2026-11-09-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Lab says an unreleased Anthropic model helped prove a 2008 quantum-computing conjecture",
+      "excerpt": "Physical Superintelligence says its research system settled the Aaronson-Ambainis conjecture in three days.",
+      "summary": [
+        "Physical Superintelligence Inc. (PSI) said on Friday that a research system built around an unreleased Anthropic model produced a proof of the Aaronson-Ambainis conjecture, an open problem since 2008 about when quantum computers can be dramatically faster than classical ones. PSI says the system reached the proof in three days, and the steps were checked in the Lean proof assistant.",
+        "It is unclear which Anthropic model was used, and Anthropic did not comment to Business Insider. The proof has not been peer reviewed yet. It is the latest in a string of AI-assisted math results this autumn, and Business Insider notes growing unease among mathematicians, citing an MIT survey in which most grad students and postdocs said they were unlikely to stay in academic math."
+      ],
+      "whyItMatters": "As models produce results experts must check, interfaces that pair AI output with machine-verifiable evidence will matter more than confident prose.",
+      "sourceName": "Business Insider",
+      "sourceUrl": "https://www.businessinsider.com/anthropic-quantum-computing-breakthrough-aaronson-ambainis-math-physics-psi-2026-11",
+      "author": "Kelsey Vlamis",
+      "publishedAt": "2026-11-07T00:49:10Z",
+      "imageUrl": "https://i.insider.com/6aee62ed80d4b24f183472c3?width=1200&format=jpeg",
+      "imageAlt": "Two people, out of focus, looking at a blackboard covered in handwritten equations and diagrams",
+      "tags": ["Anthropic", "mathematics", "quantum computing", "research"]
+    },
+    {
+      "id": "2026-11-09-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Nvidia's board opens an independent probe into Jensen Huang's ties to a suspected Chinese spy",
+      "excerpt": "Huang admitted an affair with a former Megaspeed executive that a US memo said was recruited to spy on him.",
+      "summary": [
+        "Nvidia's board said on Sunday that independent directors and outside counsel will investigate CEO Jensen Huang after reports that he was targeted by a Chinese intelligence operation. The company also published a message in which Huang admits an affair with a former executive at Singapore's Megaspeed, whom a memo circulating among US policymakers described as recruited by China's Ministry of State Security.",
+        "The board said it has no reason to believe national security or company secrets were compromised, that Huang supports the review, and that it still has confidence in him and his team. The probe lands as chips sit at the center of the US–China AI race, and other AI companies have warned staff about espionage attempts that use romance."
+      ],
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "author": "Anthony Ha",
+      "publishedAt": "2026-11-08T21:00:11Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2294936867.jpg?resize=1200,800",
+      "imageAlt": "Nvidia CEO Jensen Huang in a black leather jacket speaking into a microphone with a raised finger",
+      "tags": ["Nvidia", "Jensen Huang", "governance", "US-China"]
+    }
+  ]
+}
