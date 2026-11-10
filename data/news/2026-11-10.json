@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T07:40:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-10-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Medium launches TK, a writing app with an @-mention AI assistant built into the editor",
+      "excerpt": "Writers summon the assistant inline by typing @TK, and can publish notes on how AI shaped a piece.",
+      "summary": [
+        "Medium has released TK, a free web app for anyone with a Medium account that puts an AI assistant directly inside the writing editor. Instead of a separate chat window, writers call it inline by typing \"@TK\" plus a request. It can answer quick factual questions without a tab switch, resurface ideas the writer saved earlier, critique headlines and drafts, and check a piece against a publication's style guide.",
+        "The app also lets writers connect their own AI agent through an MCP server or a Claude skill so it can draw on stored projects, and it adds a provenance feature: authors can attach notes explaining how AI was used, including prompts and sources. Drafts can be shared for feedback with access controls, but content is not encrypted. TK is web-only for now, with a desktop app planned, and Medium openly acknowledges the risk of low-quality AI writing."
+      ],
+      "whyItMatters": "Invoking AI with an @-mention inside the working surface, plus an optional disclosure note on AI involvement, is a lightweight pattern for any collaborative editor that wants help without a separate chat panel.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-11-09T16:12:28Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/tk-logo.webp?resize=1200,675",
+      "imageAlt": "The TK app logo, red and dark letters in a rounded frame on a blurred orange and yellow background",
+      "tags": [
+        "Medium",
+        "writing",
+        "AI assistant",
+        "MCP",
+        "provenance"
+      ]
+    },
+    {
+      "id": "2026-11-10-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Automattic's Spacefast lets ChatGPT, Claude and coding agents publish an app and return the link in chat",
+      "excerpt": "The new hosting service is driven from inside AI assistants, with per-publish versions and approvals for risky agent actions.",
+      "summary": [
+        "Automattic, the company behind WordPress.com, has launched Spacefast as a separate company offering hosting, custom domains and a SQL database for projects built with AI. Users connect it to the assistant they already use, such as ChatGPT, Claude, Cursor, Claude Code or Codex, ask it to publish, and get a working link back in the conversation within seconds. A dashboard, CLI, API and MCP server are also available.",
+        "Every publish creates a new version with its own permanent URL and rollback, and sharing can be public, password-protected or invite-only. Sensitive agent actions such as rollbacks and DNS changes go through approval checks, and comments left on a published page can be passed back to the agent as change requests. There is a free personal plan; Spacefast charges for infrastructure, not AI credits. Built-in app authentication is listed as coming soon."
+      ],
+      "whyItMatters": "Returning the result as a link inside the chat, versioning every agent action and requiring approval only for high-impact changes is a clean template for products that let agents ship work on a user's behalf.",
+      "sourceName": "Automattic",
+      "sourceUrl": "https://automattic.com/2026/11/09/meet-spacefast/",
+      "author": "Automattic",
+      "publishedAt": "2026-11-09T14:00:00Z",
+      "imageUrl": "https://i0.wp.com/automattic.com/wp-content/uploads/2026/11/a8c-blog-launch-01.jpg?fit=1200%2C675&ssl=1",
+      "imageAlt": "Blurred photo of a person working on a laptop in tall grass, overlaid with the words \"Make it with spacefast\"",
+      "tags": [
+        "Automattic",
+        "Spacefast",
+        "hosting",
+        "agents",
+        "MCP"
+      ]
+    },
+    {
+      "id": "2026-11-10-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Who designs the stop button? Map agent workflows into deterministic, fuzzy and irreversible steps",
+      "excerpt": "A product designer argues the hardest agent UX decisions sit exactly where AI autonomy should end.",
+      "summary": [
+        "In a UX Collective essay, product designer Michał Krztoń argues that teams racing to build AI agents often forget to decide which parts of a workflow are allowed to be unpredictable. He cites research where the same prompt at temperature zero still produced 80 distinct outputs over 1,000 runs, and does the math on compounding error: ten steps at 95% reliability each succeed end to end only about 60% of the time.",
+        "He contrasts two products: Routine Labs uses AI to build healthcare automations but runs them deterministically in production, while Zauber lets agents interpret freight emails yet flags mismatched values for an operator instead of guessing. His method is to label each step as deterministic, fuzzy or irreversible, keep AI to the fuzzy parts, and add approvals only where actions are high-impact, while warning about false 'done' messages, hidden uncertainty and approval fatigue."
+      ],
+      "whyItMatters": "Before designing an agent's UI, classify every step as rule-based, interpretive or irreversible, show interpreted values differently from verified ones, and put human approval only on the irreversible steps so reviewers don't tune out.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/your-ai-is-non-deterministic-but-your-product-cant-be-3ec2a0cf870c",
+      "author": "Michał Krztoń",
+      "publishedAt": "2026-11-03T22:40:34Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*4xb0tuwC90tLWJBgYVaomg.png",
+      "imageAlt": "Pixel-art flow diagram where a user's linear steps branch into many AI-inferred paths that pass through a bar labeled \"Where AI Stops\"",
+      "tags": [
+        "human-in-the-loop",
+        "autonomy",
+        "approvals",
+        "error handling",
+        "workflows"
+      ]
+    },
+    {
+      "id": "2026-11-10-competitors-01",
+      "topic": "competitors",
+      "headline": "Microsoft 365 Copilot can now write to Jira, Confluence and Notion, behind per-tool approval cards",
+      "excerpt": "Connector write actions are generally available in Copilot Chat and Cowork, with every write tool starting at \"Needs approval\".",
+      "summary": [
+        "Microsoft has made write actions for Copilot connectors generally available in Copilot Chat and Cowork, so users can ask Copilot in plain language to create, update or delete data in connected apps. Launch connectors include Atlassian Rovo for Jira and Confluence, Notion, Canva, G2, iManage and BioRender. Support inside Word, Excel, PowerPoint and Outlook is described as coming soon.",
+        "Before any write, Copilot shows a confirmation card listing the tool and the details it will send, and the action then runs with the user's own permissions. Read tools are always allowed, while write tools default to \"Needs approval\"; users can choose to allow a tool once or always, and manage this per tool under Settings, Sources. Admins can review each MCP-based connector's tools in the Microsoft 365 admin center and see which can change data."
+      ],
+      "whyItMatters": "Per-tool trust settings (read always allowed, writes need approval, user can promote a tool to always allow) are becoming the default permission model for agents acting inside work-management apps.",
+      "sourceName": "Microsoft Copilot Blog",
+      "sourceUrl": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/turn-copilot-insights-into-action-with-connector-write-capabilities/4571160",
+      "author": "Rishabh Agrawal",
+      "publishedAt": "2026-11-09T12:00:00Z",
+      "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTcxMTYwLUhyTGxYNA?image-dimensions=831x519&revision=6",
+      "imageAlt": "Copilot settings dialog on the Sources tab, listing a connector's write and delete tools, each set to \"Needs approval\"",
+      "tags": [
+        "Microsoft 365 Copilot",
+        "Jira",
+        "Notion",
+        "approvals",
+        "connectors",
+        "MCP"
+      ]
+    },
+    {
+      "id": "2026-11-10-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Figma shows six everyday jobs for its agent, from crit-transcript annotations to motion variants",
+      "excerpt": "A new Figma guide walks through using the agent with connectors, slash-command skills, code layers and Motion.",
+      "summary": [
+        "Figma published a hands-on guide to its now widely available agent, listing six workflows. Designers can connect meeting transcripts from tools like Granola, Notion or Google Drive and have the agent annotate frames with crit feedback, or select commented frames and ask it to summarize and apply suggested changes. Reusable skills, triggered with a slash, package common prompts such as sorting comments into do, try and consider.",
+        "The other uses cover generating custom shaders such as film grain, producing several layout directions at once using a team's own library components, turning static frames into interactive code layers via \"Build this with code\", and creating animation variants to compare in the Motion toolbar. The agent is available on Starter, Professional, Organization, Enterprise and education plans, and Collab, Dev and View seats can use it in drafts."
+      ],
+      "whyItMatters": "Packaging repeatable prompts as named slash-command skills and grounding generation in the team's own component library are two concrete ways to make an in-product agent dependable rather than novel.",
+      "sourceName": "Figma Blog",
+      "sourceUrl": "https://www.figma.com/blog/6-easy-ways-to-use-the-figma-agent-right-now/",
+      "author": "Emma Webster",
+      "publishedAt": "2026-11-09T21:46:00Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/e45f20141c28283bd8a1a0a1889c5f8e9befd922-7680x4320.png?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "Figma canvas with a \"World Peas\" web page beside an agent chat panel that has just swapped the hero image for a mushroom close-up",
+      "tags": [
+        "Figma",
+        "Figma agent",
+        "design tools",
+        "code layers",
+        "skills"
+      ]
+    },
+    {
+      "id": "2026-11-10-ux-design-02",
+      "topic": "ux-design",
+      "headline": "What 1990s typesetters can teach designers about AI, according to Christian Crumlish",
+      "excerpt": "A conversation with the product leader on how desktop publishing merged five jobs, and what that implies for design roles now.",
+      "summary": [
+        "Writing for UX Collective, design chapter lead Vlad Derdeicea interviews Christian Crumlish, author of Product Management for UX People, who recalls a computer-book publisher in the early 1990s where a manuscript passed through five specialist jobs: word processor, typesetter, paste-up, layout and proofreading. As PCs arrived, the word-processing role disappeared and typesetters were offered retraining as desktop publishers, a job that absorbed several others.",
+        "Crumlish argues today's lines between researcher, UI designer, product designer and product manager are largely conventions shaped by past tools, and that AI is compressing them as companies look for fewer people covering more ground. The author notes US labor data now counts only about 4,600 desktop publishers, with a further 14% decline expected by 2035, and frames the present as an in-between phase before new job titles settle."
+      ],
+      "whyItMatters": "As AI blurs specialist roles, designers who can stretch into adjacent work like prototyping in code or product decisions are better placed than those defending a narrow title.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/five-pairs-of-hands-what-the-typesetters-can-teach-designers-about-ai-9d6b8e8c2285",
+      "author": "Vlad Derdeicea",
+      "publishedAt": "2026-11-09T12:13:36Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/984/0*yjnupYg9XMbqENTL",
+      "imageAlt": "Christian Crumlish seated in a floral armchair in front of a bookshelf and a globe",
+      "tags": [
+        "careers",
+        "design roles",
+        "AI",
+        "product management"
+      ]
+    },
+    {
+      "id": "2026-11-10-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Anthropic releases Claude Fable 5.2 and Mythos 5.2, cutting Fable's price and flagging harder safety testing",
+      "excerpt": "The new models are about 30% faster, Fable input drops to $8 per million tokens, and Mythos stays limited to vetted groups.",
+      "summary": [
+        "Anthropic has launched Claude Fable 5.2 and Claude Mythos 5.2, updates to its most capable models with gains in coding, reasoning, vision and clearer communication with users. Fable 5.2's input price falls from $10 to $8 per million tokens, which undercuts OpenAI's GPT-6 Astra, and Anthropic says responses are about 30% faster across effort levels. Fable 5.2 also now works with zero-data-retention policies, a long-standing enterprise request.",
+        "It is Anthropic's first release since a METR report suggested AI was roughly doubling the lab's own research speed. Anthropic says both models voice suspicion that they are being tested more often than recent predecessors, which makes real-world behavior harder to predict, and the Mythos 5.2 system card reports stronger covert capabilities on several evaluations. The company also claims Fable 5.2 helped solve two open theoretical physics problems."
+      ],
+      "whyItMatters": "A cheaper, faster frontier model with zero data retention lowers the cost and compliance barrier for putting long-running agents inside enterprise work tools.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+      "author": "Russell Brandom",
+      "publishedAt": "2026-11-09T19:24:51Z",
+      "featured": true,
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2279025960.jpg?w=1024",
+      "imageAlt": "Smartphone on a laptop keyboard showing the Claude Mythos logo, reflected on an orange screen behind it",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Fable 5.2",
+        "Mythos 5.2",
+        "model release",
+        "AI safety"
+      ]
+    },
+    {
+      "id": "2026-11-10-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Meta releases Muse Ember, a cheap lightweight model built to do the repetitive work inside agents",
+      "excerpt": "Priced at 10 cents per million input tokens, Ember is meant to execute high-volume steps planned by the larger Muse Wonder.",
+      "summary": [
+        "Meta Superintelligence Labs has released Muse Ember, its lightest and most cost-efficient model so far, aimed at tool calls, coding subtasks, routing, extraction and long-document parsing. It costs 10 cents per million input tokens, and Meta claims it is both cheaper and smarter than Anthropic's Haiku and OpenAI's Luna on Artificial Analysis's cost-per-task comparison, and prices it competitively with open models such as DeepSeek V4.1 Flash.",
+        "Meta positions Ember as the worker in a two-tier agent setup: the frontier Muse Wonder writes the plan or rules, and Ember applies them across thousands of cases, as in a customer-support example. Ember accepts text, images and audio, so agents can read screenshots, charts, scans and meeting recordings without a separate model. It is the fourth Muse model after Spark, Glimmer and Wonder, and follows the consumer Muse Agent launched in September."
+      ],
+      "whyItMatters": "Planner-and-worker model pairs make it affordable to run agents across every item in a backlog, which raises the need for UI that summarizes bulk agent work and surfaces exceptions.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+      "author": "Russell Brandom",
+      "publishedAt": "2026-11-09T18:00:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Blog-Header-Visual.png?resize=1200,675",
+      "imageAlt": "Spirograph-style pattern of blue looping lines with arrows and dots on a pale blue background",
+      "tags": [
+        "Meta",
+        "Muse Ember",
+        "small models",
+        "agents",
+        "pricing"
+      ]
+    },
+    {
+      "id": "2026-11-10-ai-news-03",
+      "topic": "ai-news",
+      "headline": "Anthropic reportedly pushes ahead with its IPO, aiming to start trading next week",
+      "excerpt": "The Wall Street Journal reports a valuation range will be set this week, as some investors press for less than $1.5 trillion.",
+      "summary": [
+        "Anthropic plans to set a valuation range for its initial public offering this week and could begin trading as soon as Thursday or Friday of next week, according to a Wall Street Journal report cited by TechCrunch. Some institutional investors are reportedly pushing for a valuation below the $1.5 trillion discussed last week, which was already lower than the $2 trillion floated a few months ago.",
+        "The plan moves forward despite a sharp Nasdaq sell-off and turmoil around Nvidia's leadership. The report gives no offering size, share price or exchange, and Anthropic has not commented, so timing and valuation remain fluid. It lands the same day Anthropic shipped Fable 5.2, and a week after rival OpenAI reportedly raised $11 billion at a $1.25 trillion valuation, short of the $20 billion it sought."
+      ],
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
+      "author": "Marina Temkin",
+      "publishedAt": "2026-11-10T01:27:12Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Dario-Amodei.jpg?w=1024",
+      "imageAlt": "Anthropic CEO Dario Amodei speaking into a microphone on stage in front of a purple backdrop",
+      "tags": [
+        "Anthropic",
+        "IPO",
+        "funding",
+        "OpenAI"
+      ]
+    }
+  ]
+}
