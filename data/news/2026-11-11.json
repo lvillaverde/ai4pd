@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T07:40:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-11-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Anthropic's Claude Meetings joins Google Meet calls as a visible participant and starts the work mid-call",
+      "excerpt": "Claude can now sit in a video call, draft plans and whiteboards live, and hand back notes and action items afterwards.",
+      "summary": [
+        "Anthropic introduced Claude Meetings on November 10, a beta for Team and Enterprise plans that puts Claude into Google Meet calls as an attendee. While people talk, it can draft the plan being discussed, sketch a timeline on a shared whiteboard, answer questions in the meeting chat and pull figures from connected work apps. Notes, action items and anything it produced are waiting in claude.ai once the call ends.",
+        "The launch came alongside Claude Whiteboards and Claude Sheets, both in beta on paid plans, plus general availability of Claude Data (previously Dashboards) and connectors that open full apps such as Atlassian and HubSpot inside Claude. Claude announces itself in the call and the chat, stays out of meetings with external guests unless an admin allows it, and leaves if one joins. Anthropic says support for more plans and meeting platforms will follow."
+      ],
+      "whyItMatters": "An agent that participates in meetings and turns talk into plans and tasks moves straight into project-management territory, and its self-announcing, auto-leave rules are a ready template for agent etiquette in shared spaces.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+      "author": "Aisha Malik",
+      "publishedAt": "2026-11-10T17:30:00Z",
+      "featured": true,
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Claude-Meetings.png?resize=1200,675",
+      "imageAlt": "Laptop showing a video call where Claude sits in a participant tile and replies in the meeting chat with a link to a new whiteboard",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "meetings",
+        "agents",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "2026-11-11-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "OpenAI lets companies claim ChatGPT profiles and put their own Business Agents in front of customers",
+      "excerpt": "A new beta gives brands verified profiles, mention insights and a customer-facing agent that opens beside ChatGPT's answers.",
+      "summary": [
+        "OpenAI opened Businesses in ChatGPT in beta on November 10. Through a Business Hub, companies can claim a verified profile with a blue check, keep details, prices and stock up to date, and see aggregate data on how often ChatGPT mentions them, click-throughs to their sites and common topics. OpenAI says it does not hand individual user chats to businesses.",
+        "Eligible US e-commerce and online-service firms can also run a Business Agent: when a company shows up in an answer, users can open its profile panel and start a chat that draws on the company's own product information. Those chats are labeled and kept apart from ChatGPT's own responses, agents must disclose they are AI, and purchases or sharing personal data need explicit approval. Brands can also sponsor the agent as an ad destination, and OpenAI is working on agent payments with Visa."
+      ],
+      "whyItMatters": "It shows a clean pattern for letting a third-party agent speak inside a host product: a separate labeled side panel, an explicit 'Start chat' entry point and approval gates before any purchase or data sharing.",
+      "sourceName": "The Next Web",
+      "sourceUrl": "https://thenextweb.com/news/openai-businesses-in-chatgpt-business-agents",
+      "author": "Ana Maria Constantin",
+      "publishedAt": "2026-11-10T19:06:21Z",
+      "imageUrl": "https://media.thenextweb.com/2026/11/chatgpt-business-profile-colorful-clatter.jpg",
+      "imageAlt": "ChatGPT window listing toy shops, with a side panel for a verified toy-store profile showing a Start chat button and product cards",
+      "tags": [
+        "OpenAI",
+        "ChatGPT",
+        "business agents",
+        "side panel"
+      ]
+    },
+    {
+      "id": "2026-11-11-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "NN/G explains the agent harness, the layer that decides what an AI model sees, can do and when it must ask",
+      "excerpt": "Nielsen Norman Group defines the software loop around a model and argues many of its settings are really UX decisions.",
+      "summary": [
+        "In a new definition piece, Nielsen Norman Group's Caleb Sponheim describes the agent harness as the software wrapped around an AI model that runs its execution loop: it receives the model's tool requests, checks permissions, calls the tool, returns the result and repeats. Using two scheduling assistants built on the same model, the article shows that one only edits agendas while the other checks calendars and sends invites, purely because of what their harnesses allow.",
+        "The article lists the harness's other jobs: assembling context such as saved preferences and connected documents, connecting tools, enforcing limits and deciding when to pause for user confirmation. If a stored preference never reaches the model, users end up repeating themselves. NN/G recommends evaluating the whole task with realistic tools and permissions, including broken connections or changed preferences, and working with engineers to tell whether a failure came from the interface, the harness or the model."
+      ],
+      "whyItMatters": "Treat context assembly, tool permissions and confirmation points as design specs: map which preferences the agent must always receive and which actions must stop for approval, then test full tasks with failures injected.",
+      "sourceName": "Nielsen Norman Group",
+      "sourceUrl": "https://www.nngroup.com/articles/agent-harness/",
+      "author": "Caleb Sponheim",
+      "publishedAt": "2026-11-06T18:00:00Z",
+      "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/Agent-Harness_socialcard.png",
+      "imageAlt": "NN/G title card with a glowing AI sparkle surrounded by icons for code, a checklist, a person, a document, a clock and settings inside a dashed boundary",
+      "tags": [
+        "agent harness",
+        "permissions",
+        "context",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "2026-11-11-competitors-01",
+      "topic": "competitors",
+      "headline": "Notion confirms AI chat transcripts were exposed through a breach at its model provider Fireworks AI",
+      "excerpt": "Fewer than 1% of workspaces were affected after attackers reached data Notion had sent to a third party for an analytics feature.",
+      "summary": [
+        "Notion says a security incident at Fireworks AI exposed Notion AI chat transcripts tied to fewer than 1% of customer workspaces. The conversations had been sent to Fireworks for classification work behind Insights, a feature that shows teams how they use AI. Notion stresses that its own systems were not breached, no other features were involved, and affected customers have been contacted with a way to review the data in their workspaces.",
+        "The timeline shifted over a week: Fireworks first reported only synthetic test data on November 2, Notion cut the connection and deleted its data there on November 3, and on November 8 Fireworks confirmed a dataset with customer transcripts. Notion says most transcripts lacked author or workspace labels and tool-call results, but text people typed could still identify them. The investigation remains open and more customers may be notified."
+      ],
+      "whyItMatters": "AI analytics and usage dashboards often route chat logs to third parties; designers should make that flow visible in admin settings and give teams clear controls over which conversations leave the workspace.",
+      "sourceName": "Cyber Security News",
+      "sourceUrl": "https://cybersecuritynews.com/notion-confirms-data-breach",
+      "author": "Guru Baran",
+      "publishedAt": "2026-11-10T16:54:37Z",
+      "imageUrl": "https://cybersecuritynews.com/wp-content/uploads/2026/11/Notion-Confirms-Data-Breach-.webp",
+      "imageAlt": "Notion cube logo on a dark digital background next to a red warning sign labeled breach",
+      "tags": [
+        "Notion",
+        "security",
+        "privacy",
+        "AI data"
+      ]
+    },
+    {
+      "id": "2026-11-11-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Google opens Gemini 4 Carbon to paying developers after two weeks of security-first testing",
+      "excerpt": "The deep-reasoning model is now in the Gemini API at an introductory $2/$10 per million tokens, plus an agent-swarm preview.",
+      "summary": [
+        "Google made Gemini 4 Carbon generally available on November 10 for paying developers and business customers through the Gemini API in AI Studio, Android Studio and Gemini for Business. It sits next to Gemini 4 Argon, which Google still recommends for most coding and knowledge work. Introductory pricing is $2 per million input tokens and $10 per million output tokens, rising to $4 and $20, and Google claims first place on CursorBench 4.0, WANDR and AutomationBench.",
+        "The Decoder notes that Carbon spends more tokens on reasoning and verification, so real costs run higher than list prices: about $7.76 per solved task on Artificial Analysis, while Fable 5.2 scores slightly higher overall at its top tier. Google also previewed a /swarm mode in Antigravity where Carbon coordinates lighter models in parallel, and reported strong safety and prompt-injection results, though several cybersecurity figures remain unpublished."
+      ],
+      "whyItMatters": "Cost per completed task, not token price, is becoming the number that decides which model powers an agent feature, and orchestrator-plus-workers swarms will need progress views that show several agents at once.",
+      "sourceName": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet/",
+      "author": "Matthias Bastian",
+      "publishedAt": "2026-11-10T18:19:13Z",
+      "imageUrl": "https://the-decoder.com/wp-content/uploads/2026/11/gemini-4_carbon_logo.png",
+      "imageAlt": "Translucent blue crystal floating on a dark blue background scattered with small number fours",
+      "tags": [
+        "Google",
+        "Gemini",
+        "models",
+        "pricing",
+        "agents"
+      ]
+    },
+    {
+      "id": "2026-11-11-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Anthropic launches its IPO roadshow, pricing 825 million shares at $70 to $78",
+      "excerpt": "The Claude maker has applied to list on Nasdaq under the ticker ANT as it starts pitching investors.",
+      "summary": [
+        "Anthropic started the roadshow for its proposed initial public offering on November 10. The deal covers 825 million Class A shares, about 801 million sold by the company and roughly 23.6 million by existing stockholders, at an expected $70 to $78 each. Underwriters get a 30-day option on up to 123.75 million more shares, and the company has applied to list on the Nasdaq Global Select Market as ANT.",
+        "Goldman Sachs and Morgan Stanley lead the offering, and the registration statement has been filed with the SEC but is not yet effective, so the final price and size can still change. Press reports, citing people familiar with the deal, say pricing is expected around November 18 with trading as soon as November 19. The roadshow began the same day Anthropic unveiled its new workplace tools."
+      ],
+      "whyItMatters": "A public Anthropic will face quarterly pressure to grow enterprise products, which means faster expansion of Claude into the meeting, spreadsheet and planning tools that work-management apps compete with.",
+      "sourceName": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/roadshow-launch",
+      "publishedAt": "2026-11-10T12:00:00Z",
+      "imageUrl": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+      "imageAlt": "Anthropic logo",
+      "tags": [
+        "Anthropic",
+        "IPO",
+        "industry"
+      ]
+    }
+  ]
+}
