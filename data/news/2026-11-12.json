@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T07:30:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-12-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Adobe's always-on Firefly agent suggests quick actions, and a new MCP opens Creative Cloud to other chatbots",
+      "excerpt": "At MAX, Adobe added a proactive agent to Firefly, a Figma-style prototyping tool and an MCP for ChatGPT, Claude and Gemini.",
+      "summary": [
+        "Adobe used its MAX event in Miami on November 10 to add a new round of AI features across Photoshop, Premiere, Lightroom and Firefly. The headline item for agent design is a proactive assistant in Firefly that stays on in the background, collects context about what the user is working on and offers ready-made quick actions such as removing a background or generating a thumbnail. Adobe also showed Firefly Builder, a prototyping tool in private beta that puts it in more direct competition with Figma.",
+        "Alongside the app updates, Adobe is shipping a local MCP server that exposes Illustrator, Photoshop, After Effects and Premiere features to outside assistants like ChatGPT, Claude and Gemini, on top of its existing ChatGPT and Claude integrations. Adobe's Deepa Subramaniam said the company has not settled on everything it will expose and will let user feedback guide that. TechCrunch notes that availability dates for most of the features, including the MCP, were not given."
+      ],
+      "whyItMatters": "Adobe's promo shows a stack of suggested actions that ends in a single 'Approve & run' button, a compact pattern for proactive agents that propose work but wait for consent before acting.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-11-10T14:05:10Z",
+      "featured": true,
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/FF-AIA-PlanMode-No-Logo-4.jpg?resize=1200,675",
+      "imageAlt": "A hand resting on a printed tote bag beside floating suggestion chips (Auto tone image, Remove background, Resize image for social) and an 'Approve & run' button",
+      "tags": ["Adobe", "Firefly", "proactive agents", "MCP", "approvals"]
+    },
+    {
+      "id": "2026-11-12-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Spotify's AI DJ adds named personalities and a switch to turn off its chatter between songs",
+      "excerpt": "Premium listeners can now choose among new DJ voices with distinct characters, or keep the music going with almost no commentary.",
+      "summary": [
+        "Spotify began rolling out new voices for its AI DJ on November 10 to Premium subscribers in the more than 95 markets where the feature already works. English now has seven options with British, American, Irish, Australian and Indian accents, and three of the American voices come with defined personalities: Casey is relaxed and warm, Tess is blunt, and Lane has a Southern accent and young energy. Spanish speakers get two new voices, Nico and Fabi, which replace the previous Spanish voice. Spotify says more than 94 million Premium listeners use the DJ.",
+        "The update also lets people switch off the commentary between tracks, leaving the DJ with only short acknowledgments when it starts and stops, which Spotify pitches for background listening at gatherings. Voice and commentary settings live behind the three-dot menu on the DJ, reached by searching for 'DJ' in the app, and tapping the DJ button again still steers genres or artists mid-session. The original DJ voice remains available."
+      ],
+      "whyItMatters": "Letting people pick an assistant's persona and dial down how much it talks treats agent verbosity as a user preference rather than a fixed product decision.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-11-10T14:00:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/05/Spotify-AI-DJ-Header.jpg?w=978",
+      "imageAlt": "Illustration of a hand holding a smartphone showing the Spotify DJ player with a glowing green ring",
+      "tags": ["Spotify", "AI personality", "voice", "settings"]
+    },
+    {
+      "id": "2026-11-12-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Eric Bailey's guide to making streaming AI chat and agent replies usable with a screen reader",
+      "excerpt": "Smashing Magazine lays out how to announce streamed replies, loading states and long conversations without flooding assistive tech.",
+      "summary": [
+        "In a Smashing Magazine article published November 5, designer Eric Bailey works through what it takes to make full-screen LLM chat products such as Claude, ChatGPT, Gemini, GitHub Copilot and Glean accessible. His central advice is to route every announcement through a single live region placed at the end of the page instead of marking each message as live, and to read a reply aloud only once it has finished streaming, rather than token by token.",
+        "For waiting states, he suggests announcing whatever loading text is visible, or saying 'Loading' after roughly five seconds with varied wording if only an animation shows. Each message should be its own article with a hidden heading naming the speaker, landmarks should be limited to the main regions, and keyboard users need skip links, F6 landmark jumps and sensible focus placement. He also recommends user controls for announcement verbosity, motion and sounds, short spoken summaries of tables and code, and testing with disabled people."
+      ],
+      "whyItMatters": "Announce an agent's progress and finished results through one central status channel with a plain-language summary, so long-running work stays understandable to everyone, not just people watching the screen.",
+      "sourceName": "Smashing Magazine",
+      "sourceUrl": "https://www.smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/",
+      "author": "Eric Bailey",
+      "publishedAt": "2026-11-05T13:00:00Z",
+      "imageUrl": "https://files.smashing.media/articles/making-immersive-llm-chat-experiences-more-accessible/making-immersive-llm-chat-experiences-more-accessible.jpg",
+      "imageAlt": "Smashing Magazine title card with a cartoon portrait of author Eric Bailey and the red Smashing cat mascot",
+      "tags": ["accessibility", "chat UI", "screen readers", "loading states", "streaming"]
+    },
+    {
+      "id": "2026-11-12-competitors-01",
+      "topic": "competitors",
+      "headline": "Notion's API can now make a Custom Agent the assignee of a task, or @-mention it, to start the work",
+      "excerpt": "Intake forms, bots and other integrations can hand work to Notion agents through the same people fields used for teammates.",
+      "summary": [
+        "Notion updated its public API so that an integration can put a Custom Agent into a people property such as Assignee when it creates or edits a page, a change that went live on November 9. A day later it added the ability to @-mention a shared Custom Agent inside page text. Both actions accept either the agent ID or its bot user ID, and Notion's changelog says either can kick off an agent run, so an external form or chat bot can route a request to an agent much as it would to a colleague.",
+        "There are conditions: the integration needs the capability to view sessions and interact with agents, and the agent must be enabled in its Agent access settings. Notion Coach points out that updating a people field replaces the whole list, so an integration can silently remove existing assignees, and that the List all users endpoint still leaves agents out. The changelog's wording is that assignment 'can' start a run, without spelling out when it will."
+      ],
+      "whyItMatters": "Treating an agent as a regular assignee in task fields makes delegation feel native to work-management tools, but it raises design questions about how an agent shows it has picked up, is working on, or has declined a task.",
+      "sourceName": "Notion Coach",
+      "sourceUrl": "https://notioncoach.com/feed/notion-api-custom-agent-people-property",
+      "author": "Dave de Céspedes",
+      "publishedAt": "2026-11-09T12:00:00Z",
+      "imageUrl": "https://notioncoach.com/feed/images/notion-api-custom-agent-people-property.svg",
+      "imageAlt": "Editorial diagram of mentioning or assigning a Custom Agent with an agent ID or a bot user ID, the bot user object that returns agent_id and id, and the List all users limit.",
+      "tags": ["Notion", "custom agents", "assignment", "API", "delegation"]
+    },
+    {
+      "id": "2026-11-12-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Open product design roles hit a record low while PM openings climb, Lenny's job market data shows",
+      "excerpt": "There are now 3.8 open PM roles for every design role, and Claude has become the second most cited skill in design job posts.",
+      "summary": [
+        "Lenny Rachitsky's late-2026 look at the tech job market counts about 1,900 open product design roles worldwide, the lowest since his tracking began and 28% fewer than a year ago. US companies hired roughly 12,600 product designers over the past twelve months, compared with 27,600 in 2022. Product management is moving the other way: PM openings are at a near four-year high, up 75% from the March 2023 low, leaving 3.8 open PM jobs for every design job, up from 1.9 in early 2023.",
+        "The data also shows research and remote work shrinking for designers: US user researcher hiring fell 66% from 2022, and only 19% of open design roles are remote, down from 34%. AI skills dominate postings. 'LLM' is the top skill named in PM listings, and in design listings Claude rose to the second most mentioned skill this spring while Cursor overtook CSS. Part of the report sits behind the newsletter's paywall."
+      ],
+      "whyItMatters": "With design teams shrinking and AI tooling becoming a hiring requirement, designers who can prototype and reason about AI behavior are better placed than those who only hand off static screens.",
+      "sourceName": "Lenny's Newsletter",
+      "sourceUrl": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+      "author": "Lenny Rachitsky",
+      "publishedAt": "2026-11-10T15:04:03Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!-6sL!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8be609d0-ed10-464c-8b94-d052d45956da_2912x1940.png",
+      "imageAlt": "Illustrated chart cards labelled AI roles, PM roles and Design roles, with the design chart dipping below zero",
+      "tags": ["careers", "hiring", "design jobs", "product management"]
+    },
+    {
+      "id": "2026-11-12-ux-design-02",
+      "topic": "ux-design",
+      "headline": "Luke Wroblewski puts his 17,000-answer design archive into ChatGPT, Claude and Cursor through an MCP server",
+      "excerpt": "Ask LukeW now runs inside AI tools, with keyword and semantic search plus an agent that critiques interfaces.",
+      "summary": [
+        "Luke Wroblewski announced on November 11 that Ask LukeW, the AI feature on his site that has answered more than 17,000 questions about digital product design, can now be used inside other AI tools. Anyone can add the MCP server at lukew.com/mcp, with no account, to assistants such as ChatGPT, Claude and Cursor. It offers keyword search for exact terms and semantic search for related ideas across his articles, talks, PDFs and audio, and every result links back to its source.",
+        "He also built an Interface Designer agent that pairs those searches with detailed review instructions. In his example it assessed a signup form and suggested concrete fixes, such as showing progress on the submit button and validating the email field when it loses focus. Wroblewski says the agent can also run in coding tools like Intent to guide changes to real, working interfaces."
+      ],
+      "whyItMatters": "Packaging design guidance as an MCP source lets teams bring cited, expert critique into the AI tools where interfaces are now being built.",
+      "sourceName": "LukeW",
+      "sourceUrl": "https://www.lukew.com/ff/2171/ask-lukew-in-your-ai-tools",
+      "author": "Luke Wroblewski",
+      "publishedAt": "2026-11-11T14:00:00Z",
+      "imageUrl": "https://static.lukew.com/asklukew_ranking_mcp.png",
+      "imageAlt": "Diagram of a question box asking what designers should do about AI, feeding keyword and semantic search across web pages, videos, PDFs, audio and images",
+      "tags": ["MCP", "design critique", "Luke Wroblewski", "AI tools"]
+    },
+    {
+      "id": "2026-11-12-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Google DeepMind's AlphaProof Code formally verifies key security guarantees of the Signal protocol",
+      "excerpt": "In a four-week project, DeepMind's agentic system mathematically proved core properties of the encryption behind Signal and WhatsApp.",
+      "summary": [
+        "Google DeepMind researchers used a new agentic framework called AlphaProof Code to formally verify several of the Signal protocol's core cryptographic guarantees, WIRED reported on November 10. The proof-of-concept took about four weeks. It found no new flaws in the parts it examined, and when pointed at older Signal versions with known, long-patched bugs, it flagged them and showed those versions could not be verified. DeepMind is publishing the specification and proof.",
+        "The scope was limited and did not cover the full Signal app, and the team benefited from earlier verification work by the Signal Foundation. Google would not disclose the cost or say whether a commercial product is planned. Researcher Swarat Chaudhuri credited much of the progress to a human-AI process in which agents self-correct through most steps but ask for human review at key points, rather than letting AI write both the goals and the proofs."
+      ],
+      "whyItMatters": "DeepMind's emphasis on human checkpoints at key junctures, rather than letting agents set and grade their own goals, is a useful model for any agent that does high-stakes work.",
+      "sourceName": "WIRED",
+      "sourceUrl": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
+      "author": "Lily Hay Newman",
+      "publishedAt": "2026-11-10T05:01:00Z",
+      "imageUrl": "https://media.wired.com/photos/6af23a5e398c3a1348a23455/191:100/w_1280,c_limit/Security_A%20New%20AI%20Tool%20From%20Google%20DeepMind%20Formally%20Verified%20the%20Signal%20Protocol_v1.jpg",
+      "imageAlt": "Photo-illustration of a glowing human figure surrounded by floating panels marked with shield, check and warning icons",
+      "tags": ["Google DeepMind", "formal verification", "Signal", "security", "agents"]
+    },
+    {
+      "id": "2026-11-12-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Gemini Robotics 2.5 lifts robot task success and hits 96% on a Mercedes-Benz parts-packing pilot",
+      "excerpt": "DeepMind's new vision-language-action model is rolling out to robotics partners along with an open jailbreak benchmark.",
+      "summary": [
+        "Google DeepMind released Gemini Robotics 2.5 on November 10, calling it its most capable vision-language-action model so far. Tested on more than 200 tasks, from serving food with tongs to pipetting liquids, it raised success rates by 30% to 100% over earlier baselines depending on the task and finished jobs 20% to 30% faster. In a proof of concept on Mercedes-Benz production lines, Apptronik's Apollo 2 humanoid running the model picked and packed car parts with a 96% success rate.",
+        "DeepMind also reports safety gains: 33% more tasks completed safely around obstacles and 43% more around nearby people. It released ASIMOV-Jailbreak, an open benchmark of disguised unsafe requests on Hugging Face, on which Gemini 4 Argon resisted 99.5% of attempts. The model is going to robotics partners such as Agile and Apptronik first, with no general availability announced."
+      ],
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "author": "Carolina Parada",
+      "publishedAt": "2026-11-10T15:00:00Z",
+      "imageUrl": "https://lh3.googleusercontent.com/F1CrVEYRb8lJOyyxGgcyow-Td1de-nkp7K8MZrhjrKPANJUc0EYB754Ninn-Yrppjdb54nolOWo6Rk8iDaRNuixWwLaEKc0K9ImGooxen9fj9IOh=w1200-h630-n-nu-rw",
+      "imageAlt": "White humanoid robot at a kitchen counter with a tray of pastries and a gift box tied with a ribbon",
+      "tags": ["Google DeepMind", "robotics", "Gemini", "safety"]
+    }
+  ]
+}
