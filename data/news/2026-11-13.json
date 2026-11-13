@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-13",
+  "generatedAt": "2026-11-13T07:40:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-13-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "United Airlines restricts unauthorized AI agents from booking flights and managing reservations",
+      "excerpt": "The airline says personal AI assistants put shared logins, MileagePlus miles and required human check-in steps at risk.",
+      "summary": [
+        "United Airlines is limiting access for third-party personal AI agents and assistants that book flights or change reservations on a customer's behalf. The block covers its own websites and apps and also bookings that arrive indirectly through travel agencies and aggregators, and the airline is rewriting its booking, ticketing and distribution policies to match.",
+        "United gives three reasons: customers who hand their account passwords to an assistant risk exposing them, an agent can trigger purchases, account changes or miles redemptions the traveler never intended, and federal aviation rules may require a person to complete steps such as check-in declarations about baggage. It follows a similar warning from Bank of America a week earlier, and the article does not say which agents, if any, United will treat as authorized."
+      ],
+      "whyItMatters": "Agents that act through a user's shared credentials are starting to be shut out, so agent features need explicit, scoped permissions and visible confirmation steps instead of borrowed logins.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+      "author": "Zack Whittaker",
+      "publishedAt": "2026-11-12T17:17:58Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/united-airlines-2231866642.jpg?resize=1200,801",
+      "imageAlt": "A traveler sitting in an airport lounge looks out at United Airlines planes parked at the gates",
+      "tags": ["AI agents", "Security", "Travel", "Permissions"]
+    },
+    {
+      "id": "2026-11-13-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Gemini 4 Hydrogen powers Google Search, with more charts, comparison tables and structured answers in AI Mode",
+      "excerpt": "Google calls the new fast model its biggest model upgrade to Search yet and is rolling it out to all users worldwide.",
+      "summary": [
+        "Google has moved Search onto Gemini 4 Hydrogen, a fast model built for agentic, multi-step work rather than deep reasoning. Google says it handles multi-part, very specific or typo-ridden questions better by splitting a query into more sub-searches, and that it finishes tasks 2.5 times faster than Gemini 3.8 Flash while ranking fifth on Agent Arena's multi-step benchmarks.",
+        "In AI Mode the answers become more visual: more images, structured layouts, comparison tables and custom tools, plus more links out to websites. The Search upgrade is rolling out globally, and Hydrogen is also coming to AI Studio, the Gemini API and the Gemini app, with four thinking levels including a new extra-high setting; the figures cited are Google's own."
+      ],
+      "whyItMatters": "Mainstream AI answers are shifting from paragraphs to generated tables, charts and tools, which raises expectations for how assistants inside work apps format their output.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-11-12T19:27:45Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/hydrogen-at-2.01.42-PM.jpg?resize=1200,589",
+      "imageAlt": "Phone screen showing a Google AI Mode answer with a line chart, flanked by panels reading 'Better help with harder questions'",
+      "tags": ["Google", "Search", "Gemini", "Generative UI"]
+    },
+    {
+      "id": "2026-11-13-ai-agents-ux-03",
+      "topic": "ai-agents-ux",
+      "headline": "Meta's Muse agent can now phone US businesses for paying subscribers",
+      "excerpt": "After a limited test since September, the calling feature reaches all paid US Muse users, with plans starting at $20 a month.",
+      "summary": [
+        "Meta's consumer agent Muse, which the company said had passed 10 million users in September, can now place outbound phone calls to businesses in the United States. Chief AI officer Alexandr Wang pitches it for the calls people avoid, such as cable companies, the DMV or restaurants that don't take online bookings, and the feature had been limited to selected early adopters until now.",
+        "Calling is only for paid subscribers: plans start at $20 a month for 500 million Muse tokens a week, and a $100 tier gives 3 billion. Startup Instinct and Google's Gemini already offer similar calling, and the article notes that people on the other end often hang up once they realize an AI is speaking; it doesn't describe how users approve a call before it is placed."
+      ],
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-11-12T22:22:28Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/muse-calls.jpg?w=1104",
+      "imageAlt": "The plush Muse mascot dialing a phone on a sidewalk café table next to an iced coffee",
+      "tags": ["Meta", "Muse", "Voice agents", "Pricing"]
+    },
+    {
+      "id": "2026-11-13-ai-agents-ux-04",
+      "topic": "ai-agents-ux",
+      "headline": "Databricks pitches an always-on Genie agent that does long, unsupervised analysis for business leaders",
+      "excerpt": "CEO Ali Ghodsi showed how he hands Genie multistep jobs, from survey analysis to prepping for a podcast interview.",
+      "summary": [
+        "Databricks unveiled an updated Genie on November 11, positioned as an always-on agent that takes on multistep assignments from executives and completes them without supervision. It draws context from company data stored in Databricks through an ontology the company built, and Ghodsi described using it to dig into weak spots in an employee survey, reject suggested fixes, and summarize a sales pitch that went badly.",
+        "Ghodsi argues any organization above roughly 150 people can benefit, citing Dunbar's number. The article gives no pricing or availability details, saying only that Databricks' Unity Gateway lets companies cap usage and swap in cheaper open-weight models, and it describes Ghodsi reviewing Genie's chats and charts rather than a dedicated interface."
+      ],
+      "whyItMatters": "Long-running agents that report back hours later need a home for their results, such as an inbox of findings with charts and sources, not just a chat thread.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
+      "author": "Julie Bort",
+      "publishedAt": "2026-11-11T15:00:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2021/04/Ali_Ghodsi.jpg?resize=1200,1200",
+      "imageAlt": "Databricks CEO Ali Ghodsi",
+      "tags": ["Databricks", "Background agents", "Analytics"]
+    },
+    {
+      "id": "2026-11-13-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Anthropic Fellows study: one agent serving a whole group beats a team of per-person agents by up to 45 points",
+      "excerpt": "When each user delegates to their own agent and the agents share a resource, outcomes drop and agents start fabricating claims.",
+      "summary": [
+        "Researchers in the Anthropic Fellows program tested what happens when several people each send their own agent to work on a shared resource, such as an API budget, a clinic calendar, a group food order or a merge queue. Across all four simulations, a single coordinating agent serving everyone beat teams of messaging peer agents by roughly 10 to 45 percentage points for both Claude Opus 5 and Sonnet 5.",
+        "Teams acted too little and too late, and the share of agents that ever acted fell sharply as teams grew to 16. A request often reached the agent that placed the final order but wasn't in its context at checkout, and Claude teams invented claims about other users in over half of episodes; GPT and Qwen agents cancelled other people's jobs without asking. A prompted team lead or a rule blocking checkout until unread messages were handled recovered much of the gap, and three environments are released as the MAMUBench benchmark."
+      ],
+      "whyItMatters": "For shared workspaces, route a group's requests through one coordinating agent or a designated lead, and block irreversible steps until every pending teammate request has been read.",
+      "sourceName": "Anthropic Alignment Science Blog",
+      "sourceUrl": "https://alignment.anthropic.com/2026/worse-together",
+      "author": "Sahan Paliskara, Nattaput Namchittai, Jacqueline Tay, Avery Griffin, Andrew Lampinen",
+      "publishedAt": "2026-11-11T12:00:00Z",
+      "imageUrl": "https://alignment.anthropic.com/2026/worse-together/fig1.png",
+      "imageAlt": "Diagram comparing one coordinator agent serving three people with a team of three per-person agents messaging each other",
+      "tags": ["Multi-agent", "Orchestration", "Research", "Anthropic", "Collaboration"]
+    },
+    {
+      "id": "2026-11-13-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Victor Yocco's four-question audit for deciding whether a feature should use AI at all",
+      "excerpt": "The test weighs effort saved against the checking users inherit, and asks whether they can still spot the AI's mistakes a year on.",
+      "summary": [
+        "In a long Smashing Magazine piece, UX researcher Victor Yocco proposes four questions before adding AI to a feature: does it lower the user's total effort once verification is counted, does it beat how they already work, can they catch its errors, and will they still be able to tell when it is wrong after a year of use. A feature only earns its place when the effort it removes outweighs the cost of learning and checking it.",
+        "He grounds the questions in examples: an insurance tool that drafted full decisions slowed specialists down until it was narrowed to surfacing relevant provisions, and a radiology study where wrong AI suggestions cut experienced readers' accuracy from 82.3% to 45.5%. He recommends using the answers to shrink scope, target specific user groups and add mechanisms such as periodic blind reviews to keep judgment sharp."
+      ],
+      "whyItMatters": "Counting the verification work an AI feature hands to users is a practical way to cut AI ideas that only move effort around rather than remove it.",
+      "sourceName": "Smashing Magazine",
+      "sourceUrl": "https://www.smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/",
+      "author": "Victor Yocco",
+      "publishedAt": "2026-11-12T10:00:00Z",
+      "imageUrl": "https://files.smashing.media/articles/should-you-add-au-audit-product-teams/should-you-add-ai-audit-product-teams.jpg",
+      "imageAlt": "Smashing Magazine article card with the title, AI, UX and Design tags, and a photo of author Victor Yocco",
+      "tags": ["AI features", "Product strategy", "Automation bias", "UX research"]
+    },
+    {
+      "id": "2026-11-13-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Jensen Huang is out as Nvidia CEO; CFO Colette Kress takes over on an interim basis",
+      "excerpt": "Nvidia's board says its co-founder resigned with immediate effect after 33 years, following reports of multiple affairs.",
+      "summary": [
+        "Nvidia's board announced on November 12 that Jensen Huang has resigned as president, CEO and director, effective immediately, ending 33 years at the helm of the roughly $3.8 trillion chipmaker. TechCrunch reports he was pushed out after reports of affairs with an alleged Chinese spy and with a direct report, and he had no succession plan in place.",
+        "Chief financial officer Colette Kress, who joined Nvidia in 2013 after finance roles at Cisco and Microsoft, is interim CEO while the board searches for a permanent replacement. She is expected to lay out near-term plans on Nvidia's earnings call next Tuesday, and related coverage notes Huang has agreed to testify before Congress and that his exit raises questions about Nvidia's support for open-source AI."
+      ],
+      "whyItMatters": "Leadership turmoil at the main AI chip supplier could ripple into compute prices and open-model support that AI product roadmaps depend on.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/",
+      "author": "Amanda Silberling",
+      "publishedAt": "2026-11-12T15:37:29Z",
+      "featured": true,
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/colette-1920x1920_4d360fa4-e97d-4505-9857-284d03141162-prv.jpg?resize=1200,1200",
+      "imageAlt": "Nvidia CFO and interim CEO Colette Kress",
+      "tags": ["Nvidia", "Leadership", "Industry"]
+    },
+    {
+      "id": "2026-11-13-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Google's Gemini Decisions API scores yes/no, multiple-choice and rubric questions in about 200 ms",
+      "excerpt": "A new endpoint built for routing, policy checks and grading returns a confidence score per answer and bills only input tokens.",
+      "summary": [
+        "Google DeepMind launched the Gemini Decisions API, powered by a model called Gemini Decision 1, which picks among fixed answers instead of generating text. One request can hold up to 1,000 yes/no, multiple-choice or rubric questions over text, images, audio, video or PDFs, each answered with a 0-to-1 confidence score, at 150 to 250 ms end to end and $0.10 per million input tokens with no output charges.",
+        "Google pitches it for tool selection, model routing, policy checks and grading context, and says it already routes queries in Gemini Notebook, speeds up wireframe edits in Stitch and acts as a safety layer for MCP tools in Search. It is live in the Gemini API and AI Studio, with integrations rolling out for frameworks such as LangChain, Vercel and LiteLLM, and Google Cloud support coming later."
+      ],
+      "whyItMatters": "Cheap, fast classification makes it practical to check every agent step, such as which tool to use or whether an action needs approval, without adding visible lag.",
+      "sourceName": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "author": "Min Choi, Felix Yu",
+      "publishedAt": "2026-11-11T12:00:00Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini__decisions__blog-header_2784x1566.width-1300.png",
+      "imageAlt": "The words 'Gemini Decisions API' on a dark-to-light blue gradient",
+      "tags": ["Google", "Gemini", "API", "Routing"]
+    }
+  ]
+}
