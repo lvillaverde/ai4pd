@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-14",
+  "generatedAt": "2026-11-14T07:30:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-14-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "ChatGPT Wallet lets its agents check out for you, with a biometric approval on every purchase",
+      "excerpt": "OpenAI's new Wallet stores cards once so ChatGPT's agents can complete purchases after a Face ID or fingerprint check.",
+      "summary": [
+        "OpenAI launched ChatGPT Wallet on November 13, a payment layer that lets ChatGPT's personal agents, which it calls \"dots,\" help pick products and then complete the purchase. People add an eligible card once; at checkout the card is charged through a payment token, so neither the agent nor the store ever sees the real card number, while the merchant still gets the shipping and contact details it needs. Rewards and normal card protections such as chargebacks still apply.",
+        "The rollout is narrow: a limited group of US ChatGPT Pro subscribers aged 18 or over with a US-issued Visa, Mastercard or American Express card. Before paying, the user reviews the items, total and card, then confirms with Face ID or a fingerprint, which also creates a transaction record. OpenAI says spending limits and category- or time-based rules that would let people pre-approve purchases are planned but not yet available, and some large retailers, Amazon among them, still block outside agents."
+      ],
+      "whyItMatters": "It is a clear reference for high-stakes agent actions: a summary card to review, a strong explicit confirmation, a durable record, and pre-approval rules as the path to more autonomy later.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-11-13T16:00:12Z",
+      "featured": true,
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/chatgpt-wallet.jpg?resize=1200,729",
+      "imageAlt": "Phone chat with a ChatGPT agent confirming delivery details for a $66.30 order, with a \"Review purchase\" button above the message box",
+      "tags": ["OpenAI", "ChatGPT", "agentic commerce", "approvals", "payments"]
+    },
+    {
+      "id": "2026-11-14-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "ElevenLabs previews ElevenAI, a team app that mixes meeting notes, dictation and agent follow-ups",
+      "excerpt": "The voice AI company's new desktop app records meetings, answers questions across past calls and types cleaned-up dictation anywhere.",
+      "summary": [
+        "ElevenLabs, valued at $22 billion, unveiled ElevenAI at its 11/11 Summit in New York, an experimental app aimed at teams rather than individuals. It takes notes across meetings while telling participants the call is being recorded, lets people query information from earlier conversations, offers live help during a call, and turns speech into cleaned-up text in any app in more than 90 languages, recognising industry jargon in both dictation and transcripts.",
+        "Companies can connect ElevenAgent to automate follow-ups such as drafting an email from meeting notes, and the app relies on ElevenLabs' own models and agent platform for context. ElevenAI is in preview behind an early-access sign-up. It lands in a crowded field where Fireflies, Granola and Wispr Flow are all converging on the same notetaker-plus-dictation combination, and follows ElevenLabs' recent Scribe v3 speech-to-text release."
+      ],
+      "whyItMatters": "Meeting capture is becoming the input layer for work tools, so designers should plan how spoken decisions turn into tasks, owners and follow-ups that people can check and edit.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-11-13T14:44:48Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Screenshot-2026-11-13-at-7.19.18-PM.jpg?resize=1200,774",
+      "imageAlt": "ElevenAI desktop window showing a live 1:1 conversation transcript with a \"Listening\" indicator and a sidebar for Conversations, Dictations and Dictionary",
+      "tags": ["ElevenLabs", "meeting notes", "dictation", "voice AI"]
+    },
+    {
+      "id": "2026-11-14-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Gibbons and Moran: personal agents will own the last mile of the customer experience",
+      "excerpt": "Former NN/g leaders Kate Moran and Sarah Gibbons open a series arguing that people will reach institutions mostly through their own AI agents.",
+      "summary": [
+        "Kate Moran and Sarah Gibbons launched a new essay series on their Gibbons & Moran publication with a piece predicting that, within a few years, most people will deal with businesses and public services through a personal AI agent. In their model the agent acts as a private data broker: it sends institutions only the data a transaction needs, receives content, products, UI suggestions and brand tokens back, and generates a custom interface for the person on the spot.",
+        "They use early Google as a parable for how a better experience rewires behaviour, note that consumer agents such as Meta's Muse now work over plain text messaging, and argue chat will not suit every task because people still want to browse and compare. They also flag risks, including manipulation aimed at agents instead of people and free agents funded by paid influence. Simple consumer services will shift first, regulated sectors later; follow-up pieces on agentic ecommerce and privacy are planned."
+      ],
+      "whyItMatters": "Design the data, constraints and suggestions an agent consumes, not just screens: treat brand and design tokens as inputs an agent may render, and expose minimum-necessary data through protocols like MCP.",
+      "sourceName": "Gibbons & Moran",
+      "sourceUrl": "https://articles.gibbonsmoran.com/p/the-agentic-experience-revolution",
+      "author": "Kate Moran, Sarah Gibbons",
+      "publishedAt": "2026-11-09T13:15:33Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!xgll!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7cab01e2-3786-46fa-aa44-698f36014844_1200x800.png",
+      "imageAlt": "Hand-drawn diagram of a personal agent between a user and institutions, exchanging data and generating custom interfaces",
+      "tags": ["agentic experience", "personal agents", "generative UI", "MCP", "NN/g"]
+    },
+    {
+      "id": "2026-11-14-agentic-design-02",
+      "topic": "agentic-design",
+      "headline": "Jakob Nielsen: cap AI agents at one to three clarifying questions and keep their feedback short",
+      "excerpt": "Nielsen's weekly roundup pulls design rules for agents from new studies on clarifying questions, feedback length and developers in the field.",
+      "summary": [
+        "Jakob Nielsen's November 13 UX Roundup summarises a batch of new research on how people work with AI. In one study of 8 language models acting as customer-service agents, limiting them to 1–3 clarifying questions cut the attention cost to users by 36–73% while keeping 86–94% of the task value of unlimited questioning; checking each question against what the user already said trimmed another 13%. A separate classroom study linked longer AI feedback to worse next attempts, though only correlationally.",
+        "The roundup also covers a 13-month study of about 12,000 employees in which Copilot adopters collaborated more, leaning on trusted colleagues to vet AI output, and a field study shadowing 11 developers who juggled up to 17 tasks per session, dispatching agents and checking back with timers. Nielsen's recommendations: give AI features an attention budget, lead with the single most important issue, and measure attention cost alongside task success."
+      ],
+      "whyItMatters": "Give agents an explicit question budget and a check against prior answers, and design agent dashboards for dispatch-and-return work where people leave agents running and come back later.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/ux-roundup-20261113",
+      "author": "Jakob Nielsen",
+      "publishedAt": "2026-11-13T12:00:04Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_02e3f51006594800af0573bc9d5dc4ce~mv2.jpg/v1/fill/w_1280,h_720,al_c/d496b6_02e3f51006594800af0573bc9d5dc4ce~mv2.jpg",
+      "imageAlt": "Clay-style illustration of a smiling robot pressing shopping bag and cart buttons next to an empty meeting table with chairs",
+      "tags": ["clarifying questions", "attention", "research", "human-AI collaboration", "Jakob Nielsen"]
+    },
+    {
+      "id": "2026-11-14-competitors-01",
+      "topic": "competitors",
+      "headline": "Microsoft 365 outage takes down Outlook, Teams and Copilot for around 18 hours",
+      "excerpt": "A failure that started with Outlook and Teams spread worldwide to files, Copilot, Defender and Intune before recovering on Friday.",
+      "summary": [
+        "Microsoft's cloud suffered a roughly daylong outage starting Thursday, November 12. What began as trouble with Outlook email and Teams video calls spread into a wider failure of consumer and business email, files and documents, and also knocked out Copilot AI tools, Defender security screening, Intune admin dashboards and some cloud-hosted Windows PCs. Network monitoring firm Kentik saw traffic return after about 18 hours of downtime, affecting millions of people.",
+        "Microsoft has not said what caused it beyond a large number of servers becoming unexpectedly unavailable, and it stated there was no evidence of malicious activity and that the incident was not related to cyberattacks or AI agents. Copilot and agents chief Charles Lamanna said teams are reviewing the incident. It is Microsoft's second major outage in about two months, after a multi-day September incident traced to an authentication configuration problem."
+      ],
+      "whyItMatters": "As AI assistants and agents become part of daily workflows, products need clear degraded states that show what still works and what an unavailable agent was doing.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/13/microsoft-latest-email-outage-turned-into-a-full-blown-global-cloud-crisis/",
+      "author": "Zack Whittaker",
+      "publishedAt": "2026-11-13T13:15:20Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/ms-outage-hero-2304360163.jpg?resize=1200,894",
+      "imageAlt": "Close-up of Microsoft Teams and Outlook app icons on a phone screen, with a badge showing 1,448 unread emails",
+      "tags": ["Microsoft 365", "Copilot", "Teams", "outage", "reliability"]
+    },
+    {
+      "id": "2026-11-14-competitors-02",
+      "topic": "competitors",
+      "headline": "Linear adds bring-your-own-key for its cloud coding agent, plus a batch of agent UX fixes",
+      "excerpt": "Workspaces can now run Linear's coding agent on their own OpenAI, Anthropic, Bedrock or Azure keys, on every current plan.",
+      "summary": [
+        "Linear's November 12 changelog lets workspace admins connect their own model API key to its cloud coding agent so model usage is billed directly by the provider at their negotiated rates, while sandbox runtime still draws on Linear AI credits. Supported options include OpenAI, Anthropic, AWS Bedrock, Azure OpenAI, Claude in Microsoft Foundry, OpenRouter, Vercel and any gateway that speaks the OpenAI Responses or Anthropic Messages API; consumer ChatGPT or Claude subscriptions do not qualify.",
+        "The same release polishes the agent experience: conversations keep scrolling with new output and show a Latest button when you scroll up, sessions now surface an error when the sandbox fails to start, deleting an agent chat asks for confirmation, the agent can be stopped mid-task in comment threads, and hovering a skill shows a preview. Linear Agent can also set month, quarter, half-year and year target dates on initiatives."
+      ],
+      "whyItMatters": "Small agent affordances like a jump-to-latest button, visible start-up errors, stop controls and skill previews are what make long-running agent sessions feel trustworthy.",
+      "sourceName": "Linear Changelog",
+      "sourceUrl": "https://linear.app/changelog/2026-11-12-bring-your-own-key",
+      "publishedAt": "2026-11-12T12:00:00Z",
+      "imageUrl": "https://webassets.linear.app/images/ornj730p/production/074f9d4cf204c16fd7239dc2d54a80ec5b6288c4-1200x600.png?q=95&auto=format&dpr=2",
+      "imageAlt": "Two overlapping dark cards showing the Anthropic and OpenAI logos",
+      "tags": ["Linear", "coding agents", "BYOK", "changelog"]
+    },
+    {
+      "id": "2026-11-14-competitors-03",
+      "topic": "competitors",
+      "headline": "Breach at AI provider Fireworks exposed chat transcripts from about 1% of Notion customers",
+      "excerpt": "Hackers who got into Fireworks AI took Notion AI chat transcripts from customers using the Insights feature.",
+      "summary": [
+        "Fireworks AI, an inference platform developers use to run open models, confirmed that an attacker breached its cloud provider and reached a development system, taking customer billing information and some datasets. It is the company's second breach in two months. Notion is the only customer confirmed as affected: stolen data included chat transcripts, meaning model inputs and outputs, from Notion AI customers who used its Insights feature, about 1% of Notion's customers.",
+        "Notion says much of the stolen data cannot be tied to specific customers, so it cannot tell exactly whose transcripts were taken. It disconnected from Fireworks on November 3, deleted data held there and cut all connectivity. Fireworks believes the attackers are financially motivated and want to resell access to model tokens; it has tens of thousands of customers, but the report does not say any others were affected."
+      ],
+      "whyItMatters": "AI features route user content through third-party model providers, so settings and disclosures should show which features send data where and let admins turn them off.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+      "author": "Zack Whittaker",
+      "publishedAt": "2026-11-12T15:02:28Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2021/02/notion-glitch-hero.jpg?resize=1200,827",
+      "imageAlt": "Glitched, pixelated Notion cube logo on a red background",
+      "tags": ["Notion", "security", "data breach", "AI providers"]
+    },
+    {
+      "id": "2026-11-14-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Figma ships 3D transforms in open beta, with CSS export and agent access through its MCP server",
+      "excerpt": "Designers can now tilt and rotate text, images and frames in 3D on the canvas, and copy the result as CSS in Dev Mode.",
+      "summary": [
+        "Figma released a 3D transform effect on November 12 that rotates text, images, vectors and frames on the x, y and z axes; applying perspective to a parent frame places its children in one shared 3D scene. The effect is non-destructive, so the underlying artwork stays editable, and it can be combined with shaders and animated with Figma Motion. It is in open beta for all Full seat users.",
+        "In a companion post, Figma's motion design director Chad Colby shows how the brand team made the launch video, using the Figma agent to compute staggered type along the z axis and to build a plugin that arranges elements in grids, helices and rings. For handoff, Dev Mode copies a 3D layer's CSS transform, and coding agents can read and create 3D designs through the Figma MCP server."
+      ],
+      "whyItMatters": "Spatial effects that export straight to CSS and are readable by coding agents shrink the gap between expressive design and shipped UI.",
+      "sourceName": "Figma Blog",
+      "sourceUrl": "https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/",
+      "author": "Chad Colby",
+      "publishedAt": "2026-11-12T14:00:00Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/53964310f42e5cb65e0c17606f8ec8aa96448a7e-960x540.png?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "Photo of a white desert pavilion tilted in 3D on the Figma canvas, with a 3D transform panel and cube control beside it",
+      "tags": ["Figma", "3D", "Dev Mode", "MCP", "motion"]
+    },
+    {
+      "id": "2026-11-14-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Google launches Gemini 4 Hydrogen, a fast, cheaper model for everyday coding and agent work",
+      "excerpt": "Hydrogen edges out Gemini 4 Argon on a major intelligence index at $1.50 per million input tokens, and is rolling out to the Gemini app and API.",
+      "summary": [
+        "Google introduced Gemini 4 Hydrogen on November 12 as its everyday model for coding and agentic tasks, leaving long-horizon reasoning to Gemini 4 Carbon and Argon. At its default high thinking level it scores 51 on the Artificial Analysis Intelligence Index, one point above Argon, and 54 at a new xhigh level. It finishes tasks about 2.5 times faster than Gemini 3.8 Flash and costs $1.50 per million input and $7.50 per million output tokens across a 1-million-token context.",
+        "Hydrogen can work alone or alongside the larger models: in Google Antigravity an Orchestrator switches between Carbon and Hydrogen in one session, reaching near-Carbon results with about 24% less quota, and Carbon can coordinate while Hydrogen runs worker and verifier agents. Google also reports less overreach in agentic tasks and better prompt-injection resistance. It is available in the Gemini API, AI Studio, Gemini for business, the Gemini app and Search."
+      ],
+      "whyItMatters": "Cheap, fast models paired with larger planners make multi-agent setups affordable, so product teams can plan for agents that split work between a coordinator and quicker workers.",
+      "sourceName": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "author": "Koray Kavukcuoglu",
+      "publishedAt": "2026-11-12T12:00:00Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg",
+      "imageAlt": "Gemini 4 Hydrogen logo beside a translucent, bubble-like 3D shape on a blue background",
+      "tags": ["Google", "Gemini", "models", "agents", "pricing"]
+    }
+  ]
+}
