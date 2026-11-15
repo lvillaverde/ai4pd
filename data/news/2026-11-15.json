@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-15",
+  "generatedAt": "2026-11-15T07:40:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-15-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Gemini can now read your Google Wallet and chart your spending, but it can't move money",
+      "excerpt": "US Gemini users can connect Google Wallet and tag it in chat to get budgets, subscription checks and cash-flow charts.",
+      "summary": [
+        "Google has added Google Wallet to the apps that Personal Intelligence in the Gemini app can draw on, alongside Gmail, Photos, YouTube and Search. Every Gemini app user in the US can opt in, on web, Android and iOS, and can also link bank and credit card accounts through Plaid. Google's examples include cash-flow and budget charts, spotting forgotten or price-hiked subscriptions, and planning a holiday budget from last year's spending.",
+        "Users switch the connection on under Connected Apps in Personal Intelligence settings and call it up by typing @Google Wallet in a chat; charts render inside the conversation thread. Google stresses that Gemini only gets read access and cannot move, manage or invest money, and the connection can be turned off at any time. A Memory Summary view lets people review, edit or delete the preferences and goals Gemini has stored about them."
+      ],
+      "whyItMatters": "It is a clean template for connecting an assistant to sensitive data: explicit opt-in per source, @-mention invocation, read-only scope stated up front, and a visible memory page users can edit.",
+      "sourceName": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+      "publishedAt": "2026-11-13T17:00:00Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Personal_Intelligence_Wallet_2784x1566.width-1300.jpg",
+      "imageAlt": "A 'Personal Intelligence' pill with the Gemini spark, surrounded by Gmail, Photos, YouTube, Google and Google Wallet app icons",
+      "tags": ["Gemini", "Google", "personal data", "permissions", "memory"]
+    },
+    {
+      "id": "2026-11-15-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Decision theatre or decision design? Why an AI approval button only counts if real judgment sits behind it",
+      "excerpt": "Patrizia Bertini argues that human sign-off on AI output is often theatre, and lists what a reviewer needs for it to be a real decision.",
+      "summary": [
+        "Writing in UX Collective, Patrizia Bertini argues that AI has made information cheap but decisions no easier. She cites a BetterUp Labs and Stanford survey in which 40% of US desk workers had received 'workslop' in the past month, costing about two hours each to deal with, and uses the data-information-knowledge-wisdom pyramid to argue that more AI-generated know-how does not add up to judgment. Because a system cannot be held accountable, she says, people are becoming AI supervisors who own the decisions.",
+        "The core of the piece contrasts two versions of the same Approve button, using a caseworker reviewing AI-flagged benefit claims. In decision theatre the reviewer gets only a risk score, has no authority to overrule without a manager, no time to look and no way to send feedback. In decision design the reviewer sees the evidence and the model's confidence, can override freely, gets fewer cases with the most uncertain first, and each override is explained and fed back to the system's owners. She ties this to the EU AI Act's human-oversight duty."
+      ],
+      "whyItMatters": "Audit every human-in-the-loop approval for four things: visible evidence and confidence, the authority to override, time to review (uncertain items first), and a feedback path for overrides.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/decision-theatre-or-decision-design-f1604f178685",
+      "author": "Patrizia Bertini",
+      "publishedAt": "2026-11-13T23:51:42Z",
+      "featured": true,
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*jSm2wuX6DerL6DwhQFrLqA.png",
+      "imageAlt": "Side-by-side diagram of two identical Approve buttons: 'decision theatre' with no feedback, authority, evidence or time, versus 'decision design' with all four",
+      "tags": ["human-in-the-loop", "approvals", "accountability", "trust", "oversight"]
+    },
+    {
+      "id": "2026-11-15-agentic-design-02",
+      "topic": "agentic-design",
+      "headline": "SAP's design chief: cost is now a design material, so show what an agent task will cost before the click",
+      "excerpt": "Arin Bhowmick lays out patterns for credit- and usage-priced AI products, from cost estimates on buttons to caps per task.",
+      "summary": [
+        "Arin Bhowmick, chief design officer at SAP, writing personally in UX Collective, argues that the era of flat-rate AI is ending: as products move to credit and usage pricing, every agent action has a price, and showing it is a design job. He points to GitHub Copilot's June 2026 move to usage-based AI Credits, after which developers reported burning large parts of a monthly allowance in hours with no way to predict the cost of a request.",
+        "His baseline patterns are: put the cost estimate next to the button, confirm before expensive tasks, show what each task cost (as Replit does per checkpoint), warn early so nobody is cut off mid-task (Claude Enterprise alerts admins at 75% and 90%), and let people cap spend per task or session. He also proposes expressing remaining credits in the user's own units, such as 'enough for about three more prototypes', and asks teams to give each AI feature a cost budget and add cost to design reviews."
+      ],
+      "whyItMatters": "Treat cost like latency or errors in agent flows: show an estimate before a run, confirm big jobs, itemize spend per run, and translate remaining credits into units of work people understand.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/every-click-has-a-price-now-who-designs-how-that-feels-e3f00b6cabb8",
+      "author": "Arin Bhowmick",
+      "publishedAt": "2026-11-11T22:15:19Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*9uqAutsVFqEDaAeZlf7T9w.png",
+      "imageAlt": "Illustration of a person at a laptop surrounded by UI cards: a 'Run with AI?' prompt costing about 12 credits, an AI Credits meter with 1,180 left, and a note saying that's enough for about 3 more prototypes",
+      "tags": ["pricing", "credits", "cost transparency", "agents", "SAP"]
+    },
+    {
+      "id": "2026-11-15-ux-design-01",
+      "topic": "ux-design",
+      "headline": "NN/G's research-in-the-loop: build the measurement into each release when AI makes shipping cheap",
+      "excerpt": "Tony Alicea proposes adding a research section to specs that both people and coding agents read, so each release is instrumented.",
+      "summary": [
+        "Nielsen Norman Group's Tony Alicea argues that AI coding agents have made shipping cheaper than studying, so long pre-build research is harder to justify, but releases only show what users did, not why. His answer is research-in-the-loop: research sets what each release must measure and when to go talk to people. It covers three jobs: evaluation of predicted outcomes, investigation of surprising behavior, and open-ended discovery, which instrumentation cannot replace.",
+        "In practice teams add a research section to the plain-language spec that coding agents also read, listing expected outcomes, signs of success and harm, what to track and when to talk to users; a help-desk ticket-transfer example shows how. Qualitative work stays on a regular cadence, is triggered by data anomalies, and comes first for hard-to-reverse calls like pricing. The article flags limits such as causation and off-system workarounds, and lists new skills for researchers, from spec writing to analytics instrumentation."
+      ],
+      "whyItMatters": "Adding success and harm criteria plus tracking requirements to every AI-built feature spec keeps research from being skipped when teams ship weekly.",
+      "sourceName": "Nielsen Norman Group",
+      "sourceUrl": "https://www.nngroup.com/articles/research-in-the-loop/",
+      "author": "Tony Alicea",
+      "publishedAt": "2026-11-13T18:00:00Z",
+      "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/Research-In-The-Loop__How_UXR_Adapts__to_Development_at__AI_Speed.png",
+      "imageAlt": "NN/G title card with a magnifying glass over a grid of colored dots",
+      "tags": ["UX research", "AI-assisted development", "instrumentation", "NN/G"]
+    },
+    {
+      "id": "2026-11-15-ux-design-02",
+      "topic": "ux-design",
+      "headline": "Figma Weave's Itay Schiff: decide which creative friction to automate and which to keep",
+      "excerpt": "On Figma's blog, Weave's co-founder argues AI should take the labor of making, not the thinking that happens inside it.",
+      "summary": [
+        "Itay Schiff, co-founder and chief creative officer of Figma Weave, writes that the question is no longer whether to use AI in creative work but which steps to hand over. He opens with himself reaching for ChatGPT minutes into a writing class he joined to think more clearly, and calls himself a daily AI user who still worries creators give away the parts of the work that matter most to them.",
+        "He separates pure labor, such as green-screen cleanup and tracking, from productive friction where ideas form, like trimming a shot or writing a brief. Generation is not authorship: fast outputs look finished, so without shaping everyone gets similar, mediocre work. A Weave campaign needed many rounds on story and styling after a quick first generation. He describes an open mode for exploring and a closed mode for committing to repeatable workflows, and says good tools should let people reopen earlier choices."
+      ],
+      "whyItMatters": "When adding AI to a workflow, map each step as labor or judgment and keep the judgment steps editable and reopenable rather than fully automated.",
+      "sourceName": "Figma Blog",
+      "sourceUrl": "https://www.figma.com/blog/ai-role-in-the-creative-process/",
+      "author": "Itay Schiff",
+      "publishedAt": "2026-11-13T20:00:00Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/4791f6c2acbf0d3121abf8a8f3e7aa3c6b7c4ae9-3264x1836.png?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "Illustration by Jose Flores of a gold woven handbag with blue flowers beside red and orange flowers on a bright yellow background",
+      "tags": ["Figma", "Figma Weave", "creativity", "automation"]
+    },
+    {
+      "id": "2026-11-15-ai-news-01",
+      "topic": "ai-news",
+      "headline": "LangChain raises $300M at a $3B valuation to sell model-neutral agent management",
+      "excerpt": "CapitalG led the Series C; LangChain says more than 7,000 organizations now use its LangSmith agent platform.",
+      "summary": [
+        "LangChain has raised a $300 million Series C at a $3 billion valuation, more than double the $1.25 billion it was valued at about a year ago. CapitalG led the round, with GIC and DFJ Growth joining as significant new investors alongside IVP and Sapphire Ventures; Salesforce Ventures, Insight Partners, QuantumLight and MongoDB Ventures also came in. The company says over 7,000 organizations use LangSmith, including Harvey, Rippling, Clay, NVIDIA, Toyota and Salesforce.",
+        "Having started as an open-source library in 2022, LangChain now pitches LangSmith as a model-, cloud- and ecosystem-neutral platform with three parts: an agent runtime (Deep Agents, LangGraph, managed agents, sandboxes, Fleet), agent improvement (observability, evaluation and an agent that proposes fixes) and governance gateways for model budgets, fallbacks and tool access. Customers cite gains like Workday cutting agent deployment from five months to under a day. A launch event is set for November 20."
+      ],
+      "whyItMatters": "Budgets, fallbacks, tool permissions and run traces are becoming standard agent infrastructure, so product UIs will increasingly be expected to surface them to admins and users.",
+      "sourceName": "LangChain Blog",
+      "sourceUrl": "https://www.langchain.com/blog/series-c",
+      "author": "Harrison Chase",
+      "publishedAt": "2026-11-13T12:00:00Z",
+      "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6af52a0047907d0f9587a24f_Social%20Announcement.png",
+      "imageAlt": "LangChain announcement card reading '$300M raise at a $3B valuation, led by CapitalG' with Sapphire, IVP, GIC and DFJ Growth logos",
+      "tags": ["LangChain", "funding", "agent platforms", "LangSmith"]
+    }
+  ]
+}
