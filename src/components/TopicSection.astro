@@ -12,7 +12,7 @@ const headingId = `section-${topic.slug}`;
   <section class="topic" aria-labelledby={headingId}>
     <div class="section-head">
       <h2 id={headingId}><TopicIcon name={topic.icon} size={22} />{topic.name}</h2>
-      <a href={url(`/topic/${topic.slug}/`)}>More {topic.name}<span aria-hidden="true"> →</span></a>
+      <a href={url(`/topic/${topic.slug}/`)}>More<span class="more-topic"> {topic.name}</span><span aria-hidden="true"> →</span></a>
     </div>
     {articles.length ? (
       <StoryGrid articles={articles} date={date} />

@@ -2,12 +2,18 @@
 import type { Article } from '../lib/data';
 import { getTopic } from '../lib/data';
 
-interface Props { article: Article; eager?: boolean; href?: string; caption?: boolean }
-const { article: a, eager = false, href, caption = false } = Astro.props;
+interface Props {
+  article: Article; eager?: boolean; href?: string; caption?: boolean;
+  /** Video: draw a play button and, when known, the running time over the image. */
+  video?: boolean; duration?: string;
+  /** Link opens the source in a new tab (e.g. a video that can't be embedded). */
+  external?: boolean;
+}
+const { article: a, eager = false, href, caption = false, video = false, duration, external = false } = Astro.props;
 const Wrap = href ? 'a' : 'div';
 ---
 <figure class="thumb">
-  <Wrap class="frame" href={href} tabindex={href ? -1 : undefined} aria-hidden={href ? 'true' : undefined}>
+  <Wrap class="frame" href={href} tabindex={href ? -1 : undefined} aria-hidden={href ? 'true' : undefined} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}>
     <img
       src={a.imageUrl}
       alt={href ? '' : a.imageAlt}
@@ -19,6 +25,12 @@ const Wrap = href ? 'a' : 'div';
       referrerpolicy="no-referrer"
       onerror="this.closest('.thumb').classList.add('failed')"
     />
+    {video && (
+      <span class="play" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5.5v13l11-6.5z" fill="currentColor" /></svg>
+      </span>
+    )}
+    {video && duration && <span class="duration">{duration}</span>}
     <!-- Shown only if the publisher blocks the image, so every story keeps a picture. -->
     <span class="fallback" aria-hidden="true">
       <span class="fb-topic">{getTopic(a.topic)?.name}</span>
@@ -41,6 +53,20 @@ const Wrap = href ? 'a' : 'div';
   .failed .fallback { display: flex; }
   .fb-topic { font-size: var(--text-xs); font-weight: var(--weight-bold); letter-spacing: var(--tracking-label); text-transform: uppercase; opacity: 0.85; }
   .fb-source { font-size: var(--text-xl); font-weight: var(--weight-bold); line-height: var(--leading-tight); }
+  .play {
+    position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%);
+    display: grid; place-items: center; width: 4rem; height: 4rem; border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95); color: var(--color-brand); box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+    transition: transform 200ms ease;
+  }
+  .play svg { margin-left: 3px; }
+  a.frame:hover .play { transform: translate(-50%, -50%) scale(1.08); }
+  .duration {
+    position: absolute; right: var(--space-2); bottom: var(--space-2); z-index: 1;
+    padding: 0.125rem var(--space-2); border-radius: var(--radius);
+    background: rgba(0, 0, 0, 0.78); color: #fff; font-size: var(--text-xs); font-weight: var(--weight-medium);
+  }
+  .failed .play, .failed .duration { display: none; }
   figcaption { margin-top: var(--space-2); font-size: var(--text-sm); font-weight: var(--weight-light); color: var(--color-text-muted); }
   figcaption span { white-space: nowrap; }
   @media (prefers-reduced-motion: reduce) { a.frame img { transition: none; } }

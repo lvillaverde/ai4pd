@@ -17,7 +17,9 @@
         "properties": {
           "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
           "name": { "type": "string", "minLength": 1, "maxLength": 40 },
-          "icon": { "enum": ["bot", "cursor", "target", "pen", "newspaper", "hash"], "description": "Section icon (src/components/TopicIcon.astro). Defaults to hash." },
+          "short": { "type": "string", "minLength": 1, "maxLength": 20, "description": "Short label for the section bar. Defaults to name." },
+          "icon": { "enum": ["bot", "cursor", "target", "pen", "newspaper", "wand", "route", "play", "hash"], "description": "Section icon (src/components/TopicIcon.astro). Defaults to hash." },
+          "format": { "enum": ["articles", "video"], "description": "video: one featured video per edition, shown as a band with an inline player. Defaults to articles." },
           "description": { "type": "string", "maxLength": 200 }
         }
       }

@@ -108,6 +108,16 @@
           "type": "string",
           "format": "date-time"
         },
+        "durationMinutes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 600,
+          "description": "Video length in minutes (video sections only)."
+        },
+        "embeddable": {
+          "type": "boolean",
+          "description": "Video sections only: true when the video's owner allows playback on other sites (YouTube oEmbed returns 200). The site embeds the player only when true."
+        },
         "featured": {
           "type": "boolean"
         },

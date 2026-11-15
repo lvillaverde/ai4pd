@@ -1,0 +1,67 @@
+---
+import Thumb from './Thumb.astro';
+import TopicIcon from './TopicIcon.astro';
+import type { Article, Topic } from '../lib/data';
+import { formatDateTime } from '../lib/format';
+import { storyUrl, url } from '../lib/url';
+import { formatDuration } from '../lib/video';
+
+interface Props { topic: Topic; articles: Article[]; date: string }
+const { topic, articles, date } = Astro.props;
+const headingId = `section-${topic.slug}`;
+---
+{articles.length > 0 && (
+  <section class="band" aria-labelledby={headingId}>
+    <div class="section-head">
+      <h2 id={headingId}><TopicIcon name={topic.icon} size={22} />{topic.name}</h2>
+      <a href={url(`/topic/${topic.slug}/`)}>More videos<span aria-hidden="true"> →</span></a>
+    </div>
+    {articles.map((a) => {
+      const href = storyUrl(date, a.id);
+      const duration = formatDuration(a.durationMinutes);
+      return (
+        <article class="video">
+          <Thumb article={a} href={href} video duration={duration} />
+          <div class="text">
+            <h3><a href={href}>{a.headline}</a></h3>
+            <p class="meta">
+              <strong>{a.author ?? a.sourceName}</strong>{a.author && <> · {a.sourceName}</>} · <time datetime={a.publishedAt}>{formatDateTime(a.publishedAt)}</time>{duration && <> · {duration}</>}
+            </p>
+            <p class="deck">{a.excerpt}</p>
+            <p><a class="watch" href={href}>Watch<span class="visually-hidden">: {a.headline}</span></a></p>
+          </div>
+        </article>
+      );
+    })}
+  </section>
+)}
+<style>
+  /* Full-width dark band; the background bleeds to the viewport edges without widening the page. */
+  .band {
+    --band-bg: #141414;
+    position: relative; margin-bottom: var(--space-7); padding-block: var(--space-6) var(--space-7);
+    background: var(--band-bg); color: #ececec;
+    box-shadow: 0 0 0 100vmax var(--band-bg); clip-path: inset(0 -100vmax);
+  }
+  @media (prefers-color-scheme: dark) { .band { --band-bg: #1c1c1c; } }
+  .band .section-head { border-bottom-color: #333; }
+  .band .section-head h2 { color: #fff; }
+  .band .section-head a { color: #b3b3b3; }
+  .band .section-head a:hover { color: #ff9a3c; }
+  .band :global(.topic-icon) { color: #f68e1e; }
+  .video { display: grid; gap: var(--space-5); align-items: center; }
+  .video + .video { margin-top: var(--space-6); }
+  @media (min-width: 56rem) { .video { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: var(--space-6); } }
+  .text { display: grid; gap: var(--space-3); align-content: center; }
+  h3 { font-size: var(--text-2xl); line-height: var(--leading-snug); color: #fff; }
+  h3 a { text-decoration: none; }
+  h3 a:hover { color: inherit; text-decoration: underline; text-decoration-thickness: 2px; }
+  .meta { color: #a3a3a3; }
+  .meta strong { color: #ececec; }
+  .deck { font-size: var(--text-lg); color: #d9d9d9; }
+  .watch {
+    display: inline-flex; padding: var(--space-2) var(--space-5); border-radius: 999px;
+    background: #f68e1e; color: #141414; font-weight: var(--weight-bold); text-decoration: none;
+  }
+  .watch:hover { color: #141414; filter: brightness(1.08); }
+</style>

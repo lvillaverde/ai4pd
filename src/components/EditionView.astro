@@ -2,7 +2,11 @@
 import LeadStory from './LeadStory.astro';
 import ArticleCard from './ArticleCard.astro';
 import TopicSection from './TopicSection.astro';
+import VideoSection from './VideoSection.astro';
 import { topics, getLead, getSecondary, byTopic, type Edition } from '../lib/data';
+
+const videoTopics = topics.filter((t) => t.format === 'video');
+const storyTopics = topics.filter((t) => t.format !== 'video');
 
 interface Props { edition: Edition }
 const { edition } = Astro.props;
@@ -19,7 +23,9 @@ const rest = edition.articles.filter((a) => !promoted.has(a));
     </aside>
   )}
 </div>
-{topics.map((t) => {
+{/* Video sections sit right under the top stories, as a full-width band. */}
+{videoTopics.map((t) => <VideoSection topic={t} articles={byTopic(edition.articles, t.slug)} date={edition.date} />)}
+{storyTopics.map((t) => {
   const remaining = byTopic(rest, t.slug);
   // Hide a section only when all of today's stories for it were promoted to the top.
   const allPromoted = remaining.length === 0 && byTopic(edition.articles, t.slug).length > 0;

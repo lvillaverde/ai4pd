@@ -26,7 +26,7 @@ const isArchive = path === url('/archive');
     <ul>
       <li><a href={url('/')} aria-current={isHome ? 'page' : undefined}>Today</a></li>
       {topics.map((t) => (
-        <li><a href={url(`/topic/${t.slug}/`)} aria-current={activeTopic === t.slug ? 'page' : undefined}>{t.name}</a></li>
+        <li><a href={url(`/topic/${t.slug}/`)} aria-current={activeTopic === t.slug ? 'page' : undefined} title={t.short ? t.name : undefined}>{t.short ?? t.name}</a></li>
       ))}
       <li><a href={url('/archive/')} aria-current={isArchive ? 'page' : undefined}>Archive</a></li>
     </ul>
@@ -60,12 +60,12 @@ const isArchive = path === url('/archive');
   .nav-inner { position: relative; display: flex; align-items: center; }
   .nav ul {
     flex: 1 1 auto; min-width: 0;
-    list-style: none; display: flex; gap: var(--space-6); justify-content: center;
+    list-style: none; display: flex; gap: var(--space-5); justify-content: center;
     overflow-x: auto; scrollbar-width: none; padding-block: var(--space-3);
     transition: padding-left 200ms ease;
   }
   .nav ul::-webkit-scrollbar { display: none; }
-  .nav ul a { font-size: var(--text-base); text-decoration: none; white-space: nowrap; padding-block: var(--space-1); }
+  .nav ul a { font-size: 0.9375rem; text-decoration: none; white-space: nowrap; padding-block: var(--space-1); }
   .nav ul a[aria-current='page'] { font-weight: var(--weight-bold); box-shadow: inset 0 -2px 0 var(--color-brand); }
 
   .mini-brand {
@@ -78,13 +78,13 @@ const isArchive = path === url('/archive');
   .nav.stuck .mini-brand { opacity: 1; visibility: visible; transform: translateY(-50%); }
 
   /* Narrow screens: links start at the left and make room for the logo once it appears. */
-  @media (max-width: 72rem) {
+  @media (max-width: 80rem) {
     .nav ul { justify-content: flex-start; gap: var(--space-5); }
     .nav.stuck ul { padding-left: 5.5rem; }
   }
   /* Wide screens: room is reserved on both sides, so the centered links never shift. */
-  @media (min-width: 72.01rem) {
-    .nav ul { padding-inline: 6rem; }
+  @media (min-width: 80.01rem) {
+    .nav ul { padding-inline: 5.5rem; }
   }
   @media (prefers-reduced-motion: reduce) {
     .mini-brand, .nav ul { transition: none; }

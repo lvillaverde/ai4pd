@@ -10,6 +10,7 @@ export const siteConfig = {
   whyItMattersLabel: {
     default: 'Why it matters',
     'agentic-design': 'Design takeaway',
+    'must-watch': 'Why watch it',
   } as Record<string, string>,
   credit: { name: 'Leandro Villaverde', url: 'https://lvillaverde.com' },
   /** How many past editions the RSS feed includes. */

@@ -6,6 +6,7 @@ import { getEditions, getTopic, type Article, type Edition } from '../../../lib/
 import { formatLongDate, formatPublished, formatShortDate } from '../../../lib/format';
 import { url, storyUrl, domainOf } from '../../../lib/url';
 import { siteConfig } from '../../../site.config';
+import { videoEmbedUrl, formatDuration } from '../../../lib/video';
 
 export async function getStaticPaths() {
   const editions = await getEditions();
@@ -23,6 +24,10 @@ const topic = getTopic(a.topic);
 const topicHref = url(`/topic/${a.topic}/`);
 const dayHref = url(`/day/${edition.date}/`);
 const whyLabel = siteConfig.whyItMattersLabel[a.topic] ?? siteConfig.whyItMattersLabel.default;
+const isVideo = topic?.format === 'video';
+// Only embed when the agent confirmed the owner allows playback on other sites; otherwise link out.
+const embed = isVideo && a.embeddable ? videoEmbedUrl(a.sourceUrl) : undefined;
+const duration = formatDuration(a.durationMinutes);
 // Same-topic stories first, then the rest of the edition.
 const others = edition.articles.filter((o) => o !== a);
 const related = [...others.filter((o) => o.topic === a.topic), ...others.filter((o) => o.topic !== a.topic)].slice(0, 3);
@@ -48,13 +53,26 @@ const related = [...others.filter((o) => o.topic === a.topic), ...others.filter(
       <h1>{a.headline}</h1>
       <p class="standfirst">{a.excerpt}</p>
       <p class="meta byline">
-        {a.author && <>By <strong>{a.author}</strong> · </>}<strong>{a.sourceName}</strong> · <time datetime={a.publishedAt}>{formatPublished(a.publishedAt)}</time>
+        {a.author && <>By <strong>{a.author}</strong> · </>}<strong>{a.sourceName}</strong> · <time datetime={a.publishedAt}>{formatPublished(a.publishedAt)}</time>{duration && <> · {duration}</>}
       </p>
     </header>
 
     <div class="story-body">
       <div class="main">
-        <Thumb article={a} eager caption />
+        {embed ? (
+          <div class="player">
+            <iframe
+              src={embed}
+              title={`Video: ${a.headline}`}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        ) : (
+          <Thumb article={a} eager caption video={isVideo} duration={duration} href={isVideo ? a.sourceUrl : undefined} external={isVideo} />
+        )}
 
         <div class="summary">
           <h2 class="visually-hidden">Summary</h2>
@@ -68,14 +86,15 @@ const related = [...others.filter((o) => o.topic === a.topic), ...others.filter(
           </aside>
         )}
 
-        <p><a class="cta" href={a.sourceUrl} target="_blank" rel="noopener noreferrer">Read the full article on {a.sourceName}<span aria-hidden="true"> ↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></p>
-        <p class="meta note">This is an original summary written by an AI agent. Facts, figures and quotes come from {a.sourceName}; check the full article before citing them.</p>
+        <p><a class="cta" href={a.sourceUrl} target="_blank" rel="noopener noreferrer">{isVideo ? `Watch on ${a.sourceName}` : `Read the full article on ${a.sourceName}`}<span aria-hidden="true"> ↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+        <p class="meta note">This is an original summary written by an AI agent. Facts, figures and quotes come from {a.sourceName}; check {isVideo ? 'the video' : 'the full article'} before citing them.</p>
       </div>
 
       <aside class="facts" aria-label="About this story">
         <dl>
           <div><dt>Source</dt><dd><a href={a.sourceUrl} target="_blank" rel="noopener noreferrer">{a.sourceName}<span aria-hidden="true"> ↗</span><span class="visually-hidden"> (opens in a new tab)</span></a> <span class="domain">{domainOf(a.sourceUrl)}</span></dd></div>
-          {a.author && <div><dt>Author</dt><dd>{a.author}</dd></div>}
+          {a.author && <div><dt>{isVideo ? 'Speaker' : 'Author'}</dt><dd>{a.author}</dd></div>}
+          {duration && <div><dt>Length</dt><dd>{duration}</dd></div>}
           <div><dt>Published</dt><dd><time datetime={a.publishedAt}>{formatPublished(a.publishedAt)}</time></dd></div>
           {topic && <div><dt>Topic</dt><dd><a href={topicHref}>{topic.name}</a></dd></div>}
           <div><dt>Edition</dt><dd><a href={dayHref}>{formatLongDate(edition.date)}</a></dd></div>
@@ -133,6 +152,8 @@ const related = [...others.filter((o) => o.topic === a.topic), ...others.filter(
   @media (min-width: 64rem) { .story-body { grid-template-columns: minmax(0, 1fr) 18rem; } }
   .main { display: grid; gap: var(--space-5); align-content: start; min-width: 0; }
 
+  .player { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: #000; }
+  .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .summary { display: grid; gap: var(--space-4); max-width: var(--measure); }
   .summary p { font-size: var(--text-lg); line-height: 1.65; }
 

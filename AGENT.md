@@ -52,6 +52,18 @@ data/news/YYYY-MM-DD.json
 
 If an image fails to load in a visitor's browser, the site shows a branded placeholder with the topic and source, so a broken image never breaks the layout.
 
+## Must-Watch (video section)
+
+Topics with `"format": "video"` in `data/topics.json` (today: `must-watch`) hold **one video per edition**, shown as a full-width band under the top stories, with an inline player on its story page.
+
+- Pick **one** must-see video about AI in UX, UI or product design: a conference talk, demo, interview or walkthrough with real substance. It may be up to 60 days old, but never repeat a video already in `data/news/`. Skip it if nothing is genuinely worth watching.
+- `sourceUrl`: the video page (YouTube preferred; Vimeo also works). `sourceName`: the platform or channel (e.g. "YouTube", "Config"). `author`: the speaker(s).
+- `imageUrl`: the video thumbnail (YouTube: `https://i.ytimg.com/vi/<ID>/maxresdefault.jpg`, falling back to `hqdefault.jpg` if that returns 404). `imageAlt`: what the thumbnail shows.
+- `durationMinutes`: the running time, rounded to whole minutes.
+- `embeddable`: check `https://www.youtube.com/oembed?url=<video URL>&format=json`. Set `true` only if it returns HTTP 200; omit the field otherwise (401 means the owner blocks embedding, and the site then links out instead of showing a broken player). Prefer videos that can be embedded.
+- `excerpt`: one sentence on why it's worth watching. `summary`: two paragraphs on what the video covers and its main points, from the video page, its description, chapters or transcript. Never invent claims about what's said.
+- Never mark the video `featured`; it has its own slot.
+
 ## File format
 
 Formal schema: `schema/news.schema.json`.
@@ -103,6 +115,8 @@ Formal schema: `schema/news.schema.json`.
 | `featured` | no | `true` for the lead story only |
 | `imageUrl` | yes | `https://` only |
 | `imageAlt` | yes | 1–300 chars |
+| `durationMinutes` | video only | Integer minutes, 1–600 |
+| `embeddable` | video only | `true` only when YouTube oEmbed returns 200; otherwise omit |
 | `tags` | no | Up to 8 unique strings |
 
 No other fields are allowed.

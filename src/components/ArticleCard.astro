@@ -1,6 +1,7 @@
 ---
 import type { Article } from '../lib/data';
-import { getTopic } from '../lib/data';
+import { getTopic, isVideoTopic } from '../lib/data';
+import { formatDuration } from '../lib/video';
 import { formatDateTime } from '../lib/format';
 import { storyUrl } from '../lib/url';
 import Thumb from './Thumb.astro';
@@ -25,7 +26,7 @@ const href = storyUrl(date, a.id);
     <h3><a href={href}>{a.headline}</a></h3>
     <p class="meta"><strong>{a.sourceName}</strong> · <time datetime={a.publishedAt}>{formatDateTime(a.publishedAt)}</time></p>
   </div>
-  {size !== 'list' && <Thumb article={a} href={href} />}
+  {size !== 'list' && <Thumb article={a} href={href} video={isVideoTopic(a.topic)} duration={formatDuration(a.durationMinutes)} />}
   {size !== 'list' && <p class="deck">{a.excerpt}</p>}
 </article>
 <style>

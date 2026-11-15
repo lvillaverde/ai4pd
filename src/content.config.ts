@@ -18,6 +18,8 @@ const article = z
     sourceUrl: httpsUrl,
     author: z.string().min(1).max(120).optional(),
     publishedAt: z.iso.datetime({ offset: true }),
+    durationMinutes: z.number().int().min(1).max(600).optional(),
+    embeddable: z.boolean().optional(),
     featured: z.boolean().optional(),
     imageUrl: httpsUrl,
     imageAlt: z.string().min(1).max(300),
