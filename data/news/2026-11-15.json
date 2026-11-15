@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "date": "2026-11-15",
-  "generatedAt": "2026-11-15T07:40:00-03:00",
+  "generatedAt": "2026-11-15T20:16:28-03:00",
   "articles": [
     {
       "id": "2026-11-15-ai-agents-ux-01",
@@ -58,6 +58,78 @@
       "tags": ["pricing", "credits", "cost transparency", "agents", "SAP"]
     },
     {
+      "id": "2026-11-15-ai-design-tools-01",
+      "topic": "ai-design-tools",
+      "headline": "Why AI builders hand you a lookalike of your design system, and the MCP setup that makes them use the real components",
+      "excerpt": "Christine Vallaure tested Claude Design and other builders, then rebuilt her prototyping around a component manifest and the Storybook MCP.",
+      "summary": [
+        "In the second part of her In-System Design series for UX Collective, Christine Vallaure explains why prototypes from tools such as Lovable, Bolt, v0, Replit and Claude Design keep getting rebuilt by developers. Their 'connect your design system' option reads a team's components and then recreates them, usually on shadcn and Tailwind, so the screen looks right but none of it points at the real code. Testing Claude Design on her own repo, she found the button's props, values and tokens came back correct, yet Base UI, scoped classes and types were replaced by a frozen copy.",
+        "Her fix is not a better prompt but two pieces developers can set up: a generated JSON manifest listing every component, property, allowed value and default, and an MCP connection so the agent asks the system what exists instead of guessing. She walks through the Storybook MCP as the quick route (citing Storybook's test showing 27% fewer tokens and almost three times faster runs) and a custom design-system MCP as the richer one, and argues every pipeline should look things up, choose from a closed list, check against the system, render the result and leave the final call to a person."
+      ],
+      "whyItMatters": "Before trusting any AI prototyping tool with a real product, designers can ask it to show which file a component was imported from, which quickly reveals whether it built with the system or redrew it.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/ai-prototyping-inside-your-design-system-a-hands-on-guide-for-design-product-teams-44825904c08d",
+      "author": "Christine Vallaure",
+      "publishedAt": "2026-11-10T23:34:58Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/0*GVeuczf4PnCJn95b.jpeg",
+      "imageAlt": "Logos of Lovable, Bolt, v0, Replit and Claude Design crossed out next to 'Storybook MCP' and 'Design System MCP' with green check marks",
+      "tags": ["design systems", "prototyping", "MCP", "Storybook", "Claude Design"]
+    },
+    {
+      "id": "2026-11-15-ai-design-tools-02",
+      "topic": "ai-design-tools",
+      "headline": "In-system design: an agent moves the same prototype from Storybook to Figma and back without redrawing it",
+      "excerpt": "The last part of Vallaure's series shows an AI agent rebuilding code prototypes from a matching Figma library, and catching bugs on the way.",
+      "summary": [
+        "Christine Vallaure closes her three-part series by connecting both sides: a Storybook prototype built from real components, a published Figma library whose components carry exactly the same names and properties as the code, and an agent (she uses Claude Code with the Figma Console MCP) sitting between them. Asked to send a course sign-up flow to Figma, the agent rebuilt it from library instances as a clickable prototype and left a note listing what it used, what it had to assemble by hand and which gaps it found. Bringing the edited screens back, it reads each instance's component and props rather than layer names.",
+        "She argues the canvas still matters because comparing several versions side by side beats refining one, and says the round trip kept surfacing real problems: a 21-pixel height difference that traced back to a stray browser margin in the code, a dialog without a slot that pushed a better flow, and a spacer hack copied three times. Teams without a code setup can still prototype in Figma against the library, and pressing Cmd+Y shows library instances in purple so hand-drawn elements stand out. Her biggest error source was forgetting to accept library updates."
+      ],
+      "whyItMatters": "Matching component names and properties exactly between Figma and code is the cheap prerequisite that lets agents translate designs instead of guessing.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/in-system-design-from-code-to-figma-and-back-prototyping-in-your-real-design-system-7372b128de9a",
+      "author": "Christine Vallaure",
+      "publishedAt": "2026-11-11T22:08:32Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/0*Eh6X8C_0RO5wInpt.jpeg",
+      "imageAlt": "Diagram of a Claude agent building the same sign-up page in code and in Figma, with an arrow showing it pushed between Storybook and Figma",
+      "tags": ["design systems", "Figma", "Storybook", "MCP", "prototyping"]
+    },
+    {
+      "id": "2026-11-15-ai-ux-process-01",
+      "topic": "ai-ux-process",
+      "headline": "Jakob Nielsen: AI makes open-ended research answers cheap to count, so ask more of them",
+      "excerpt": "Nielsen argues teams should shift surveys and interviews toward open questions now that AI can code every free-form answer.",
+      "summary": [
+        "Jakob Nielsen argues that the old trade-off in user research has changed: closed questions were cheap to analyze but only measure the categories a team thought of, while open questions surface surprises but used to be too costly to code. He cites a University of Vienna-led study where GPT-5.4 inductively coded 903 open survey answers and reached an Adjusted Rand Index of 0.61 with five human coders on codes and 0.54 on themes, which he treats as good enough for AI to join the coding team under human review.",
+        "He recommends keeping a fixed closed core for benchmarks, counting coded verbatims with the original quotes attached, counting each respondent once per theme and not ranking problems by frequency alone. For AI-moderated interviews he points to a Penn State study where the bot probed deeper in only 4.9% of turns and offered leading praise, and he proposes banning praise, probing for concrete episodes and piloting with real people. He also warns against synthetic respondents, citing a benevolence bias that grew with model size across 18 models."
+      ],
+      "whyItMatters": "Teams can now afford to read every open comment from a survey or feedback widget, but the codebook and human review decide whether the counts can be trusted.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/open-closed-questions",
+      "author": "Jakob Nielsen",
+      "publishedAt": "2026-11-11T12:01:01Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_b6b113d46f05412dab0651cb2cf0a878~mv2.jpg/v1/fill/w_1280,h_720,al_c/d496b6_b6b113d46f05412dab0651cb2cf0a878~mv2.jpg",
+      "imageAlt": "Illustration titled 'Closed vs. Open Questions' with a radio-button card beside a red microphone and an empty speech bubble",
+      "tags": ["user research", "surveys", "synthesis", "AI interviews"]
+    },
+    {
+      "id": "2026-11-15-ai-ux-process-02",
+      "topic": "ai-ux-process",
+      "headline": "NN/G's journey mapping primer now covers agents as actors and AI as a mapping assistant",
+      "excerpt": "NN/G's updated Journey Mapping 101 explains how to map journeys that AI agents run, and where AI can speed up making the map.",
+      "summary": [
+        "Nielsen Norman Group refreshed its Journey Mapping 101 article with a new section on AI. It notes that people are no longer the only actors in a journey, since agents can research, buy or resolve issues on someone's behalf, and describes two options: show the agent's actions, obstacles and approval points alongside the person's goals and emotions, or make the agent the primary actor and map the tools it uses and where it needs human help, without thoughts or feelings.",
+        "For making the map, Huei-Hsin Wang and Sarah Gibbons suggest using AI to draft a hypothesis map from stakeholder knowledge, tag interview excerpts by stage and lane, cluster support tickets and reviews, turn a static map into an interactive prototype and brainstorm 'how might we' questions. They stress that agent behavior should come from logs and observation, that AI outputs should be checked against quotes and participant IDs, and that much of a map's value comes from the team discussion AI cannot replace."
+      ],
+      "whyItMatters": "As products add agents that act for users, journey maps need a lane for what the agent does and where the person must approve or step in.",
+      "sourceName": "Nielsen Norman Group",
+      "sourceUrl": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "author": "Huei-Hsin Wang, Sarah Gibbons",
+      "publishedAt": "2026-11-13T18:00:00Z",
+      "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/Journey_Mapping_101.png",
+      "imageAlt": "Stylized journey map with three colored phases, an emotion curve and speech bubbles with sad, happy and neutral faces",
+      "tags": ["journey mapping", "AI agents", "research synthesis", "NN/G"]
+    },
+    {
       "id": "2026-11-15-ux-design-01",
       "topic": "ux-design",
       "headline": "NN/G's research-in-the-loop: build the measurement into each release when AI makes shipping cheap",
@@ -110,6 +182,26 @@
       "imageUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6af52a0047907d0f9587a24f_Social%20Announcement.png",
       "imageAlt": "LangChain announcement card reading '$300M raise at a $3B valuation, led by CapitalG' with Sapphire, IVP, GIC and DFJ Growth logos",
       "tags": ["LangChain", "funding", "agent platforms", "LangSmith"]
+    },
+    {
+      "id": "2026-11-15-must-watch-01",
+      "topic": "must-watch",
+      "headline": "Designing Claude: Jenny Wen demos how Anthropic's design team uses Claude to design Claude",
+      "excerpt": "An hour with Anthropic's design lead on designing for unpredictable AI, agent autonomy and a live demo of her own workflow.",
+      "summary": [
+        "In this Double Diamond episode, Jenny Wen, design lead at Anthropic, shows how she uses Claude in her own design work, including using Cowork to synthesize research and product feedback. The conversation covers how her team designs AI products whose outcomes are unpredictable, what they learn from internal users, how Cowork came together and how to help people understand what an AI can actually do.",
+        "Later chapters get into chat versus AI-generated interfaces, balancing agent autonomy with plans and user control, and how to show progress while an agent works, before a live demo of using Claude to design Claude. Wen also talks about how designers and engineers now work together, why craft, execution and shipping count as design skills, and where design tools go next. The channel notes it was recorded in March 2026, so some product details have since changed."
+      ],
+      "whyItMatters": "It is a rare first-hand look at how a frontier lab's designers handle agent plans, progress and control in a shipping product.",
+      "sourceName": "Double Diamond (YouTube)",
+      "sourceUrl": "https://www.youtube.com/watch?v=jGTIPv6OjnY",
+      "author": "Jenny Wen",
+      "publishedAt": "2026-11-04T15:29:30Z",
+      "imageUrl": "https://i.ytimg.com/vi/jGTIPv6OjnY/maxresdefault.jpg",
+      "imageAlt": "Black-and-white portrait of Jenny Wen on a red background with the text 'Jenny Wen, Design Lead, Anthropic'",
+      "durationMinutes": 65,
+      "embeddable": true,
+      "tags": ["Anthropic", "agent UX", "design process", "Cowork", "interview"]
     }
   ]
 }
