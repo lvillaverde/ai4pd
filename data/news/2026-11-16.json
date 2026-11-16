@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T07:45:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-16-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Sierra and Meta ship Personal Agent Protocol 1.0, a standard for how personal agents deal with businesses",
+      "excerpt": "Version 1.0, nicknamed Poppy, is live in Meta's Muse agent and switched on for every Shopify merchant.",
+      "summary": [
+        "Sierra co-founders Bret Taylor and Clay Bavor released version 1.0 of the Personal Agent Protocol, an open standard that Sierra and Meta are building to define how a person's own AI agent identifies itself to a company and learns what it may do there. The release follows five weeks of testing a draft against real sites, APIs and agents, and the partner list grew by 60 companies to more than 100, including Delta, Intuit, Salesforce, Zoom and Wayfair.",
+        "The protocol leans on existing standards such as MCP, OpenAPI and UCP, and lets companies adopt it in stages, with industry extensions like a commerce module co-written by Shopify. Customers sign agents in through OAuth and can change what an agent is allowed to do over time; some actions require asking the customer first. Mercury routes agent payments through each account's approval policy, and Turkish Airlines lets customers approve upgrades before paying. Meta's Muse now checks for the protocol first on every site it visits."
+      ],
+      "whyItMatters": "When outside agents start acting for your users through a standard handshake, permission screens, per-action approval rules and revocable access become core product surfaces rather than settings buried in an admin page.",
+      "sourceName": "Sierra",
+      "sourceUrl": "https://sierra.ai/blog/releasing-poppy",
+      "author": "Bret Taylor, Clay Bavor",
+      "publishedAt": "2026-11-13T17:00:00Z",
+      "featured": true,
+      "imageUrl": "https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F9f55c3897075ccfe5650c54d09feacbe3ac3be9a-2400x1260.png&width=1200&quality=75",
+      "imageAlt": "Blurred green and orange background with the text 'Releasing Personal Agent Protocol 1.0, over 100+ design partners building Poppy'",
+      "tags": ["agents", "protocols", "permissions", "commerce", "Meta", "Sierra"]
+    },
+    {
+      "id": "2026-11-16-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Apple launches a Health AI study app with OpenEvidence to learn how people use AI for health questions",
+      "excerpt": "Up to 200,000 US iPhone users can ask health questions, rate the answers and fill in monthly surveys for a year.",
+      "summary": [
+        "Apple released the Apple Health AI Usage Study app in the US on November 15, built with the medical AI company OpenEvidence. Participants ask health questions in a chat interface, get answers grounded in sources such as the New England Journal of Medicine, JAMA and Nature, then rate those answers, leave feedback and complete monthly surveys. Apple wants to enroll up to 200,000 people over more than 12 months.",
+        "Joining requires being over 21, an iPhone 15 or later on iOS 26 and Apple Intelligence turned on. People can optionally share HealthKit data such as sleep, resting heart rate or lab results for more personal answers, and the app also helps prepare for doctor visits. Apple says data is anonymized before it reaches a third-party cloud and will not train models, and OpenEvidence reportedly deletes queries after 24 hours."
+      ],
+      "whyItMatters": "Apple is treating answer rating, suggested prompts and source attribution as research instruments, a reminder that feedback controls in an AI panel can double as a continuous study of where users trust or doubt the assistant.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-11-16T01:30:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Apple-Health-AI-Usage-Study.jpg?resize=1200,800",
+      "imageAlt": "Two iPhone screens: the Apple Health AI Usage Study welcome screen and a chat view with suggested prompts like 'Summarize my vitals'",
+      "tags": ["Apple", "health", "AI chat", "research", "feedback"]
+    },
+    {
+      "id": "2026-11-16-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Sierra's Mossy: how one designer gave a voice agent a visible body that shows when it listens and when it talks",
+      "excerpt": "A grass ball that leans in to speak and pulls back to listen replaced the usual glowing orb for Sierra's voice agents.",
+      "summary": [
+        "Sierra designer Leonard Jung describes building Mossy, the on-screen presence for the company's voice agents at its Summit event, mostly on his own in two weeks with AI coding agents. Rejecting the generic orb or waveform, he tested around 50 materials before settling on grass strands that sway with sound, and built a slider tool to tune length, density, inertia, overshoot and sensitivity live instead of describing changes in words.",
+        "Early testers said it looked like a virus and, more seriously, that they could not tell who was talking. Jung softened the grass, added small flowers, and gave the agent two distinct states: when speaking it rotates slightly and its strands move in different directions, and when listening it draws back and pulses gently. The piece was built in code from start to finish, so there was no animation handoff, and Jung argues that faster iteration made judgment more important, not less."
+      ],
+      "whyItMatters": "Give an agent clearly different speaking, listening and working states, and test them with the question 'can you tell whose turn it is?' before polishing the look.",
+      "sourceName": "Sierra",
+      "sourceUrl": "https://sierra.ai/blog/mossy",
+      "author": "Leonard Jung",
+      "publishedAt": "2026-11-09T21:27:00Z",
+      "imageUrl": "https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2F43796e1f6ccca072bb5514fdb19514500171ea45-4800x2520.png&width=1200&quality=75",
+      "imageAlt": "Grainy green and yellow background with the title 'Meet Mossy: designing a voice you can see' and the Sierra logo",
+      "tags": ["voice", "agent identity", "agent states", "prototyping", "motion"]
+    },
+    {
+      "id": "2026-11-16-ai-ux-process-01",
+      "topic": "ai-ux-process",
+      "headline": "Run the prompt 50 times: Patrick Neeman's case for designers sampling model output before drawing screens",
+      "excerpt": "A UX Collective essay argues the mockup shows one lucky answer, while the real product is the whole spread of outputs.",
+      "summary": [
+        "Designer Patrick Neeman traces a line from Bauhaus workshops and hand-coded 1990s web pages to today's language models, arguing that designers have always learned a new medium by working the material directly. With AI, he says, a static mockup shows a single best-case answer that a designer wrote, while users get a different answer each time, with misses and delays a frame cannot show. He cites Figma's 2026 AI report, which found that the share of designers taking part in development doubled from 21% to 41% in a year.",
+        "His workflow has four habits: use Claude Code or Cursor to write a throwaway script that sends real product inputs to the model; run each prompt about 50 times and sort the results by length, tone and accuracy; bring the two worst answers to design review next to the mockup; and save every output that broke a layout or misled someone into a shared file the team reruns whenever the model or prompt changes, an evaluation set that designers are well placed to own."
+      ],
+      "whyItMatters": "Designing AI features for the longest, most wrong answer instead of the typical one, and keeping those failures as a shared test set, catches broken layouts and misleading states long before launch.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/ai-is-the-new-old-design-material-0e7f83540c9a",
+      "author": "Patrick Neeman",
+      "publishedAt": "2026-11-13T02:33:09Z",
+      "imageUrl": "https://miro.medium.com/v2/resize:fit:1200/1*JuPAwnD1n1gK7HhzzrR1Yw.png",
+      "imageAlt": "Painted workbench with hand tools, a coil of wire, folded paper and an open laptop side by side",
+      "tags": ["evaluation", "prototyping", "AI output", "design process"]
+    },
+    {
+      "id": "2026-11-16-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Google details Antigravity's /teamwork, a multi-agent mode with built-in verifiers for long research and coding jobs",
+      "excerpt": "Parallel agents, fresh-context critics and checkers like Lean and test suites tackled proofs, ports and kernel tuning.",
+      "summary": [
+        "Google Research VP Vahab Mirrokni described /teamwork, a feature in the Antigravity agent platform that splits long research and engineering tasks across parallel agents, each given only the files and tools it needs, with coordinators handing work to fresh successors and critic agents checking results from a clean context. Verifiers such as the Lean 4 proof checker, test suites and simulators gate the output, and the system routes each prompt to a reusable pattern such as Long Proof or Deep Review.",
+        "Google lists results including about 1.8 million lines of formal Lean for the Weil conjectures, a 170,000-line Rust port of the libgav1 video decoder with bit-exact parity, and a 24% cut in some TPU preemptions. Its Deep Review pattern gave feedback on 578 submissions to a theory conference, and 90% of 70 surveyed authors said they would use it again. Humans still frame the problems, confirm the formal statements match the originals and review results. Google is offering 10,000 academics six months of free top-tier access."
+      ],
+      "whyItMatters": "Splitting work across narrow agents with separate checkers and a human sign-off step is becoming the default shape of serious agent products, and each of those handoffs needs a visible status and review moment in the interface.",
+      "sourceName": "Google Research",
+      "sourceUrl": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "author": "Vahab Mirrokni",
+      "publishedAt": "2026-11-13T12:00:00Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-research2023-media/images/HO_previewImage1.width-800.format-jpeg.jpg",
+      "imageAlt": "Google Research logo with a strip of photos showing data visualization, a lab scientist, a forest and a satellite",
+      "tags": ["Google", "multi-agent", "verification", "Antigravity", "research"]
+    },
+    {
+      "id": "2026-11-16-must-watch-01",
+      "topic": "must-watch",
+      "headline": "Dylan Field on All-In: AI lowers the floor, but only people raise the ceiling of design",
+      "excerpt": "A 41-minute conversation on why cheaper code raises the value of design, taste and a distinct point of view.",
+      "summary": [
+        "Figma CEO Dylan Field joins the All-In podcast to talk about whether AI is replacing designers. His central claim is that AI lowers the floor for making code, video and design, while humans are the ones raising the ceiling. As anyone can generate code, he argues, design becomes the layer above it, and products need a distinct look and point of view to stand out. Friedberg pushes on the idea that real creation means doing something new rather than mimicking.",
+        "Field separates building with AI, which helps beat the blank canvas and gives you something to react to, from trusting AI to carry your own vision, which filters it through the model's tendencies. He describes Figma's push to make code a material on the canvas and tools such as Figma Weave for shaping model output, and argues people should use AI to deepen understanding rather than let it think for them. Chapters cover creativity in the AI era around 19 minutes in and human agency near the end."
+      ],
+      "whyItMatters": "A clear, quotable framing of where designers add value as AI generation gets cheaper, useful for anyone making the case for craft and judgment inside an AI-heavy product team.",
+      "sourceName": "All-In Podcast",
+      "sourceUrl": "https://www.youtube.com/watch?v=2Zj6uMv3kTA",
+      "author": "Dylan Field, David Friedberg",
+      "publishedAt": "2026-10-19T12:00:00Z",
+      "durationMinutes": 41,
+      "embeddable": true,
+      "imageUrl": "https://i.ytimg.com/vi/2Zj6uMv3kTA/maxresdefault.jpg",
+      "imageAlt": "Two men holding microphones on either side of the Figma logo under the words 'Dylan Field' and 'Figma survives SaaSpocalypse'",
+      "tags": ["Figma", "design leadership", "creativity", "podcast"]
+    }
+  ]
+}
