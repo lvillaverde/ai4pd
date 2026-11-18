@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T07:04:01-03:00",
+  "articles": [
+    {
+      "id": "2026-11-18-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Google renames its Spark agent to Tasks in Gemini and makes it free in six countries",
+      "excerpt": "A Chat-to-Tasks toggle on the Gemini home screen now hands errands to an agent that pauses before purchases.",
+      "summary": [
+        "Google has rebranded Spark, the Gemini agent it introduced in May for paying AI Pro and Ultra subscribers, as Tasks and opened it to all users in the US, Canada, Japan, Korea, Australia and India at no cost. Running on the new Gemini 4 Hydrogen model, it can build meal plans, manage a calendar or comb through email for recurring charges. In the US it can also phone businesses to check prices and stock, pay with Google Pay and sign in to sites saved in Google Password Manager.",
+        "The entry point is a simple mode switch: users flip the toggle on Gemini's home screen from Chat to Tasks and describe the job, and US users can also delegate by emailing or texting Gemini. People can add instructions while a task runs, and Gemini stops to ask before sensitive steps such as clicking Buy, though routine actions can be set to always allow and purchases can be capped. Each task runs in a dedicated, hardware-isolated virtual machine, and calling is not offered in five US states."
+      ],
+      "whyItMatters": "A visible Chat/Tasks mode switch plus per-action 'always allow' and spending caps is a clean template for separating conversation from delegation in any product that adds an agent.",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
+      "author": "Emma Roth",
+      "publishedAt": "2026-11-17T18:58:01+00:00",
+      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Tasks-in-Gemini.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+      "imageAlt": "Tasks in Gemini, with the Chat toggle switched to Tasks",
+      "tags": [
+        "Google",
+        "Gemini",
+        "agents",
+        "delegation",
+        "approvals"
+      ]
+    },
+    {
+      "id": "2026-11-18-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Daydream's stylist agent remembers your fit and budget, tries clothes on you, and checks out",
+      "excerpt": "The fashion startup's new agent plans outfits from your closet and calendar and can complete purchases with one click.",
+      "summary": [
+        "Daydream, the fashion search startup run by former Stitch Fix COO Julie Bornstein, launched Daydream Agent, pitched as a personal stylist. It keeps a memory of each shopper's style, fit and budget, reuses an uploaded photo for virtual try-ons, watches for sales and new drops with weekly updates, and can connect to a user's wardrobe and calendar to suggest outfits for upcoming events. Unlike the company's 2025 chatbot, it can now complete the purchase.",
+        "Saved items go to a persistent 'clothing rack' instead of a cart, so people can compare before buying, and checkout is a one-click step; TechCrunch's report does not describe any extra confirmation. The agent draws live prices and stock from more than 10,000 brands and blends fine-tuned OpenAI, Gemini and Claude models with Daydream's own. The company has raised $50 million, says over 2 million shoppers have used it since June 2025, and hired a stylist in residence to feed its fashion knowledge base."
+      ],
+      "whyItMatters": "Replacing the cart with a persistent comparison 'rack' shows how an agent product can give users a holding area to review results before committing.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/17/daydreams-new-ai-agent-acts-as-your-personal-stylist-and-can-shop-for-you-too/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-11-17T16:32:55+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/2daydream-agent-1.jpeg?w=1024",
+      "imageAlt": "Daydream app on a phone asking 'What can I help you with today?' with suggestion chips and Stylist, Explore, Rack and Cart tabs",
+      "tags": [
+        "agents",
+        "shopping",
+        "memory",
+        "Daydream"
+      ]
+    },
+    {
+      "id": "2026-11-18-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Punchcut's Ken Olewiler sets six principles for AI UX, from glass boxes to autonomy maps and escape hatches",
+      "excerpt": "A UXmatters column argues teams must decide how people and agents share work before choosing any interaction pattern.",
+      "summary": [
+        "In his UXmatters column, Punchcut managing partner Ken Olewiler argues that once software can act by itself, the core design question shifts to how people and agents divide work and how control passes between them. He proposes six principles: go beyond the chat box when reviewing or comparing is the job, anchor AI in familiar structures such as documents and dashboards, calibrate how much of several running agents' activity people see, build 'glass boxes' that tie recommendations to evidence, right-size autonomy, and provide escape hatches.",
+        "Examples come from Punchcut projects, including an in-car agent driven by voice and ambient cues and an underwriting platform where experts must check AI risk assessments while staying accountable. The team uses 'Autonomy Maps' to decide which reversible, low-risk actions run without review and which need a person, warning that too many checkpoints defeat delegation. Users must be able to pause, correct, undo or take over without losing work. Olewiler frames the six as three tensions with no universal balance."
+      ],
+      "whyItMatters": "Draw an autonomy map per agent action, sorted by reversibility and risk, so approvals appear only where an error would be costly and everything else runs freely with undo.",
+      "sourceName": "UXmatters",
+      "sourceUrl": "https://www.uxmatters.com/mt/archives/2026/11/beyond-chat-six-principles-for-the-next-generation-of-ai-ux.php",
+      "author": "Ken Olewiler",
+      "publishedAt": "2026-11-16T12:00:00Z",
+      "imageUrl": "https://www.uxmatters.com/authors/Ken-Olewiler.jpg",
+      "imageAlt": "Portrait of UXmatters columnist Ken Olewiler",
+      "tags": [
+        "autonomy",
+        "trust",
+        "transparency",
+        "undo",
+        "human-in-the-loop"
+      ]
+    },
+    {
+      "id": "2026-11-18-agentic-design-02",
+      "topic": "agentic-design",
+      "headline": "Automattic turns writing research into agent skills that ask first, lint 47 words, and keep claims verbatim",
+      "excerpt": "Automattic Design shows how it stopped agents from drifting into AI-sounding UX copy and voiceover scripts.",
+      "summary": [
+        "Michael Pick of Automattic Design describes two agent skills the team built for writing: one for UX copy such as headings, buttons, empty states and errors, and one for voiceover scripts used in AI video and text-to-speech. Before writing, the agent asks about audience, voice and constraints, and it learns brand tone from real copy examples rather than adjectives. A deterministic linter flags 47 banned words and 33 banned patterns, and anything that needs judgment goes to a human.",
+        "The post grounds the work in research, including Pew's finding that AI-typical vocabulary more than doubled on the web since 2023 and Jakob Nielsen's note that ChatGPT writes far above the recommended reading level. Brand files are distilled from real guides and re-synced when the source changes, factual claims must stay word for word, and consent and disclosure steps cannot be skipped. An earlier skill set raised the share of agents that stopped to ask before acting to 67%. Ban lists go stale, so each skill needs a named human owner."
+      ],
+      "whyItMatters": "Make agents ask clarifying questions before producing output and lock factual claims verbatim; both are simple, testable guardrails that cut rewrites and legal risk.",
+      "sourceName": "Automattic Design",
+      "sourceUrl": "https://automattic.design/2026/11/16/design-writing-working-with-ai-agents/",
+      "author": "Michael Pick",
+      "publishedAt": "2026-11-16T10:55:06+00:00",
+      "imageUrl": "https://i0.wp.com/automattic.design/wp-content/uploads/2026/11/writing-with-ai-cover.png?fit=1200%2C800&ssl=1",
+      "imageAlt": "Abstract, softly blurred mouse pointer on a blue gradient",
+      "tags": [
+        "UX writing",
+        "agent skills",
+        "guardrails",
+        "clarifying questions"
+      ]
+    },
+    {
+      "id": "2026-11-18-ai-design-tools-01",
+      "topic": "ai-design-tools",
+      "headline": "Gemini Notebook now generates interactive sites, dashboards and trackers from your notes and sources",
+      "excerpt": "Typing 'make me a site' in a Gemini Notebook chat builds a shareable interactive page from the notebook's sources.",
+      "summary": [
+        "Google Labs added interactive site generation to Gemini Notebook. Users ask for a site in the notebook's chat, describe what they want, and Gemini builds it from the notes, research and sources already in the notebook. The result opens in a new tab and can be shared. Google's examples include study guides such as an interactive periodic table or a timeline, dashboards for data such as quarterly sales, and project trackers for tasks and deadlines.",
+        "The feature began rolling out globally on the web on November 16 for Gemini Notebook users aged 18 and over, including Google Workspace customers, with mobile support promised soon. It is another sign that generative UI is moving out of design tools and into everyday knowledge apps, where users can ask for a purpose-built view of their own material instead of waiting for a designed screen."
+      ],
+      "whyItMatters": "When users can generate their own dashboards and trackers from their data, product teams need to decide which views they still design and which they let people generate on demand.",
+      "sourceName": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-notebook/interactive-sites/",
+      "author": "Maria Ines Aranguren",
+      "publishedAt": "2026-11-16T16:00:00+00:00",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/blog_hero_periodic_table3_2784x1566.max-1440x810.png",
+      "imageAlt": "Gemini Notebook generating an interactive periodic table site from the prompt 'Make me a site to help me understand the periodic table'",
+      "tags": [
+        "generative UI",
+        "Gemini Notebook",
+        "Google",
+        "dashboards"
+      ]
+    },
+    {
+      "id": "2026-11-18-ai-ux-process-01",
+      "topic": "ai-ux-process",
+      "headline": "Find, fix, prove: a workflow so accessibility testing keeps pace with AI-speed builds",
+      "excerpt": "Survey data shows AI speeds design and code far more than QA; Smashing lays out where checks and owners should sit.",
+      "summary": [
+        "Andrew Chung cites Level Access's 2026 survey of more than 2,500 professionals: AI sped up design for 61% and development for 51%, but QA and testing for only 30%. WebAIM's scan of the top million home pages also found detectable errors per page rose about 10% in a year. Teams that improve on accessibility use AI no more than others; their edge is training, communication and culture, so AI works as an amplifier of an existing program.",
+        "His workflow has three steps. Find: put focus order, names, states and announcements into design system components, rules files and prompts, gate pull requests with linters and CI scans, and give each check an owner. Fix: write tickets with WCAG references, let AI draft fixes but verify semantics, since it can pass checks with wrong ARIA. Prove: add a regression test per fix and record what was tested in the PR. The piece is sponsored by Level Access, whose tools appear among the examples."
+      ],
+      "whyItMatters": "Putting accessibility specs into the design system and AI rules files at handoff means AI-generated UI starts out accessible instead of being patched later.",
+      "sourceName": "Smashing Magazine",
+      "sourceUrl": "https://smashingmagazine.com/2026/11/ai-sped-up-build-how-can-accessibility-testing-keep-up/",
+      "author": "Andrew Chung",
+      "publishedAt": "2026-11-17T08:00:00Z",
+      "imageUrl": "https://files.smashing.media/articles/ai-sped-up-build-how-can-accessibility-testing-keep-up/ai-sped-up-build-how-can-accessibility-testing-keep-up.jpg",
+      "imageAlt": "Smashing Magazine article card with the title, accessibility, testing and AI tags, and a photo of author Andrew Chung",
+      "tags": [
+        "accessibility",
+        "QA",
+        "workflow",
+        "design systems"
+      ]
+    },
+    {
+      "id": "2026-11-18-ux-design-01",
+      "topic": "ux-design",
+      "headline": "What smart glasses teach about UX when the screen disappears: recall, legible failures and bystanders",
+      "excerpt": "A UXmatters columnist turns months with display-free smart glasses into concrete lessons for voice and ambient interfaces.",
+      "summary": [
+        "Writing for UXmatters, Yuri Shapochka uses his own Ray-Ban Meta smart glasses to show that removing the screen moves the interface into voice, gestures, sound and context rather than eliminating it. Hidden controls swap recognition for recall, so he kept checking his phone to learn the device. He recommends a searchable command reference, personalised gestures, hints after repeated failures, and distinct audio cues that separate a misheard request from a missing feature.",
+        "Because the camera does not see what the wearer sees, the assistant should admit uncertainty, ask the user to adjust their view and offer a text record in a companion app, since confident spoken answers vanish and can be wrong. Other lessons cover bystanders affected by audio leaks and cameras, the effort that hands-free use still demands, and giving step-by-step delivery with a choice of concise or detailed answers. His conclusion: good design here leaves people in control and sometimes simply leaves them alone."
+      ],
+      "whyItMatters": "Distinguishing 'I misheard you' from 'I can't do that' and admitting uncertainty are habits any voice or ambient assistant should adopt.",
+      "sourceName": "UXmatters",
+      "sourceUrl": "https://www.uxmatters.com/mt/archives/2026/11/when-the-user-interface-disappears-what-my-smart-glasses-taught-me-about-ux.php",
+      "author": "Yuri Shapochka",
+      "publishedAt": "2026-11-16T12:00:00Z",
+      "imageUrl": "https://www.uxmatters.com/authors/Yuri-Shapochka.jpg",
+      "imageAlt": "Portrait of UXmatters columnist Yuri Shapochka",
+      "tags": [
+        "wearables",
+        "voice UI",
+        "accessibility",
+        "error handling"
+      ]
+    },
+    {
+      "id": "2026-11-18-competitors-01",
+      "topic": "competitors",
+      "headline": "Microsoft Ignite: Copilot Autopilot becomes a persistent personal agent colleagues can @mention in Teams",
+      "excerpt": "Microsoft also previewed Copilot Today, a morning brief that drafts replies and schedule changes for you to approve.",
+      "summary": [
+        "At Ignite on November 17, Microsoft introduced Copilot Autopilot, a long-running personal agent with its own memory, tools and identity inside an organization's Microsoft environment. It can follow up on conversations, handle recurring work and keep projects moving without a prompt for every step, and coworkers can @mention someone's Autopilot in Teams channels or group chats to request information or actions. It is rolling out first to the Frontier early-access program.",
+        "Microsoft also showed Copilot Today, which reads email, calendar, chats and meetings to surface what needs attention and prepares drafts and proposed schedule changes for the user to review and approve, delivered as a morning Today Brief and an updating Today Feed in the Copilot app and Outlook. The daily brief is included with a Microsoft 365 Copilot license, while the feed consumes Copilot credits. Office apps inside Copilot are now generally available, and GitHub's Copilot Fusion gained Microsoft's new MAI Code 2 models."
+      ],
+      "whyItMatters": "Agents with their own identity that teammates can @mention in shared channels make the agent a visible member of the team, raising new questions about ownership, permissions and attribution in collaboration tools.",
+      "sourceName": "The Neuron",
+      "sourceUrl": "https://www.theneuron.ai/news/microsoft-ignite-2026-copilot-autopilot-today-fusion/",
+      "author": "Corey Noles",
+      "publishedAt": "2026-11-17T23:08:13Z",
+      "featured": true,
+      "imageUrl": "https://cdn.theneuron.ai/Microsoft%20Ignite%202026%20Everything%20AI%20You%20Need%20to%20Know.png",
+      "imageAlt": "Microsoft logo connected to AI assistant, calendar and coding icons beside the headline 'Microsoft Ignite 2026: Everything AI You Need to Know'",
+      "tags": [
+        "Microsoft",
+        "Copilot",
+        "Ignite",
+        "agents",
+        "Teams"
+      ]
+    },
+    {
+      "id": "2026-11-18-ai-news-01",
+      "topic": "ai-news",
+      "headline": "OpenAI ships GPT-6.2 Astra for hard projects and Sol for everyday work, with Astra 20% cheaper",
+      "excerpt": "Both models are live in ChatGPT Work, Codex and the API; Astra is OpenAI's first to hit its High self-improvement threshold.",
+      "summary": [
+        "OpenAI released two models on November 17: GPT-6.2 Astra, its frontier model for the most demanding projects, and GPT-6.2 Sol, an efficient model for daily tasks. They are rolling out to Plus, Pro, Enterprise and Edu users in ChatGPT Work and Codex and to developers as gpt-6.2-astra and gpt-6.2-sol. Astra costs $8 per million input tokens and $40 per million output, 20% below GPT-6 Astra, while Sol stays at $2 and $10.",
+        "OpenAI and third-party evaluators report gains on agent, coding and reasoning benchmarks, and say Astra follows supplied templates closely when producing slides, spreadsheets and documents; early testers including ClickUp and Harvey cite fewer tokens and review rounds, though Ethan Mollick found it harder to steer. Under OpenAI's Preparedness Framework both models reach the Critical cyber threshold, and Astra is the first released model at the High self-improvement level, so tighter safeguards now limit some security work."
+      ],
+      "whyItMatters": "A cheaper flagship and a near-equal budget model make it easier to route routine agent work to Sol and reserve Astra for complex, template-bound document jobs.",
+      "sourceName": "TestingCatalog",
+      "sourceUrl": "https://www.testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis/",
+      "publishedAt": "2026-11-17T18:55:50Z",
+      "imageUrl": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w1200/2026/11/banner-11.webp",
+      "imageAlt": "Banner reading Astra, GPT-6.2 and Sol against a starry night sky with a glowing orb",
+      "tags": [
+        "OpenAI",
+        "GPT-6.2",
+        "models",
+        "pricing"
+      ]
+    },
+    {
+      "id": "2026-11-18-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Google will keep Gemini chats for about two months even with history off, but splits out AI training",
+      "excerpt": "Retention for temporary and history-off chats jumps from 72 hours, while a new setting lets users keep history without training.",
+      "summary": [
+        "Google is extending how long it keeps temporary Gemini chats, and chats made with history switched off, from 72 hours to roughly two months, rolling out globally over the coming weeks. It says the change is meant to improve safety and security as AI systems grow more capable, and to respond to users, process feedback and protect its services, but did not say what triggered it or whether it affects how conversations are reviewed.",
+        "At the same time, the single Keep Activity control is being split into separate chat history and AI training settings, so people can keep conversations without letting them train Google's models. Users who had Keep Activity off start with both new settings off, and temporary chats are not used for training. For comparison, OpenAI may keep temporary ChatGPT chats for up to 30 days, and Anthropic keeps incognito Claude chats for 30 days by default."
+      ],
+      "whyItMatters": "Separating 'keep my history' from 'train on my data' into two plain controls is a privacy pattern worth copying in any AI feature that stores conversations.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/",
+      "author": "Jagmeet Singh",
+      "publishedAt": "2026-11-17T18:48:23+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/google-gemini-app.jpg?resize=1200,800",
+      "imageAlt": "Google Gemini app listing in the Play Store on a phone screen",
+      "tags": [
+        "Google",
+        "Gemini",
+        "privacy",
+        "data retention"
+      ]
+    },
+    {
+      "id": "2026-11-18-must-watch-01",
+      "topic": "must-watch",
+      "headline": "Nate Parrott on designing with Claude without the AI slop: five tips and live demos",
+      "excerpt": "The designer behind Claude Design shows, live, how to steer AI away from generic-looking output.",
+      "summary": [
+        "In this Behind the Craft episode, Peter Yang talks with Nate Parrott, the Anthropic designer behind Claude Design and Artifacts. Nate opens with five tips: give the model rich context such as screenshots, reference pages and rebuilt real screens; research familiar UX patterns for hard layouts; counter the model's design biases in a design.md file; nail flows in wireframes before styling; and request several options, then remix the best parts.",
+        "Demos show a feature designed from a phone note, a spreadsheet turned into a live dashboard and then into a motion video. Chapters cover how Anthropic designers prototype in days, why Claude Design launched as its own product, the four tells that make a design look AI-made, how to test a design skill when AI cannot judge taste, and whether AI will ever have good taste."
+      ],
+      "whyItMatters": "Practical, demo-led advice on getting distinctive, on-brand results from AI design tools, from the person who designs one.",
+      "sourceName": "YouTube",
+      "sourceUrl": "https://www.youtube.com/watch?v=604T-74s3KE",
+      "author": "Nate Parrott, Peter Yang",
+      "publishedAt": "2026-11-15T12:00:00Z",
+      "durationMinutes": 42,
+      "embeddable": true,
+      "imageUrl": "https://i.ytimg.com/vi/604T-74s3KE/maxresdefault.jpg",
+      "imageAlt": "Peter Yang and Nate Parrott on either side of the text 'How to design with no AI slop' under the Behind the Craft logo",
+      "tags": [
+        "Claude Design",
+        "prototyping",
+        "AI slop",
+        "video"
+      ]
+    }
+  ]
+}
