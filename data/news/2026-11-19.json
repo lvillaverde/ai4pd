@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T07:40:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-19-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Google's AI Mode adds temporary threads, an incognito-style chat that leaves no trace in history",
+      "excerpt": "A single icon in AI Mode starts a chat that is cut off from your account, history and personalization.",
+      "summary": [
+        "Google is rolling out temporary threads in AI Mode, the conversational part of Search. The feature mirrors the temporary chat already offered in the standalone Gemini app: people tap an icon in the upper-right corner of AI Mode to open a thread, and closing it drops them back into regular searching. Google says it is reaching desktop and mobile worldwide in every language AI Mode supports.",
+        "A temporary thread is detached from the signed-in account, so answers are not shaped by past preferences, the conversation does not resurface later in search history or recommendations, and it does not feed future personalization. No settings change is required to use it. TechCrunch notes Google did not say whether these conversations are still stored on its servers, which leaves the privacy promise narrower than the incognito label suggests."
+      ],
+      "whyItMatters": "A one-tap, clearly signposted 'don't remember this' mode is becoming a baseline expectation for any assistant that learns from a user's history.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/",
+      "author": "Sarah Perez",
+      "publishedAt": "2026-11-18T18:04:00Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2019/10/google-search-app-ios.jpg?resize=1200,644",
+      "imageAlt": "Close-up of the Google app icon on a phone home screen between the Weather and Instagram icons",
+      "tags": ["Google", "AI Mode", "privacy", "memory"]
+    },
+    {
+      "id": "2026-11-19-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Citi, PNC and Citizens make customers liable for whatever third-party AI agents do in their accounts",
+      "excerpt": "Three more US banks rewrote their terms so losses from outside AI finance tools, even hacked ones, fall on the customer.",
+      "summary": [
+        "Citibank, the third-largest US commercial bank, updated its terms so that customers are responsible for problems caused by third-party AI finance tools they connect, including what attackers do if credentials leak or the tool itself is compromised. PNC, the eighth-largest bank, changed its terms the same day, and Citizens emailed customers a similar warning that week. JPMorgan and Bank of America adopted comparable policies in October.",
+        "Citi exempts agents that it provides itself, and a spokesperson said the bank wants customers to understand the risks of sharing banking credentials with outside AI tools. The shift lands as consumer agents gain access to money: TechCrunch points out that Anthropic's personal finance tool, launched earlier in November, is deliberately read-only and cannot move or invest funds."
+      ],
+      "whyItMatters": "When liability lands on the user, agent products need explicit permission scopes, read-only defaults and plain-language warnings at the moment of connection.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
+      "author": "Tim Fernholz",
+      "publishedAt": "2026-11-18T17:32:10Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-1497343848.jpeg?resize=1200,800",
+      "imageAlt": "Blue Citibank sign above the entrance of a branch building",
+      "tags": ["banking", "liability", "permissions", "agents"]
+    },
+    {
+      "id": "2026-11-19-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Jakob Nielsen: when agents are paid per outcome, designing the meter becomes a core UX job",
+      "excerpt": "Nielsen revisits his 2024 'service as software' forecast and argues that what counts as 'resolved' is now a design decision.",
+      "summary": [
+        "Jakob Nielsen has published a second edition of his 2024 essay on 'service as software', grading his earlier predictions as three right, one mostly right and one wrong. His core claim is that AI vendors increasingly sell finished work rather than seats: Sierra passed $400M ARR on outcome pricing, Fin charges $0.99 per resolution, Zendesk about $2 and HubSpot $0.50 per resolved conversation, against a $13.50 benchmark for a human contact. Hybrid pricing rose from 27% to 41% of surveyed software firms.",
+        "He warns that outcome pricing moves the cost of failure to the vendor but leaves the consequences with the buyer, including 'phantom resolutions' counted when a customer simply goes quiet for 24 to 72 hours. His prescription for designers: treat the meter as interface, define intake, progress checkpoints, handoffs and redress paths for disputed jobs, show guarantees and their limits at purchase, and audit billed outcomes by sampling whether customers agree."
+      ],
+      "whyItMatters": "Define 'done' for an agent with the user: show progress checkpoints, an explicit completion state the user confirms, and a redress path when the agent's 'resolved' isn't.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/service-as-software",
+      "author": "Jakob Nielsen",
+      "publishedAt": "2026-11-18T12:00:17Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_12f56311d154457b949f831f9104ddcf~mv2.jpg/v1/fill/w_1280,h_720,al_c/d496b6_12f56311d154457b949f831f9104ddcf~mv2.jpg",
+      "imageAlt": "Painted illustration of a smiling office worker taking a red report from a robotic arm reaching out of a computer monitor",
+      "tags": ["outcome pricing", "agents", "trust", "metrics"]
+    },
+    {
+      "id": "2026-11-19-ai-ux-process-01",
+      "topic": "ai-ux-process",
+      "headline": "Matt Rafalow: synthetic users give anxious companies the frictionless validation research was meant to challenge",
+      "excerpt": "A researcher and sociologist argues the fight over research's value is about institutions, not AI, and friction is the asset.",
+      "summary": [
+        "In UX Collective, researcher Matt Rafalow argues that the current debate over whether AI can replace user researchers is less a technology story than a story about how organizations handle inconvenient findings. He describes how teams under pressure flatten messy human behaviour into single spreadsheet metrics, and how synthetic AI personas and LLM summaries now offer 'good enough' reassurance for decisions already made, at a fraction of the cost of talking to real people.",
+        "He lists concrete risks: synthetic stand-ins for hard-to-reach communities build caricatures from dominant internet text, models trained on past averages lose the edge cases where new behaviour starts, and logs mistake frustrated repeat clicks for engagement. He also faults researchers for selling interview counts and decks. When AI lets teams build twenty prototypes a week, he concludes, deciding which one is worth building becomes the scarce skill."
+      ],
+      "whyItMatters": "A useful counterweight for teams adopting AI synthesis: keep real participants in the loop wherever edge cases and unmet needs matter.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/what-is-a-researchers-worth-ea14c95c6d12",
+      "author": "Matt Rafalow",
+      "publishedAt": "2026-11-17T23:26:24Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/0*0cFCJpNLtLhpGfGK",
+      "imageAlt": "Watercolor illustration of a boat carrying scientific objects in the middle of a body of water",
+      "tags": ["user research", "synthetic users", "research ops"]
+    },
+    {
+      "id": "2026-11-19-ux-design-01",
+      "topic": "ux-design",
+      "headline": "A UI edge-case reference guide: how to test, spot and fix empty, loading, stale and permission states",
+      "excerpt": "A catalogue of the small states that break interfaces, each with a test method and a design fix, first written for an AI workflow.",
+      "summary": [
+        "Designer and developer Adir SL has published a long reference guide to UI edge cases in UX Collective. It grew out of a client workshop on agentic design and development, where the client asked why teams check AI-written code for missed edge cases instead of giving the AI a list up front. The authors could not find a generic list, so they wrote one, and say it improved the code their agentic workflow generated.",
+        "The guide groups cases into content-driven ones (empty states, text-length extremes, long unbroken strings, plural and zero counts, localization, missing media), state-driven ones (loading, errors, optimistic updates, expired sessions, stale data) and input-driven ones (focus, disabled versus read-only). Each entry explains how to reproduce the problem, for example pseudo-localization or killing the network mid-request, and the design fix to apply."
+      ],
+      "whyItMatters": "Edge states like stale data, partial failures and permission limits are where collaborative work tools break most, and the list doubles as a checklist to feed design agents.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/ui-edge-cases-a-reference-guide-e778061588ef",
+      "author": "Adir SL",
+      "publishedAt": "2026-11-16T21:20:24Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*R_ZHpYkP3hc4ER5e4KuPsA.png",
+      "imageAlt": "Banner with a cartoon hooded character in a desert scene next to a speech bubble reading 'UI edge cases: A reference guide'",
+      "tags": ["edge cases", "states", "design QA", "checklist"]
+    },
+    {
+      "id": "2026-11-19-competitors-01",
+      "topic": "competitors",
+      "headline": "Microsoft turns Copilot Notebooks into Workspaces, shared spaces where teams and agents work toward one goal",
+      "excerpt": "At Ignite, Copilot gained shared team Workspaces, a 'Today' command center and Word, Excel and PowerPoint inside the app.",
+      "summary": [
+        "Microsoft's Ignite update for Copilot introduces Workspaces, an evolution of Copilot Notebooks where people and agents share context around a common goal: agents draft sections, teammates review and comment, and the agent revises; the work continues in Teams. Microsoft says personal Autopilot agents will join Workspaces later. It is available through the Frontier early-access program only.",
+        "Alongside it, Home becomes the single starting point, with one composer that routes work between quick Chat and multistep Cowork tasks and can suggest moving a task to Cowork. Today, in private preview, is a command center across mail, calendar, Teams and tasks that flags what needs attention and preps drafts and follow-ups. Office in Copilot is generally available, and new skill packs cover sales, service, finance and legal."
+      ],
+      "whyItMatters": "Shared project spaces where agents draft and humans comment are becoming the default pattern for team collaboration with AI, raising the bar for work-management tools.",
+      "sourceName": "Microsoft Copilot Blog",
+      "sourceUrl": "https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/",
+      "author": "Jared Spataro",
+      "publishedAt": "2026-11-17T18:05:00Z",
+      "imageUrl": "https://www.microsoft.com/en-us/copilot/blog/wp-content/uploads/sites/2/2026/11/Copilot-Blog-Header_Hero-Blog_Ignite-FY27_social-resize.png",
+      "imageAlt": "Copilot app home screen with a Chat/Cowork composer and a sidebar listing Today, Autopilot, Agents and Workspaces",
+      "tags": ["Microsoft", "Copilot", "Workspaces", "Ignite"]
+    },
+    {
+      "id": "2026-11-19-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Anthropic prices its IPO at $83 a share, raising $81.3 billion in the largest listing ever",
+      "excerpt": "The Claude maker sold 980 million shares above its range, valuing it near $1.5 trillion before Nasdaq trading starts.",
+      "summary": [
+        "Anthropic priced its initial public offering at $83 per share, above the $70 to $78 range it marketed, and expanded the deal to 980 million shares from 825 million. That raises $81.3 billion, beating SpaceX's record, and values the company at about $1.5 trillion fully diluted, up from $965 billion in its May private round. Shares begin trading on Nasdaq under the ticker ANT on November 19, with closing expected on November 20.",
+        "Amazon will own nearly 15% and Google almost 14% after the listing, and a separate $26 billion private placement with AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC Partners runs alongside it. Each of the seven co-founders sold about 3.4 million shares. Underwriters hold a 30-day option on up to 147 million more shares. The pricing held despite market jitters after Jensen Huang's exit from Nvidia."
+      ],
+      "whyItMatters": "A public Anthropic will face quarterly pressure on pricing, model cadence and enterprise features, which shapes the roadmap of every product built on its models.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+      "author": "Marina Temkin",
+      "publishedAt": "2026-11-18T22:11:00Z",
+      "featured": true,
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg?resize=1200,800",
+      "imageAlt": "Blurred close-up of the orange Claude app icon glowing on a dark screen",
+      "tags": ["Anthropic", "IPO", "Claude", "funding"]
+    },
+    {
+      "id": "2026-11-19-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Google launches Gemini 4 Neon, a mid-tier model aimed at agentic coding and knowledge work",
+      "excerpt": "Neon slots between Hydrogen and Carbon, priced at $3 in and $15 out per million tokens, with a one-million-token context.",
+      "summary": [
+        "Google DeepMind released Gemini 4 Neon, positioned between the fast Hydrogen model and the flagship Carbon for long, hard projects. Google reports it ranks third on the Artificial Analysis Intelligence Index, second on the Vals Index and Agent Arena, first on the Artificial Analysis Coding Agent Index, and 65.2% on Terminal-Bench 4.1. At its default effort level Google says cost per task is 32% lower than Carbon.",
+        "Pricing is $3 per million input tokens, $0.15 cached and $15 output, with a one-million-token context window. Neon is available in the paid Gemini API, AI Studio, Android Studio, Gemini for business and Antigravity, and in the Gemini app for Pro and Ultra subscribers; a cyber-focused variant goes to Fairwind Program members. Benchmarks are Google's own, and VentureBeat notes Artificial Analysis found the cost edge narrows to about 17% at the highest effort."
+      ],
+      "whyItMatters": "A cheaper model tuned for multi-step automation lowers the cost of running agents in production, which changes what agent features are affordable to ship.",
+      "sourceName": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "author": "Koray Kavukcuoglu",
+      "publishedAt": "2026-11-18T21:00:00Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-neon__blog-header__sm.width-1300.png",
+      "imageAlt": "Orange neon sign reading 'Gemini 4 Neon' with the Gemini spark logo on a dark wall",
+      "tags": ["Google", "Gemini", "models", "agents"]
+    },
+    {
+      "id": "2026-11-19-must-watch-01",
+      "topic": "must-watch",
+      "headline": "Inside Meta's Muse: Mona Sarantakos on building and launching a breakout personal agent",
+      "excerpt": "A rare inside account of how a consumer AI agent went from a weekend hack to the top of the App Store.",
+      "summary": [
+        "On Lenny's Podcast, Mona Sarantakos, VP of Product at Meta Superintelligence Labs, gives her first podcast interview about Muse, Meta's personal agent, which she has led since day one. She traces it back to a weekend spent running the open-source OpenClaw agent on a Raspberry Pi with access to her email and calendar, and explains why the team waited seven months to launch despite starting before most competitors.",
+        "The conversation covers how Nat Friedman, Alex Wang and Mark Zuckerberg shaped the product, how the team uses 'agent swarms' to surface user insights at scale, the use case nobody predicted, how a placeholder avatar called Jolly became the product's icon, the two levers that move activation for an AI agent, and what she now looks for when hiring product managers."
+      ],
+      "whyItMatters": "Worth watching for first-hand lessons on agent identity, activation and using agents for user research, straight from the team behind a hit consumer agent.",
+      "sourceName": "YouTube",
+      "sourceUrl": "https://www.youtube.com/watch?v=WY0cdD4gNoQ",
+      "author": "Mona Sarantakos, Lenny Rachitsky",
+      "publishedAt": "2026-11-15T12:00:00Z",
+      "durationMinutes": 87,
+      "embeddable": true,
+      "imageUrl": "https://i.ytimg.com/vi/WY0cdD4gNoQ/maxresdefault.jpg",
+      "imageAlt": "Mona Sarantakos smiling beside a fluffy white mascot and the text 'The rise of Muse' with a Meta logo",
+      "tags": ["Meta", "Muse", "personal agents", "video"]
+    }
+  ]
+}
