@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-21T07:04:38-03:00",
+  "articles": [
+    {
+      "id": "2026-11-21-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Apple is reportedly building its own agent that operates Mac apps, browses and writes code",
+      "excerpt": "A Bloomberg-spotted job listing describes an Apple agent that moves across apps, browsers, terminals and code to finish multi-step tasks.",
+      "summary": [
+        "Bloomberg found an Apple job posting for a senior engineering manager to lead work on an \"AI agent that can use a computer,\" and TechCrunch followed up with the details. The role describes an agent that browses the web, works across apps, runs commands, writes and debugs code, and calls services, picking the right tool for each step of a multi-step task, all while keeping data private and the experience polished.",
+        "The project is said to be at an early stage, with Apple weighing a launch as soon as late next year; Apple did not respond to requests for comment, and the report rests on a job listing rather than an announcement. In parallel, Bloomberg says macOS 27.3 will show warnings that discourage people from granting third-party agents full control of their Macs, which would make Apple both a gatekeeper for rival agents and a competitor to them."
+      ],
+      "whyItMatters": "If the OS owner ships a native computer-use agent and adds friction for third-party ones, product teams will need agent features that earn permission step by step rather than asking for full control up front.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "author": "Lucas Ropek",
+      "publishedAt": "2026-11-20T00:56:01+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/06/iphone-usb-cable.jpg?resize=1200,800",
+      "imageAlt": "An Apple Lightning charging cable plugged into an iPhone",
+      "tags": [
+        "Apple",
+        "computer use",
+        "agents",
+        "permissions",
+        "macOS"
+      ]
+    },
+    {
+      "id": "2026-11-21-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "ChatGPT's Live Dictation shows your words as you speak and drops the 10-minute recording cap",
+      "excerpt": "OpenAI now transcribes voice prompts in real time, with an editable transcript, across all plans on web, desktop and mobile.",
+      "summary": [
+        "OpenAI is rolling out Live Dictation in ChatGPT to every plan worldwide on the web, the desktop app, and iOS and Android. Instead of waiting until a recording ends, ChatGPT now transcribes voice prompts as you talk; tapping or clicking the audio waveform reveals the live transcript, which you can then edit in the prompt box before sending.",
+        "The update also removes the 10-minute limit on prompt-box dictation, and OpenAI says the feature is now more reliable. It follows this year's overhaul of ChatGPT's two-way voice mode; the separate record mode for meetings and voice notes remains in beta and limited to paid workspace tiers."
+      ],
+      "whyItMatters": "Showing a live, editable transcript before submission is a simple pattern for voice input in any AI composer: people can catch recognition errors before the model acts on them.",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
+      "author": "Stevie Bonifield",
+      "publishedAt": "2026-11-19T15:16:45+00:00",
+      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/chatgpt-live-dictation-promo-screenshot.jpeg?quality=90&strip=all&crop=8.4734375%2C20.737347294939%2C85.1578125%2C79.262652705061&w=1200",
+      "imageAlt": "A screenshot of an OpenAI promotional video for Live Dictation in ChatGPT",
+      "tags": [
+        "ChatGPT",
+        "OpenAI",
+        "voice",
+        "dictation",
+        "composer"
+      ]
+    },
+    {
+      "id": "2026-11-21-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Jakob Nielsen: people rubber-stamp agent permission prompts, so design approvals for glance-level judgment",
+      "excerpt": "A new study finds only 48% of developers read agent permission requests carefully and 21% approve them by default.",
+      "summary": [
+        "Jakob Nielsen's November 20 UX Roundup gathers several findings on how people supervise AI. A study of 18 interviews and 115 survey responses (Salerno et al.) found that only 48% of developers read agent permission requests carefully and 21% approve them by default; Nielsen argues self-reports understate the habit and points to Anthropic's figure that Claude Code users approve 93% of permission prompts.",
+        "He pairs this with the recognition-primed decision model: experts rarely compare options and instead judge one action at a glance, so AI products should offer stable cues, previews and visibly different treatment for dangerous actions. Other items in the roundup recommend asking for permissions in context, one per task, and report the DimSteer study, where labeled sliders let 15 of 16 participants steer AI drafts in ways they would not have thought to prompt for."
+      ],
+      "whyItMatters": "Treat approval as a glance, not a reading task: reserve prompts for risky actions, ask one at a time at the moment of need, and make destructive steps look unmistakably different from routine ones.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/ux-roundup-20261120",
+      "author": "Jakob Nielsen",
+      "publishedAt": "2026-11-20T12:00:09.930Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_acde84fab3074bd8ba1eef62d0b5742d~mv2.jpg/v1/fill/w_1280,h_720,al_c/d496b6_acde84fab3074bd8ba1eef62d0b5742d~mv2.jpg",
+      "imageAlt": "Paper-cut illustration: a person approving a warning dialog beside another person adjusting a slider on a document",
+      "tags": [
+        "human-in-the-loop",
+        "approvals",
+        "permissions",
+        "trust",
+        "research"
+      ]
+    },
+    {
+      "id": "2026-11-21-ai-design-tools-01",
+      "topic": "ai-design-tools",
+      "headline": "Figma shows how Specs and its agent turn scattered canvas context into a plan a coding agent can build",
+      "excerpt": "A Figma engineer walks through bundling PRDs, annotated frames, code layers and components into one spec that Codex then implements.",
+      "summary": [
+        "Johnny Dallas, tech lead for Figma Specs, published a step-by-step workflow using a fictional delivery feature. Specs is a shared container for project context that sits on the canvas next to the designs, and both teammates and agents can write to it. The engineer used the Hex connector to have the Figma agent pick a pilot city from usage data, gathered a PRD, diagrams, annotated frames, a map code layer and a design system component, then ran a reusable build-implementation-plan skill that produced a plan spec.",
+        "The team reviewed that plan for design system adherence, testing, rollout and a task table linked to sources; a designer edited it directly and the agent answered comments with fixes. The spec link was then handed to Codex, which reads the spec and linked designs through Figma's MCP server. Specs is in open beta on all plans across web, desktop and mobile."
+      ],
+      "whyItMatters": "Design annotations and component guidance become direct inputs to coding agents, so the quality of what designers write next to their frames now shapes what ships.",
+      "sourceName": "Figma Blog",
+      "sourceUrl": "https://www.figma.com/blog/workflow-lab-specs-and-the-figma-agent/",
+      "author": "Johnny Dallas",
+      "publishedAt": "2026-11-20T22:17:00Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/2ca1e62056e0643145440afac47fe74aac4957ea-1056x704.jpg?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "Abstract grainy illustration of red, pale yellow and lavender swirls with glowing circles",
+      "tags": [
+        "Figma",
+        "Specs",
+        "Figma agent",
+        "design-to-code",
+        "MCP"
+      ]
+    },
+    {
+      "id": "2026-11-21-ai-ux-process-01",
+      "topic": "ai-ux-process",
+      "featured": true,
+      "headline": "NN/g: AI designs meet more criteria when fed synthesized findings instead of raw user comments",
+      "excerpt": "In 32 AI-generated designs, synthesized research beat raw feedback by 8.4 percentage points on a blind scorecard.",
+      "summary": [
+        "Megan Chan and Rachel Banawa of Nielsen Norman Group asked an AI model to design a flight-rebooking form and a multistep checkout, giving it either about 100 raw user comments per task or synthesized findings and recommendations built from the same comments. Across 32 designs scored blindly by a human and an LLM judge, synthesized input met 77.9% of criteria versus 69.5% for raw data, an 8.4-point gap (p < 0.001), with 11.4 points on the flight task and 5.5 on checkout.",
+        "Concrete misses illustrate the gap: no raw-data design showed whether a cancellation affected loyalty miles, while every synthesized-research design did. The authors caution that their comments were cleaner than typical app-store data, that they cannot yet separate the effect of findings from recommendations, and that they only tested one model. They urge teams to treat research artifacts as written for both teammates and AI tools, a practice they call UX-context design."
+      ],
+      "whyItMatters": "Feeding AI tools curated research insights rather than raw feedback dumps measurably improves generated designs, which makes synthesis a core input to AI-assisted design work.",
+      "sourceName": "Nielsen Norman Group",
+      "sourceUrl": "https://www.nngroup.com/articles/raw-data-vs-synthesized-data/",
+      "author": "Megan Chan, Rachel Banawa",
+      "publishedAt": "2026-11-20T12:00:00Z",
+      "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/Can_AI_Card.png",
+      "imageAlt": "NN/G card comparing a shorter 'Raw user data' bar with a taller 'Synthesized research' bar, each topped by an AI sparkle icon",
+      "tags": [
+        "NN/g",
+        "research synthesis",
+        "AI design",
+        "context",
+        "study"
+      ]
+    },
+    {
+      "id": "2026-11-21-ux-design-01",
+      "topic": "ux-design",
+      "headline": "NN/g's guide to choosing among usability tests, interviews, field studies and diary studies",
+      "excerpt": "Maria Rosala maps four qualitative methods by cost, difficulty and sample size, with a decision path for picking one.",
+      "summary": [
+        "Nielsen Norman Group published an overview of four qualitative user-research methods by Maria Rosala, a companion to its quantitative methods guide. It covers qualitative usability testing (about five participants per user group per round, ideally several small rounds), user interviews (5–12 for focused studies, 20–30 or more for broad ones), field studies including contextual inquiry, and diary studies, each with rough ratings for cost and difficulty of collection and analysis.",
+        "The article offers a decision path: evaluative questions point to usability testing, while generative ones depend on whether you must observe behavior, whether the environment shapes the experience, and whether it unfolds over days or weeks. Interviews are the simplest default but rely on memory; field studies are the most demanding; diary studies need over-recruiting because participants drop out. It stresses rigor in goals, recruiting, unbiased questions and systematic analysis."
+      ],
+      "whyItMatters": "Complex collaboration workflows shaped by tools, interruptions and teammates are exactly where the guide points teams toward field studies and diary studies rather than interviews alone.",
+      "sourceName": "Nielsen Norman Group",
+      "sourceUrl": "https://www.nngroup.com/articles/qual-research-methods/",
+      "author": "Maria Rosala",
+      "publishedAt": "2026-11-20T12:00:00Z",
+      "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/Qualitative_User_Research_Card.png",
+      "imageAlt": "NN/G card with a browser window holding sticky notes and speech bubbles",
+      "tags": [
+        "user research",
+        "qualitative methods",
+        "interviews",
+        "diary studies",
+        "NN/g"
+      ]
+    },
+    {
+      "id": "2026-11-21-competitors-01",
+      "topic": "competitors",
+      "headline": "ClickUp 4.10 adds formula Sheets, email-triggered automations and CRM actions for Brain and Super Agents",
+      "excerpt": "ClickUp's latest release lets agents act on Gmail, Outlook, HubSpot and Salesforce, and adds spreadsheets and work schedules.",
+      "summary": [
+        "ClickUp's Release Notes 4.10 bring Sheets, spreadsheets with formulas that sit alongside tasks and can pull a snapshot of List data or import Excel and CSV files. New Gmail and Outlook triggers let incoming emails create tasks or post messages, and a Super Agent can read emails that need judgment and act on instructions. Brain and Super Agents can also update HubSpot deals, log calls, and report Salesforce opportunity stages, amounts and close dates.",
+        "The release adds a workspace work schedule with hours and holidays that Workload and Timesheets follow, an option for task dates to skip non-working days, and effort set per day, week or month in Workload. Most new features, including Sheets, custom schedules and Salesforce, are limited to Business Plus and Enterprise plans; email triggers also reach the Business plan."
+      ],
+      "whyItMatters": "Work-management agents are moving from answering questions to acting on CRM and inbox events, which raises the bar for showing what an agent changed and why.",
+      "sourceName": "ClickUp Changelog",
+      "sourceUrl": "https://clickup.canny.io/changelog/release-notes-410",
+      "publishedAt": "2026-11-20T12:00:00Z",
+      "imageUrl": "https://canny-assets.io/images/b52b467d49b42cc37cd2aac379b47625.png",
+      "imageAlt": "ClickUp 4.10 banner beside a Q4 launch budget spreadsheet with a Data menu offering to connect a List",
+      "tags": [
+        "ClickUp",
+        "Super Agents",
+        "Sheets",
+        "automations",
+        "CRM"
+      ]
+    },
+    {
+      "id": "2026-11-21-ai-news-01",
+      "topic": "ai-news",
+      "headline": "OpenAI's Performance Factory has Codex agents investigate ChatGPT slowdowns while engineers decide what merges",
+      "excerpt": "Over three months the system ran 1,700+ investigations and found root causes in more than 600 cases.",
+      "summary": [
+        "OpenAI engineers Okay Zed and Cyrus Forbes described Performance Factory, an internal system where Codex agents investigate performance regressions in ChatGPT. Agents pick up alerts, find likely root causes, open fixes as pull requests and check after deployment whether metrics returned to baseline. In just over three months it tracked more than 1,700 investigations, about 17 a day, and root caused over 600; a manual review graded 70 of 100 root-cause suggestions accurate.",
+        "Humans stay in charge of merges and architectural tradeoffs, and a separate adversarial Codex session tries to disprove each diagnosis before it advances. The team's lessons focus on protecting engineers' attention by grouping related incidents and ranking impact, backtesting changes to agents against past incidents, grading handoff summaries for clarity, and having a daily agent turn recurring tool failures into repair tasks."
+      ],
+      "whyItMatters": "Adversarial double-checks, impact-ranked queues and graded handoff summaries are reusable patterns for any product that asks people to review a stream of agent output.",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/",
+      "author": "Okay Zed, Cyrus Forbes",
+      "publishedAt": "2026-11-19T12:00:00Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/1GmNPxrS3qwhYU0t43dsaa/0df53811b9acf8f9699ace630362f112/performance-factory-social.png?w=1600&h=900&fit=fill",
+      "imageAlt": "An illustrated workflow connecting alerts, agents, investigation and code",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "agents",
+        "human review",
+        "engineering"
+      ]
+    },
+    {
+      "id": "2026-11-21-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Google opens Genie 4 world model to developers through the Gemini API and AI Studio",
+      "excerpt": "Developers can now generate steerable 720p, 24fps interactive worlds with native audio from text or reference images.",
+      "summary": [
+        "A day after launching Genie 4, Google made the world model available to developers through the Gemini API's Interactions API and in Google AI Studio. It generates interactive worlds at 720p and 24 frames per second with synchronized audio, from ambient sound to character dialogue, starting from a text prompt, a reference image or both, and users can steer them in real time with keyboard input and live text prompts that change weather, lighting, objects or events.",
+        "Google pitches it for prototyping interactive experiences, visualizing spatial design concepts and training robots and AI agents, and says Gemini reasoning keeps the world state coherent over time. AI Studio offers an interactive canvas and starter apps; pricing sits in the Gemini API documentation, and every output carries an invisible SynthID watermark."
+      ],
+      "whyItMatters": "Steerable generated environments open a new prototyping medium for spatial and interactive concepts that static mockups cannot show.",
+      "sourceName": "Google Blog",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+      "publishedAt": "2026-11-19T12:00:00Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Genie_4_Social_Share.max-1440x810.png",
+      "imageAlt": "A woman in a taxi at night with a neon city street bending around the car, under the words Genie 4",
+      "tags": [
+        "Google",
+        "Genie 4",
+        "world models",
+        "Gemini API",
+        "prototyping"
+      ]
+    }
+  ]
+}
