@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-22",
+  "generatedAt": "2026-11-22T07:20:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-22-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "ChatGPT's mobile redesign gives your always-on Dot agent its own tab next to Home",
+      "excerpt": "OpenAI is testing a tab-bar layout with Home, a dedicated Dot agent tab and a grid of every other tool.",
+      "summary": [
+        "OpenAI has started rolling out a new mobile layout for ChatGPT built around a bottom tab bar. Home holds the familiar composer, a dedicated Dot tab opens a conversation with the user's always-on personal agent, and a third tab shows a grid of tools including Projects, Images, Scheduled, Codex, Plugins, Finance, Health and Sites. Head of Codex and ChatGPT Thibault Sottiaux previewed the change.",
+        "Users can press and hold items in the grid to reorder them or pin them to the tab bar, so someone could keep Codex beside Home and their Dot. The design is on by default for Pro users over 18 who have or can create a Dot and for a small group of Plus users, excluding the EEA, UK, Switzerland and South Korea, with a settings switch to revert. OpenAI says it wants feedback first and gives no date for a wider rollout; Anthropic began shipping a similar tab-based redesign of its Claude app the same day."
+      ],
+      "whyItMatters": "Giving a persistent agent its own top-level destination, rather than burying it in chat, signals that agents are becoming a place in the product's navigation, and user-pinnable tabs show one way to let people choose how prominent each AI tool is.",
+      "sourceName": "Digital Trends",
+      "sourceUrl": "https://www.digitaltrends.com/computing/chatgpt-new-mobile-design/",
+      "author": "Anvinraj Valiyathara",
+      "publishedAt": "2026-11-20T04:43:22+00:00",
+      "featured": true,
+      "imageUrl": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/ChatGPT-makeover.jpg?resize=1200%2C630&ssl=1",
+      "imageAlt": "Three iPhone screens of the new ChatGPT app: a Home screen with an Ask anything box, a Meet your dot screen with a cloud character, and a grid of tools",
+      "tags": [
+        "ChatGPT",
+        "OpenAI",
+        "navigation",
+        "personal agents",
+        "mobile"
+      ]
+    },
+    {
+      "id": "2026-11-22-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Signal limits mobile screenshots, calling OS-level AI agents that read screens an existential threat",
+      "excerpt": "Signal's Android and iOS apps now restrict screenshots by default to keep built-in AI agents from scanning chats.",
+      "summary": [
+        "Signal announced on Friday that it is restricting screenshots in its Android and iOS apps, extending a protection its Windows app already applies by default. Users can switch the restriction off, but Signal President Meredith Whittaker said doing so would break the app's privacy guarantees.",
+        "Whittaker framed operating systems with built-in agentic AI, from Windows to Android and macOS or iOS, as an existential threat to private messaging because their assistants can scan whatever is on screen. She acknowledged the fix is incomplete and does not stop other, sneakier ways an agent might reach app data, pointing to a growing tension between apps that hold sensitive content and system-level agents that want to see everything."
+      ],
+      "whyItMatters": "As OS agents learn to read and operate any screen, product teams need to decide which views an outside agent may see or act on, and how to tell users when content is shielded from automation.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "author": "Anthony Ha",
+      "publishedAt": "2026-11-21T21:37:10+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/05/signal-app-icon-phone.jpg?resize=1200,800",
+      "imageAlt": "A finger about to tap the Signal app icon on a phone home screen",
+      "tags": [
+        "privacy",
+        "Signal",
+        "computer use",
+        "OS agents"
+      ]
+    },
+    {
+      "id": "2026-11-22-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Confirmation is not trust: gate agent actions by blast radius, not by asking \"Are you sure?\" at every step",
+      "excerpt": "Javy Wang proposes checks, reversibility lanes and one scoped final approval in place of constant agent confirmations.",
+      "summary": [
+        "In a new essay, Javy Wang argues that asking users to confirm every agent step, from lookup to diagnosis to plan to apply, is babysitting rather than trust: people either approve on autopilot or abandon the product. Building on Hanako's Loops and Graphs model, he splits the work into loops, which retry a single unit until a machine-checkable test passes, and graphs, whose gates open according to how much damage an action could do rather than how confident the model claims to be.",
+        "He sorts actions into three lanes. Reversible local work such as drafts passes once its check is green, reversible but wide changes need a deterministic check plus a record of what ran, and hard-to-undo actions like deletions, production writes or payments stay closed until a human signs off at the final step, with the scope of that approval kept visible. Accepted fixes become rules for the next run, a form of earned autonomy. Wang admits that taste can't be reduced to pass/fail checks, gates can encode bad rules, and regulated work may need several approvals."
+      ],
+      "whyItMatters": "Tag each agent action with a reversibility lane: let drafts auto-pass checks, show a diff and activity record for bulk changes, reserve one clearly scoped approval for irreversible steps, and offer to save an accepted fix as a standing rule.",
+      "sourceName": "Javy Wang (Substack)",
+      "sourceUrl": "https://javywang.substack.com/p/confirmation-is-not-the-same-as-trust",
+      "author": "Javy Wang",
+      "publishedAt": "2026-11-20T18:00:39.111Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!HKZy!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f6bb7d6-2814-487b-997c-e384b327f91d_1672x941.png",
+      "imageAlt": "Hand-drawn illustration of a woman stamping the last of three cards labelled Draft, Checks and Apply, with a note reading The last stamp",
+      "tags": [
+        "human-in-the-loop",
+        "approvals",
+        "autonomy",
+        "guardrails",
+        "trust"
+      ]
+    },
+    {
+      "id": "2026-11-22-ai-design-tools-01",
+      "topic": "ai-design-tools",
+      "headline": "Hands-on with Google Stitch Loop: an agent that turns a live product's goals into KPIs and shipped tasks",
+      "excerpt": "TestingCatalog tried the waitlisted Stitch Loop, which writes its own product skills and proposes KPI-driven work.",
+      "summary": [
+        "TestingCatalog's Alexey Shabanov tested Stitch Loop, the self-improving agent Google announced on November 18 as a Labs experiment for keeping products improving after launch. Users create a Workspace for a GitHub project, then pick a predefined loop such as hardening security or write a custom one with an objective. Context comes from files, repos and more than 100 integrations including Jira, Linear, Sentry, Notion, Slack and Figma, plus custom MCP servers.",
+        "The agent studies the project, writes editable Markdown skills about the product and its metrics, and proposes KPIs that become running loops. In the test, a goal to grow a Telegram community was split into member and contributor KPIs, and one task arrived with an evidence trail and impact, scope and risk labels before development ran through Gemini. The tool is still waitlist-only, and the idea that each Workspace acts like a product team overseen by the user is the reviewer's own reading."
+      ],
+      "whyItMatters": "Stitch Loop shows design tools moving past screen generation toward goal-driven agents, and its evidence trails and impact, scope and risk labels on proposed tasks are a useful model for presenting agent suggestions people can judge.",
+      "sourceName": "TestingCatalog",
+      "sourceUrl": "https://www.testingcatalog.com/how-google-stitch-loop-works-from-workspace-to-kpis/",
+      "author": "Alexey Shabanov",
+      "publishedAt": "2026-11-21T00:08:45.000Z",
+      "imageUrl": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w1200/2026/11/Accelerate-beta-alert-delivery-Stitch-Loop-11-21-2026_12_59_AM.jpg",
+      "imageAlt": "Dark-mode Stitch Loop screen with three metric cards, Tasks, Skills and Activity tabs, and an assistant chat panel on the right",
+      "tags": [
+        "Google Stitch",
+        "goals",
+        "KPIs",
+        "Google Labs"
+      ]
+    },
+    {
+      "id": "2026-11-22-ai-ux-process-01",
+      "topic": "ai-ux-process",
+      "headline": "A Design OS for startups: turn every design review into a rule and an automated check agents can't skip",
+      "excerpt": "Designer Yan describes one shared setup of brand, coded components and AI skills that keeps agent-built work on-brand.",
+      "summary": [
+        "An interview in Bootcamp profiles Yan, a designer and former founder who builds a Design OS for newly funded startups: one shared setup of brand identity, design system, coded components and AI instructions that both the team and its AI tools build from. The aim is to stop different tools for product, website and marketing from producing polished but generic output that doesn't look like one company, with the founder repeating the same feedback.",
+        "The core loop turns each review into a rule. When an agent rendered billing history as cards, she switched it to a table, added a guideline that many records mean a table, and added a check that flags repeated div rows; the next agent-built list came out as a sortable table first time. At broadband startup Navi she built coded components for agent-assembled prototypes and 35 design skills that produced the company site. The interviewer is her friend, the piece ends with a paid kit, and its results aren't quantified."
+      ],
+      "whyItMatters": "Capturing review feedback where the next prompt will read it, and backing it with an automated check, is a practical way to stop design teams correcting the same AI mistakes again and again.",
+      "sourceName": "Bootcamp (Medium)",
+      "sourceUrl": "https://medium.com/design-bootcamp/the-design-os-for-early-stage-startups-b9e9f11aea96",
+      "author": "Xinran Ma",
+      "publishedAt": "2026-11-20T16:31:05Z",
+      "imageUrl": "https://cdn-images-1.medium.com/v2/resize:fit:800/1*DE6JZXKfLq_i1y6eUO1OXg.gif",
+      "imageAlt": "Broadband coverage dashboard with a left navigation, stat cards for providers tracked and daily address checks, and a provider table",
+      "tags": [
+        "DesignOps",
+        "design systems",
+        "AI workflow",
+        "design review"
+      ]
+    },
+    {
+      "id": "2026-11-22-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Send the firefighters to the fires: why task screens should lead with what's broken, not the newest rows",
+      "excerpt": "Francis Wu argues enterprise tables sorted by date hide critical problems that a fires-first layout surfaces at once.",
+      "summary": [
+        "Francis Wu argues that when a user's job is to fix what's broken, such as failing services, expiring certificates or SLA breaches, the screen should show the problems first, yet enterprise software keeps defaulting to tables sorted by created or updated date. In his example, a 20-row service table sorted by last update puts the two critical services in rows 16 and 19, and one still shows 99.92% uptime while failing; his redesign shows 2 critical items, 4 warnings with causes and collapses 14 healthy ones into a summary.",
+        "He also counts the accessibility cost, about 20 screen-reader announcements to find 6 problems, and traces the habit to buyers who aren't users, the fact that date sorting is free while severity must be designed, and dashboards built for demos. His rule of thumb: open-ended questions need flexible tables, while known jobs need opinionated views, with slicing and audits pushed to exports or BI. He cites Taylor's exception principle and control-room HMI standards that keep normal states gray."
+      ],
+      "whyItMatters": "Work-management views like overdue tasks or at-risk goals benefit from an exceptions-first layout that ranks by severity and collapses what's healthy, instead of a neutral list users must scan.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/send-the-firefighters-to-the-fires-6cd7b1893ae7",
+      "author": "Francis Wu",
+      "publishedAt": "2026-11-19T12:54:05Z",
+      "imageUrl": "https://cdn-images-1.medium.com/v2/resize:fit:1024/1*AxzsdxOgAjWX6L8JGp1SLQ.png",
+      "imageAlt": "A service table with 20 rows where the most severe issues are hard to spot",
+      "tags": [
+        "enterprise UX",
+        "dashboards",
+        "tables",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "2026-11-22-ux-design-02",
+      "topic": "ux-design",
+      "headline": "\"We need this to be green\": a survey of designers in Central Asia shows influence without the final say",
+      "excerpt": "Only 3 of 21 designers surveyed across four countries said design has the final word on product decisions.",
+      "summary": [
+        "Aleksei Kirdiaev surveyed 21 designers and design leads in Kazakhstan, Uzbekistan, Tajikistan and Kyrgyzstan in August and followed up with six interviews in October. Respondents rated their influence at 4.0 out of 5 on average, yet only 3 said design has the final word; six named the CEO or a business leader, and 10 usually receive a finished spec instead of helping frame the problem.",
+        "Regulation was the most cited local force on design (15 of 21), ahead of cultural habits, local payments such as QR transfers, multilingual users and low digital literacy. Seven companies do almost no systematic research and decisions lean on designer expertise over A/B tests. The title comes from a medtech case where a ministry demand forced an error-free state to be green. He calls the work field notes from a network sample skewed to fintech, and notes 16 of 21 teams already use AI tools."
+      ],
+      "whyItMatters": "The advice to learn who can approve or block a design before presenting, and to treat regulation as design material, applies to any team designing inside large organizations.",
+      "sourceName": "Bootcamp (Medium)",
+      "sourceUrl": "https://medium.com/design-bootcamp/we-need-this-to-be-green-designing-without-the-final-say-in-central-asia-309c0d081f63",
+      "author": "Aleksei Kirdiaev",
+      "publishedAt": "2026-11-20T16:31:10Z",
+      "imageUrl": "https://cdn-images-1.medium.com/v2/resize:fit:1024/1*-HOOICmB1KBFM4DTXIXL-A.png",
+      "imageAlt": "Painterly illustration of a hand pressing a wooden stamp onto a green block in a wireframe layout on a desk with paint pots",
+      "tags": [
+        "design leadership",
+        "research",
+        "stakeholders",
+        "survey"
+      ]
+    },
+    {
+      "id": "2026-11-22-competitors-01",
+      "topic": "competitors",
+      "headline": "Superhuman pushes its Go assistant across Mail, Docs and Meetings, with proactive briefings and background agents",
+      "excerpt": "The Grammarly and Coda parent says Go now learns context across apps and has more than 1 million active users.",
+      "summary": [
+        "Superhuman, the company behind Grammarly and Coda, is extending its Go assistant across its suite. Go now asks users to connect their tools and load work context during onboarding, works inline at the cursor, can manage other agents, and acts proactively by checking schedules, watching email and drafting replies in the user's own style. In Docs, all Go agents run natively with background tasks and event-triggered routines.",
+        "Go replaces Mail's previous AI with enterprise search, drafts and inbox organization across Google and Outlook, and in Meetings, following the September purchase of Fathom, it adds live shared notes and follow-up actions such as drafting a proposal. Twenty new partner agents arrive through its SDK, including DeepL, Amplitude and Databricks. CEO Shishir Mehrotra says Go has more than 1 million active users and positions it against OpenAI's Dots and Claude Duet; pricing was not shared."
+      ],
+      "whyItMatters": "Go's pre-meeting card, combining past decisions, open owners and risks pulled from email and chat, is a clear template for proactive agent briefings in collaboration tools.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
+      "author": "Ivan Mehta",
+      "publishedAt": "2026-11-19T14:00:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/Static_Go-Proactive.jpeg?resize=1200,675",
+      "imageAlt": "Go assistant card over a Q4 launch plan doc with a meeting briefing listing past decisions, open items and a flagged risk",
+      "tags": [
+        "Superhuman",
+        "Coda",
+        "proactive AI",
+        "meetings"
+      ]
+    },
+    {
+      "id": "2026-11-22-competitors-02",
+      "topic": "competitors",
+      "headline": "Asana argues for one shared agent per team, citing Anthropic's \"Worse Together\" multi-agent study",
+      "excerpt": "Asana says the study's finding that one shared agent beat personal agents backs team-owned AI teammates.",
+      "summary": [
+        "Asana published a piece on Anthropic Fellows' Worse Together study, which tested five frontier models across 77 scenarios and found that a single agent serving a whole group outperformed teams of personal agents in every setting, for example scoring 88 versus 44 on group orders and bookings. As teams grew from 4 to 16 agents, the share acting on a shared budget fell from 66% to 10%, and in 65–77% of team runs at least one agent edited a shared order against someone's request.",
+        "Requests reached the group-order agent 94–99% of the time but survived to checkout only 47–67% of the time, while blocking actions until required messages were read rescued 62–73% of failed orders. Asana's recommendations: give every agent a named human owner, have agents work from a shared plan, cap an agent's permissions at those of whoever triggered it, and let the team shape its instructions. The piece also promotes Asana's AI Teammates."
+      ],
+      "whyItMatters": "Designing agents as shared, team-owned members with a human owner and a common plan, rather than one private assistant per person, avoids the coordination failures the study measured.",
+      "sourceName": "Asana",
+      "sourceUrl": "https://asana.com/resources/anthropic-worse-together-agentic-workflows",
+      "author": "Frances Ward",
+      "publishedAt": "2026-11-19T12:00:00Z",
+      "imageUrl": "https://assets.asana.biz/transform/da7e7cf6-99ff-42ab-b6af-9a59ca178211/one-agent-for-everyone",
+      "imageAlt": "A team works better together with a shared agent than they do with an agent each",
+      "tags": [
+        "Asana",
+        "multi-agent",
+        "AI teammates",
+        "research"
+      ]
+    },
+    {
+      "id": "2026-11-22-competitors-03",
+      "topic": "competitors",
+      "headline": "Microsoft brings OpenAI's GPT-6.2 Sol and Astra into Copilot, Cowork and the Office apps",
+      "excerpt": "Sol rolls out across Copilot Chat and Office apps, while Astra arrives in Cowork, Copilot Studio and for Frontier users.",
+      "summary": [
+        "Microsoft said OpenAI's GPT-6.2 Sol is rolling out worldwide to eligible users in Copilot Chat, Copilot Cowork, Copilot Studio and Copilot in Word, Excel and PowerPoint. The heavier GPT-6.2 Astra arrives in Cowork and Copilot Studio, and members of the Frontier early-access program also get it in Copilot Chat and the Office apps.",
+        "Microsoft's pitch is that people can match the model to the work. Both models are grounded through Work IQ in files, meetings, chats and business data, and only see content each person already has permission to access, while admins control availability in the Microsoft 365 admin center. The short post gives no pricing, licensing or benchmarks and doesn't describe how model choice appears in the interface; it follows the company's Ignite Copilot announcements earlier in the week."
+      ],
+      "whyItMatters": "As suites expose several models for different kinds of work, product teams have to decide whether model choice is a user-facing control or something the product routes automatically.",
+      "sourceName": "Microsoft Copilot Blog",
+      "sourceUrl": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229",
+      "author": "Xia Song",
+      "publishedAt": "2026-11-20T10:40:04-08:00",
+      "imageUrl": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTc0MjI5LVpwQkw0Zg?revision=6",
+      "imageAlt": "Copilot logo surrounded by Outlook, Teams, PowerPoint, Excel, Word and OneDrive icons and an Ask Copilot pill",
+      "tags": [
+        "Microsoft 365",
+        "Copilot",
+        "GPT-6.2",
+        "model choice"
+      ]
+    },
+    {
+      "id": "2026-11-22-ai-news-01",
+      "topic": "ai-news",
+      "headline": "OpenRouter drops three inference providers after researchers catch months of prompt theft",
+      "excerpt": "Canary secrets planted in about 2 million prompts revealed breached hosts and logging that ignored zero-retention flags.",
+      "summary": [
+        "Security firm Dragos, in research led by HD Moore, planted unique secrets in roughly 2 million prompts sent through AI inference providers between July and November. It found three providers that had been breached for months without noticing, in the worst case with every request copied as it arrived, including requests flagged for zero data retention. An unnamed Chinese lab fetched secret links from about two-thirds of no-collection requests sent to its models.",
+        "OpenRouter off-boarded three providers, pulled 125 endpoints from zero-retention eligibility, notified affected customers, said its own systems were not breached and is making canary testing continuous. Phala said an attacker controlled one of its servers from October 21 to November 8; Together AI said a coding agent leaked a credential to a public repo, exposing June–July samples; Novita blamed a routing error. The lesson for builders: a privacy flag only binds the first hop."
+      ],
+      "whyItMatters": "Products that promise users their data isn't retained need to vet every upstream model host, since a routing marketplace's privacy flag may not reach the provider that actually processes the prompt.",
+      "sourceName": "The Hacker News",
+      "sourceUrl": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+      "author": "Swati Khandelwal",
+      "publishedAt": "2026-11-22T12:00:00Z",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEGP3P_elvK4C-QnSx5onZ67viDXCIgPCUYqtTF_RDNcLJfyQ4QMbegUmn8AJy5nEmnXfN4ACr6hHztG_DdqXlj54S21toacPQaZgRx2rgqZltN3lvREpZR2xlvgXF_iZ7zW0XT0b91mMiRDVaEB6TUvMFlWwaSa3_C7gwpxdKcNhLtIq15KqwaZrR3VI/s1600/openrouter.png",
+      "imageAlt": "OpenRouter logo over a mock dashboard with Zero Data Retention struck through in red and an unlocked padlock",
+      "tags": [
+        "security",
+        "privacy",
+        "OpenRouter",
+        "inference"
+      ]
+    },
+    {
+      "id": "2026-11-22-must-watch-01",
+      "topic": "must-watch",
+      "headline": "How Zalando built its own AI prototyping tool with Claude Code when off-the-shelf tools missed its brand",
+      "excerpt": "A practical look at making a design system agent-ready, with a live demo and honest lessons from rolling it out.",
+      "summary": [
+        "Recorded at the Into Design Systems meetup at Zalando in Berlin, senior product designers Dana Baddad and Gonzalo Vásquez Correa explain why Figma Make didn't give them on-brand prototypes and how their design system team built ZDS Capsule with Claude Code, a tool that turns a Figma design or a prompt into a working Zalando prototype. They walk through earlier experiments with Figma plugins, a migration skill and a Chrome extension, and the five steps they call agentic foundations for an AI-ready design system.",
+        "Gonzalo demos a Claude Code skill that launches agents in parallel and uses the Figma MCP to rebuild a design as a prototype filled with real product data. They cover splitting guidance into many small design.md files with an index, why skills should run scripts at critical steps, what the first workshops revealed, the biggest early enablement mistake, and results across 20+ designers and 98 pull requests, closing on the idea of machine-ready but human-first, followed by audience Q&A."
+      ],
+      "whyItMatters": "It shows concretely how to structure design-system guidance so agents produce on-brand prototypes, and what it takes to get a design team to adopt that workflow.",
+      "sourceName": "Into Design Systems",
+      "sourceUrl": "https://www.youtube.com/watch?v=e6RJWpAOhxc",
+      "author": "Dana Baddad, Gonzalo Vásquez Correa",
+      "publishedAt": "2026-11-04T15:00:23Z",
+      "durationMinutes": 30,
+      "embeddable": true,
+      "imageUrl": "https://i.ytimg.com/vi/e6RJWpAOhxc/maxresdefault.jpg",
+      "imageAlt": "Two speakers with microphones on stage in front of a projected slide reading Machine-Ready, but Human-First",
+      "tags": [
+        "design systems",
+        "Claude Code",
+        "prototyping",
+        "Figma MCP"
+      ]
+    }
+  ]
+}
