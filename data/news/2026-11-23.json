@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T07:05:31-03:00",
+  "articles": [
+    {
+      "id": "2026-11-23-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "ChatGPT and Claude both switch to bottom tab bars, and a forum revolt over hidden Projects shows what to get right",
+      "excerpt": "OpenAI and Anthropic shipped mobile tab bars a day apart, after ChatGPT users said moving Projects under Explore made their work seem gone.",
+      "summary": [
+        "Within two days, both leading AI assistants rebuilt their phone navigation around a bottom tab bar. OpenAI's new ChatGPT mobile design, announced November 19 for Pro and some Plus users, gives the always-on dot agent its own tab and lets people pin tools such as Codex, Projects or Images. On November 20 Anthropic began rolling out a refreshed Claude app with tabs for Chat, Projects, Code and Artifacts, using a custom bar that keeps focus on the input field.",
+        "The Bootcamp analysis by Amajuoyi Udochukwu Deborah centers on an OpenAI community thread started November 8, where users said an earlier sidebar change that tucked Projects under an Explore item made them think their work had been deleted, and ChatGPT itself could not say where it went. The author draws four lessons: labels are promises, the assistant must know its own UI, customization only helps if people can find it, and release notes should say what stays the same, as Anthropic's did."
+      ],
+      "whyItMatters": "As AI products grow from one chat box into many tools and agents, moving a workspace people rely on is a breaking change, so announce it in place, keep a visible way back, and make sure the assistant can answer \"where did it go?\"",
+      "sourceName": "Bootcamp",
+      "sourceUrl": "https://medium.com/design-bootcamp/chatgpt-moved-projects-under-explore-some-users-thought-their-work-was-gone-5c6b3f27c723",
+      "author": "Amajuoyi Udochukwu Deborah",
+      "publishedAt": "2026-11-23T08:53:08Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*fgzkFAr9_LcYuJD_bvRtTw.jpeg",
+      "imageAlt": "A hand holding a smartphone sideways with the word ChatGPT on its black screen",
+      "tags": ["ChatGPT", "Claude", "navigation", "mobile", "information architecture"]
+    },
+    {
+      "id": "2026-11-23-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Google adds Connected Apps to Search for groceries, credit checks and tax estimates",
+      "excerpt": "U.S. users can now build a Target or Safeway grocery order, check their credit with Experian or estimate taxes with H&R Block from Search.",
+      "summary": [
+        "Google announced a new batch of Connected Apps for Search and the Gemini app on November 20, pitched as help with year-end errands in the U.S. Grocery partners Albertsons, Safeway, Shaw's and Target let people assemble an order, for example for Thanksgiving or a party, and then check out; Google says these run on its Universal Commerce Protocol. Experian, already in the Gemini app, comes to Search for credit ratings and personal loan shopping, and H&R Block lets people estimate taxes and refunds.",
+        "In the coming weeks, people will also be able to link Angi and Thumbtack accounts in Search to find local pros for repairs and decorating. Google's announcement image shows the interaction pattern: a grocery cart panel inside Search with transient status chips such as \"Checking Connected Apps\" and \"Updating your cart\", and a final Check out button that hands off to the partner. The post does not detail pricing, languages or availability outside the U.S."
+      ],
+      "whyItMatters": "Short status chips that narrate which connected app the assistant is using, followed by an explicit hand-off button, are a compact pattern for showing agent progress without a full activity log.",
+      "sourceName": "Google Blog",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+      "publishedAt": "2026-11-20T18:00:00Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Connected_apps_-_Social_share_asset.max-1440x810.png",
+      "imageAlt": "A grocery cart panel with a Check out button, flanked by status chips reading Checking Connected Apps and Updating your cart",
+      "tags": ["Google Search", "Gemini", "connected apps", "commerce", "agent progress"]
+    },
+    {
+      "id": "2026-11-23-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "What is a task when an agent does the work? Four roles and a \"waiting on\" state that a single owner field can't capture",
+      "excerpt": "Derek Niedringhaus models agent work as a task record that names who asked, who it's for, who does it and who answers for it.",
+      "summary": [
+        "Using a billing example, Derek Niedringhaus walks through what a product should record when an agent takes on work. A bank returns a $12,000 transfer that lacked an invoice number; a Billing Agent notices the unpaid invoice, starts a task to get it paid, and its human sponsor approves a resend. He argues the approval, the payment and the task are three separate records: the approval covers one action, the payment tracks the money, and the task holds the goal and how the work ended.",
+        "Instead of one owner field, the task keeps four roles: asked by, for, doing it, and answers for it, so the same agent can both start and perform work while a person stays accountable without pre-approving every step. States should also say what the task is waiting on, such as a person's answer or the bank, so a list of \"Waiting\" items tells people whether they need to act. A finished report is stored apart from anyone's review of the result. The model ships in his open OODS Foundry project."
+      ],
+      "whyItMatters": "Replace a lone assignee with explicit asked-by, for, doing and accountable roles, and qualify waiting states with what they wait on, so mixed human-agent task lists show at a glance who must act.",
+      "sourceName": "Bootcamp",
+      "sourceUrl": "https://medium.com/design-bootcamp/what-is-a-task-in-your-product-cfe1075ec060",
+      "author": "Derek Niedringhaus",
+      "publishedAt": "2026-11-23T08:53:11Z",
+      "featured": true,
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/0*x-X6zqIgjD6aarVj.png",
+      "imageAlt": "Diagram linking a Payment card for $12,000 marked Pending to a Task card, Get the invoice paid, marked Waiting for the bank",
+      "tags": ["task model", "accountability", "approvals", "agent states", "data model"]
+    },
+    {
+      "id": "2026-11-23-agentic-design-02",
+      "topic": "agentic-design",
+      "headline": "LukeW's notes from Crazy Agent Scale: inboxes, event wake-ups and one owner per product as teams go all-in on agents",
+      "excerpt": "Speakers from Sentry, Amp, Latent Space and others showed how they run agents at scale and why human attention is now the bottleneck.",
+      "summary": [
+        "Luke Wroblewski summarized the Crazy Agent Scale event at Sutter Hill Ventures, where five builders showed what running agents at company scale looks like. Sentry's David Cramer described Junior, a single open-source agent with its own account and email that is the company's top committer and sends questions and ready-to-review work to an inbox. Amp's Quinn Slack said the company passed $100M ARR with 21 people, with agents triaging about 9,300 mostly agent-filed bug reports in three months while a human reviews every outgoing email.",
+        "Clement Pang showed Intent, an orchestrator where agents coordinate through a shared spec and task graph, use adversarial PM pairs, and hand context to a fresh agent before it degrades. John Hayes described a self-repairing software factory where scripts feed agents just-in-time prompts because agents forget steps. Common threads: shared state outside the context window, event-driven wake-ups instead of polling, workflows enforced in code rather than prompts, and human attention as the scarcest resource."
+      ],
+      "whyItMatters": "When agents do most of the work, design the review inbox, attribution and wake-up signals as first-class surfaces, since people's attention, not compute, decides how far agent work can scale.",
+      "sourceName": "LukeW",
+      "sourceUrl": "https://www.lukew.com/ff/2173/crazy-agent-scale-companies-all-in-on-ai",
+      "author": "Luke Wroblewski",
+      "publishedAt": "2026-11-20T14:00:00Z",
+      "imageUrl": "https://static.lukew.com/crazyagent_long2.png",
+      "imageAlt": "Crazy Agent Scale event title card listing its five speakers beside a cluster of hand-drawn red, pink and blue butterflies",
+      "tags": ["multi-agent", "orchestration", "attention", "review inbox", "Luke Wroblewski"]
+    },
+    {
+      "id": "2026-11-23-ai-design-tools-01",
+      "topic": "ai-design-tools",
+      "headline": "Figma's agent comes to Dev Mode to explain designs, diff versions and write code snippets",
+      "excerpt": "Developers can now ask the Figma agent in Dev Mode to inspect a design, compare versions, suggest CSS or React and gather assets.",
+      "summary": [
+        "Figma's November 19 release notes bring its agent into Dev Mode. According to the help center, developers can ask it to explain how components interact, point out layers that could use existing variables, describe how to build a layout with CSS grid or flexbox, or produce a React snippet. It can also compare versions of a component or design, either as a visual diff or a list of changes in the chat, and generate SVG download links for icons or CSS for variables.",
+        "Dev seats can chat with the agent without changing the file, while Full seats can also ask it to edit. Dev Mode is not available on Starter plans or for View and Collab seats, and web search needs a Professional, Education, Organization or Enterprise plan with edit access. The agent cannot export assets itself, only produce links, and works on desktop and web but not mobile; vector editing, icon creation and prototyping are still listed as coming soon."
+      ],
+      "whyItMatters": "An agent that answers \"what changed and how do I build it\" inside the handoff file could replace much of the annotation and redline work designers prepare for developers.",
+      "sourceName": "Figma Help Center",
+      "sourceUrl": "https://help.figma.com/hc/en-us/articles/37998629035799-Work-with-the-Figma-agent-in-design-files",
+      "publishedAt": "2026-11-19T12:00:00Z",
+      "imageUrl": "https://help.figma.com/hc/article_attachments/44029810967447",
+      "imageAlt": "Figma agent prompt box with a menu to attach Figma files, toggle web search and pick libraries, connectors or skills, beside a dashboard frame",
+      "tags": ["Figma", "Dev Mode", "handoff", "design-to-code", "agent"]
+    },
+    {
+      "id": "2026-11-23-ai-ux-process-01",
+      "topic": "ai-ux-process",
+      "headline": "Patrick Neeman: prototype first, test weekly, and write the spec last as a record of what the build settled",
+      "excerpt": "With working versions costing an afternoon, he argues the specification should document tested decisions rather than predict them.",
+      "summary": [
+        "In UX Collective, Patrick Neeman argues that specifications existed because building was expensive, and that AI prototyping flips the order. Citing UX Tools' State of Prototyping survey, where 59.1 percent of 1,478 designers had built their own AI tool in six months, and Figma's 2026 AI report showing designers' share in development doubling to 41 percent, he says a PM, designer or engineer can now bring a working version to the review and settle questions a document only guesses at.",
+        "His workflow: treat the prototype as the team's working source of truth, run research every week in the spirit of continuous discovery and Microsoft's RITE method, write the spec afterwards, and use evals as the spec for model-driven features. He warns that prototypes silently decide dozens of things, from empty states to borrowed components, so teams should log those defaults, write precise constraints for coding agents, and throw the first prototype away instead of hardening it."
+      ],
+      "whyItMatters": "Logging every default a prototype quietly decides, then turning tested decisions into agent instructions and evals, gives teams speed without shipping unexamined choices.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/prototypes-have-always-been-the-most-effective-specification-10162107b2ee",
+      "author": "Patrick Neeman",
+      "publishedAt": "2026-11-22T11:36:31Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*0-aD1rfjLM1wz_vxAi4mcg.png",
+      "imageAlt": "Illustration of a laptop showing a working app on a meeting table next to a closed printed requirements document",
+      "tags": ["prototyping", "specifications", "continuous discovery", "evals", "workflow"]
+    },
+    {
+      "id": "2026-11-23-ai-news-01",
+      "topic": "ai-news",
+      "headline": "OpenAI's chief scientist proposes perplexity as a shared yardstick for capping AI progress",
+      "excerpt": "Jakub Pachocki suggests labs agree not to push past a perplexity threshold until monitoring catches up; Sam Altman backed the post.",
+      "summary": [
+        "In a new OpenAI post, chief scientist Jakub Pachocki suggests that AI labs adopt perplexity, a measure of how well a model predicts the next token, as a common gauge of general capability. He argues that task benchmarks go stale quickly while perplexity has stayed informative, citing a chart of OpenAI models since GPT-3.5: GPT-4 sat near 0.91, and once values fell below 0.8, transformative abilities appeared in areas like cybersecurity and math.",
+        "With a shared metric, labs could set common limits, pledging not to cross a threshold until their ability to understand and monitor models reaches agreed milestones. Sam Altman called it the most important thing OpenAI had published in a while. TechCrunch places it alongside Dario Amodei's recent plan to pace the frontier, but no thresholds, milestones or commitments from other labs have been set."
+      ],
+      "whyItMatters": "If labs coordinate on capability ceilings, model release cadence and the features products can count on could become more predictable, and more political.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "author": "Anthony Ha",
+      "publishedAt": "2026-11-22T21:14:07Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1200,798",
+      "imageAlt": "OpenAI logo over a background of computer code",
+      "tags": ["OpenAI", "AI safety", "perplexity", "Jakub Pachocki"]
+    },
+    {
+      "id": "2026-11-23-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Anthropic closes its IPO with $93.5 billion raised, plus $26 billion from chip and cloud partners",
+      "excerpt": "Underwriters bought their full option, and AMD, Google, Microsoft, NVIDIA and others took $26 billion in a parallel private placement.",
+      "summary": [
+        "Anthropic said on November 20 that its initial public offering had closed: 1.127 billion Class A shares sold at $83 each, including the underwriters' full option for 147 million more, for about $93.5 billion in gross proceeds. The company itself received about $91.6 billion, with the remainder going to selling stockholders. The shares started trading on the Nasdaq Global Select Market on November 19 under the ticker ANT, with Goldman Sachs and Morgan Stanley leading the deal.",
+        "Alongside the IPO, Anthropic sold about 313 million unregistered Class N shares at the same price to AMD, Broadcom, Google, Micron, Microsoft, NVIDIA and TSMC Partners, adding roughly $26 billion. Together the two transactions brought in about $119.5 billion before fees, giving the Claude maker a large war chest for compute as its products push further into agents and workplace tools."
+      ],
+      "whyItMatters": "A heavily funded, now public Anthropic is likely to keep expanding the Claude models and agent features that many work tools build on, under closer public scrutiny.",
+      "sourceName": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/ipo-close",
+      "publishedAt": "2026-11-20T12:00:00Z",
+      "imageUrl": "https://assets.claude.com/6d4a0d28992ade92d6fa63646fd9c9d318245c6c.jpg",
+      "imageAlt": "Anthropic logo",
+      "tags": ["Anthropic", "IPO", "funding", "Nasdaq"]
+    },
+    {
+      "id": "2026-11-23-must-watch-01",
+      "topic": "must-watch",
+      "headline": "Don't write like a robot, don't design like one: Kevin Cannon on designing AI writing agents at Superhuman",
+      "excerpt": "A candid keynote from the design director of Superhuman's AI agents team on working through ambiguity while AI reshapes design itself.",
+      "summary": [
+        "This Hatch Conference 2026 main-stage keynote, published as \"Your Design Looks AI Generated. Here's How Kevin Cannon (Superhuman) Can Tell.\", features Kevin Cannon, design director at Superhuman (formerly Grammarly), where he leads the AI agents design team. The video description says he has spent the last three years working on AI writing, and his conference bio adds that his team builds agents meant to help people become better writers rather than write for them.",
+        "The conference billed the talk as an unguarded account of navigating ambiguity while the same technology changes both the product and the work of designing it, under the banner \"Don't write like a robot\". Attendee recaps highlight his message not to hand your thinking over to AI and to treat it as a tool like any other. Cannon previously designed Pitch's presentation tool and worked at Frog Design in Munich."
+      ],
+      "whyItMatters": "It comes from someone shipping AI agents that assist rather than replace users, which is the core tension for any team adding agents to everyday work tools.",
+      "sourceName": "Hatch Conference",
+      "sourceUrl": "https://www.youtube.com/watch?v=TWP1c_m1Wpg",
+      "author": "Kevin Cannon",
+      "publishedAt": "2026-11-23T02:00:00Z",
+      "durationMinutes": 29,
+      "embeddable": true,
+      "imageUrl": "https://i.ytimg.com/vi/TWP1c_m1Wpg/maxresdefault.jpg",
+      "imageAlt": "Kevin Cannon speaking on stage beside the text Don't write like a robot. Don't design like one either.",
+      "tags": ["Superhuman", "Hatch Conference", "AI writing", "craft", "keynote"]
+    }
+  ]
+}
