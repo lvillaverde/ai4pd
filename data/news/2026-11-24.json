@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-24T07:06:37-03:00",
+  "articles": [
+    {
+      "id": "2026-11-24-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Walmart opens its Agent Gateway, and Meta's Muse becomes the first agent that can buy deals for you",
+      "excerpt": "Shoppers set spending limits and approve purchases in a Walmart \"Agent Profile\" while Muse builds the basket and checks out in chat.",
+      "summary": [
+        "Walmart has switched on a live version of the Agent Gateway it announced last month, and the first outside agent it supports is Meta's Muse. Through Walmart's Sparky assistant, Muse can hunt for Black Friday deals, assemble a basket and complete checkout inside the conversation, using a card already saved in the shopper's Walmart account and paying Walmart.com prices. Walmart says the gateway lets agents find relevant products without exposing a customer's purchase history.",
+        "The consent step stays on Walmart's side. The first time Muse adds an item, it sends the user to Walmart to sign in and create an Agent Profile, a separate area of the account where they set a spending cap, approve purchases and review everything the agent has bought; then it hands them back to Muse. Normal return policies apply. Walmart calls Muse just the beginning but named no other agents, and the launch date shifted twice on the day. Amazon and eBay, by contrast, block AI agents from browsing their sites."
+      ],
+      "whyItMatters": "It shows a clean delegation model: the service that owns the data hosts the agent's identity, spending limits, approvals and history, so users can grant and audit agent power in one place.",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+      "author": "Jess Weatherbed",
+      "publishedAt": "2026-11-23T11:00:00+00:00",
+      "featured": true,
+      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Walmart-Meta-Muse-Agent-Gateway.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "imageAlt": "Three screenshots of Meta Muse being set up with Walmart access.",
+      "tags": ["agentic commerce", "Walmart", "Meta Muse", "permissions", "spending limits"]
+    },
+    {
+      "id": "2026-11-24-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Anthropic's Claude Ship adds agents that fix pull requests and approve the ones a team policy allows",
+      "excerpt": "PR Steward repairs failing checks and conflicts, while Claude Approvals signs off changes that a repo policy file permits.",
+      "summary": [
+        "Anthropic announced Claude Ship in beta, extending the Code Review product it launched in March with two agents. PR Steward handles failing CI checks, merge conflicts and reviewer feedback; it cannot approve or merge, comments on every push it makes with an explanation of how to undo it, and can be steered or stopped by commenting @claude. Claude Approvals reads a policy file in the repository plus signals such as review findings, approves changes where the policy allows, and escalates the rest for deeper human sign-off.",
+        "Anthropic suggests running it in an observe-only mode first, then making Claude Approvals a required branch-protection check. Admins pick which repositories it runs in and can cap spending. Pro, Max and Ultra subscribers get a /ship command in Claude Code, while Team and Enterprise customers can use it on GitHub repositories with token-based billing. ZDNET notes it could cut turnaround time but also removes review work that junior developers learn from."
+      ],
+      "whyItMatters": "Policy files, an observe-only trial mode, per-action undo notes and an @mention stop are a reusable recipe for letting an agent approve work without a human clicking every request.",
+      "sourceName": "ZDNET",
+      "sourceUrl": "https://www.zdnet.com/innovation/claude-ship-code-how-to-try/",
+      "author": "Radhika Rajkumar",
+      "publishedAt": "2026-11-23T15:00:02-05:00",
+      "imageUrl": "https://www.zdnet.com/wp-content/uploads/sites/3/GettyImages-2271847888.jpg",
+      "imageAlt": "The Claude logo seen through a magnifying glass against a large orange and black Anthropic logo",
+      "tags": ["Anthropic", "Claude", "code review", "approvals", "human-in-the-loop"]
+    },
+    {
+      "id": "2026-11-24-ai-agents-ux-03",
+      "topic": "ai-agents-ux",
+      "headline": "Google's AI Mode can now read your Drive and Wallet, with a coming icon that shows which personal context it used",
+      "excerpt": "Personal Intelligence in Search expands beyond Gmail, Calendar and Photos to Drive, read-only Wallet data and the Gemini app.",
+      "summary": [
+        "Google expanded Personal Intelligence in Search's AI Mode so it can draw on Google Drive, Google Wallet and the Gemini app, on top of the Gmail, Calendar and Photos connections it already had. Drive lets AI Mode use documents and spreadsheets, for example to plan for tax season; Wallet is pitched for tracking financial goals, trimming spending and getting more from card rewards. Conversations can now carry over between the Gemini app and AI Mode.",
+        "Each connection is opt-in and Personal Intelligence can be turned off at any time. Wallet access is read-only, so AI Mode cannot move or manage money. Google says a Personalization icon will soon appear under answers to show which personal context was used, though it gave no date. AI Overviews and AI Mode will also adapt to a user's recent searches. The announcement did not say which countries or plans get the features first."
+      ],
+      "whyItMatters": "A per-answer indicator of which personal sources informed a response is a simple transparency pattern for any assistant that reads users' documents and records.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+      "author": "Aisha Malik",
+      "publishedAt": "2026-11-23T19:14:46+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/01/ai-mode-google.jpg?resize=1200,800",
+      "imageAlt": "TechCrunch image of Google's AI Mode in Search",
+      "tags": ["Google", "AI Mode", "personalization", "privacy", "transparency"]
+    },
+    {
+      "id": "2026-11-24-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Jakob Nielsen: agents read the manual users never did, which makes knowing what to ask the new discoverability problem",
+      "excerpt": "Agents handle finding and operating features, Nielsen argues, but a blank prompt box leaves users unsure what they can delegate.",
+      "summary": [
+        "In his November 23 UX Roundup, Jakob Nielsen builds on Lovable's Elena Verna, who argues that agents make most feature discovery unnecessary because users state a goal and the agent picks the tools. Nielsen splits discoverability into three layers: knowing your goal, knowing which feature serves it, and finding and operating that feature. Agents remove the last two, he says, but the first gets harder, because an empty prompt box is like a catalog with no pages. He cites Pendo's estimate that 80% of features are rarely or never used.",
+        "He expects trust to grow one delegation at a time, starting small, and warns that engagement metrics may drop even as customer value rises. His advice is to brief the agent well, since each feature's documentation now acts as its interface. The same issue covers a University of Siegen and Honda Research Institute study where a robot whispered through an earbud; 39 of 40 discreet exchanges worked, but the system read three seconds without a head tilt as a no, which Nielsen flags as treating silence as refusal."
+      ],
+      "whyItMatters": "Seed an agent's empty state with example requests tied to real capabilities, write feature docs for the agent to read, and never treat a timeout as a user's answer.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/ux-roundup-20261123",
+      "author": "Jakob Nielsen",
+      "publishedAt": "2026-11-23T12:00:07.261Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_09792ea3226f4366accfa267629fce33~mv2.jpg/v1/fill/w_1280,h_720,al_c/d496b6_09792ea3226f4366accfa267629fce33~mv2.jpg",
+      "imageAlt": "Two-panel illustration: a robot with a magnifying glass over app-feature icons, and a woman's portrait inside a chat bubble",
+      "tags": ["discoverability", "delegation", "empty states", "Jakob Nielsen"]
+    },
+    {
+      "id": "2026-11-24-ai-design-tools-01",
+      "topic": "ai-design-tools",
+      "headline": "Figma's agent arrives in FigJam and Slides to cluster stickies, draft specs and build decks from context",
+      "excerpt": "Generally available on paid plans, the agent can map journeys, theme feedback, assign action items and turn specs into decks.",
+      "summary": [
+        "Figma has made its agent, already on the design canvas, generally available in FigJam and Figma Slides on all paid plans. In FigJam it can set up brainstorm boards, build journey maps from research and data, group sticky notes into themes and turn action items into a table with owners and due dates. It can also gather earlier feedback and competitor examples before a critique and condense a messy board into a draft Spec document on the canvas. Connectors such as Notion and Google Drive, plus attached files and images, supply context.",
+        "In Slides the agent can turn a Spec, script or attachment into an outline and then a deck, adapt a presentation for another audience, shorten copy, critique the story, estimate runtime from speaker notes and chart data from a CSV or a spreadsheet screenshot. Figma frames outputs as drafts for people to review, and quotes a design manager, the Specs engineering lead and a brand designer using it. Only selected connectors are supported, and the post gives no pricing or credit details."
+      ],
+      "whyItMatters": "Whiteboards and decks are where messy team work becomes decisions, and an agent that turns a board into owners, due dates and a spec shows where collaboration tools are heading.",
+      "sourceName": "Figma Blog",
+      "sourceUrl": "https://www.figma.com/blog/introducing-figma-agent-in-figjam-and-slides/",
+      "author": "Jinen Kamdar",
+      "publishedAt": "2026-11-23T20:54:00.000Z",
+      "imageUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/788c8b94cba16df5c795728f974aca117a196962-1694x948.png?w=1200&q=70&fit=max&auto=format",
+      "imageAlt": "FigJam board of three mobile onboarding screens covered in sticky-note feedback, with an agent prompt asking to organize the stickies into an impact-effort matrix",
+      "tags": ["Figma", "FigJam", "Figma Slides", "agent", "specs"]
+    },
+    {
+      "id": "2026-11-24-ai-design-tools-02",
+      "topic": "ai-design-tools",
+      "headline": "Redesigning a live feature with AI: let the prototype deviate, as long as it lists every change and why",
+      "excerpt": "GoodBarber's design lead found AI prototypes quietly reworded labels and changed behavior, so she made it declare each change.",
+      "summary": [
+        "Lesia Pietri, who leads product design at app-builder GoodBarber, describes redesigning existing features with AI-generated prototypes after rewriting the company's design system so an AI can read it. Prototypes now take days rather than months, and she says she has opened Figma only about three times this year. Her main lesson is that redesign differs from new-feature work: mature features carry unwritten decisions such as defaults, exact button wording and filter behavior, and the AI fills any gap by improvising.",
+        "Visible additions were easy to judge; the problems were silent changes, such as reworded labels and altered behavior, that developers caught in review. Her fix is one rule: the AI may depart from the existing feature only if it lists each change with its reason. Supporting habits include leaving the original untouched and working on copies, writing a brief that says what must stay, and comparing proposals against the live feature. She used Paul Bakaus's open-source impeccable design skills for review. It is a short case study without metrics."
+      ],
+      "whyItMatters": "A required change log with reasons turns AI-generated redesigns into reviewable diffs instead of guesswork, a habit worth building into any AI prototyping workflow.",
+      "sourceName": "Bootcamp",
+      "sourceUrl": "https://medium.com/design-bootcamp/the-prototype-i-didnt-draw-047f4dcadce6",
+      "author": "Lesia Pietri",
+      "publishedAt": "2026-11-23T22:35:46Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*_4sGsQLakraPPYtoL9qyGw.png",
+      "imageAlt": "Four-step diagram titled \"Let it deviate, as long as it says so\": the locked original, an AI copy with highlighted changes, a list of changes with reasons, and Kept or Refused buttons",
+      "tags": ["AI prototyping", "redesign", "design systems", "case study"]
+    },
+    {
+      "id": "2026-11-24-ai-ux-process-01",
+      "topic": "ai-ux-process",
+      "headline": "Criteo replaces Low/Medium/High with evidence-based confidence levels for its UX research agents",
+      "excerpt": "Borrowing from health-research grading, Criteo's agents now label answers Established, Grounded, Isolated feedback or Not covered.",
+      "summary": [
+        "Criteo's UX research team runs agents that answer product teams' questions from a repository of client feedback and tools such as HeyMarvin, Contentsquare, Intercom and Jira. Their original Low/Medium/High trust label failed: nobody knew what drove a rating, High was almost never reached, and the label did not suggest any action. In workshops over September and October, Anne-Sophie Guillou's team designed a replacement drawing on the GRADE and GRADE-CERQual evidence-grading methods used in health research.",
+        "The agent now applies checks that rely on source metadata rather than judgment. It first asks whether any evidence is in scope (if not, Not covered), then whether a volume threshold is met, including 65% of users saying the same thing (if not, Isolated feedback). It then counts quality criteria: convergence, collection by researchers, being under 18 months old, and structured synthesis rather than a single quote. Mainstream topics need two of four to be Established and innovation topics one of three; otherwise the answer is Grounded. Each level has its own wording and next step."
+      ],
+      "whyItMatters": "Named confidence levels built from checkable criteria, each paired with wording and a next step, make AI answers easier to trust and act on than a vague High/Medium/Low badge.",
+      "sourceName": "Criteo Product Design",
+      "sourceUrl": "https://medium.com/criteo-product-design/beyond-low-medium-high-building-confidence-levels-for-ux-research-in-the-age-of-ai-agents-2d3de143966e",
+      "author": "Anne-Sophie Guillou",
+      "publishedAt": "2026-11-24T07:54:40Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*j7sVvfMncDo2a2UdysWVug.png",
+      "imageAlt": "FigJam workshop board with sections for agent examples, inspiration and confidence-level ideas, and columns of sticky notes",
+      "tags": ["research repository", "confidence", "UX research", "research agents"]
+    },
+    {
+      "id": "2026-11-24-ai-ux-process-02",
+      "topic": "ai-ux-process",
+      "headline": "Synthetic users as rehearsal, not evidence: three safe uses and rules for keeping them out of findings",
+      "excerpt": "LLM personas can pilot an interview guide and stress-test a codebook, but nothing synthetic should ever be counted as data.",
+      "summary": [
+        "Researcher Satoru Tokuhisa takes a middle position in the synthetic-users debate. Citing studies including Agnew et al. at CHI 2024 and Argyle et al. in 2023, he argues LLM participants fail as evidence because they produce the average of what has been written, echo the persona prompt and give transcripts that are too tidy. He still sees value in using them for rehearsal.",
+        "He proposes three uses. First, dry-run the interview guide on three personas that differ on the key dimension, each in a fresh chat, and flag questions that get only politeness or near-identical answers. Second, stress-test a qualitative coding scheme on three synthetic transcripts and note every point where you hesitate between categories. Third, after fieldwork, treat real statements with no synthetic counterpart as candidate new findings. His rules: label synthetic files, never mix synthetic and real quotes in one table, count nothing synthetic, and disclose the use in one methods sentence. The piece ends by promoting the author's own template."
+      ],
+      "whyItMatters": "It gives research teams a defensible line for AI personas: use them to sharpen instruments before fieldwork, and keep them out of anything presented as user evidence.",
+      "sourceName": "Medium",
+      "sourceUrl": "https://medium.com/@dgramgra/synthetic-users-are-a-rehearsal-not-evidence-781e25e4583c",
+      "author": "Satoru Tokuhisa",
+      "publishedAt": "2026-11-24T00:58:45Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*8V3fY-oUsXgGNM0wAZ24Uw.png",
+      "imageAlt": "Cover of a free codebook template for interview coding, with one category, four rating levels and a prompt for using Claude as a second coder",
+      "tags": ["synthetic users", "user research", "interviews", "methods"]
+    },
+    {
+      "id": "2026-11-24-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Our toggle was a Norman door: designing a switch with four real states, including two locked ones",
+      "excerpt": "A finance product's visibility switch needed off, on and two locked states that the design system's Disabled style couldn't express.",
+      "summary": [
+        "Maitri Patel describes redesigning a visibility toggle in a business finance product. The control actually had four states: off and locked until a profile or payout was verified, off, on, and on but locked while offers were live. The design system only offered on, off and disabled, and disabled assumed the switch was off, so fading an active switch to 50% made people think it was broken, loading or off.",
+        "Working under a no-new-colors constraint, she explored 13 ways to signal locked. Tooltips lost because they stay hidden and fail on touch; an inline notice stating the reason and the way out won. The final rule: the knob shows where you are, and the other half shows where you can go, or a lock if you can't. The switch keeps the same size in every state. Recovery is route-aware: buttons go straight to the fix, a banner explains why you landed there, and a Go back link appears only if you came through that route."
+      ],
+      "whyItMatters": "Most products have controls that are blocked for a reason; designing the locked state with a visible reason and a path to unlock it is as important as the happy path.",
+      "sourceName": "Bootcamp",
+      "sourceUrl": "https://medium.com/design-bootcamp/our-toggle-was-a-norman-door-how-i-designed-a-4-state-switch-5bbd8d3e5359",
+      "author": "Maitri Patel",
+      "publishedAt": "2026-11-23T22:35:00Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*7U7kQUMPDP66ll4J8iFINQ.png",
+      "imageAlt": "Dark panel titled \"Before: a locked door with no sign\" comparing a closed door with question marks to a faded green on-switch",
+      "tags": ["components", "toggle", "states", "design systems", "case study"]
+    },
+    {
+      "id": "2026-11-24-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Nvidia's board reinstates Jensen Huang as CEO about ten days after his resignation",
+      "excerpt": "The board voted unanimously to bring Huang back after input from senior US officials; Colette Kress returns to the CFO role.",
+      "summary": [
+        "Nvidia's board voted unanimously to reinstate Jensen Huang as president, CEO and director, effective immediately, after several meetings with him. The board said it had heard from senior US government officials and concluded his return poses no national security risk. Interim CEO Colette Kress goes back to being chief financial officer. Huang said he returns with humility and renewed commitment, and chair Harvey Jones called him the right person to lead the company.",
+        "A committee of independent directors with outside counsel is still investigating reports that Huang was the target of a foreign intelligence effort, and he says he will cooperate. The board is also creating a National Security and Export Control Committee and hiring a chief compliance officer. The reversal came roughly ten days after his resignation, and news reports described a sharp jump in Nvidia's share price on Monday."
+      ],
+      "whyItMatters": "Leadership stability at the main supplier of AI compute affects the pricing and availability of the models that AI product features depend on.",
+      "sourceName": "CNN",
+      "sourceUrl": "https://www.cnn.com/2026/11/23/business/live-news/jensen-huang-reinstated-as-ceo-of-nvidia",
+      "publishedAt": "2026-11-23T14:26:58Z",
+      "imageUrl": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2205754284-20261123142350684.jpg?c=16x9&q=w_800,c_fill",
+      "imageAlt": "Nvidia CEO Jensen Huang in a leather jacket on a brightly lit stage",
+      "tags": ["Nvidia", "Jensen Huang", "leadership"]
+    },
+    {
+      "id": "2026-11-24-ai-news-02",
+      "topic": "ai-news",
+      "headline": "OpenAI and Cisco open-source Shirudo, letting agents write kernel-level shields that block exploits until a patch ships",
+      "excerpt": "Agents draft and test eBPF shields that a human approves before they protect a running Linux service without a restart.",
+      "summary": [
+        "OpenAI and Cisco launched Shirudo, Japanese for shield, an open-source runtime that protects live Linux systems during the days or weeks before a patch can be tested and deployed. It uses eBPF to run small programs in the kernel. Agents investigate a vulnerability, write a temporary shield and validate that it blocks the bad behavior while legitimate traffic still passes; an operator previews and approves it before it is enforced, with no service restart.",
+        "Shields are cryptographically signed, checked by the kernel's eBPF verifier and recorded in a TPM-backed log of every load and removal. In a controlled test, a Codex-generated shield added an input check to Java's Base64 decoder inside a running Elasticsearch process and stopped an exploit. Cisco describes the model as agents doing the legwork while people keep the keys. Both companies are inviting outside contributors and list kernel hardening and tighter workload permissions as next steps."
+      ],
+      "whyItMatters": "Its preview, approve, sign and log loop is a strong template for letting agents take consequential actions while humans keep final control.",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-shirudo/",
+      "publishedAt": "2026-11-23T12:00:00Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5K7gFDr3r8vgjdIcsW6RVY/aba5325ce7902e5d1499b907f8e78f0b/shirudo-partner-logos-landscape-2x.png?w=1600&h=900&fit=fill",
+      "imageAlt": "Shirudo logo centered on an orange gradient, with smaller OpenAI and Cisco logos along the bottom.",
+      "tags": ["OpenAI", "Cisco", "security", "open source", "agents"]
+    },
+    {
+      "id": "2026-11-24-ai-news-03",
+      "topic": "ai-news",
+      "headline": "Amazon buys Decart's model-optimization stack and team, reportedly for $7.5 billion",
+      "excerpt": "The deal brings software for running models efficiently across chips as Amazon prepares to sell Trainium to outside customers.",
+      "summary": [
+        "Amazon agreed to acquire a large part of Israeli startup Decart, including the technology behind the Decart Optimization Stack, its founding team and its AI researchers and engineers. Bloomberg put the price at $7.5 billion, which Amazon has not confirmed. The stack is software that makes AI models run efficiently on Nvidia, Amazon and Google hardware. Amazon executive Peter DeSantis said every leap in AI starts with getting more out of every chip.",
+        "The purchase lines up with Amazon's plan to sell its Trainium chips to outside customers in competition with Nvidia, since Decart's tools could make it easier to move workloads onto Amazon silicon. Decart is also known for real-time world models such as Oasis 3 and AI video tools; what happens to those products, the closing timeline and any regulatory review remain unclear."
+      ],
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+      "author": "Rebecca Bellan",
+      "publishedAt": "2026-11-23T17:14:23+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/12/Decart-Founders-Dean-Leitersdorf-CEO-and-Moshe-Shalev-CPO.jpg?resize=1200,800",
+      "imageAlt": "Decart founders Dean Leitersdorf and Moshe Shalev",
+      "tags": ["Amazon", "Decart", "acquisition", "Trainium", "inference"]
+    },
+    {
+      "id": "2026-11-24-ai-news-04",
+      "topic": "ai-news",
+      "headline": "Z.ai releases GLM-5.4, a roughly 750B-parameter flagship built on a looping transformer design",
+      "excerpt": "The model runs its layers twice for extra depth without extra parameters and goes first to GLM Coding Plan subscribers.",
+      "summary": [
+        "Zhipu's Z.ai released GLM-5.4, its first flagship built on what it calls a Loop Transformer. Rather than passing through each layer once, the model runs 28 layers of the GLM-5 base twice, adding depth without adding parameters; it was adapted with continued training instead of being trained from scratch. Per-token gates, a hybrid key-value cache and reused sparse-attention indices keep serving costs manageable at around 750 billion parameters. It also adds vision.",
+        "GLM-5.4 is live for GLM Coding Plan users and in ZCode and Z.ai Chat, with API access promised after a safety evaluation and open weights later. Z.ai claims intelligence comparable to much larger models but has not yet published benchmarks for GLM-5.4 itself, and admits the model can slip into overly long reasoning. It quotes up to 200 tokens per second off-peak and positions the model for using code to make video, games, shaders and CAD models."
+      ],
+      "sourceName": "TestingCatalog",
+      "sourceUrl": "https://www.testingcatalog.com/z-ai-launches-glm-5-4-its-first-loop-transformer-model/",
+      "author": "Alexey Shabanov",
+      "publishedAt": "2026-11-23T10:34:35Z",
+      "imageUrl": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w1200/2026/11/banner-27.webp",
+      "imageAlt": "Dark banner reading \"GLM-5.4 Loop\" with a white looping curve drawn over a geometric grid",
+      "tags": ["Z.ai", "GLM", "open models", "model release"]
+    },
+    {
+      "id": "2026-11-24-must-watch-01",
+      "topic": "must-watch",
+      "headline": "Beyond chat: product leaders from Microsoft, OpenAI and Notion AI on designing multi-agent experiences",
+      "excerpt": "A rare cross-company panel on how teams of agents should work together with people, from practitioners shipping them now.",
+      "summary": [
+        "This panel opened day one of fig studio's online AI Design Makeathon 2026, recorded on November 7. Moderated by fig studio co-founder Dan He, it brings together Lewis Liu, a product lead at Microsoft building agents and knowledge systems; Xinyu Qu, an applied AI engineer at OpenAI; Youyang Hou, a research manager on Notion AI; and Fred McHale, executive director of product design at the Academy of Art University.",
+        "According to the session description, the discussion covers how multiple agents collaborate, lessons from real-world deployments, and the design decisions that shape human-AI collaboration and how people interact with teams of agents. The event page offers no chapter list, so the description is the best guide to its scope; it runs just under 50 minutes."
+      ],
+      "whyItMatters": "Watch it for practitioner views on moving past a single chat box toward orchestrated agent teams that people can direct and supervise.",
+      "sourceName": "fig studio",
+      "sourceUrl": "https://www.youtube.com/watch?v=4XvL9tuvneY",
+      "author": "Lewis Liu, Xinyu Qu, Youyang Hou, Fred McHale, Dan He",
+      "publishedAt": "2026-11-11T09:04:18Z",
+      "durationMinutes": 49,
+      "embeddable": true,
+      "imageUrl": "https://i.ytimg.com/vi/4XvL9tuvneY/maxresdefault.jpg",
+      "imageAlt": "Event card for FIG AI Design Makeathon 2026, Day 1, \"Designing Multi-Agent Experiences\", with five speaker headshots and Microsoft, OpenAI, Academy of Art, Notion and fig logos",
+      "tags": ["multi-agent", "panel", "agent UX", "orchestration"]
+    }
+  ]
+}
