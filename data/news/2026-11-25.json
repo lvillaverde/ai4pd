@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T07:06:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-25-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Google's search homepage swaps the search button for AI task chips and a sidebar of past AI Mode threads",
+      "excerpt": "Create images, Ask about files and Brainstorm now sit under the search box, with a collapsible history panel on the left.",
+      "summary": [
+        "Google has reworked its desktop search homepage around AI entry points while keeping the centered logo and search bar. The spot where the \"Google Search\" button used to sit now holds three task chips (create images, ask about files and brainstorm), with \"I'm Feeling Lucky\" still to their right. Typing a query and pressing Enter still runs a normal web search.",
+        "A thin bar on the left edge expands into a panel listing earlier AI Mode conversations by title, plus New thread, Search threads and Notebooks, so signed-in users can reopen a thread and ask a follow-up. Google's VP of Search Products Robbie Stein showed the change in a demo, saying searches increasingly don't end after one question. The sidebar is rolling out in stages to desktop homepages worldwide."
+      ],
+      "whyItMatters": "It is a high-traffic example of adding an assistant without burying the classic action: suggested starting tasks under the input and a collapsible thread history at the edge, so returning to unfinished work is one click away.",
+      "sourceName": "Design Compass",
+      "sourceUrl": "https://designcompass.org/en/2026/11/24/google-search-homepage-ai-redesign/",
+      "author": "Jongmin Park",
+      "publishedAt": "2026-11-24T00:00:00+00:00",
+      "imageUrl": "https://designcompass.org/wp-content/uploads/2026/11/google-search-homepage-ai-redesign-3-web-thumbnail-scaled.jpg",
+      "imageAlt": "Google's new search homepage with a left sidebar of recent threads and Create images and Ask about files chips under the search box",
+      "tags": [
+        "Google",
+        "AI Mode",
+        "Search",
+        "Sidebar",
+        "Conversation history"
+      ]
+    },
+    {
+      "id": "2026-11-25-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Meta puts its Muse agent inside Instagram DMs, where it can act on posts you share with it",
+      "excerpt": "Users can send Muse a post and ask it to plan, shop or organize saves without leaving the Instagram inbox.",
+      "summary": [
+        "Meta is bringing Muse, its personal AI agent, into Instagram direct messages, so people no longer need to switch to the standalone Muse app. In a DM thread they can share a post and ask Muse to add a café to a trip itinerary, find a deal on shoes, turn a recipe video into a grocery list or explain more about a place or product. It can also sort saved posts and reels into Collections and catch users up on missed DMs.",
+        "Conversations started on Instagram show up as a side chat in the main Muse app. Meta says nothing is shared, published or sent without the user's approval, and people can ask Muse to forget information or undo actions. The DM integration is rolling out on iOS and Android in the U.S., Canada, Mexico, Japan and Singapore, with a prompt to organize newly saved posts launching first in the U.S. and Canada."
+      ],
+      "whyItMatters": "Meeting users inside an existing conversation surface, with one agent thread synced across apps and explicit approve, forget and undo controls, is a strong template for embedding an agent where work already happens.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+      "author": "Aisha Malik",
+      "publishedAt": "2026-11-24T17:00:00+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/11/MuseCharm.png?w=1200",
+      "imageAlt": "Meta's Muse character, a smiling fuzzy beige figure, on a rounded black device screen",
+      "tags": [
+        "Meta",
+        "Muse",
+        "Instagram",
+        "Personal agents",
+        "Messaging"
+      ]
+    },
+    {
+      "id": "2026-11-25-ai-agents-ux-03",
+      "topic": "ai-agents-ux",
+      "headline": "OpenAI is preparing dedicated email addresses for ChatGPT Dots agents, with an off switch per Dot",
+      "excerpt": "A hidden Email button now sits beside Call and Slack in a Dot's profile panel, opening a settings dialog that isn't live yet.",
+      "summary": [
+        "TestingCatalog found an unreleased email feature for Dots, the always-on agents inside ChatGPT. Each Dot's profile panel now shows an Email button next to Call and Slack; selecting it opens a \"dot's email\" dialog that currently reports email isn't available for the account and offers a Turn off email option. The setup suggests each Dot would get its own address that its owner can disable.",
+        "Today a Dot can only draft or send mail through a connected Gmail account, and OpenAI's Help Center says standalone addresses are not available at launch. An OpenAI team member posted on November 17 that Dots will soon have their own addresses and that testing has begun, giving examples like CC'ing a Dot to schedule a meeting or forwarding a receipt for a refund. No release date has been announced."
+      ],
+      "whyItMatters": "Giving an agent its own reachable identity, with channels listed on a profile card and a per-channel kill switch, is a pattern worth studying for any product that lets teams loop an agent into threads and requests.",
+      "sourceName": "TestingCatalog",
+      "sourceUrl": "https://www.testingcatalog.com/openai-prepares-dedicated-email-inboxes-for-chatgpt-dots/",
+      "author": "Alexey Shabanov",
+      "publishedAt": "2026-11-24T17:05:51Z",
+      "imageUrl": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w1200/2026/11/Screenshot-2026-11-24-at-01.31.08.png",
+      "imageAlt": "ChatGPT dark interface with a \"dot's email\" dialog offering Try again and Turn off email, beside a Dot profile panel with Call, Email and Slack buttons",
+      "tags": [
+        "OpenAI",
+        "ChatGPT",
+        "Dots",
+        "Agent identity",
+        "Email"
+      ]
+    },
+    {
+      "id": "2026-11-25-ai-agents-ux-04",
+      "topic": "ai-agents-ux",
+      "headline": "Google's Antigravity shows long agent tasks as live checklists and splits planner and executor models",
+      "excerpt": "Long-running tasks now list each step with live status, and a new panel picks separate planning and execution models.",
+      "summary": [
+        "Google's agentic coding app Antigravity now shows a checklist for long-running tasks that lists every step, marks steps running in parallel and counts completed ones. A new Orchestrator Settings panel lets users choose a planner model (for planning, design decisions and review) and an executor model (for searches, edits, builds and tests) separately, each with its own effort level, and the orchestrator can also be picked per conversation from the model menu.",
+        "The update, announced on November 23, also reset Gemini quotas for all Antigravity users, opened Gemini 4 Carbon to paid Google AI Pro subscribers and Gemini 4 Hydrogen to everyone, and merged the separate Argon quota into the general Gemini bucket. Checklists should be live for all users on version 2.34.0, though the model upgrade is still rolling out and \"banked resets\" are not yet finalized."
+      ],
+      "whyItMatters": "A step-by-step checklist with live and parallel states is a simple, reusable way to make long agent runs legible, and exposing planner versus executor choices hints at how much control power users may expect.",
+      "sourceName": "TestingCatalog",
+      "sourceUrl": "https://www.testingcatalog.com/google-adds-task-checklists-to-antigravity-and-carbon-for-pro/",
+      "publishedAt": "2026-11-24T00:02:37Z",
+      "imageUrl": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w1200/2026/11/1_WLkF-gPCou11WYlKZUTC_g.jpg",
+      "imageAlt": "Google Antigravity logo and wordmark on a black starry background",
+      "tags": [
+        "Google",
+        "Antigravity",
+        "Progress",
+        "Checklists",
+        "Coding agents"
+      ]
+    },
+    {
+      "id": "2026-11-25-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "\"Did the user ask for this?\": Google's intent check blocks hijacked agent actions before they run",
+      "excerpt": "A separate judge compares each proposed tool call with the user's request and cut attack success on AgentDojo from 48.7% to 0.9%.",
+      "summary": [
+        "Google engineers detailed how Semantic governance policies, in Preview on its Gemini agent platform, defend agents against intent hijacking, where untrusted content such as a bill, web page or message steers an agent toward something the user never asked for. A judge model sitting at the Agent Gateway reviews every proposed tool call, treating the user's request and system instructions as trusted and tool results and files as data. A built-in user-intent check is on by default; denied calls never execute and the agent's turn ends.",
+        "On the AgentDojo benchmark with a Gemini 2.5 Flash agent, attack success fell from 48.7% to 0.9%, while benign-task success dropped 2.6 points on average and about 1% of benign tasks were over-blocked. In a bill-payment example, reading the bill and checking transactions were allowed but a transfer injected by the bill was denied, though the same transfer passes if the user asks for it directly. Google notes the attacks were not adapted to the defense and text-only manipulation is out of scope."
+      ],
+      "whyItMatters": "Gate agent actions by provenance, not by asking \"Are you sure?\": check whether each action traces back to the user's own request, block silently when it doesn't, and explain the denial in the agent's activity log.",
+      "sourceName": "Google Developers Blog",
+      "sourceUrl": "https://developers.googleblog.com/did-the-user-ask-for-this-securing-ai-agents-against-intent-hijacking-with-semantic-governance-policies/",
+      "author": "Ritika Nigam, Deepti Sehrawat, Pranav Bhagwat",
+      "publishedAt": "2026-11-23T12:00:00Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/intent-hijacking-header-fullname-.2e16d0ba.fill-1200x600.png",
+      "imageAlt": "Diagram of a user's intent flowing through an agent, with two approved tool calls passing a policy shield and a hijacked payment call blocked",
+      "tags": [
+        "Guardrails",
+        "Prompt injection",
+        "Human-in-the-loop",
+        "Google",
+        "Trust"
+      ]
+    },
+    {
+      "id": "2026-11-25-ai-design-tools-01",
+      "topic": "ai-design-tools",
+      "headline": "Canva opens its MCP server to any agent and adds REST APIs and a CLI that agents already dominate",
+      "excerpt": "The waitlist is gone: any developer can wire Canva's design engine and Craft image model into agents and products.",
+      "summary": [
+        "Canva made its Model Context Protocol server generally available with no waitlist and added REST APIs, an expanded command-line tool and service accounts with API billing, pitching itself as the design layer for other products. Through 46 MCP tools, agents can generate editable designs, images and videos, remove backgrounds, split flat images into layers, resize, autofill and export. Canva says nearly 500,000 people signed up via MCP since October and agents typed 72% of CLI commands that month.",
+        "Canva says it consolidated overlapping tools so agents on smaller models pick the right one with less context. MCP still requires each user to sign in with their own Canva account; service accounts only apply to the REST API, whose pricing hasn't been disclosed. Some tools need a Pro plan, rate limits apply per tool, and all growth figures are Canva's own, unaudited numbers. The launch comes weeks after Canva cut 22% of its staff."
+      ],
+      "whyItMatters": "Design is becoming a callable service inside other people's agents, so the output of a chat can be an editable, on-brand file rather than a static image, which changes where design systems and brand kits need to live.",
+      "sourceName": "Sulat AI & Tech News",
+      "sourceUrl": "https://news.sulat.com/2026/11/24/canva-mcp/",
+      "author": "JP Caparas",
+      "publishedAt": "2026-11-24T07:40:49Z",
+      "imageUrl": "https://news.sulat.com/wp-content/uploads/2026/11/hero-canva-mcp-agent-plug.jpg",
+      "imageAlt": "Glossy 3D Canva logo disc with a small robot plugging a glowing cable into it, beside floating glass design cards",
+      "tags": [
+        "Canva",
+        "MCP",
+        "Design tools",
+        "APIs",
+        "Agents"
+      ]
+    },
+    {
+      "id": "2026-11-25-competitors-01",
+      "topic": "competitors",
+      "headline": "Smartsheet becomes an interactive connector in Claude, starting with live data quality audits in a side panel",
+      "excerpt": "Ask Claude to check a sheet and a live audit panel opens beside the chat, refreshing as each approved fix lands.",
+      "summary": [
+        "Smartsheet is one of the first tools in Anthropic's interactive connectors launch. Asking Claude to check a sheet now opens a live audit, built with the MCP Apps extension, that uses Smartsheet's Data Quality Agent to flag missing values, inconsistencies, duplicates and stale rows. When users ask Claude to fix issues, the audit refreshes as each change is made, and every change is approved like any other connector action.",
+        "The audit opens in a side panel that can stay beside the conversation, expand to full screen or hide the chat column. It works through the existing Smartsheet connector for Business, Enterprise and Advanced Work Management plans in the US, EU and AU regions, covers one sheet at a time, and respects existing sheet permissions. Admins who block connector tools must switch the default to Needs approval for the panel to load. More interactive experiences are planned."
+      ],
+      "whyItMatters": "Work-management vendors are starting to ship their own UI inside AI assistants, not just data, so the interactive panel next to the chat, with per-change approval, may become a key place users experience your product.",
+      "sourceName": "Smartsheet",
+      "sourceUrl": "https://www.smartsheet.com/content-center/smartsheet-now-interactive-connector-claude-starting-data-quality-audits-beside-your",
+      "publishedAt": "2026-11-23T09:43:56-08:00",
+      "imageUrl": "https://www.smartsheet.com/sites/default/files/2024-10/smartsheet-og-teaser-image-dusk-on-light.jpg",
+      "imageAlt": "Smartsheet logo above product screens showing a dashboard with charts, a grid with checkboxes and a Gantt timeline",
+      "tags": [
+        "Smartsheet",
+        "Claude",
+        "Connectors",
+        "Data quality",
+        "MCP Apps"
+      ]
+    },
+    {
+      "id": "2026-11-25-ai-news-01",
+      "topic": "ai-news",
+      "headline": "MCP servers can now ship skills, run background tasks and pause to ask the user in Claude",
+      "excerpt": "Anthropic made Tasks and Elicitation generally available, put Skills over MCP in public beta and previewed File Uploads.",
+      "featured": true,
+      "summary": [
+        "Anthropic announced four Model Context Protocol features for Claude and Claude Code. Skills over MCP (public beta) lets a server publish workflow guidance alongside its tools, which Claude loads only when needed. Tasks (generally available) lets a server run long jobs in the background and report back. Elicitation (generally available) lets a server pause mid-call to ask the user for input through a form or link. File Uploads, which pass files to servers without going through the context window, are coming soon.",
+        "Skills are on by default for Pro, Max and Ultra, need an admin toggle on Team and are coming to Enterprise; Tasks and Elicitation are rolling out to Team and Enterprise. Partner examples include Shopify, HubSpot and Atlassian skills, ZoomInfo research tasks, and Elicitation prompts from Supabase and Railway before costly or destructive changes, and from GitHub asking users to type a repository's name before an agent deletes it."
+      ],
+      "whyItMatters": "Confirmation forms, background jobs with progress and vendor-supplied playbooks are moving into the protocol layer, so designers can expect standard moments for approvals and long-running work that their own agent UI must render well.",
+      "sourceName": "Claude",
+      "sourceUrl": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+      "publishedAt": "2026-11-24T12:00:00Z",
+      "imageUrl": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more/opengraph-image/og",
+      "imageAlt": "Line drawing of two hands passing a square block toward a white L-shaped piece on a peach background",
+      "tags": [
+        "Anthropic",
+        "MCP",
+        "Elicitation",
+        "Skills",
+        "Agents"
+      ]
+    },
+    {
+      "id": "2026-11-25-ai-news-02",
+      "topic": "ai-news",
+      "headline": "ShellBench: top personal AI agents still fail more than a third of everyday chores",
+      "excerpt": "A new benchmark built from 10 million real agent interactions finds frequent failures and safety misses on email, calendar and payment tasks.",
+      "summary": [
+        "ShellBench, built by researchers at The OpenClaw Foundation, Parsewave, Hugging Face, Red Hat and UC Berkeley from more than 10 million anonymized agent interactions, tests multi-step personal tasks such as handling email, calendars, receipts and payments. The most advanced models from OpenAI, Anthropic and Meta failed more than a third of the time, and 15.7% of attempts broke at least one safety requirement. Top scorer GPT-6 Astra passed all three repeated runs of a task less than half the time.",
+        "Specific tasks exposed blind spots: 79.5% of attempts mishandled a child's school pickup and 40.3% recommended duplicate or wrong invoice payments. The harness also mattered, with Meta's Muse Wonder scoring 56% in one harness and 38.1% in Claude Code. The researchers did not test Muse, Dots or Claude Duet in their consumer apps, so real-world results may differ, and the article does not say whether the work was peer reviewed."
+      ],
+      "whyItMatters": "Inconsistent results on repeated runs argue for designing agent features around review, confirmation of money-moving steps and easy correction, rather than assuming a single successful demo reflects everyday reliability.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
+      "author": "Rebecca Bellan",
+      "publishedAt": "2026-11-24T21:33:29+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2296543552.jpg?w=1024",
+      "imageAlt": "A hand holds a smartphone showing the App Store listing for Meta's Muse AI assistant in front of a computer screen",
+      "tags": [
+        "Benchmarks",
+        "Reliability",
+        "Personal agents",
+        "Safety"
+      ]
+    },
+    {
+      "id": "2026-11-25-ai-news-03",
+      "topic": "ai-news",
+      "headline": "Anthropic shares slip below their $83 IPO price less than a week after a $111.50 debut",
+      "excerpt": "The stock fell as low as $76 on Tuesday, a drop observers see as a warning for private AI valuations.",
+      "summary": [
+        "Anthropic's stock fell below its initial public offering price on Tuesday, trading as low as $76 by midday, nearly 12% under Monday's close. The company had priced its IPO at $83 a share, above its projected range, and opened on Nasdaq at $111.50 less than a week earlier. Trading below the offer price is usually read as a bad sign because underwriters tend to price shares at a discount to expected demand.",
+        "Venture investors treat Anthropic's trading as a barometer for how public markets value AI companies, and continued weakness could pressure private startup valuations and other AI listings. The slide came amid a broader AI selloff, with Nvidia down more than 7% by midday after a 30%-plus jump the day before on Jensen Huang's reinstatement as CEO. The article includes no named analyst views."
+      ],
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+      "author": "Marina Temkin",
+      "publishedAt": "2026-11-24T18:30:42+00:00",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2305298275.jpg?w=594",
+      "imageAlt": "Anthropic CEO Dario Amodei at the Nasdaq MarketSite in New York ahead of the company's IPO",
+      "tags": [
+        "Anthropic",
+        "IPO",
+        "Markets",
+        "Funding"
+      ]
+    }
+  ]
+}
