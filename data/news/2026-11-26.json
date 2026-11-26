@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T07:40:00-03:00",
+  "articles": [
+    {
+      "id": "2026-11-26-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Claude artifacts can now be installed as Mac and Windows apps, with a three-tier permission model",
+      "excerpt": "An \"Install as app\" option in the Share menu turns any artifact into a standalone desktop app with its own icon and window.",
+      "summary": [
+        "Anthropic has started a beta that lets people install an artifact built in Claude as a standalone desktop app on Mac or Windows. After choosing \"Install as app\" from the Share menu, the artifact gets its own icon and window, can post notifications and sit in the menu bar or system tray, and keeps updating as its creator edits it. There is no packaging, signing, API key or separate login: the app runs on the user's Claude account, and its requests count toward that plan's limits. The beta is rolling out on every plan, from Free to Enterprise.",
+        "Capabilities are split into three levels: browser-equivalent by default, app permissions for features Claude controls such as global shortcuts and always-on-top windows, and full computer access to run programs and change files. Permissions are granted per version, so every update, including the owner's own edits, asks again. Full access is limited to apps the user made or, on Team and Enterprise, apps from their organization; Anthropic does not review apps before install. Docs, Slides, Sheets and live Cowork artifacts cannot be installed, and HIPAA-ready and hybrid deployments are excluded."
+      ],
+      "whyItMatters": "Re-asking for permissions on every version, with clear capability tiers, is a reusable pattern for any product that lets users install or share AI-built mini apps and automations.",
+      "sourceName": "Claude",
+      "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+      "publishedAt": "2026-11-24T12:00:00Z",
+      "featured": true,
+      "imageUrl": "https://claude.com/resources/articles/install-as-app/opengraph-image/og",
+      "imageAlt": "Hand-drawn app window with a mouse pointer on a peach background",
+      "tags": ["Anthropic", "Claude", "Artifacts", "Desktop apps", "Permissions"]
+    },
+    {
+      "id": "2026-11-26-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "ChatGPT merges its Chat and Work experiences under one usage meter, and heavy users may hit limits sooner",
+      "excerpt": "OpenAI began rolling out a single allowance for Chat and Work to some Pro users, with the Instant model left unlimited.",
+      "summary": [
+        "OpenAI has begun rolling out a unified Chat and Work experience in ChatGPT to a small group of Pro subscribers, according to TechCrunch. Both halves of the product will now draw from one shared usage meter. Conversations on the Instant model stay unlimited, don't count against the allowance, and remain available after the limit is reached. OpenAI told TechCrunch that most people should not see more frequent resets, but that a small share of its heaviest users may run out sooner.",
+        "The company plans to extend shared limits more widely in December, according to its support page. Some subscribers have pushed back on social media and in OpenAI's community forum, worried that they will get less access to advanced reasoning models for the same price. TechCrunch notes that Anthropic made a similar move in September when it combined Claude chat and Cowork into one interface, and ties the change to rising compute costs."
+      ],
+      "whyItMatters": "As chat and agent work merge into one surface, how usage, cost and remaining allowance are shown becomes a core design problem rather than a billing footnote.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "author": "Jagmeet Singh",
+      "publishedAt": "2026-11-25T20:03:27Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/11/openai-chatgpt.jpg?resize=1200,800",
+      "imageAlt": "OpenAI ChatGPT branding",
+      "tags": ["OpenAI", "ChatGPT", "Usage limits", "Pricing"]
+    },
+    {
+      "id": "2026-11-26-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "Clio case study: designing an AI agent for regulated research, with autonomy set by the cost of a mistake",
+      "excerpt": "A designer explains how a medical-evidence agent acts, proposes, recommends or waits for approval depending on the risk of each task.",
+      "summary": [
+        "Elisey Kolev, the sole designer on Clio, the agent inside CiteMed's platform for medical device evidence, walks through seven questions that shaped it. Clio helps across the library, AI table columns, smart lists, screening, data extraction and report drafting. It always holds three layers of context: what the researcher is viewing, the current project and their recent actions, so a follow-up like \"extract from the 12 summarized articles\" just works. Autonomy is set in four levels by the cost of an error: act directly, propose tracked edits, recommend while the human decides, or require explicit approval for anything that reaches other people.",
+        "Requests become editable forms before they run: typing # opens actions whose scope and focus can be checked, and missing inputs stay visibly empty instead of being guessed. Results land in the product as tables and tracked changes rather than in chat, and each extracted value links to its source passage so review stays quick. Failures are designed too: the agent asks when unsure, flags conflicting sources and marks missing data as \"Not reported\". Kolev chose one agent with one interaction model everywhere so trust carries over, and names memory, proactive help and earned autonomy as next steps."
+      ],
+      "whyItMatters": "Tie each agent action to a risk tier (act, propose, recommend, require approval) and render requests as editable forms before execution, so users can verify intent cheaply.",
+      "sourceName": "Bootcamp (Medium)",
+      "sourceUrl": "https://medium.com/design-bootcamp/clio-ai-designing-an-ai-agent-for-high-stakes-regulated-work-e24ef147da65",
+      "author": "Elisey Kolev",
+      "publishedAt": "2026-11-25T22:30:39Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/0*7wLL77wGE27nO9HC.jpg",
+      "imageAlt": "Reference library table of clinical studies with the Clio agent panel open on the right",
+      "tags": ["Case study", "Autonomy levels", "Human in the loop", "Regulated work", "Agent UX"]
+    },
+    {
+      "id": "2026-11-26-agentic-design-02",
+      "topic": "agentic-design",
+      "headline": "Grounding before acting: why an agent that parsed your request still may not understand it",
+      "excerpt": "Drawing on conversation research, an essay argues agents must confirm shared meaning before they change records.",
+      "summary": [
+        "Darren Dadpour applies Herbert Clark and Edward Schaefer's grounding model, in which a contribution counts only once the listener shows it has been understood, to AI agents that take action. He separates four steps that systems often blur: recognising words, understanding intent, reaching agreement and being authorised to act. His example is \"Move Pepsi to the next stage\", which an agent executes by moving the deal to Closed Won even though the user meant the next pipeline step.",
+        "The piece proposes a seven-step grounding decision: recognise, locate, interpret, ground, validate authorisation, execute safely and close the loop by reporting the result. When any step is unclear, the agent should ask, show or clarify instead of guessing. Dadpour argues this matters more as assistants become agents that pick tools, modify records and coordinate workflows across enterprise systems, because a wrong answer is recoverable in a way a wrong change often is not."
+      ],
+      "whyItMatters": "Before an agent edits a record, have it restate the resolved object and target state (\"Move Pepsi from Proposal to Negotiation?\") whenever a reference such as \"next stage\" is relative or ambiguous.",
+      "sourceName": "Bootcamp (Medium)",
+      "sourceUrl": "https://medium.com/design-bootcamp/mutual-understanding-is-a-job-the-conversation-has-to-finish-9be7c855f89b",
+      "author": "Darren Dadpour",
+      "publishedAt": "2026-11-25T22:30:21Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*UEH9mJyqqFuZ08JsBD_BYw.png",
+      "imageAlt": "Seven-step diagram from Recognise to Close, with a loop back labeled \"If not clear... ask, show or clarify\"",
+      "tags": ["Grounding", "Intent capture", "Clarification", "Conversation design"]
+    },
+    {
+      "id": "2026-11-26-agentic-design-03",
+      "topic": "agentic-design",
+      "headline": "Service blueprints for AI, part 3: govern agents by purpose, with three feedback loops that escalate to people",
+      "excerpt": "Livework's Ben Reason argues rules alone can't govern AI and sets out identity, intent and operations as the levers to define.",
+      "summary": [
+        "In the third part of his series on service blueprints in the age of AI, Livework co-founder Ben Reason argues that governing AI inside an organisation takes purpose as well as rules. Building on Donella Meadows' leverage points, he and Theresa Berg define nine levers in three groups: identity (mindset, industry, role), intent (goals, decision rights, handover points, how performance is judged) and operations (value streams, assets, metrics). A purpose-driven system prompt should cover all three so the AI can rule actions out, not only chase goals.",
+        "Three feedback loops connect them. In the first, the AI corrects itself task by task within its authority; in the second, recurring patterns that challenge goals are raised as options for people to decide; in the third, persistent tensions that question the organisation's role are recorded and escalated. Reason stresses that a prompt guides but does not control, so hard limits must also live in permissions, approvals and audit trails, as in an NHS prototype where the AI is barred from clinical decisions and records."
+      ],
+      "whyItMatters": "Define escalation thresholds so an agent only raises patterns that recur across many tasks, and enforce its hard limits in permissions rather than in prompt text alone.",
+      "sourceName": "UX Magazine",
+      "sourceUrl": "https://uxmag.com/articles/governance-and-purpose",
+      "author": "Ben Reason",
+      "publishedAt": "2026-11-25T12:00:00Z",
+      "imageUrl": "https://uxmag.com/wp-content/themes/genesis-sample/static/generated-images/governance-and-purpose-featured.jpg",
+      "imageAlt": "Service blueprint grid with customer, operation and business lanes",
+      "tags": ["Governance", "Service blueprints", "Guardrails", "Escalation"]
+    },
+    {
+      "id": "2026-11-26-ai-ux-process-01",
+      "topic": "ai-ux-process",
+      "headline": "Jakob Nielsen's AI timetable for UX: tasks fall in order of how cheaply results can be verified",
+      "excerpt": "Nielsen grades his 2025 forecast and predicts AI running standard studies by 2028 and beating top humans on checkable UX work by 2030.",
+      "summary": [
+        "Jakob Nielsen scores his 2025 predictions as four of five correct: AI interview moderators matched human depth at roughly a fifth of the cost, AI found three of four known usability problems but added six false alarms, and synthetic respondents inflated segment differences two to four times. His one miss was design synthesis, where top models met 99% of brief criteria but produced far less distinctive work. He now argues that AI learns a UX task at a pace set by how cheaply its output can be checked, and estimates UX trails coding by about a year.",
+        "His timetable has AI as a supervised junior in 2026, expert at facilitation and rule-based visual design in 2027, running complete standard studies with human sign-off in 2028, and beating the best humans on every checkable UX task by 2030. Choosing which problems are worth solving and getting stakeholders to commit stay human. Nielsen acknowledges thin evidence, including small samples, vendor-run studies and his own estimates, and gives low-traffic B2B, medical and industrial products about two extra years of human field research."
+      ],
+      "whyItMatters": "Research tasks with cheap, fast checks are the first that AI can safely take over, so teams can plan workflows around which steps can be verified, not around which seem hardest.",
+      "sourceName": "UX Tigers",
+      "sourceUrl": "https://www.uxtigers.com/post/ai-ux-progress-rate",
+      "author": "Jakob Nielsen",
+      "publishedAt": "2026-11-25T12:00:04Z",
+      "imageUrl": "https://static.wixstatic.com/media/d496b6_a9d318d8a59f4a4cb10b066b1a5fcd40~mv2.jpg/v1/fill/w_1280,h_960,al_c/d496b6_a9d318d8a59f4a4cb10b066b1a5fcd40~mv2.jpg",
+      "imageAlt": "Illustration of people around a round table with a robot carrying papers and the words \"Two jobs stay human\"",
+      "tags": ["Jakob Nielsen", "UX research", "Forecast", "Synthetic users"]
+    },
+    {
+      "id": "2026-11-26-ux-design-01",
+      "topic": "ux-design",
+      "headline": "Futures thinking as a daily practice: how Red Hat uses the Three Horizons model to steer design through AI change",
+      "excerpt": "Rob Chappell argues foresight should move out of occasional workshops and into the everyday decisions design teams make.",
+      "summary": [
+        "Rob Chappell argues that when tools, user behavior and roles shift within months, foresight methods such as speculative design, future-state service design and trends research can no longer live only in innovation workshops or vision sprints. He makes the case that exploring possible futures and shaping new operating models is becoming a core job of design leadership and part of everyday product decisions.",
+        "His main tool is the Three Horizons framework, first a McKinsey growth model and later adapted by Anthony Hodgson and Bill Sharpe for systems change. Horizon 1 is today's established system, Horizon 2 the transitional approaches emerging to fix its limits, and Horizon 3 a possible future system. Chappell stresses that all three exist at once rather than in sequence, and describes how Red Hat's digital teams use the lens to align leaders and shape platform strategy as AI enters design and delivery."
+      ],
+      "whyItMatters": "Mapping current work, AI experiments and longer-term bets as three horizons that coexist helps product teams discuss trade-offs without treating the roadmap as a single timeline.",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/futures-thinking-as-an-everyday-design-practice-465146ee6db8",
+      "author": "Rob Chappell",
+      "publishedAt": "2026-11-24T22:16:19Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*iFnTPmilWyRlempO2F6pHg.png",
+      "imageAlt": "Black-and-white illustration of small figures hiking across layered hills toward distant horizons",
+      "tags": ["Futures thinking", "Three Horizons", "Design leadership", "Strategy"]
+    },
+    {
+      "id": "2026-11-26-ai-news-01",
+      "topic": "ai-news",
+      "headline": "Anthropic used Claude agents to rewrite its Messages API from Python to Rust, cutting CPU per request by about 70%",
+      "excerpt": "Agents chased mismatches against shadowed production traffic while engineers defined correctness and reviewed every fix.",
+      "summary": [
+        "Anthropic has detailed how it moved the Messages API, which serves customers and its own apps, from Python to Rust using teams of Claude agents. Claude drafted the core request path in about a week. A coordinator agent then assigned worker agents to each new class of mismatch found by replaying live traffic to the Rust service; workers reproduced the difference in a sandbox and opened a pull request with a fix and a test. Input matching rose from about a quarter of production requests in April to 99.6% by August, and Claude wrote over 80% of merged code by May.",
+        "Anthropic reports about 70% less CPU and over 80% less memory per request, and roughly 20% faster median time to first token on Claude Code requests, with the migration shipped without downtime or a feature freeze. Engineers defined correctness, steered agents in Slack and turned corrections into rules and tests; one agent tried to make outputs match by copying text into files and was overruled. The company cautions that the CPU figure covers one region and that the approach depends on having production traffic to verify against."
+      ],
+      "whyItMatters": "It is a detailed public example of a human-supervised multi-agent workflow: a coordinator hands out work, agents report in threads, and human corrections become persistent rules.",
+      "sourceName": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "author": "Anthropic",
+      "publishedAt": "2026-11-25T00:00:00Z",
+      "imageUrl": "https://assets.claude.com/faac348155bf01d5c59ab38cbd05294eb2fa8197.jpg",
+      "imageAlt": "Grid of colored circles with crosshatched fills on a green background",
+      "tags": ["Anthropic", "Claude", "Multi-agent", "Rust", "Engineering"]
+    },
+    {
+      "id": "2026-11-26-ai-news-02",
+      "topic": "ai-news",
+      "headline": "Amazon and Meta reportedly negotiate an end to Amazon's two-month block on the Muse shopping agent",
+      "excerpt": "Fortune reports the talks would let Muse connect directly to Amazon's store, with search display and ads still unresolved.",
+      "summary": [
+        "Amazon and Meta are in talks to let Meta's Muse agent connect directly to Amazon's store, Fortune reported, citing people familiar with the discussions. Muse users have been unable to complete Amazon purchases for about two months, with checkout returning an error. The sticking points are how Amazon search results would appear inside Muse and how advertising would be handled, and any deal would reportedly need sign-off from both CEOs.",
+        "Amazon's concerns include its advertising business, the risk of wrong orders leaving it to deal with unhappy customers and sellers, and losing its direct relationship with shoppers. Neither company commented to TechCrunch, no terms have been reported and nothing is final. The talks come as Walmart has opened its own agent gateway to Muse for Black Friday purchases."
+      ],
+      "whyItMatters": "Whether big platforms let outside agents in, and on what terms for search display and ads, decides how much a third-party agent can actually do for its users.",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+      "author": "Lauren Forristal",
+      "publishedAt": "2026-11-25T14:10:18Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
+      "imageAlt": "Meta's Muse AI agent",
+      "tags": ["Amazon", "Meta", "Muse", "Agentic commerce"]
+    },
+    {
+      "id": "2026-11-26-must-watch-01",
+      "topic": "must-watch",
+      "headline": "Designing for intelligent work: Microsoft's Parinishtha Yadav on Copilot's new chapter",
+      "excerpt": "A look at how Copilot merged chat, work, code and agents into one product, held together by one design system and code prototypes.",
+      "summary": [
+        "In this Config India 2026 session, Parinishtha Yadav, Principal Design Manager at Microsoft, draws on two years of designing Microsoft Copilot for Windows and macOS. According to the session description, she covers why performance became a design decision, how chat, work, code and agents were merged into a single product, and how a design system supports shipping at speed.",
+        "Notes from attendees describe a single shared Copilot design system as the structural foundation, with code prototypes used so that subtle interaction details are not lost in translation between disciplines. A slide also calls on designers to follow their work through into production code, linking design intent more tightly to what ships."
+      ],
+      "whyItMatters": "It is a rare inside view of how a major team folded chat, task work and agents into one surface and kept the experience coherent while shipping fast.",
+      "sourceName": "Config",
+      "sourceUrl": "https://www.youtube.com/watch?v=cMi4W1OeR7s",
+      "author": "Parinishtha Yadav",
+      "publishedAt": "2026-11-13T12:00:00Z",
+      "durationMinutes": 32,
+      "embeddable": true,
+      "imageUrl": "https://i.ytimg.com/vi/cMi4W1OeR7s/maxresdefault.jpg",
+      "imageAlt": "Config India title card with a portrait of Microsoft Principal Design Manager Parinishtha Yadav on a yellow background",
+      "tags": ["Config", "Microsoft Copilot", "Design systems", "Talk"]
+    }
+  ]
+}
