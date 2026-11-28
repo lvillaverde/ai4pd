@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T07:04:17-03:00",
+  "articles": [
+    {
+      "id": "2026-11-28-ai-agents-ux-01",
+      "topic": "ai-agents-ux",
+      "headline": "Google is building an agent creation screen and plugin Bundles into Antigravity",
+      "excerpt": "Hidden screens show users naming an agent, giving it a goal and attaching resources, plus curated plugin sets by role.",
+      "summary": [
+        "TestingCatalog found unreleased features in Google's Antigravity app. A New Agent dialog asks for an icon, a name, a goal (\"What should this agent accomplish?\") and the resources the agent can use, and a new Bundles category in the customization screen is meant to hold curated collections of plugins for common workflows and job roles. No bundles are listed yet, and the agent screen is still in early development.",
+        "The report reads the changes as Google pushing Antigravity toward a desktop \"super app\" that competes with the ChatGPT and Claude apps, with a mobile app and proactive personal assistants expected to follow, possibly absorbing the standalone Gemini app. Google is also working on quota reset tokens that users can bank and redeem later, which Varun Mohan confirmed on November 23. None of this has been officially announced, so details may change before release."
+      ],
+      "whyItMatters": "The name, goal and resources form is becoming the standard way to define a custom agent, and role-based plugin bundles show how products can hand new users a ready-made set of capabilities instead of an empty configuration page.",
+      "sourceName": "TestingCatalog",
+      "sourceUrl": "https://www.testingcatalog.com/google-develops-bundles-and-agent-creation-for-antigravity/",
+      "author": "Alexey Shabanov",
+      "publishedAt": "2026-11-27T13:23:56Z",
+      "featured": true,
+      "imageUrl": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w1200/2026/11/Screenshot-2026-11-26-at-00.48.11.png",
+      "imageAlt": "Dark Antigravity window with a New Agent dialog showing Name, Goal and Resources fields and a Create Agent button",
+      "tags": [
+        "Google",
+        "Antigravity",
+        "agent creation",
+        "plugins",
+        "leak"
+      ]
+    },
+    {
+      "id": "2026-11-28-ai-agents-ux-02",
+      "topic": "ai-agents-ux",
+      "headline": "Nous Research readies a Hermes Desktop redesign with per-agent pages, Routines and a Bots Market",
+      "excerpt": "The open-source agent app gets one sidebar for all agents and chats, a run history for routines, and first steps toward proactivity.",
+      "summary": [
+        "Nous Research co-founder Teknium says a full redesign of the Hermes Desktop app is finished and should ship early next week. In-progress designs shared by an unofficial watcher account show a home screen that lists every agent and its chats in one sidebar, a page and settings for each agent, a Routines area where users create routines and review every run, and a single page for skills, plugins and tools, with light and dark themes, a phone layout and an option to keep the classic look.",
+        "A Bots Market is coming to the Hermes Market: adding a bot creates a personal profile, early bots include Inbox Brief, Research Desk and Meeting Wrap, users can try a bot on a sample task first, and scheduled jobs stay off until a time is picked. Teknium admitted Hermes has had little real proactivity so far; a first change would let it spot flights, deadlines or habits and propose a job on a \"Schedule this job?\" card. A mobile app is expected in December."
+      ],
+      "whyItMatters": "Trying an agent on a sample task, keeping its schedule off until the user opts in, and proposing automations as confirmable cards are concrete ways to make proactive agents feel safe.",
+      "sourceName": "TestingCatalog",
+      "sourceUrl": "https://www.testingcatalog.com/nous-research-readies-hermes-desktop-redesign-for-next-week/",
+      "author": "Erin | AI Agent",
+      "publishedAt": "2026-11-26T15:26:19Z",
+      "imageUrl": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/og-image.png",
+      "imageAlt": "Blue engraving of a multi-armed figure in a winged helmet behind large white letters reading Hermes Agent",
+      "tags": [
+        "Nous Research",
+        "Hermes",
+        "desktop app",
+        "proactive agents",
+        "routines"
+      ]
+    },
+    {
+      "id": "2026-11-28-agentic-design-01",
+      "topic": "agentic-design",
+      "headline": "\"You're booked.\" Prove it: an agent's message must never claim more than the system has confirmed",
+      "excerpt": "A booking-agent walkthrough shows how to design the unknown outcome: check first, end the spinner honestly, and make retries safe.",
+      "summary": [
+        "Writing in Bootcamp, designer Iris Atalay uses a design-interview scenario: an AI booking assistant sends a request, the booking service stops responding, and the assistant announces success anyway while a card offers \"Try again\", a button that could create a second appointment. Her fix is to let the agent run one automatic lookup of the original request within its existing permission, show a checking state while it does, and then show the confirmed details, a still-processing status, or an honest \"We couldn't confirm your appointment\" with Check again and Get help.",
+        "She stresses that the chat message, the card and the behaviour underneath must agree: rewording is useless if the agent quietly sends another booking. Whether a retry is safe depends on what the service guarantees, which is a conversation with engineering. She suggests demoing such flows with a test service whose responses can be changed live, placing an activity record beside the preview, and then testing whether people actually read \"couldn't confirm\" correctly. She also cites Figma's experiment finding Figma Make users about 20% faster on defined edits."
+      ],
+      "whyItMatters": "Design an explicit \"outcome unknown\" state for agent actions: verify before asking the user to act, make Check again a read-only lookup rather than a resend, and keep the agent's words in sync with the status shown in the UI.",
+      "sourceName": "Bootcamp (Medium)",
+      "sourceUrl": "https://medium.com/design-bootcamp/the-ai-says-youre-booked-prove-it-b501bc6a29da",
+      "author": "Iris Atalay",
+      "publishedAt": "2026-11-26T11:06:27Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*XuI25jNC5pbT9jK_InNPcw.png",
+      "imageAlt": "Blue line drawing of a woman asking \"Where's the confirmation?\" next to an AI demo window saying \"You're booked.\" above a calendar with a question mark",
+      "tags": [
+        "error recovery",
+        "verification",
+        "trust",
+        "agent status",
+        "idempotency"
+      ]
+    },
+    {
+      "id": "2026-11-28-ai-ux-process-01",
+      "topic": "ai-ux-process",
+      "headline": "A solo designer's AI stack: code prototypes for testing, AI as a text tool in synthesis, and a UX feedback skill",
+      "excerpt": "After a year as the only UX designer at a B2B scale-up, Teisanu Tudor rates which AI uses worked, which disappointed and why.",
+      "summary": [
+        "In UX Collective, Teisanu Tudor describes moving from a 30-person design team to being the only UX designer at a B2B e-commerce scale-up. Prototyping with Claude Code is the big win: sketches and Figma layouts become working HTML prototypes in minutes, deep enough that usability-test participants can take their own paths, and data can be swapped (say, from fashion to electronics) 15 minutes before a session. He hides small settings panels in prototypes to switch variations and warns that speed tempts teams to polish one direction too early.",
+        "For synthesis he stopped using merged AI summaries directly because nuance got lost and he remembered little; he now summarises each interview with Gemini, notes timestamps live, forms themes with a note taker, and uses AI as a \"super text editor\" to check how often phrases recur. Visual exploration in Figma Make, Claude Design and Google Stitch was \"meh\". A repo-based UX feedback skill that asks framing questions, voices user perspectives and checks UI against guidelines is in trial, and Rovo agents help him gather company context."
+      ],
+      "whyItMatters": "It is a grounded split of where AI helps the UX process (realistic test prototypes, guideline checks, context gathering) and where keeping humans in the loop still pays off (theme building and visual direction).",
+      "sourceName": "UX Collective",
+      "sourceUrl": "https://uxdesign.cc/how-do-i-use-ai-as-a-solo-designer-956a3954614e",
+      "author": "Teisanu Tudor",
+      "publishedAt": "2026-11-27T11:22:26Z",
+      "imageUrl": "https://cdn-images-1.medium.com/max/1024/1*1-xVAhi_xe9_5QefGZDtrQ.png",
+      "imageAlt": "Row of dark Figma prototype Interaction panels showing triggers, actions such as Navigate to and Set variable, and a conditional",
+      "tags": [
+        "research synthesis",
+        "prototyping",
+        "usability testing",
+        "Claude Code",
+        "design team of one"
+      ]
+    },
+    {
+      "id": "2026-11-28-ux-design-01",
+      "topic": "ux-design",
+      "headline": "NN/g refreshes Usability Testing 101, with a section on where AI helps and where it falls short",
+      "excerpt": "Kate Moran and Maria Rosala's primer covers tasks, facilitation, sample sizes, remote formats and cost, now with AI's role.",
+      "summary": [
+        "Nielsen Norman Group published a new version of its Usability Testing 101 primer by Kate Moran and Maria Rosala, dated November 27. It defines the method as watching representative people attempt realistic tasks to find problems and opportunities, built from four parts: a facilitator, tasks, the design and a participant. It notes that small changes in task wording can steer behaviour, recommends including participants with disabilities such as screen reader users, and explains the think-aloud protocol.",
+        "The article separates qualitative tests, where about five participants per user group surface most problems, from quantitative tests that measure success and time on task and need larger samples, and compares moderated remote and unmoderated remote formats. A discount study can take about three days. New guidance on AI says it can transcribe sessions, build highlight reels and speed up analysis, but researchers must verify its interpretations, and AI moderators currently suit only simple studies. It also argues AI design tools can't predict real behaviour."
+      ],
+      "whyItMatters": "A dependable reference to share with teams that are tempted to replace observation with AI predictions or AI-moderated sessions.",
+      "sourceName": "Nielsen Norman Group",
+      "sourceUrl": "https://www.nngroup.com/articles/usability-testing-101/",
+      "author": "Kate Moran, Maria Rosala",
+      "publishedAt": "2026-11-27T12:00:00Z",
+      "imageUrl": "https://media.nngroup.com/media/articles/opengraph_images/Usability_Testing_101.png",
+      "imageAlt": "NN/g card reading Usability Testing 101 beside an illustration of four hands pointing down from tangled colored paths",
+      "tags": [
+        "usability testing",
+        "research methods",
+        "NN/g",
+        "AI moderation"
+      ]
+    },
+    {
+      "id": "2026-11-28-ai-news-01",
+      "topic": "ai-news",
+      "headline": "OpenAI fixes a GPT-6.2 billing bug, so ChatGPT users now hit limits up to 40% sooner",
+      "excerpt": "Wrong discounts on Astra and Sol are corrected, subscribers get an extra saved reset, and a merged Chat and Work mode is in testing.",
+      "summary": [
+        "OpenAI Codex engineer Thibault Sottiaux said a billing error during the GPT-6.2 rollout gave most users the wrong discounts on GPT-6.2 Astra and Sol. With the fix, users reach their usage limits about 40% faster on Astra and 25% faster on Sol than the week before, though quotas still last longer than with GPT-6 Astra and GPT-6.1 Sol. Other models were unaffected and OpenAI will not charge retroactively.",
+        "To compensate, Go, Plus, Pro and Business subscribers get an extra saved reset, and Business users get free Fast Mode until the end of the year. The Decoder also notes that OpenAI is testing a merger of Chat and Work modes with some Pro users, where the model decides whether to answer directly or start a slower, more agentic workflow, all in one cloud environment, a change likely to raise token costs. Anthropic made a similar move by folding Cowork into Claude."
+      ],
+      "whyItMatters": "Usage meters, banked resets and a model that decides on its own when to go agentic all need clear UI so users understand why their limits moved.",
+      "sourceName": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/",
+      "author": "Matthias Bastian",
+      "publishedAt": "2026-11-26T17:28:56Z",
+      "imageUrl": "https://the-decoder.com/wp-content/uploads/2026/10/openai.png",
+      "imageAlt": "Black OpenAI knot logo on a dark blue background with a larger faded copy of the logo on the right",
+      "tags": [
+        "OpenAI",
+        "ChatGPT",
+        "GPT-6.2",
+        "usage limits",
+        "pricing"
+      ]
+    },
+    {
+      "id": "2026-11-28-must-watch-01",
+      "topic": "must-watch",
+      "headline": "The next AI interface may not be a screen: Jeff Easter of PLAUD on attention, buttons and trust",
+      "excerpt": "A thoughtful conversation on how AI products can do more in the background while asking less of people's attention.",
+      "summary": [
+        "In this episode of Yanko Design's Design Mindset, host Radhika Seth talks with Jeff Easter, an HCI designer at PLAUD who previously worked on Amazon's Echo Frames smart glasses. They discuss why removing a screen does not remove distraction, what a smart-glasses notification experiment taught him about attention, and why a single-purpose physical button can be clearer than another complex interface, as long as the device still shows whether input registered, whether it is active and what happens next.",
+        "Easter explains PLAUD's highlight gesture, where a quick press marks a moment in a recording so the AI gets context it can't infer, and argues that organizing captured material can be automatic while higher-stakes actions such as sending messages should need confirmation. They also cover recording indicators for bystanders and the difference between unobtrusive and secretive. He closes with a challenge answer: a flip-to-record object whose face-up or face-down state shows whether it is listening."
+      ],
+      "whyItMatters": "Worth watching for its clear line between what AI should handle on its own and which actions should stay with the person, plus ideas for showing system state without a screen.",
+      "sourceName": "Yanko Design",
+      "sourceUrl": "https://www.youtube.com/watch?v=Pct7fzJaLuA",
+      "author": "Radhika Seth, Jeff Easter",
+      "publishedAt": "2026-11-14T17:45:31Z",
+      "embeddable": true,
+      "imageUrl": "https://i.ytimg.com/vi/Pct7fzJaLuA/maxresdefault.jpg",
+      "imageAlt": "Design Mindset with Radhika Seth podcast thumbnail showing host Radhika Seth and guest Jeff Easter in circular portraits",
+      "tags": [
+        "AI hardware",
+        "attention",
+        "human control",
+        "interview",
+        "PLAUD"
+      ]
+    }
+  ]
+}
